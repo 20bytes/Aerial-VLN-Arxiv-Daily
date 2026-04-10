@@ -1,0 +1,80 @@
+# TODO: add papers by configuration file
+base_url: "https://arxiv.paperswithcode.com/api/v0/papers/"
+user_name: "20bytes"
+repo_name: "Awesome-Aerial-VLN-Arxiv-Daily"
+show_authors: True
+show_links: True
+show_badge: True
+max_results: 10
+
+# DeepSeek translation
+translate_title: True
+translate_abstract: True
+deepseek_base_url: "https://api.deepseek.com"
+deepseek_model: "deepseek-chat"
+translation_cache_path: "./docs/title_translations.json"
+abstracts_cache_path: "./docs/abstracts_en.json"
+
+publish_readme: True
+publish_gitpage: True
+publish_wechat: False
+
+# file paths
+json_readme_path: './docs/cv-arxiv-daily.json'
+json_gitpage_path: './docs/cv-arxiv-daily-web.json'
+json_wechat_path: './docs/cv-arxiv-daily-wechat.json'
+
+md_readme_path: 'README.md'
+md_gitpage_path: './docs/index.html'
+md_wechat_path: './docs/wechat.md'
+
+# keywords to search
+keywords:
+  "无人机视觉语言导航":
+    filters:
+      - "Aerial Vision-Language Navigation"
+      - "UAV Vision-Language Navigation"
+      - "Aerial VLN"
+      - "UAV VLN"
+      - "Drone Navigation"
+      - "Aerial Embodied Navigation"
+      - "Instruction-Following UAV"
+      - "Aerial Agent Navigation"
+      - "UAV Path Planning"
+      - "Autonomous UAV Navigation"
+      - "Aerial VLA"
+      - "CityNav"
+      - "AerialVLN"
+      - "OpenUAV"
+  "3DGS场景重建与仿真":
+    filters:
+      - "3D Gaussian Splatting"
+      - "Hierarchical 3DGS"
+      - "Large-Scale Scene Reconstruction"
+      - "Aerial 3D Reconstruction"
+      - "UAV Scene Reconstruction"
+      - "Real-to-Sim"
+      - "Gaussian Splatting Reconstruction"
+      - "Neural Radiance Field Reconstruction"
+      - "UAV Mapping"
+      - "Visual SLAM"
+      - "UAV SLAM"
+      - "Occupancy Grid"
+      - "Point Cloud Segmentation"
+      - "Aerial Point Cloud"
+  "具身智能基础模型与数据":
+    filters:
+      - "Vision-Language-Action Model"
+      - "Embodied AI Navigation"
+      - "World Model"
+      - "Sim-to-Real Transfer"
+      - "VLN Dataset"
+      - "Aerial Dataset"
+      - "Automatic Trajectory Generation"
+      - "Landmark Grounding"
+      - "Multimodal Navigation"
+      - "LLM Navigation"
+      - "Embodied Agent"
+      - "Semantic Navigation"
+      - "Navigation Benchmark"
+      - "Keyframe-Aware"
