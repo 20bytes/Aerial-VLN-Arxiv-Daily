@@ -284,43 +284,50 @@ def update_paper_links(filename):
         arxiv_id = re.sub(r'v\d+', '', arxiv_id)
         return date,title,authors,arxiv_id,hjfy_link
 
-    with open(filename,"r") as f:
-        content = f.read()
-        if not content:
-            m = {}
-        else:
-            m = json.loads(content)
+    if not os.path.exists(filename):
+        m = {}
+    else:
+        with open(filename,"r") as f:
+            content = f.read()
+            if not content:
+                m = {}
+            else:
+                m = json.loads(content)
 
-        json_data = m.copy()
+    json_data = m.copy()
 
-        for keywords,v in json_data.items():
-            logging.info(f'keywords = {keywords}')
-            for paper_id,contents in v.items():
-                contents = str(contents)
+    for keywords,v in json_data.items():
+        logging.info(f'keywords = {keywords}')
+        for paper_id,contents in v.items():
+            contents = str(contents)
 
-                update_time, paper_title, paper_first_author, paper_url, hjfy_link = parse_arxiv_string(contents)
+            update_time, paper_title, paper_first_author, paper_url, hjfy_link = parse_arxiv_string(contents)
 
-                contents = "|{}|{}|{}|{}|{}|\n".format(update_time,paper_title,paper_first_author,paper_url,hjfy_link)
-                json_data[keywords][paper_id] = str(contents)
-                logging.info(f'paper_id = {paper_id}, contents = {contents}')
+            contents = "|{}|{}|{}|{}|{}|\n".format(update_time,paper_title,paper_first_author,paper_url,hjfy_link)
+            json_data[keywords][paper_id] = str(contents)
+            logging.info(f'paper_id = {paper_id}, contents = {contents}')
 
-                # PapersWithCode API is deprecated, skip code link updates
-                # Papers will keep their existing null code links
-                logging.info(f'Skipping code link update for paper_id = {paper_id} (PapersWithCode API deprecated)')
-        # dump to json file
-        with open(filename,"w") as f:
-            json.dump(json_data,f)
+            # PapersWithCode API is deprecated, skip code link updates
+            # Papers will keep their existing null code links
+            logging.info(f'Skipping code link update for paper_id = {paper_id} (PapersWithCode API deprecated)')
+    # dump to json file
+    with open(filename,"w") as f:
+        json.dump(json_data,f)
 
 def update_json_file(filename,data_dict):
     '''
     daily update json file using data_dict
     '''
-    with open(filename,"r") as f:
-        content = f.read()
-        if not content:
-            m = {}
-        else:
-            m = json.loads(content)
+    if not os.path.exists(filename):
+        os.makedirs(os.path.dirname(filename) or ".", exist_ok=True)
+        m = {}
+    else:
+        with open(filename,"r") as f:
+            content = f.read()
+            if not content:
+                m = {}
+            else:
+                m = json.loads(content)
 
     json_data = m.copy()
 
@@ -388,12 +395,15 @@ def json_to_md(filename,md_filename,
     DateNow = str(DateNow)
     DateNow = DateNow.replace('-','.')
 
-    with open(filename,"r") as f:
-        content = f.read()
-        if not content:
-            data = {}
-        else:
-            data = json.loads(content)
+    if not os.path.exists(filename):
+        data = {}
+    else:
+        with open(filename,"r") as f:
+            content = f.read()
+            if not content:
+                data = {}
+            else:
+                data = json.loads(content)
 
     # clean README.md if daily already exist else create it
     with open(md_filename,"w+") as f:
@@ -527,12 +537,15 @@ def json_to_html(filename, html_filename, task = '', translation_cache_path = ''
     DateNow = datetime.date.today()
     DateNow = str(DateNow).replace('-','.')
 
-    with open(filename,"r") as f:
-        content = f.read()
-        if not content:
-            data = {}
-        else:
-            data = json.loads(content)
+    if not os.path.exists(filename):
+        data = {}
+    else:
+        with open(filename,"r") as f:
+            content = f.read()
+            if not content:
+                data = {}
+            else:
+                data = json.loads(content)
 
     translation_cache = load_translation_cache(translation_cache_path) if translation_cache_path else {}
     abstracts_cache = {}
