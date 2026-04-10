@@ -48,11 +48,11 @@ jobs:
         run: |
           python daily_arxiv.py --update_paper_links
           
-      - name: Push new cv-arxiv-daily.md
+      - name: Push updated papers
         uses: github-actions-x/commit@v2.9
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: "Github Action Automatic Update CV Arxiv Papers"
+          commit-message: "🚁 Aerial-VLN Arxiv Weekly Links Update"
           files: README.md docs/cv-arxiv-daily.json docs/cv-arxiv-daily-web.json docs/index.html docs/title_translations.json docs/abstracts docs/cv-arxiv-daily-wechat.json docs/wechat.md
           rebase: 'true'
           name: ${{ env.GITHUB_USER_NAME }}
