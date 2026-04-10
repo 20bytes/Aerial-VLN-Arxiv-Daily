@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>OnFly: Onboard Zero-Shot Aerial Vision-Language Navigation toward Safety and Efficiency</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Aerial vision-language navigation (AVLN) enables UAVs to follow natural-language instructions in complex 3D environments. However, existing zero-shot AVLN methods often suffer from unstable single-stream Vision-Language Model decision-making, unreliable long-horizon progress monitoring, and a trade-off between safety and efficiency. We propose OnFly, a fully onboard, real-time framework for zero-shot AVLN. OnFly adopts a shared-perception dual-agent architecture that decouples high-frequency target generation from low-frequency progress monitoring, thereby stabilizing decision-making. It further employs a hybrid keyframe-recent-frame memory to preserve global trajectory context while maintaining KV-cache prefix stability, enabling reliable long-horizon monitoring with termination and recovery signals. In addition, a semantic-geometric verifier refines VLM-predicted targets for instruction consistency and geometric safety using VLM features and depth cues, while a receding-horizon planner generates optimized collision-free trajectories under geometric safety constraints, improving both safety and efficiency. In simulation, OnFly improves task success from 26.4% to 67.8%, compared with the strongest state-of-the-art baseline, while fully onboard real-world flights validate its feasibility for real-time deployment. The code will be released at https://github.com/Robotics-STAR-Lab/OnFly</p>
+      <h2>摘要 (ZH)</h2>
+      <p>空中视觉语言导航（AVLN）使无人机能够在复杂的三维环境中遵循自然语言指令。然而，现有的零样本AVLN方法常面临单流视觉语言模型决策不稳定、长时程进度监测不可靠，以及安全与效率之间的权衡问题。本文提出OnFly，一种完全机载、实时的零样本AVLN框架。OnFly采用共享感知的双智能体架构，将高频目标生成与低频进度监测解耦，从而稳定决策过程。该框架进一步利用混合关键帧-近期帧记忆机制，在保持KV缓存前缀稳定性的同时保留全局轨迹上下文，实现了具有终止和恢复信号的可信长时程监测。此外，通过语义-几何验证器，结合视觉语言模型特征和深度线索，对视觉语言模型预测的目标进行指令一致性和几何安全性优化；同时，采用滚动时域规划器在几何安全约束下生成优化的无碰撞轨迹，从而提升安全性与效率。在仿真实验中，与当前最强基线相比，OnFly将任务成功率从26.4%提升至67.8%，而完全机载的实飞验证了其实时部署的可行性。代码将在https://github.com/Robotics-STAR-Lab/OnFly发布。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

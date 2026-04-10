@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Beyond Static Forecasting: Unleashing the Power of World Models for Mobile Traffic Extrapolation</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Mobile traffic prediction is a fundamental yet challenging problem for wireless network planning and optimization. Existing models focus on learning static long-term temporal patterns in mobile traffic series, which limits their ability to capture the dynamics between mobile traffic and network parameter adjustments. In this paper, we propose MobiWM, a world model for mobile networks. Taking mobile traffic as the system state, MobiWM models the dynamics between the states and network parameter actions, including power, azimuth, mechanical tilt, and electrical tilt through a predictive backbone. It fuses multimodal environmental contexts, comprising both image and sequential data, with encoded actions, leveraging shared spatial semantics to enhance spatial understanding. Leveraging the capacity of world models to capture real-world operational dynamics, MobiWM supports unlimited-horizon rollout over continuous network-adjustment action trajectories, providing operators with an explorable counterfactual simulation environment for network planning and optimization. Extensive experiments on variable-parameter mobile traffic data covering 31,900 cells across 9 districts demonstrate that MobiWM achieves the best distributional fidelity across all evaluation scenarios, significantly outperforming existing traffic prediction baselines and representative world models. A downstream RL-based case study further validates MobiWM as a simulation environment for network optimization, establishing a new paradigm for digital twin-driven wireless network management.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>移动流量预测是无线网络规划与优化的基础性难题。现有模型主要学习移动流量序列中的静态长期时序模式，这限制了其捕捉移动流量与网络参数调整之间动态关系的能力。本文提出MobiWM，一种面向移动网络的世界模型。该模型将移动流量视为系统状态，通过预测主干网络建模状态与网络参数动作（包括功率、方位角、机械下倾角和电下倾角）之间的动态关系。它融合了多模态环境上下文（包含图像和序列数据）与编码后的动作，利用共享的空间语义增强空间理解能力。借助世界模型捕捉现实世界运行动态的能力，MobiWM支持在连续网络调整动作轨迹上进行无限时域推演，为运营商提供可探索的反事实模拟环境，用于网络规划与优化。在覆盖9个区域31,900个基站的可变参数移动流量数据上进行的大量实验表明，MobiWM在所有评估场景中均实现了最佳分布保真度，显著优于现有流量预测基线模型和代表性世界模型。一项基于强化学习的下游案例研究进一步验证了MobiWM作为网络优化模拟环境的有效性，为数字孪生驱动的无线网络管理建立了新范式。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

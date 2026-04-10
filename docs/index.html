@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aerial-VLN-Arxiv-Daily</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root { --bg-start: #f8faff; --bg-end: #eef2fb; --card-bg: rgba(255, 255, 255, 0.7); --card-border: rgba(255, 255, 255, 0.6); --text: #1f2937; --muted: #64748b; --line: rgba(226, 232, 240, 0.8); --accent: #3b82f6; --accent-light: #eff6ff; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: 'Inter', sans-serif; color: var(--text); background: linear-gradient(135deg, var(--bg-start) 0%, var(--bg-end) 100%); min-height: 100vh; background-attachment: fixed; }
+    .wrap { max-width: 1140px; margin: 0 auto; padding: 40px 20px 80px; }
+    header { background: var(--card-bg); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border: 1px solid var(--card-border); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03); margin-bottom: 40px; transition: transform 0.3s ease; }
+    header:hover { transform: translateY(-2px); box-shadow: 0 8px 40px rgba(0, 0, 0, 0.05); }
+    h1 { margin: 0 0 12px; font-size: 32px; font-weight: 700; letter-spacing: -0.5px; background: linear-gradient(90deg, #1e3a8a, #3b82f6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    h2 { font-size: 20px; font-weight: 600; margin: 0 0 16px; display: flex; align-items: center; gap: 8px; }
+    .sub { color: var(--muted); margin: 0 0 12px; font-size: 15px; line-height: 1.6; }
+    .updated { font-weight: 600; font-size: 14px; display: inline-block; padding: 4px 12px; background: white; border-radius: 20px; border: 1px solid var(--line); color: #475569; }
+    .toc { margin: 24px 0 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 12px; }
+    .toc a { text-decoration: none; color: var(--accent); background: var(--accent-light); padding: 6px 14px; border-radius: 999px; font-size: 14px; font-weight: 500; border: 1px solid rgba(59, 130, 246, 0.2); transition: all 0.2s ease; }
+    .toc a:hover { background: var(--accent); color: white; transform: translateY(-1px); box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2); }
+    section { margin-top: 40px; }
+    table { width: 100%; border-collapse: separate; border-spacing: 0; background: var(--card-bg); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border: 1px solid var(--card-border); border-radius: 16px; overflow: hidden; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03); }
+    th, td { padding: 14px 16px; border-bottom: 1px solid var(--line); vertical-align: middle; font-size: 14px; line-height: 1.5; }
+    th { background: rgba(255, 255, 255, 0.5); text-align: left; font-weight: 600; color: #475569; white-space: nowrap; text-transform: uppercase; font-size: 12px; letter-spacing: 0.5px; }
+    tr { transition: all 0.2s ease; }
+    tbody tr:hover { background: rgba(255, 255, 255, 0.9); transform: scale(1.002); box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02); z-index: 10; position: relative; }
+    tr:last-child td { border-bottom: none; }
+    .eval { display: inline-flex; gap: 8px; }
+    .eval button { border: 1px solid var(--line); background: rgba(255,255,255,0.8); padding: 4px 10px; border-radius: 8px; cursor: pointer; font-size: 14px; transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+    .eval button:hover { transform: translateY(-2px) scale(1.05); box-shadow: 0 4px 8px rgba(0,0,0,0.05); }
+    .eval button.active { border-color: var(--accent); background: var(--accent-light); transform: scale(1.05); box-shadow: 0 2px 8px rgba(59, 130, 246, 0.15); }
+    .legend { color: var(--muted); font-size: 13px; margin: 12px 0 0 4px; display: flex; align-items: center; gap: 6px; }
+    .legend::before { content: '💡'; }
+    a { color: var(--accent); text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #2563eb; text-decoration: underline; background: rgba(59, 130, 246, 0.05); border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>🚁 Aerial-VLN-Arxiv-Daily</h1>
+      <p class="sub">每日自动追踪 无人机视觉语言导航 (Aerial-VLN)、3DGS场景重建与仿真 和 具身智能基础模型 的最新 arXiv 论文。</p>
+      <p class="updated">Updated on 2026.04.10</p>
+      <ul class="toc">
+        <li><a href="#无人机视觉语言导航">无人机视觉语言导航</a></li>
+        <li><a href="#3dgs场景重建与仿真">3DGS场景重建与仿真</a></li>
+        <li><a href="#具身智能基础模型与数据">具身智能基础模型与数据</a></li>
+      </ul>
+    </header>
+    <section id="无人机视觉语言导航">
+      <h2>📌 无人机视觉语言导航</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Publish Date (YYYY-MM-DD)</th>
+            <th>Title</th>
+            <th>Authors</th>
+            <th>PDF</th>
+            <th>HJFY</th>
+            <th>评估</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr data-arxiv-id="2604.07705">
+            <td>2026-04-09</td>
+            <td>Vision-Language Navigation for Aerial Robots: Towards the Era of Large Language Models<br>面向空中机器人的视觉语言导航：迈向大语言模型时代<br><a href="abstracts/2604.07705.html">摘要</a></td>
+            <td>Wen Yao Team</td>
+            <td><a href="http://arxiv.org/abs/2604.07705">2604.07705</a></td>
+            <td><a href="https://hjfy.top/arxiv/2604.07705v1">HJFY</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2603.23224">
+            <td>2026-03-24</td>
+            <td>AeroScene: Progressive Scene Synthesis for Aerial Robotics<br>AeroScene：面向空中机器人的渐进式场景合成<br><a href="abstracts/2603.23224.html">摘要</a></td>
+            <td>Anh Nguyen Team</td>
+            <td><a href="http://arxiv.org/abs/2603.23224">2603.23224</a></td>
+            <td><a href="https://hjfy.top/arxiv/2603.23224v1">HJFY</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2603.21544">
+            <td>2026-03-23</td>
+            <td>Evolutionary Biparty Multiobjective UAV Path Planning: Problems and Empirical Comparisons<br>进化式双边多目标无人机路径规划：问题与实证比较<br><a href="abstracts/2603.21544.html">摘要</a></td>
+            <td>Yatong Chang Team</td>
+            <td><a href="http://arxiv.org/abs/2603.21544">2603.21544</a></td>
+            <td><a href="https://hjfy.top/arxiv/2603.21544v1">HJFY</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2603.21046">
+            <td>2026-03-22</td>
+            <td>SpatialFly: Geometry-Guided Representation Alignment for UAV Vision-and-Language Navigation in Urban Environments<br>SpatialFly：面向城市环境中无人机视觉与语言导航的几何引导表示对齐方法<br><a href="abstracts/2603.21046.html">摘要</a></td>
+            <td>Xiangyang Ji Team</td>
+            <td><a href="http://arxiv.org/abs/2603.21046">2603.21046</a></td>
+            <td><a href="https://hjfy.top/arxiv/2603.21046v1">HJFY</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2603.20501">
+            <td>2026-03-18</td>
+            <td>CICDWOA: A Collective Cognitive Sharing Whale Optimization Algorithm with Cauchy Inverse Cumulative Distribution for 2D/3D Path Planning and Engineering Design Problems<br>CICDWOA：一种基于柯西逆累积分布的集体认知共享鲸鱼优化算法，用于二维/三维路径规划与工程设计问题<br><a href="abstracts/2603.20501.html">摘要</a></td>
+            <td>Xu Yang Team</td>
+            <td><a href="http://arxiv.org/abs/2603.20501">2603.20501</a></td>
+            <td><a href="https://hjfy.top/arxiv/2603.20501v1">HJFY</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2603.19822">
+            <td>2026-03-20</td>
+            <td>HUGE-Bench: A Benchmark for High-Level UAV Vision-Language-Action Tasks<br>HUGE-Bench：面向高级无人机视觉-语言-动作任务的基准测试平台<br><a href="abstracts/2603.19822.html">摘要</a></td>
+            <td>Mingming Gong Team</td>
+            <td><a href="http://arxiv.org/abs/2603.19822">2603.19822</a></td>
+            <td><a href="https://hjfy.top/arxiv/2603.19822v1">HJFY</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2603.18958">
+            <td>2026-03-19</td>
+            <td>Optimal Path Planning in Hostile Environments<br>敌对环境中的最优路径规划<br><a href="abstracts/2603.18958.html">摘要</a></td>
+            <td>Haifeng Xu Team</td>
+            <td><a href="http://arxiv.org/abs/2603.18958">2603.18958</a></td>
+            <td><a href="https://hjfy.top/arxiv/2603.18958v1">HJFY</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2603.10682">
+            <td>2026-03-11</td>
+            <td>OnFly: Onboard Zero-Shot Aerial Vision-Language Navigation toward Safety and Efficiency<br>OnFly：面向安全与效率的机载零样本空中视觉语言导航<br><a href="abstracts/2603.10682.html">摘要</a></td>
+            <td>Boyu Zhou Team</td>
+            <td><a href="http://arxiv.org/abs/2603.10682">2603.10682</a></td>
+            <td><a href="https://hjfy.top/arxiv/2603.10682v1">HJFY</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2603.09194">
+            <td>2026-03-10</td>
+            <td>WESPR: Wind-adaptive Energy-Efficient Safe Perception &amp; Planning for Robust Flight with Quadrotors<br>WESPR：面向四旋翼稳健飞行的风适应性能效安全感知与规划<br><a href="abstracts/2603.09194.html">摘要</a></td>
+            <td>Pratap Tokekar Team</td>
+            <td><a href="http://arxiv.org/abs/2603.09194">2603.09194</a></td>
+            <td><a href="https://hjfy.top/arxiv/2603.09194v1">HJFY</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2603.08007">
+            <td>2026-03-09</td>
+            <td>ViSA-Enhanced Aerial VLN: A Visual-Spatial Reasoning Enhanced Framework for Aerial Vision-Language Navigation<br>ViSA增强的空中视觉语言导航：一种视觉空间推理增强的空中视觉语言导航框架<br><a href="abstracts/2603.08007.html">摘要</a></td>
+            <td>Chenghao Lin Team</td>
+            <td><a href="http://arxiv.org/abs/2603.08007">2603.08007</a></td>
+            <td><a href="https://hjfy.top/arxiv/2603.08007v1">HJFY</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="legend">评估状态保存在浏览器本地（localStorage），换设备/浏览器不会同步。</p>
+    </section>
+    <section id="3dgs场景重建与仿真">
+      <h2>📌 3DGS场景重建与仿真</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Publish Date (YYYY-MM-DD)</th>
+            <th>Title</th>
+            <th>Authors</th>
+            <th>PDF</th>
+            <th>HJFY</th>
+            <th>评估</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr data-arxiv-id="2604.08544">
+            <td>2026-04-09</td>
+            <td>SIM1: Physics-Aligned Simulator as Zero-Shot Data Scaler in Deformable Worlds<br>SIM1：物理对齐模拟器作为可变形世界中的零样本数据扩展器<br><a href="abstracts/2604.08544.html">摘要</a></td>
+            <td>Jiangmiao Pang Team</td>
+            <td><a href="http://arxiv.org/abs/2604.08544">2604.08544</a></td>
+            <td><a href="https://hjfy.top/arxiv/2604.08544v1">HJFY</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2604.08508">
+            <td>2026-04-09</td>
+            <td>Sumo: Dynamic and Generalizable Whole-Body Loco-Manipulation<br>Sumo：动态且可泛化的全身移动操作<br><a href="abstracts/2604.08508.html">摘要</a></td>
+            <td>Simon Le Cléac&#x27;h Team</td>
+            <td><a href="http://arxiv.org/abs/2604.08508">2604.08508</a></td>
+            <td><a href="https://hjfy.top/arxiv/2604.08508v1">HJFY</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2604.08410">
+            <td>2026-04-09</td>
+            <td>BLaDA: Bridging Language to Functional Dexterous Actions within 3DGS Fields<br>BLaDA：在3D高斯泼溅场中实现语言与功能性灵巧动作的衔接<br><a href="abstracts/2604.08410.html">摘要</a></td>
+            <td>Yaonan Wang Team</td>
+            <td><a href="http://arxiv.org/abs/2604.08410">2604.08410</a></td>
+            <td><a href="https://hjfy.top/arxiv/2604.08410v1">HJFY</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2604.08370">
+            <td>2026-04-09</td>
+            <td>SurfelSplat: Learning Efficient and Generalizable Gaussian Surfel Representations for Sparse-View Surface Reconstruction<br>SurfelSplat：学习高效且可泛化的高斯面元表示用于稀疏视角表面重建<br><a href="abstracts/2604.08370.html">摘要</a></td>
+            <td>Yueqi Duan Team</td>
+            <td><a href="http://arxiv.org/abs/2604.08370">2604.08370</a></td>
+            <td><a href="https://hjfy.top/arxiv/2604.08370v1">HJFY</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2604.08358">
+            <td>2026-04-09</td>
+            <td>Scalable Neural Decoders for Practical Fault-Tolerant Quantum Computation<br>可扩展的神经解码器：面向实用容错量子计算<br><a href="abstracts/2604.08358.html">摘要</a></td>
+            <td>Susanne F. Yelin Team</td>
+            <td><a href="http://arxiv.org/abs/2604.08358">2604.08358</a></td>
+            <td><a href="https://hjfy.top/arxiv/2604.08358v1">HJFY</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2604.08338">
+            <td>2026-04-09</td>
+            <td>Controlling the rain fall statistics using Mean-Reverting Jump Diffusion model<br>使用均值回归跳跃扩散模型控制降雨统计特性<br><a href="abstracts/2604.08338.html">摘要</a></td>
+            <td>Pankaj Kumar Mishra Team</td>
+            <td><a href="http://arxiv.org/abs/2604.08338">2604.08338</a></td>
+            <td><a href="https://hjfy.top/arxiv/2604.08338v1">HJFY</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2604.08126">
+            <td>2026-04-09</td>
+            <td>LLM-Based Data Generation and Clinical Skills Evaluation for Low-Resource French OSCEs<br>基于大语言模型的低资源法语客观结构化临床考试数据生成与临床技能评估<br><a href="abstracts/2604.08126.html">摘要</a></td>
+            <td>Irina Illina Team</td>
+            <td><a href="http://arxiv.org/abs/2604.08126">2604.08126</a></td>
+            <td><a href="https://hjfy.top/arxiv/2604.08126v1">HJFY</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2604.08053">
+            <td>2026-04-09</td>
+            <td>Constraining Ultralight Scalar Dark Matter in the Galactic Center with the S2 Orbit<br>利用S2轨道约束银河系中心的超轻标量暗物质<br><a href="abstracts/2604.08053.html">摘要</a></td>
+            <td>Lijing Shao Team</td>
+            <td><a href="http://arxiv.org/abs/2604.08053">2604.08053</a></td>
+            <td><a href="https://hjfy.top/arxiv/2604.08053v1">HJFY</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2604.07991">
+            <td>2026-04-09</td>
+            <td>MotionScape: A Large-Scale Real-World Highly Dynamic UAV Video Dataset for World Models<br>MotionScape：面向世界模型的大规模真实世界高动态无人机视频数据集<br><a href="abstracts/2604.07991.html">摘要</a></td>
+            <td>Lei Wang Team</td>
+            <td><a href="http://arxiv.org/abs/2604.07991">2604.07991</a></td>
+            <td><a href="https://hjfy.top/arxiv/2604.07991v1">HJFY</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2604.07928">
+            <td>2026-04-09</td>
+            <td>Generative 3D Gaussian Splatting for Arbitrary-ResolutionAtmospheric Downscaling and Forecasting<br>基于生成式三维高斯泼溅的任意分辨率大气降尺度与预报<br><a href="abstracts/2604.07928.html">摘要</a></td>
+            <td>Lei Bai Team</td>
+            <td><a href="http://arxiv.org/abs/2604.07928">2604.07928</a></td>
+            <td><a href="https://hjfy.top/arxiv/2604.07928v1">HJFY</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="legend">评估状态保存在浏览器本地（localStorage），换设备/浏览器不会同步。</p>
+    </section>
+    <section id="具身智能基础模型与数据">
+      <h2>📌 具身智能基础模型与数据</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Publish Date (YYYY-MM-DD)</th>
+            <th>Title</th>
+            <th>Authors</th>
+            <th>PDF</th>
+            <th>HJFY</th>
+            <th>评估</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr data-arxiv-id="2604.08475">
+            <td>2026-04-09</td>
+            <td>LAMP: Lift Image-Editing as General 3D Priors for Open-world Manipulation<br>LAMP：将图像编辑提升为开放世界操作的通用三维先验<br><a href="abstracts/2604.08475.html">摘要</a></td>
+            <td>Guofeng Zhang Team</td>
+            <td><a href="http://arxiv.org/abs/2604.08475">2604.08475</a></td>
+            <td><a href="https://hjfy.top/arxiv/2604.08475v1">HJFY</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2604.08226">
+            <td>2026-04-09</td>
+            <td>Grounding Clinical AI Competency in Human Cognition Through the Clinical World Model and Skill-Mix Framework<br>基于临床世界模型与技能组合框架，将临床AI能力植根于人类认知<br><a href="abstracts/2604.08226.html">摘要</a></td>
+            <td>Isaac Shiri Team</td>
+            <td><a href="http://arxiv.org/abs/2604.08226">2604.08226</a></td>
+            <td><a href="https://hjfy.top/arxiv/2604.08226v1">HJFY</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2604.08199">
+            <td>2026-04-09</td>
+            <td>Beyond Static Forecasting: Unleashing the Power of World Models for Mobile Traffic Extrapolation<br>超越静态预测：释放世界模型在移动流量外推中的潜力<br><a href="abstracts/2604.08199.html">摘要</a></td>
+            <td>Yong Li Team</td>
+            <td><a href="http://arxiv.org/abs/2604.08199">2604.08199</a></td>
+            <td><a href="https://hjfy.top/arxiv/2604.08199v1">HJFY</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2604.08059">
+            <td>2026-04-09</td>
+            <td>Governed Capability Evolution for Embodied Agents: Safe Upgrade, Compatibility Checking, and Runtime Rollback for Embodied Capability Modules<br>具身智能体的受控能力演化：面向具身能力模块的安全升级、兼容性检查与运行时回滚<br><a href="abstracts/2604.08059.html">摘要</a></td>
+            <td>Zhijun Li Team</td>
+            <td><a href="http://arxiv.org/abs/2604.08059">2604.08059</a></td>
+            <td><a href="https://hjfy.top/arxiv/2604.08059v1">HJFY</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2604.07991">
+            <td>2026-04-09</td>
+            <td>MotionScape: A Large-Scale Real-World Highly Dynamic UAV Video Dataset for World Models<br>MotionScape：面向世界模型的大规模真实世界高动态无人机视频数据集<br><a href="abstracts/2604.07991.html">摘要</a></td>
+            <td>Lei Wang Team</td>
+            <td><a href="http://arxiv.org/abs/2604.07991">2604.07991</a></td>
+            <td><a href="https://hjfy.top/arxiv/2604.07991v1">HJFY</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2604.07973">
+            <td>2026-04-09</td>
+            <td>How Far Are Large Multimodal Models from Human-Level Spatial Action? A Benchmark for Goal-Oriented Embodied Navigation in Urban Airspace<br>大型多模态模型距离人类水平空间行动能力有多远？——面向城市空域目标导向具身导航的基准测试<br><a href="abstracts/2604.07973.html">摘要</a></td>
+            <td>Xinlei Chen Team</td>
+            <td><a href="http://arxiv.org/abs/2604.07973">2604.07973</a></td>
+            <td><a href="https://hjfy.top/arxiv/2604.07973v1">HJFY</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2604.07957">
+            <td>2026-04-09</td>
+            <td>WorldMAP: Bootstrapping Vision-Language Navigation Trajectory Prediction with Generative World Models<br>WorldMAP：利用生成式世界模型自举视觉语言导航轨迹预测<br><a href="abstracts/2604.07957.html">摘要</a></td>
+            <td>Zhibo Chen Team</td>
+            <td><a href="http://arxiv.org/abs/2604.07957">2604.07957</a></td>
+            <td><a href="https://hjfy.top/arxiv/2604.07957v1">HJFY</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2604.07859">
+            <td>2026-04-09</td>
+            <td>Object-Attribute-Relation Model Driven Adaptive Hierarchical Transmission for Multimodal Semantic Communication<br>基于对象-属性-关系模型驱动的自适应分层传输多模态语义通信框架<br><a href="abstracts/2604.07859.html">摘要</a></td>
+            <td>Mingquan Lu Team</td>
+            <td><a href="http://arxiv.org/abs/2604.07859">2604.07859</a></td>
+            <td><a href="https://hjfy.top/arxiv/2604.07859v1">HJFY</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2604.07833">
+            <td>2026-04-09</td>
+            <td>Harnessing Embodied Agents: Runtime Governance for Policy-Constrained Execution<br>驾驭具身智能体：面向策略约束执行的运行时治理<br><a href="abstracts/2604.07833.html">摘要</a></td>
+            <td>Zhijun Li Team</td>
+            <td><a href="http://arxiv.org/abs/2604.07833">2604.07833</a></td>
+            <td><a href="https://hjfy.top/arxiv/2604.07833v1">HJFY</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2604.07799">
+            <td>2026-04-09</td>
+            <td>Learning Without Losing Identity: Capability Evolution for Embodied Agents<br>学习而不失身份：具身智能体的能力演化<br><a href="abstracts/2604.07799.html">摘要</a></td>
+            <td>Zhijun Li Team</td>
+            <td><a href="http://arxiv.org/abs/2604.07799">2604.07799</a></td>
+            <td><a href="https://hjfy.top/arxiv/2604.07799v1">HJFY</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="legend">评估状态保存在浏览器本地（localStorage），换设备/浏览器不会同步。</p>
+    </section>
+  </div>
+  <script>
+    const storageKey = (id) => `vlm_arxiv_daily_eval:${id}`;
+    const rows = document.querySelectorAll('tr[data-arxiv-id]');
+    rows.forEach((row) => {
+      const id = row.getAttribute('data-arxiv-id');
+      const buttons = row.querySelectorAll('button[data-value]');
+      const saved = localStorage.getItem(storageKey(id));
+      if (saved) {
+        buttons.forEach((btn) => {
+          if (btn.dataset.value === saved) btn.classList.add('active');
+        });
+      }
+      buttons.forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const val = btn.dataset.value;
+          localStorage.setItem(storageKey(id), val);
+          buttons.forEach((b) => b.classList.remove('active'));
+          btn.classList.add('active');
+        });
+      });
+    });
+  </script>
+</body>
+</html>
