@@ -501,6 +501,15 @@ def json_to_md(filename,md_filename,
                      f"Awesome-Aerial-VLN-Arxiv-Daily.svg?style=for-the-badge\n"))
             f.write((f"[issues-url]: https://github.com/20bytes/"
                      f"Awesome-Aerial-VLN-Arxiv-Daily/issues\n\n"))
+        # Acknowledgement — always append
+        f.write("---\n\n")
+        f.write("## 🙏 致谢 (Acknowledgement)\n\n")
+        f.write("本项目基于 [cv-arxiv-daily](https://github.com/Vincentqyw/cv-arxiv-daily) 二次开发，"
+                "在此感谢原作者 [@Vincentqyw](https://github.com/Vincentqyw) 的开源贡献。\n\n")
+        f.write("> This project is forked and customized from "
+                "[cv-arxiv-daily](https://github.com/Vincentqyw/cv-arxiv-daily) "
+                "by [@Vincentqyw](https://github.com/Vincentqyw). "
+                "All credits to the original author.\n\n")
 
     logging.info(f"{task} finished")
 

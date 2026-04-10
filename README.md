@@ -40,6 +40,14 @@
 
 <p align=right>(<a href=#updated-on-20260411>back to top</a>)</p>
 
+---
+
+## 🙏 致谢 (Acknowledgement)
+
+本项目基于 [cv-arxiv-daily](https://github.com/Vincentqyw/cv-arxiv-daily) 二次开发，在此感谢原作者 [@Vincentqyw](https://github.com/Vincentqyw) 的开源贡献。
+
+> This project is forked and customized from [cv-arxiv-daily](https://github.com/Vincentqyw/cv-arxiv-daily) by [@Vincentqyw](https://github.com/Vincentqyw). All credits to the original author.
+
 [contributors-shield]: https://img.shields.io/github/contributors/20bytes/Awesome-Aerial-VLN-Arxiv-Daily.svg?style=for-the-badge
 [contributors-url]: https://github.com/20bytes/Awesome-Aerial-VLN-Arxiv-Daily/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/20bytes/Awesome-Aerial-VLN-Arxiv-Daily.svg?style=for-the-badge
