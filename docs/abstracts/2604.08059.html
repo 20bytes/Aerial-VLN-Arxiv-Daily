@@ -20,11 +20,11 @@
 <body>
   <div class="wrap">
     <div class="card">
-      <h1>Governed Capability Evolution for Embodied Agents: Safe Upgrade, Compatibility Checking, and Runtime Rollback for Embodied Capability Modules&lt;br&gt;具身智能体的受控能力演化：面向具身能力模块的安全升级、兼容性检查与运行时回滚&lt;br&gt;[摘要](abstracts/2604.08059.html)</h1>
+      <h1>Governed Capability Evolution for Embodied Agents: Safe Upgrade, Compatibility Checking, and Runtime Rollback for Embodied Capability Modules</h1>
       <h2>Abstract (EN)</h2>
-      <p>Abstract not available.</p>
+      <p>Embodied agents are increasingly expected to improve over time by updating their executable capabilities rather than rewriting the agent itself. Prior work has separately studied modular capability packaging, capability evolution, and runtime governance. However, a key systems problem remains underexplored: once an embodied capability module evolves into a new version, how can the hosting system deploy it safely without breaking policy constraints, execution assumptions, or recovery guarantees?   We formulate governed capability evolution as a first-class systems problem for embodied agents. We propose a lifecycle-aware upgrade framework in which every new capability version is treated as a governed deployment candidate rather than an immediately executable replacement. The framework introduces four upgrade compatibility checks -- interface, policy, behavioral, and recovery -- and organizes them into a staged runtime pipeline comprising candidate validation, sandbox evaluation, shadow deployment, gated activation, online monitoring, and rollback.   We evaluate over 6 rounds of capability upgrade with 15 random seeds. Naive upgrade achieves 72.9% task success but drives unsafe activation to 60% by the final round; governed upgrade retains comparable success (67.4%) while maintaining zero unsafe activations across all rounds (Wilcoxon p=0.003). Shadow deployment reveals 40% of regressions invisible to sandbox evaluation alone, and rollback succeeds in 79.8% of post-activation drift scenarios.</p>
       <h2>摘要 (ZH)</h2>
-      <p>未生成（可稍后重试翻译）</p>
+      <p>具身智能体日益需要通过更新其可执行能力而非重写智能体本身来实现持续改进。先前研究已分别探讨了模块化能力封装、能力演化和运行时治理，但一个关键的系统性问题仍未得到充分探索：一旦具身能力模块演化为新版本，宿主系统如何安全部署它，而不违反策略约束、破坏执行假设或影响恢复保障？本文将受控能力演化确立为具身智能体的首要系统性问题，提出一种生命周期感知的升级框架。该框架将每个新能力版本视为受控部署候选而非立即可执行的替换项，引入了四项升级兼容性检查——接口、策略、行为和恢复检查，并将其组织为分阶段的运行时流水线，包括候选验证、沙箱评估、影子部署、门控激活、在线监控和回滚。我们在6轮能力升级中进行了评估（使用15个随机种子）。朴素升级实现了72.9%的任务成功率，但在最后一轮导致不安全激活率升至60%；受控升级在保持相近成功率（67.4%）的同时，所有轮次均维持零不安全激活（Wilcoxon检验p=0.003）。影子部署揭示了40%仅靠沙箱评估无法发现的性能退化，而回滚机制在79.8%的激活后漂移场景中成功执行。</p>
       <p><a href="../index.html">← Back</a></p>
     </div>
   </div>

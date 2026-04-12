@@ -20,11 +20,11 @@
 <body>
   <div class="wrap">
     <div class="card">
-      <h1>WorldMAP: Bootstrapping Vision-Language Navigation Trajectory Prediction with Generative World Models&lt;br&gt;WorldMAP：利用生成式世界模型自举视觉语言导航轨迹预测&lt;br&gt;[摘要](abstracts/2604.07957.html)</h1>
+      <h1>WorldMAP: Bootstrapping Vision-Language Navigation Trajectory Prediction with Generative World Models</h1>
       <h2>Abstract (EN)</h2>
-      <p>Abstract not available.</p>
+      <p>Vision-language models (VLMs) and generative world models are opening new opportunities for embodied navigation. VLMs are increasingly used as direct planners or trajectory predictors, while world models support look-ahead reasoning by imagining future views. Yet predicting a reliable trajectory from a single egocentric observation remains challenging. Current VLMs often generate unstable trajectories, and world models, though able to synthesize plausible futures, do not directly provide the grounded signals needed for navigation learning. This raises a central question: how can generated futures be turned into supervision for grounded trajectory prediction? We present WorldMAP, a teacher--student framework that converts world-model-generated futures into persistent semantic-spatial structure and planning-derived supervision. Its world-model-driven teacher builds semantic-spatial memory from generated videos, grounds task-relevant targets and obstacles, and produces trajectory pseudo-labels through explicit planning. A lightweight student with a multi-hypothesis trajectory head is then trained to predict navigation trajectories directly from vision-language inputs. On Target-Bench, WorldMAP achieves the best ADE and FDE among compared methods, reducing ADE by 18.0% and FDE by 42.1% relative to the best competing baseline, while lifting a small open-source VLM to DTW performance competitive with proprietary models. More broadly, the results suggest that, in embodied navigation, the value of world models may lie less in supplying action-ready imagined evidence than in synthesizing structured supervision for navigation learning.</p>
       <h2>摘要 (ZH)</h2>
-      <p>未生成（可稍后重试翻译）</p>
+      <p>视觉语言模型与生成式世界模型正为具身导航开辟新机遇。视觉语言模型越来越多地被用作直接规划器或轨迹预测器，而世界模型则通过想象未来视图支持前瞻推理。然而，从单一自我中心观察中预测可靠轨迹仍具挑战。当前视觉语言模型常生成不稳定轨迹，而世界模型虽能合成合理的未来场景，却未直接提供导航学习所需的接地信号。这引出一个核心问题：如何将生成的未来转化为接地轨迹预测的监督信息？我们提出WorldMAP，一种师生框架，将世界模型生成的未来转化为持久的语义-空间结构及规划衍生的监督。其世界模型驱动的教师从生成视频中构建语义-空间记忆，定位任务相关目标与障碍，并通过显式规划生成轨迹伪标签。随后，一个配备多假设轨迹头的轻量级学生模型被训练直接从视觉语言输入中预测导航轨迹。在Target-Bench测试中，WorldMAP在对比方法中取得最佳平均位移误差与最终位移误差，相较于最优竞争基线，平均位移误差降低18.0%，最终位移误差降低42.1%，同时将小型开源视觉语言模型提升至与专有模型相竞争的动态时间规整性能。更广泛而言，结果表明在具身导航中，世界模型的价值或许不在于提供可直接用于行动的想象证据，而在于为导航学习合成结构化监督。</p>
       <p><a href="../index.html">← Back</a></p>
     </div>
   </div>
