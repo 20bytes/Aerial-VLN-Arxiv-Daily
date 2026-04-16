@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Reading Between the Pixels: Linking Text-Image Embedding Alignment to Typographic Attack Success on Vision-Language Models</h1>
+      <h2>Abstract (EN)</h2>
+      <p>We study typographic prompt injection attacks on vision-language models (VLMs), where adversarial text is rendered as images to bypass safety mechanisms, posing a growing threat as VLMs serve as the perceptual backbone of autonomous agents, from browser automation and computer-use systems to camera-equipped embodied agents. In practice, the attack surface is heterogeneous: adversarial text appears at varying font sizes and under diverse visual conditions, while the growing ecosystem of VLMs exhibits substantial variation in vulnerability, complicating defensive approaches. Evaluating 1,000 prompts from SALAD-Bench across four VLMs, namely, GPT-4o, Claude Sonnet 4.5, Mistral-Large-3, and Qwen3-VL-4B-Instruct under varying font sizes (6--28px) and visual transformations (rotation, blur, noise, contrast changes), we find: (1) font size significantly affects attack success rate (ASR), with very small fonts (6px) yielding near-zero ASR while mid-range fonts achieve peak effectiveness; (2) text attacks are more effective than image attacks for GPT-4o (36% vs 8%) and Claude (47% vs 22%), while Qwen3-VL and Mistral show comparable ASR across modalities; (3) text-image embedding distance from two multimodal embedding models (JinaCLIP and Qwen3-VL-Embedding) shows strong negative correlation with ASR across all four models (r = -0.71 to -0.93, p &lt; 0.01); (4) heavy degradations increase embedding distance by 10--12% and reduce ASR by 34--96%, while rotation asymmetrically affects models (Mistral drops 50%, GPT-4o unchanged). These findings highlight that model-specific robustness patterns preclude one-size-fits-all defenses and offer empirical guidance for practitioners selecting VLM backbones for agentic systems operating in adversarial environments.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>本文研究了针对视觉语言模型（VLMs）的排版提示注入攻击，其中对抗性文本以图像形式呈现以绕过安全机制。随着VLMs作为从浏览器自动化、计算机使用系统到配备摄像头的具身智能体等自主智能体的感知核心，此类攻击构成日益增长的威胁。实践中，攻击面具有异质性：对抗性文本以不同字体大小和多样化视觉条件出现，而不断增长的VLM生态系统在脆弱性上表现出显著差异，这使防御方法复杂化。通过在四种VLMs（GPT-4o、Claude Sonnet 4.5、Mistral-Large-3和Qwen3-VL-4B-Instruct）上，针对不同字体大小（6-28像素）和视觉变换（旋转、模糊、噪声、对比度变化）评估SALAD-Bench的1,000条提示，我们发现：（1）字体大小显著影响攻击成功率（ASR），极小字体（6像素）导致ASR接近零，而中等字体大小达到峰值效果；（2）对于GPT-4o（36% vs 8%）和Claude（47% vs 22%），文本攻击比图像攻击更有效，而Qwen3-VL和Mistral在两种模态上表现出可比的ASR；（3）来自两种多模态嵌入模型（JinaCLIP和Qwen3-VL-Embedding）的文本-图像嵌入距离与所有四种模型的ASR呈强负相关（r = -0.71至-0.93，p &lt; 0.01）；（4）严重退化使嵌入距离增加10-12%，ASR降低34-96%，而旋转对模型的影响不对称（Mistral下降50%，GPT-4o无变化）。这些发现强调，模型特定的鲁棒性模式排除了通用防御的可能性，并为从业者在对抗性环境中为智能体系统选择VLM核心提供了实证指导。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

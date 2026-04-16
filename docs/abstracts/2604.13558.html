@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>AgentComm: Semantic Communication for Embodied Agents</h1>
+      <h2>Abstract (EN)</h2>
+      <p>The increasing deployment of agentic artificial intelligence (AI) systems has intensified the demand for efficient agent to agent communication, particularly over bandwidth limited wireless links. In embodied AI applications, agents must exchange task related information under strict latency and reliability constraints. Existing agent communication methods primarily focus on connectivity and protocol efficiency, but lack effective mechanisms to reduce physical layer transmission overhead while preserving task semantics.To address this challenge, this paper proposes a semantic agent communication framework that reduces communication overhead while maintaining task performance and shared understanding among agents. An LLM based semantic processor is first introduced to reorganize and condense agent generated messages by extracting task relevant semantic content. To cope with information loss introduced by aggressive message reduction, an importance-aware semantic transmission strategy is developed, which adaptively protects semantic components according to their task importance. Furthermore, a task specific knowledge base is incorporated as long term semantic memory to support recurring tasks and further reduce bandwidth consumption with minimal performance degradation. Experimental results and ablation studies demonstrate that the proposed framework achieves nearly 50% bandwidth reduction with negligible loss in task completion performance compared to conventional transmission schemes.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>随着智能体人工智能系统的日益普及，对高效智能体间通信的需求日益增长，尤其是在带宽受限的无线链路上。在具身人工智能应用中，智能体必须在严格的延迟和可靠性约束下交换任务相关信息。现有的智能体通信方法主要关注连接性和协议效率，但缺乏有效机制来减少物理层传输开销，同时保持任务语义。为应对这一挑战，本文提出了一种语义智能体通信框架，该框架在维持任务性能和智能体间共享理解的同时，降低了通信开销。首先引入基于大语言模型的语义处理器，通过提取任务相关的语义内容来重组和压缩智能体生成的消息。为应对因激进消息压缩导致的信息损失，开发了一种重要性感知的语义传输策略，根据语义组件的任务重要性自适应地保护它们。此外，框架还集成了任务特定知识库作为长期语义记忆，以支持重复性任务，并在性能损失最小的情况下进一步减少带宽消耗。实验结果和消融研究表明，与传统传输方案相比，所提出的框架实现了近50%的带宽降低，且任务完成性能损失可忽略不计。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>
