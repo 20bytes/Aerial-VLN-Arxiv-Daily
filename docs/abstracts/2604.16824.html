@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>SafeDream: Safety World Model for Proactive Early Jailbreak Detection</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Multi-turn jailbreak attacks progressively erode LLM safety alignment across seemingly innocuous conversation turns, achieving success rates exceeding 90% against state-of-the-art models. Existing alignment-based and guardrail methods suffer from three key limitations: they require costly weight modification, evaluate each turn independently without modeling cumulative safety erosion, and detect attacks only after harmful content has been generated. To address these limitations, we first formulate the proactive early jailbreak detection problem with a new metric, detection lead, that measures how early an attack can be detected before the LLM complies. We then propose SAFEDREAM, a lightweight world-model-based framework that operates as an external module without modifying the LLM&#x27;s weights. SAFEDREAM introduces three components: (1) a safety state world model that encodes LLM hidden states into a compact safety representation and predicts how it evolves across turns, (2) CUSUM detection that accumulates weak per-turn risk signals into reliable evidence, and (3) contrastive imagination that simultaneously rolls out attack and benign futures in latent space to issue early alarms before jailbreaks occur. On three multi-turn jailbreak benchmarks (XGuard-Train, SafeDialBench, SafeMTData) against 8 baselines, SAFEDREAM achieves the best detection timeliness across all benchmarks (1.06-1.20 turns before compliance) while maintaining competitive false positive rates and outperforming baselines in detection quality.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>多轮越狱攻击通过看似无害的对话轮次逐步侵蚀大语言模型（LLM）的安全对齐，对当前最先进模型的成功率超过90%。现有的基于对齐和护栏方法存在三个关键局限：需要昂贵的权重修改、独立评估每轮对话而未建模累积的安全侵蚀、仅在有害内容生成后才检测攻击。为解决这些局限，我们首先通过新指标“检测提前量”形式化定义了主动早期越狱检测问题，该指标衡量在LLM服从攻击前可多早检测到攻击。随后提出SAFEDREAM——一个轻量级基于世界模型的框架，作为外部模块运行而无需修改LLM权重。SAFEDREAM包含三个组件：(1) 安全状态世界模型：将LLM隐藏状态编码为紧凑的安全表示并预测其在多轮对话中的演化；(2) CUSUM检测：将每轮弱风险信号累积为可靠证据；(3) 对比想象：在潜在空间中同时推演攻击性与良性未来，在越狱发生前发出早期警报。在三个多轮越狱基准测试（XGuard-Train、SafeDialBench、SafeMTData）中对比8个基线方法，SAFEDREAM在所有基准上均实现最佳检测时效性（在模型服从前1.06-1.20轮完成检测），同时保持具有竞争力的误报率，并在检测质量上超越基线方法。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

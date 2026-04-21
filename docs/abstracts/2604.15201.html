@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>RL-STPA: Adapting System-Theoretic Hazard Analysis for Safety-Critical Reinforcement Learning</h1>
+      <h2>Abstract (EN)</h2>
+      <p>As reinforcement learning (RL) deployments expand into safety-critical domains, existing evaluation methods fail to systematically identify hazards arising from the black-box nature of neural network enabled policies and distributional shift between training and deployment. This paper introduces Reinforcement Learning System-Theoretic Process Analysis (RL-STPA), a framework that adapts conventional STPA&#x27;s systematic hazard analysis to address RL&#x27;s unique challenges through three key contributions: hierarchical subtask decomposition using both temporal phase analysis and domain expertise to capture emergent behaviors, coverage-guided perturbation testing that explores the sensitivity of state-action spaces, and iterative checkpoints that feed identified hazards back into training through reward shaping and curriculum design. We demonstrate RL-STPA in the safety-critical test case of autonomous drone navigation and landing, revealing potential loss scenarios that can be missed by standard RL evaluations. The proposed framework provides practitioners with a toolkit for systematic hazard analysis, quantitative metrics for safety coverage assessment, and actionable guidelines for establishing operational safety bounds. While RL-STPA cannot provide formal guarantees for arbitrary neural policies, it offers a practical methodology for systematically evaluating and improving RL safety and robustness in safety-critical applications where exhaustive verification methods remain intractable.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>随着强化学习（RL）在安全关键领域的应用日益广泛，现有评估方法难以系统性地识别由神经网络策略的黑盒特性及训练与部署间的分布偏移所引发的危险。本文提出强化学习系统理论过程分析（RL-STPA），该框架通过三项核心贡献，将传统STPA的系统性危险分析方法适配于应对RL的独特挑战：采用时间阶段分析与领域知识相结合的分层子任务分解以捕捉涌现行为；实施覆盖引导的扰动测试以探索状态-动作空间的敏感性；以及通过奖励塑形和课程设计将识别出的危险反馈至训练过程的迭代检查点。我们在自主无人机导航与着陆这一安全关键测试案例中验证了RL-STPA，揭示了标准RL评估可能遗漏的潜在失控场景。该框架为从业者提供了一套系统性危险分析工具包、安全覆盖评估的量化指标，以及建立操作安全边界的可行指南。尽管RL-STPA无法为任意神经策略提供形式化保证，但在详尽验证方法仍不可行的安全关键应用中，它提供了一种系统性评估与提升RL安全性与鲁棒性的实用方法论。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

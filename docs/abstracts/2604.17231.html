@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Fringe Projection Based Vision Pipeline for Autonomous Hard Drive Disassembly</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Unrecovered e-waste represents a significant economic loss. Hard disk drives (HDDs) comprise a valuable e-waste stream necessitating robotic disassembly. Automating the disassembly of HDDs requires holistic 3D sensing, scene understanding, and fastener localization, however current methods are fragmented, lack robust 3D sensing, and lack fastener localization. We propose an autonomous vision pipeline which performs 3D sensing using a Fringe Projection Profilometry (FPP) module, with selective triggering of a depth completion module where FPP fails, and integrates this module with a lightweight, real-time instance segmentation network for scene understanding and critical component localization. By utilizing the same FPP camera-projector system for both our depth sensing and component localization modules, our depth maps and derived 3D geometry are inherently pixel-wise aligned with the segmentation masks without registration, providing an advantage over RGB-D perception systems common in industrial sensing. We optimize both our trained depth completion and instance segmentation networks for deployment-oriented inference. The proposed system achieves a box mAP@50 of 0.960 and mask mAP@50 of 0.957 for instance segmentation, while the selected depth completion configuration with the Depth Anything V2 Base backbone achieves an RMSE of 2.317 mm and MAE of 1.836 mm; the Platter Facing learned inference stack achieved a combined latency of 12.86 ms and a throughput of 77.7 Frames Per Second (FPS) on the evaluation workstation. Finally, we adopt a sim-to-real transfer learning approach to augment our physical dataset. The proposed perception pipeline provides both high-fidelity semantic and spatial data which can be valuable for downstream robotic disassembly. The synthetic dataset developed for HDD instance segmentation will be made publicly available.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>未回收的电子废弃物造成了显著的经济损失。硬盘驱动器（HDDs）作为一种有价值的电子废弃物，需要机器人进行拆解。自动化硬盘拆解需要整体的三维感知、场景理解及紧固件定位，但现有方法较为零散，缺乏鲁棒的三维感知和紧固件定位能力。本文提出一种自主视觉流程，该流程利用条纹投影轮廓术（FPP）模块进行三维感知，在FPP失效时选择性触发深度补全模块，并将此模块与轻量级实时实例分割网络集成，以实现场景理解和关键部件定位。通过使用同一套FPP相机-投影仪系统同时服务于深度感知和部件定位模块，我们的深度图及衍生的三维几何信息与分割掩码在像素级别上天然对齐，无需配准，这相较于工业传感中常见的RGB-D感知系统具有优势。我们对训练好的深度补全和实例分割网络进行了面向部署的推理优化。所提系统在实例分割任务中实现了0.960的边界框mAP@50和0.957的掩码mAP@50；选用的基于Depth Anything V2 Base骨干网络的深度补全配置取得了2.317毫米的RMSE和1.836毫米的MAE；在评估工作站上，面向盘片的推理栈实现了12.86毫秒的综合延迟和每秒77.7帧的吞吐量。最后，我们采用仿真到现实的迁移学习方法扩充了物理数据集。该感知流程提供了高保真的语义和空间数据，对下游机器人拆解任务具有重要价值。为硬盘实例分割开发的合成数据集将公开提供。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

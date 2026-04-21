@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>GlobalSplat: Efficient Feed-Forward 3D Gaussian Splatting via Global Scene Tokens</h1>
+      <h2>Abstract (EN)</h2>
+      <p>The efficient spatial allocation of primitives serves as the foundation of 3D Gaussian Splatting, as it directly dictates the synergy between representation compactness, reconstruction speed, and rendering fidelity. Previous solutions, whether based on iterative optimization or feed-forward inference, suffer from significant trade-offs between these goals, mainly due to the reliance on local, heuristic-driven allocation strategies that lack global scene awareness. Specifically, current feed-forward methods are largely pixel-aligned or voxel-aligned. By unprojecting pixels into dense, view-aligned primitives, they bake redundancy into the 3D asset. As more input views are added, the representation size increases and global consistency becomes fragile. To this end, we introduce GlobalSplat, a framework built on the principle of align first, decode later. Our approach learns a compact, global, latent scene representation that encodes multi-view input and resolves cross-view correspondences before decoding any explicit 3D geometry. Crucially, this formulation enables compact, globally consistent reconstructions without relying on pretrained pixel-prediction backbones or reusing latent features from dense baselines. Utilizing a coarse-to-fine training curriculum that gradually increases decoded capacity, GlobalSplat natively prevents representation bloat. On RealEstate10K and ACID, our model achieves competitive novel-view synthesis performance while utilizing as few as 16K Gaussians, significantly less than required by dense pipelines, obtaining a light 4MB footprint. Further, GlobalSplat enables significantly faster inference than the baselines, operating under 78 milliseconds in a single forward pass. Project page is available at https://r-itk.github.io/globalsplat/</p>
+      <h2>摘要 (ZH)</h2>
+      <p>基元的高效空间分配是3D高斯溅射技术的基础，因为它直接决定了表示紧凑性、重建速度与渲染保真度之间的协同关系。先前的方法，无论是基于迭代优化还是前馈推理，均在这些目标间面临显著权衡，主要原因是依赖局部、启发式驱动的分配策略，缺乏全局场景感知能力。具体而言，当前的前馈方法大多采用像素对齐或体素对齐方式，通过将像素反投影为密集的视角对齐基元，将冗余信息嵌入3D资产中。随着输入视角的增加，表示规模会膨胀，全局一致性也变得脆弱。为此，我们提出了GlobalSplat框架，其核心原则是“先对齐，后解码”。该方法学习一种紧凑的全局潜在场景表示，在解码任何显式3D几何之前，先编码多视角输入并解析跨视角对应关系。关键的是，这种设计无需依赖预训练的像素预测主干网络或复用密集基线的潜在特征，即可实现紧凑且全局一致的重建。通过采用从粗到精的训练策略逐步增加解码容量，GlobalSplat从本质上避免了表示膨胀问题。在RealEstate10K和ACID数据集上，我们的模型仅需使用16K个高斯基元（远少于密集流程所需数量）即可实现具有竞争力的新视角合成性能，获得轻量化的4MB存储占用。此外，GlobalSplat的推理速度显著快于基线方法，单次前向传播耗时低于78毫秒。项目页面详见：https://r-itk.github.io/globalsplat/</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>
