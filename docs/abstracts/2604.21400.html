@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>You Only Gaussian Once: Controllable 3D Gaussian Splatting for Ultra-Densely Sampled Scenes</h1>
+      <h2>Abstract (EN)</h2>
+      <p>3D Gaussian Splatting (3DGS) has revolutionized neural rendering, yet existing methods remain predominantly research prototypes ill-suited for production-level deployment. We identify a critical &quot;Industry-Academia Gap&quot; hindering real-world application: unpredictable resource consumption from heuristic Gaussian growth, the &quot;sparsity shield&quot; of current benchmarks that rewards hallucination over physical fidelity, and severe multi-sensor data pollution. To bridge this gap, we propose YOGO (You Only Gaussian Once), a system-level framework that reformulates the stochastic growth process into a deterministic, budget-aware equilibrium. YOGO integrates a novel budget controller for hardware-constrained resource allocation and an availability-registration protocol for robust multi-sensor fusion. To push the boundaries of reconstruction fidelity, we introduce Immersion v1.0, the first ultra-dense indoor dataset specifically designed to break the &quot;sparsity shield.&quot; By providing saturated viewpoint coverage, Immersion v1.0 forces algorithms to focus on extreme physical fidelity rather than viewpoint interpolation, and enables the community to focus on the upper limits of high-fidelity reconstruction. Extensive experiments demonstrate that YOGO achieves state-of-the-art visual quality while maintaining a strictly deterministic profile, establishing a new standard for production-grade 3DGS. To facilitate reproducibility, part scenes of Immersion v1.0 dataset and source code of YOGO has been publicly released. The project link is https://jjrcn.github.io/YOGO/.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>三维高斯泼溅（3DGS）革新了神经渲染技术，然而现有方法仍主要停留在研究原型阶段，不适合生产级部署。我们发现了一个阻碍实际应用的“产研鸿沟”：启发式高斯增长导致的不可预测资源消耗、当前基准测试的“稀疏屏障”（奖励幻觉而非物理保真度），以及严重的多传感器数据污染。为弥合这一鸿沟，我们提出了YOGO（一次高斯即可），这是一个系统级框架，将随机生长过程重构为确定性的、预算感知的平衡态。YOGO集成了用于硬件约束资源分配的新型预算控制器，以及用于鲁棒多传感器融合的可用性-注册协议。为突破重建保真度的边界，我们引入了Immersion v1.0——首个专门设计用于打破“稀疏屏障”的超密集室内数据集。通过提供饱和视角覆盖，Immersion v1.0迫使算法聚焦于极端物理保真度而非视角插值，并使社区能够专注于高保真重建的上限。大量实验表明，YOGO在保持严格确定性特征的同时实现了最先进的视觉质量，为生产级3DGS建立了新标准。为促进可复现性，Immersion v1.0数据集的部分场景及YOGO的源代码已公开发布。项目链接为https://jjrcn.github.io/YOGO/。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

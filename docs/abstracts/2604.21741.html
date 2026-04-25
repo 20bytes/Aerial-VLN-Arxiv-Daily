@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Hi-WM: Human-in-the-World-Model for Scalable Robot Post-Training</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Post-training is essential for turning pretrained generalist robot policies into reliable task-specific controllers, but existing human-in-the-loop pipelines remain tied to physical execution: each correction requires robot time, scene setup, resets, and operator supervision in the real world. Meanwhile, action-conditioned world models have been studied mainly for imagination, synthetic data generation, and policy evaluation. We propose \textbf{Human-in-the-World-Model (Hi-WM)}, a post-training framework that uses a learned world model as a reusable corrective substrate for failure-targeted policy improvement. A policy is first rolled out in closed loop inside the world model; when the rollout becomes incorrect or failure-prone, a human intervenes directly in the model to provide short corrective actions. Hi-WM caches intermediate states and supports rollback and branching, allowing a single failure state to be reused for multiple corrective continuations and yielding dense supervision around behaviors that the base policy handles poorly. The resulting corrective trajectories are then added back to the training set for post-training. We evaluate Hi-WM on three real-world manipulation tasks spanning both rigid and deformable object interaction, and on two policy backbones. Hi-WM improves real-world success by 37.9 points on average over the base policy and by 19.0 points over a world-model closed-loop baseline, while world-model evaluation correlates strongly with real-world performance (r = 0.953). These results suggest that world models can serve not only as generators or evaluators, but also as effective corrective substrates for scalable robot post-training.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>后训练对于将预训练的通用机器人策略转化为可靠的任务专用控制器至关重要，但现有的人机交互流程仍受限于物理执行：每次修正都需要真实的机器人操作时间、场景搭建、重置以及操作员监督。与此同时，基于动作条件的世界模型主要被研究用于策略想象、合成数据生成和策略评估。我们提出**人机共融世界模型（Hi-WM）**，这是一个利用学习到的世界模型作为可复用修正基础的后训练框架，用于针对失败场景的策略改进。策略首先在世界模型内闭环运行；当策略执行出现错误或容易失败时，人类直接在模型中进行干预并提供短时修正动作。Hi-WM缓存中间状态并支持回退和分支操作，使得单个失败状态可被重复用于多次修正延续，从而在基础策略处理不佳的行为周围生成密集的监督信号。随后，这些修正轨迹被加入训练集进行后训练。我们在三个涉及刚体与变形体交互的实际操作任务以及两个策略主干网络中对Hi-WM进行评估。Hi-WM使实际任务成功率相较基础策略平均提升37.9个百分点，相较基于世界模型的闭环基线平均提升19.0个百分点，同时世界模型评估结果与实际表现高度相关（r=0.953）。这些结果表明，世界模型不仅可以作为生成器或评估器，还可作为可扩展机器人后训练的有效修正基础。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>
