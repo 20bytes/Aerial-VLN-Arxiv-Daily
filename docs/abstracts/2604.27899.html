@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Simulating clinical interventions with a generative multimodal model of human physiology</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Understanding how human health changes over time, and why responses to interventions vary between individuals, remains a central challenge in medicine. Here we present HealthFormer, a decoder-only transformer that models the human physiological trajectory generatively, by training on data from the Human Phenotype Project, a multi-visit cohort of over 15,000 deeply phenotyped individuals. We tokenise each participant&#x27;s health trajectory across 667 measurements spanning seven domains: blood biomarkers, body composition, sleep physiology, continuous glucose monitoring, gut microbiome, wearable-derived physiology, and behaviour and medication exposure. We train HealthFormer to forecast individual physiological trajectories across these domains, and from this single generative objective a range of clinically relevant tasks can be expressed as queries on the model. We show that, without task-specific training, HealthFormer transfers to four independent cohorts and improves prediction for 27 of 30 incident-disease and mortality endpoints, exceeding established clinical risk scores in every comparison. We further show that the model can simulate interventions in silico: in a held-out personalised-nutrition trial, intervention-conditioned predictions recover individual six-month biomarker changes (e.g., Pearson r = 0.78 for diastolic blood pressure). Across 41 randomised intervention-outcome comparisons drawn from published trials, our results show that the predicted direction of effect agrees in every case, and the predicted mean falls within the reported 95% confidence interval in 30 cases. We position HealthFormer as an initial health world model, from which forecasting, risk stratification, and intervention-conditioned simulation arise as queries, providing a basis for clinical digital twins.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>理解人类健康如何随时间变化，以及个体间对干预措施反应差异的原因，仍是医学领域的核心挑战。我们提出HealthFormer——一种仅解码器的Transformer模型，它通过训练来自人类表型项目（一项涵盖超过15,000名深度表型个体的多轮访问队列）的数据，以生成式方式建模人体生理轨迹。我们将每位参与者的健康轨迹（涵盖667项测量指标）进行标记化处理，这些指标跨越七个领域：血液生物标志物、身体成分、睡眠生理学、连续血糖监测、肠道微生物组、可穿戴设备衍生的生理学以及行为和药物暴露。我们训练HealthFormer跨领域预测个体生理轨迹，并基于这一单一生成目标，可将一系列临床相关任务表达为对模型的查询。结果表明，无需针对特定任务训练，HealthFormer即可迁移至四个独立队列，并在30个终末疾病和死亡终点中的27项改善预测性能，所有比较均优于已建立的临床风险评分。我们还证明该模型能够在计算机中模拟干预：在保留的个性化营养试验中，基于干预条件预测可恢复个体六个月的生物标志物变化（例如，舒张压的Pearson r = 0.78）。在基于已发表试验的41项随机干预-结局比较中，我们的结果显示，所有情况下的预测效应方向均一致，其中30例预测均值落在报告的95%置信区间内。我们将HealthFormer定位为一个初始健康世界模型，从中可衍生出预测、风险分层以及基于干预条件的模拟查询，为临床数字孪生提供基础。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

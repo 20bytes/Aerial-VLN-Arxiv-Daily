@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>HERMES++: Toward a Unified Driving World Model for 3D Scene Understanding and Generation</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Driving world models serve as a pivotal technology for autonomous driving by simulating environmental dynamics. However, existing approaches predominantly focus on future scene generation, often overlooking comprehensive 3D scene understanding. Conversely, while Large Language Models (LLMs) demonstrate impressive reasoning capabilities, they lack the capacity to predict future geometric evolution, creating a significant disparity between semantic interpretation and physical simulation. To bridge this gap, we propose HERMES++, a unified driving world model that integrates 3D scene understanding and future geometry prediction within a single framework. Our approach addresses the distinct requirements of these tasks through synergistic designs. First, a BEV representation consolidates multi-view spatial information into a structure compatible with LLMs. Second, we introduce LLM-enhanced world queries to facilitate knowledge transfer from the understanding branch. Third, a Current-to-Future Link is designed to bridge the temporal gap, conditioning geometric evolution on semantic context. Finally, to enforce structural integrity, we employ a Joint Geometric Optimization strategy that integrates explicit geometric constraints with implicit latent regularization to align internal representations with geometry-aware priors. Extensive evaluations on multiple benchmarks validate the effectiveness of our method. HERMES++ achieves strong performance, outperforming specialist approaches in both future point cloud prediction and 3D scene understanding tasks. The model and code will be publicly released at https://github.com/H-EmbodVis/HERMESV2.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>驾驶世界模型通过模拟环境动态，成为自动驾驶的关键技术。然而，现有方法主要聚焦于未来场景生成，往往忽视了全面的3D场景理解。相反，尽管大型语言模型展现了出色的推理能力，但它们缺乏预测未来几何演化的能力，导致语义理解与物理模拟之间存在显著差异。为弥合这一鸿沟，我们提出HERMES++，一种统一的驾驶世界模型，在单一框架内整合了3D场景理解与未来几何预测。我们的方法通过协同设计满足这些任务的不同需求。首先，一种BEV表示将多视角空间信息整合为与LLM兼容的结构。其次，我们引入LLM增强的世界查询，以促进从理解分支的知识迁移。第三，设计了一种“当前到未来”链接，以桥接时间差距，将几何演化条件化于语义上下文。最后，为强制执行结构完整性，我们采用联合几何优化策略，该策略融合显式几何约束与隐式潜在正则化，使内部表示与几何感知先验对齐。在多个基准上的广泛评估验证了我们方法的有效性。HERMES++取得了强劲性能，在未来点云预测和3D场景理解任务中均优于专门方法。模型和代码将在https://github.com/H-EmbodVis/HERMESV2公开发布。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>
