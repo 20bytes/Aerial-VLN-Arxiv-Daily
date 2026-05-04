@@ -20,11 +20,11 @@
 <body>
   <div class="wrap">
     <div class="card">
-      <h1>Faster 3D Gaussian Splatting Convergence via Structure-Aware Densification</h1>
+      <h1>Faster 3D Gaussian Splatting Convergence via Structure-Aware Densification&lt;br&gt;更快收敛的3D高斯泼溅：基于结构感知的致密化方法&lt;br&gt;[摘要](abstracts/2604.28016.html)</h1>
       <h2>Abstract (EN)</h2>
-      <p>3D Gaussian Splatting has emerged as a powerful scene representation for real-time novel-view synthesis. However, its standard adaptive density control relies on screen-space positional gradients, which do not distinguish between geometric misplacement and frequency aliasing, often leading to either over-blurred high-frequency textures or inefficient over-densification. We present a structure-aware densification framework. Our key insight is that the decision to subdivide a Gaussian should be driven by an explicit comparison between its projected screen-space extent and the local structure of the texture it seeks to represent. We introduce a multi-scale frequency analysis combining structure tensors with Laplacian scale space analysis to estimate the dominant frequency at each pixel, enabling robust supervision across varying texture scales. Based on this analysis, we define $η$, a per-Gaussian, per-axis frequency violation metric that indicates when a primitive may be under-resolving local texture details. Unlike methods that perform isotropic splitting (e.g., splitting each Gaussian into two smaller ones with uniform shape), our approach performs anisotropic splitting. For each axis with high $η$, we compute a split factor to better resolve the local frequency content. We further introduce a multiview consistency criterion that aggregates $η$ observations across multiple views. By performing densification early and faster, we skip the lengthy iterative densification phases required by baseline methods and achieve significantly faster convergence. Experiments on standard benchmarks demonstrate that our method also achieves superior reconstruction quality, particularly in high-frequency regions.</p>
+      <p>Abstract not available.</p>
       <h2>摘要 (ZH)</h2>
-      <p>3D高斯泼溅已成为实时新视角合成的一种强大场景表示方法。然而，其标准的自适应密度控制依赖于屏幕空间的位置梯度，这无法区分几何错位和频率混叠，常常导致高频纹理过度模糊或低效的过度致密化。我们提出了一种结构感知的致密化框架。我们的关键洞察是：细分高斯体的决策应基于其投影屏幕空间范围与待表示纹理局部结构之间的显式比较。我们引入了一种结合结构张量与拉普拉斯尺度空间分析的多尺度频率分析，以估计每个像素的主导频率，从而在不同纹理尺度上实现稳健的监督。基于此分析，我们定义了η——每个高斯体在每个轴向上的频率违规度量，用于指示当前图元可能未充分解析局部纹理细节。与执行各向同性分裂（例如，将每个高斯体均匀分裂为两个形状一致的小高斯体）的方法不同，我们的方法执行各向异性分裂。对于η值高的每个轴，我们计算一个分裂因子，以更好地解析局部频率内容。我们进一步引入了一种多视图一致性准则，可跨多个视图聚合η观测值。通过更早且更快地进行致密化，我们跳过了基线方法所需的冗长迭代致密化阶段，从而实现显著更快的收敛。标准基准上的实验表明，我们的方法在重建质量上也更优，尤其是在高频区域。</p>
+      <p>未生成（可稍后重试翻译）</p>
       <p><a href="../index.html">← Back</a></p>
     </div>
   </div>
