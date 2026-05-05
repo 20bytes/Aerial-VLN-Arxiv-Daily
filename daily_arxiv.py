@@ -170,8 +170,17 @@ def get_daily_papers(topic,query="slam", max_results=2, translate_opts=None):
         sort_by = arxiv.SortCriterion.SubmittedDate
     )
 
+    # Use Client with longer delay to avoid HTTP 429/503 from arXiv API in CI environments
+    client = arxiv.Client(delay_seconds=10, num_retries=5)
+
     abstracts_map = dict()
-    for result in search_engine.results():
+    try:
+        results_iter = client.results(search_engine)
+    except Exception as exc:
+        logging.error(f"arxiv client init failed for topic '{topic}': {exc}")
+        return content, content_to_web, abstracts_map
+
+    for result in results_iter:
 
         paper_id            = result.get_short_id()
         paper_title         = result.title
