@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>GETA-3DGS: Automatic Joint Structured Pruning and Quantization for 3D Gaussian Splatting</h1>
+      <h2>Abstract (EN)</h2>
+      <p>3D Gaussian splatting (3DGS) is a state-of-the-art representation for real-time photorealistic novel-view synthesis, yet a single high-fidelity scene typically occupies hundreds of megabytes to several gigabytes, exceeding the budgets of mobile, immersive, and volumetric video platforms. Existing 3DGS compression methods (e.g., HAC++, FlexGaussian, LP-3DGS) treat pruning, quantization, and entropy coding as separate stages and rely on hand-tuned heuristics (opacity thresholds, fixed bit-widths, SH truncation), limiting cross-scene generalization and preventing users from specifying a target rate or quality budget. We propose GETA-3DGS, to our knowledge the first end-to-end automatic joint structured pruning and quantization framework for 3DGS. Building on GETA for joint pruning-quantization of deep networks, we contribute: (i) a 3DGS-aware quantization-aware dependency graph (QADG) treating each Gaussian primitive as a group with five attribute sub-nodes and degree-aware SH sub-nodes; (ii) a render-aware saliency fusing transmittance-weighted contribution, screen-space gradient, and pixel coverage into a Gaussian-level importance score; and (iii) a heterogeneous per-attribute mixed-precision scheme co-optimized with structural sparsity under a projected partial saliency-guided (PPSG) descent guarantee. On Mip-NeRF 360, Tanks and Temples, and Deep Blending, GETA-3DGS operates directly on raw Gaussian primitives rather than a post-hoc anchor representation, delivering ~5x storage reduction over Vanilla 3DGS with no per-scene thresholds. Bit-width policy is the dominant rate-distortion lever: a uniform 6-bit cap costs up to -6.74 dB on view-dependent scenes versus our heterogeneous allocation, matching an information-theoretic reverse-water-filling analysis we develop. GETA-3DGS is complementary to existing codecs: entropy coding (HAC++, CompGS) is downstream, so the two can be composed.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>3D高斯溅射（3DGS）是用于实时逼真新视角合成的最先进表示方法，然而单个高保真场景通常占用数百兆字节至数吉字节，超出移动设备、沉浸式体验和体积视频平台的预算限制。现有3DGS压缩方法（例如HAC++、FlexGaussian、LP-3DGS）将剪枝、量化和熵编码视为独立阶段，并依赖人工调整的启发式策略（如不透明度阈值、固定位宽、球谐截断），导致跨场景泛化能力受限，且无法让用户指定目标码率或质量预算。我们提出的GETA-3DGS，据我们所知，是首个面向3DGS的端到端自动联合结构化剪枝与量化框架。基于深度网络联合剪枝-量化方法GETA，我们贡献了：(i) 一种3DGS感知的量化感知依赖图（QADG），将每个高斯原语视为一个具有五个属性子节点和度数感知球谐子节点的组；(ii) 一种渲染感知重要性度量，将透射率加权贡献、屏幕空间梯度和像素覆盖率融合为高斯级重要性分数；(iii) 一种异构的逐属性混合精度方案，在投影部分显著性引导（PPSG）下降保证下与结构化稀疏性协同优化。在Mip-NeRF 360、Tanks and Temples和Deep Blending数据集上，GETA-3DGS直接对原始高斯原语而非后验锚点表示进行操作，相较于标准3DGS实现约5倍的存储缩减，且无需逐场景阈值设置。位宽策略是主导率失真杠杆：均匀6位截断在视角依赖场景上导致最多-6.74 dB的损失，而我们的异构分配方案与之匹配，符合我们推导的信息论反向注水分析。GETA-3DGS与现有编解码器互补：熵编码（如HAC++、CompGS）位于下游环节，因此两者可组合使用。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

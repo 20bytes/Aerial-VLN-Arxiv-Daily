@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>The Banach-Butterfly Invariant: Influence-Adaptive Walsh Geometry for Ternary Polynomial Threshold Functions</h1>
+      <h2>Abstract (EN)</h2>
+      <p>We introduce the Banach-Butterfly Invariant (BBT), an influence-adaptive Banach geometry on the Walsh-Hadamard butterfly factorization. For a Boolean function $f:\{-1,+1\}^n\to\{-1,+1\}$ with coordinate influences $\mathrm{Inf}_\ell(f)$, BBT assigns exponent $p_\ell = 1+\mathrm{Inf}_\ell(f)$ to butterfly layer $\ell$, yielding the contraction invariant $μ(f)=\prod_\ell 2^{-\mathrm{Inf}_\ell/(1+\mathrm{Inf}_\ell)}$. We prove a Jensen lower bound $\log_2μ(f) \ge -I(f)/(1+I(f)/n)$ and that $μ$ is strictly Schur-convex in the influence vector (modulo permutation), giving scaling classes $μ\sim 2^{-n/2}$ (parity), $2^{-Θ(\sqrt{n})}$ (majority), $2^{-1/2}$ (dictators). $\log_2μ$ is rational but not polynomial in the Fourier coefficients while $μ$ is algebraic, and $μ$ separates functions with identical total influence (122 pairs at $n=3$).   Using the certified $n \le 4$ ternary Walsh-threshold universe from a companion synthesis manuscript as a finite testbed, we compute exact MILP minimum-support certificates for all 65,536 Boolean functions at $n=4$ (mean 6.42, max 9, all-odd by a parity argument) and on 10,000 of the 616,126 NPN-canonical representatives we enumerate at $n=5$ (matching OEIS A000370). Conditional Spearman $ρ(μ,|\mathrm{supp}|)$ at fixed total influence is $+0.571$ in the largest stratum at $n=4$ but reverses to $-0.38$ at $n=5$ under both function-uniform and NPN-canonical sampling: $μ$ is a valid Schur-convex concentration invariant, not a universal monotone predictor of minimum support across $n$.   A companion application paper validates a real-valued WHT activation-energy proxy inspired by this theory on five pretrained LLMs at W2A16, cutting wikitext-2 perplexity by 15-58% versus vanilla auto-round; the transfer from Boolean theory to the real-valued proxy is qualitative, not formal.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>我们引入了巴拿赫-蝴蝶不变量（BBT），这是一种在沃尔什-阿达玛蝴蝶分解上的影响自适应巴拿赫几何。对于布尔函数 $f:\{-1,+1\}^n\to\{-1,+1\}$ 及其坐标影响度 $\mathrm{Inf}_\ell(f)$，BBT 为蝴蝶层 $\ell$ 分配指数 $p_\ell = 1+\mathrm{Inf}_\ell(f)$，从而得到收缩不变量 $μ(f)=\prod_\ell 2^{-\mathrm{Inf}_\ell/(1+\mathrm{Inf}_\ell)}$。我们证明了 Jensen 下界 $\log_2μ(f) \ge -I(f)/(1+I(f)/n)$，并且 $μ$ 在影响向量（模置换意义下）上是严格肖尔凸的，从而得到了缩放类：$μ\sim 2^{-n/2}$（奇偶函数）、$2^{-Θ(\sqrt{n})}$（多数函数）、$2^{-1/2}$（独裁函数）。$\log_2μ$ 是有理数但非傅里叶系数的多项式函数，而 $μ$ 是代数数，并且 $μ$ 能够区分具有相同总影响度的函数（$n=3$ 时有 122 对）。利用配套综合手稿中已认证的 $n \le 4$ 三元沃尔什阈值全域作为有限测试平台，我们精确计算了所有 $n=4$ 的 65,536 个布尔函数的最小支持度的 MILP 证书（均值 6.42，最大值 9，由奇偶性论证得出全为奇数），并在 $n=5$ 时枚举的 616,126 个 NPN 规范代表中的 10,000 个上进行了计算（匹配 OEIS A000370）。在固定总影响度条件下，条件斯皮尔曼相关系数 $ρ(μ,|\mathrm{supp}|)$ 在 $n=4$ 的最大分层中为 $+0.571$，但在 $n=5$ 时在函数均匀采样和 NPN 规范采样下均反转为 $-0.38$：$μ$ 是一个有效的肖尔凸集中不变量，而非跨 $n$ 的最小支持度通用单调预测器。配套应用论文基于此理论，在五个预训练大语言模型上以 W2A16 精度验证了一个实数值沃尔什-阿达玛变换激活能代理，相较于朴素自动取整，wikitext-2 困惑度降低了 15-58%；从布尔理论到实数值代理的转移是定性的，而非形式化的。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

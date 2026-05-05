@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Evidence-Based Landing Site Selection and Vison-Based Landing for UAVs in Unstructured Environments</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Autonomous landing in cluttered or unstructured environments remains a safety-critical challenge for unmanned aerial vehicles (UAVs), particularly under noisy perception caused by sensor uncertainty and platform-induced disturbances such as vibration. This paper presents an evidence-based probabilistic framework for autonomous UAV landing that explicitly separates decision-making under uncertainty from execution via visual servoing. Landing safety is modeled as a latent variable and inferred through recursive accumulation of frame-wise visual likelihoods derived from flatness, slope, and obstacle cues, yielding a temporally consistent belief map that is robust to transient perception errors. Physical feasibility is enforced through a hard geometric constraint based on the minimum required landing radius of the UAV, ensuring that undersized but visually appealing regions are rejected. The final landing site is selected using constrained maximum a posteriori estimation. Once selected, the UAV locks onto the target region using ORB feature tracking and performs precise alignment and descent via image-based visual servoing (IBVS). The proposed approach is validated through both real-world laboratory experiments and high-fidelity simulations in Nvidia Isaac Sim, demonstrating consistent, cautious, and stable landing behavior across domains.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>在杂乱或非结构化环境中，自主着陆仍然是无人机面临的一项安全关键挑战，尤其是在传感器不确定性及平台引起的振动等噪声感知条件下。本文提出了一种基于证据的概率框架，用于无人机自主着陆，该框架明确地将不确定性下的决策与基于视觉伺服的执行相分离。着陆安全性被建模为隐变量，并通过递归累积基于平坦度、坡度和障碍物线索的帧级视觉似然进行推断，从而生成对瞬时感知误差具有鲁棒性的时间一致性置信图。物理可行性通过基于无人机最小所需着陆半径的硬几何约束来强制执行，确保拒绝尺寸过小但视觉上吸引人的区域。最终着陆点采用约束最大后验估计进行选择。选定着陆点后，无人机利用ORB特征跟踪锁定目标区域，并通过基于图像的视觉伺服实现精确对齐和下降。该方法通过真实世界实验室实验及Nvidia Isaac Sim中的高保真仿真进行验证，展示了跨领域一致、谨慎且稳定的着陆行为。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Change-Robust Online Spatial-Semantic Topological Mapping</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Autonomous robots require change-robust spatial-semantic reasoning: using spatial and semantic knowledge to decide where to go, how to get there, and where the robot is despite environmental change. Existing approaches typically attach semantics to SLAM-built metric maps, but these pipelines are brittle under appearance shifts and scene dynamics, where data association and relocalization degrade. We propose a Change-Robust Online Spatial-Semantic (CROSS) representation that replaces a globally consistent metric substrate with an online, pose-aware topological graph of RGB-D keyframes. The system explicitly reasons over perceptual ambiguity using sequential hypothesis testing in continuous SE(3). Our estimator maintains a bounded Gaussian-mixture belief over poses, enabling principled handling of loop closures and kidnapped-robot events. Experiments under severe appearance change, including real-robot object-goal navigation with lighting shifts and furniture rearrangement, demonstrate improved robustness over SLAM-based and topological baselines while remaining safe under perceptual aliasing.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>自主机器人需要具备抗变化的空间-语义推理能力：即利用空间与语义知识，在环境变化的情况下决定前往何处、如何到达以及定位自身。现有方法通常将语义信息附加到基于SLAM构建的度量地图上，但这类流程在视觉外观变化和场景动态中显得脆弱，导致数据关联与重定位性能下降。我们提出一种抗变化在线空间-语义（CROSS）表示方法，该方法用基于RGB-D关键帧的在线位姿感知拓扑图取代全局一致的度量底层。该系统通过连续SE(3)空间中的序贯假设检验，显式地对感知模糊性进行推理。我们的估计器维护一个关于位姿的有界高斯混合信念，从而能够原则性地处理闭环检测和机器人的“绑架”事件。在严重外观变化下的实验（包括真实机器人目标导航任务中的光照变化和家具重排）表明，相较于基于SLAM和拓扑的基线方法，该方法在保持抗感知模糊安全性的同时具有更高的鲁棒性。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Video Generation with Predictive Latents</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Video Variational Autoencoder (VAE) enables latent video generative modeling by mapping the visual world into compact spatiotemporal latent spaces, improving training efficiency and stability. While existing video VAEs achieve commendable reconstruction quality, continued optimization of reconstruction does not necessarily translate into improved generative performance. How to enhance the diffusability of video latents remains a critical and unresolved challenge. In this work, inspired by principles of predictive world modeling, we investigate the potential of predictive learning to improve the video generative modeling. To this end, we introduce a simple and effective predictive reconstruction objective that unifies predictive learning with video reconstruction. Specifically, we randomly discard future frames and encode only partial past observations, while training the decoder to reconstruct the observed frames and predict future ones simultaneously. This design encourages the latent space to encode temporally predictive structures and build a more coherent understanding of video dynamics, thereby improving generation quality. Our model, termed Predictive Video VAE (PV-VAE), achieves superior performance on video generation, with 52% faster convergence and a 34.42 FVD improvement over the Wan2.2 VAE on UCF101. Furthermore, comprehensive analyses demonstrate that PV-VAE not only exhibits favorable scalability, with generative performance improving alongside VAE training, but also yields consistent gains in downstream video understanding, underscoring a latent space that effectively captures temporal coherence and motion priors.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>视频变分自编码器通过将视觉世界映射到紧凑的时空潜空间，实现了潜视频生成建模，提升了训练效率与稳定性。尽管现有视频VAE取得了令人满意的重建质量，但持续优化重建并不一定能转化为生成性能的提升。如何增强视频潜变量的可扩散性仍是一个关键且尚未解决的挑战。受预测性世界建模原理的启发，本研究探索了预测学习在提升视频生成建模中的潜力。为此，我们提出了一种简单而有效的预测重建目标，将预测学习与视频重建统一起来。具体而言，我们随机丢弃未来帧并仅编码部分过去观测，同时训练解码器同时重建观测帧并预测未来帧。这种设计促使潜空间编码具有时间预测性的结构，构建对视频动态更连贯的理解，从而提升生成质量。我们的模型称为预测视频VAE（PV-VAE），在视频生成任务上取得了优越性能：在UCF101数据集上，收敛速度提升52%，FVD指标较Wan2.2 VAE改善34.42。进一步的综合分析表明，PV-VAE不仅展现出良好的可扩展性——生成性能随VAE训练同步提升，而且在下游视频理解任务中也能带来一致的性能增益，这凸显了其潜空间有效捕获了时间连贯性与运动先验。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>
