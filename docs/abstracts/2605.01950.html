@@ -20,11 +20,11 @@
 <body>
   <div class="wrap">
     <div class="card">
-      <h1>TRAP: Tail-aware Ranking Attack for World-Model Planning</h1>
+      <h1>TRAP: Tail-aware Ranking Attack for World-Model Planning&lt;br&gt;TRAP：针对世界模型规划中轨迹排序的尾部感知后门攻击&lt;br&gt;[摘要](abstracts/2605.01950.html)</h1>
       <h2>Abstract (EN)</h2>
-      <p>World models enable long-horizon planning by internally generating and evaluating imagined trajectories, making them a promising foundation for generalist agents. However, this imagination-driven decision process also introduces new security risks. Existing backdoor attacks typically aim to manipulate local features, one-step predictions, or instantaneous policy outputs. While such objectives may suffice for weaker reactive models, they are often ineffective against world models, where the learned dynamics prior and planning process can absorb or wash out the effects of shallow perturbations. More importantly, we find that world models exhibit a distinct backdoor vulnerability rooted in the long-tailed ranking structure of imagined trajectories, where disrupting the ordering of a few decision-critical trajectories can systematically hijack planning.   To exploit this vulnerability, we propose TRAP, a backdoor attack framework for world models that targets imagined trajectory ranking. TRAP combines a tail-aware ranking loss to focus optimization on decision-critical trajectories with dual gating mechanisms that stabilize optimization and regulate when and where the attack penalty is applied. Under trigger conditions, TRAP alters the relative ranking of imagined trajectories to redirect planning outcomes, while largely maintaining the normal ranking structure on clean inputs. Experiments on DreamerV3 and TD-MPC2 across diverse tasks show that TRAP consistently induces sustained behavioral deviations and significant performance degradation, highlighting the need for dedicated security evaluation of world-model-based agents.</p>
+      <p>Abstract not available.</p>
       <h2>摘要 (ZH)</h2>
-      <p>世界模型通过内部生成和评估想象轨迹来实现长时域规划，使其成为通用智能体的重要基础。然而，这种基于想象的决策过程也引入了新的安全风险。现有后门攻击通常旨在操纵局部特征、单步预测或瞬时策略输出。虽然这类目标可能足以攻击较弱的反应式模型，但往往对世界模型无效——因为世界模型的学习动态先验和规划过程能够吸收或消除浅层扰动的影响。更重要的是，我们发现世界模型存在一种源于想象轨迹长尾排序结构的独特后门脆弱性：扰乱少数决策关键轨迹的排序即可系统性地劫持规划过程。为利用这一脆弱性，我们提出了TRAP——一种针对世界模型想象轨迹排序的后门攻击框架。TRAP结合了尾部感知排序损失，将优化聚焦于决策关键轨迹，并通过双重门控机制稳定优化过程、控制攻击惩罚的施加时机与位置。在触发条件下，TRAP通过改变想象轨迹的相对排序来扭曲规划结果，同时在干净输入上基本保持正常排序结构。在DreamerV3和TD-MPC2上跨多种任务的实验表明，TRAP能持续诱导行为偏差并造成显著的性能下降，凸显了对基于世界模型的智能体进行专门安全评估的必要性。</p>
+      <p>未生成（可稍后重试翻译）</p>
       <p><a href="../index.html">← Back</a></p>
     </div>
   </div>
