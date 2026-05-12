@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>VEGA: Visual Encoder Grounding Alignment for Spatially-Aware Vision-Language-Action Models</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Precise spatial reasoning is fundamental to robotic manipulation, yet the visual backbones of current vision-language-action (VLA) models are predominantly pretrained on 2D image data without explicit 3D geometric supervision, resulting in representations that lack accurate spatial awareness. Existing implicit spatial grounding methods partially address this by aligning VLA features with those of 3D-aware foundation models, but they rely on empirical layer search and perform alignment on LLM-level visual tokens where spatial structure has already been entangled with linguistic semantics, limiting both generalizability and geometric interpretability. We propose VEGA (Visual Encoder Grounding Alignment), a simple yet effective framework that directly aligns the output of the VLA&#x27;s visual encoder with spatially-aware features from DINOv2-FiT3D, a DINOv2 model fine-tuned with multi-view consistent 3D Gaussian Splatting supervision. By performing alignment at the visual encoder output level, VEGA grounds spatial awareness before any linguistic entanglement occurs, offering a more interpretable and principled alignment target. The alignment is implemented via a lightweight projector trained with a cosine similarity loss alongside the standard action prediction objective, and is discarded at inference time, introducing no additional computational overhead. Extensive experiments on simulation benchmark and real-world manipulation tasks demonstrate that VEGA consistently outperforms existing implicit spatial grounding baselines, establishing a new state-of-the-art among implicit spatial grounding methods for VLA models.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>精确的空间推理对于机器人操作至关重要，然而当前视觉-语言-动作（VLA）模型的视觉骨干网络主要在二维图像数据上预训练，缺乏明确的三维几何监督，导致其表征缺乏准确的空间感知能力。现有的隐式空间基础方法通过将VLA特征与三维感知基础模型的特征对齐来部分解决这一问题，但它们依赖于经验性的层搜索，并在空间结构已与语言语义纠缠的LLM级视觉令牌上进行对齐，既限制了泛化能力也降低了几何可解释性。我们提出VEGA（视觉编码器基础对齐），一个简单而有效的框架，直接将VLA视觉编码器的输出与来自DINOv2-FiT3D的空间感知特征对齐——DINOv2-FiT3D是通过多视图一致的三维高斯泼溅监督微调的DINOv2模型。通过在视觉编码器输出层面进行对齐，VEGA在任何语言纠缠发生之前就植入了空间感知能力，提供了更具可解释性和原则性的对齐目标。该对齐通过一个轻量级投影器实现，该投影器使用余弦相似度损失与标准动作预测目标联合训练，并在推理阶段舍弃，不引入额外计算开销。在仿真基准和真实世界操作任务上的大量实验表明，VEGA始终优于现有隐式空间基础方法，为VLA模型的隐式空间基础方法建立了新的最先进水平。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

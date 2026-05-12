@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>A cell-decomposition based path planner for 3D navigation in constrained workspaces</h1>
+      <h2>Abstract (EN)</h2>
+      <p>This paper proposes a cell decomposition algorithm for binary occupancy grids that ensures mutual complete visibility from each cell to at least one adjacent cell. This decomposition establishes a simplified framework for verifying path feasibility that can be easily embedded in optimization problems. To illustrate its utility, we formulate both second-order cone programs (SOCP) and their mixed-integer variant (MISOCP) within the proposed framework. Furthermore, we propose the KSP-SOCP method, which combines Yen&#x27;s k-shortest path algorithm with the SOCP, achieving improved solutions compared to a standard SOCP approach while avoiding the computational burden of MISOCP. The cell decomposition algorithm, KSP-SOCP, and MISOCP approaches were evaluated in 9 city-like workspaces. The decomposition efficiently partitioned each map, enabling both optimization methods to compute feasible paths. The proposed KSP-SOCP achieved time performance comparable to the MISOCP while requiring less memory, making it highly suitable for large-scale problems.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>本文提出了一种针对二值占据网格的单元分解算法，确保每个单元与至少一个相邻单元之间具有完全的相互可见性。该分解建立了一个简化的路径可行性验证框架，可轻松嵌入优化问题中。为展示其效用，我们在该框架内构建了二阶锥规划（SOCP）及其混合整数变体（MISOCP）。此外，我们提出了KSP-SOCP方法，将Yen的k-最短路径算法与SOCP相结合，在避免MISOCP计算负担的同时，相比标准SOCP方法获得了更优的解。该单元分解算法、KSP-SOCP和MISOCP方法在9个类城市工作空间中进行了评估。分解算法高效地划分了每个地图，使得两种优化方法均能计算出可行路径。所提出的KSP-SOCP方法在时间性能上与MISOCP相当，同时所需内存更少，使其特别适用于大规模问题。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

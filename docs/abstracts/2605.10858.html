@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Is Your Driving World Model an All-Around Player?</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Today&#x27;s driving world models can generate remarkably realistic dash-cam videos, yet no single model excels universally. Some generate photorealistic textures but violate basic physics; others maintain geometric consistency but fail when subjected to closed-loop planning. This disconnect exposes a critical gap: the field evaluates how real generated worlds appear, but rarely whether they behave realistically. We introduce WorldLens, a unified benchmark that measures world-model fidelity across the full spectrum, from pixel quality and 4D geometry to closed-loop driving and human perceptual alignment, through five complementary aspects and 24 standardized dimensions. Our evaluation of six representative models reveals that no existing approach dominates across all axes: texture-rich models violate geometry, geometry-aware models lack behavioral fidelity, and even the strongest performers achieve only 2-3 out of 10 on human realism ratings. To bridge algorithmic metrics with human perception, we further contribute WorldLens-26K, a 26,808-entry human-annotated preference dataset pairing numerical scores with textual rationales, and WorldLens-Agent, a vision-language evaluator distilled from these judgments that enables scalable, explainable auto-assessment. Together, the benchmark, dataset, and agent form a unified ecosystem for assessing generated worlds not merely by visual appeal, but by physical and behavioral fidelity.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>当今的驾驶世界模型能够生成极其逼真的行车记录仪视频，但没有任何单一模型能在所有方面表现出色。有些模型能生成照片级逼真的纹理，却违反基本物理规律；另一些能保持几何一致性，但在闭环规划中失败。这种脱节暴露了一个关键差距：该领域评估的是生成世界的视觉真实感，却很少关注其行为是否真实。我们提出了WorldLens，一个统一基准，通过五个互补方面和24个标准化维度，全面衡量世界模型的保真度，涵盖像素质量、4D几何、闭环驾驶以及人类感知对齐。我们对六个代表性模型的评估显示，现有方法没有能在所有轴上占据主导：纹理丰富的模型违反几何规律，几何感知的模型缺乏行为保真度，甚至最强模型在人类真实感评分中仅达到2-3分（满分10分）。为弥合算法指标与人类感知之间的差距，我们还贡献了WorldLens-26K，一个包含26,808条人工标注偏好数据集，将数值评分与文本理由配对，以及WorldLens-Agent，一个从这些判断中提炼出的视觉语言评估器，实现可扩展、可解释的自动评估。基准、数据集和评估器共同构成一个统一生态系统，不仅通过视觉吸引力，更通过物理和行为保真度来评估生成的世界。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

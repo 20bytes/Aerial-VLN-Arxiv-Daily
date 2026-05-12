@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>ALAM: Algebraically Consistent Latent Transitions for Vision-Language-Action Models</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Vision-language-action (VLA) models remain constrained by the scarcity of action-labeled robot data, whereas action-free videos provide abundant evidence of how the physical world changes. Latent action models offer a promising way to extract such priors from videos, but reconstruction-trained latent codes are not necessarily suitable for policy generation: they may predict future observations while lacking the structure needed to be reused or generated coherently with robot actions. We introduce ALAM (Algebraic Latent Action Model), an Algebraically Consistent Latent Action Model that turns temporal relations in action-free video into structural supervision. Given frame triplets, ALAM learns latent transitions that are grounded by reconstruction while being regularized by composition and reversal consistency, encouraging a locally additive transition space. For downstream VLA learning, we freeze the pretrained encoder and use its latent transition sequences as auxiliary generative targets, co-generated with robot actions under a joint flow-matching objective. This couples structured latent transitions with flow-based policy generation, allowing the policy to exploit ALAM&#x27;s locally consistent transition geometry without requiring latent-to-action decoding. Representation probes show that ALAM reduces additivity and reversibility errors by 25-85 times over unstructured latent-action baselines and improves long-horizon cumulative reconstruction. When transferred to VLA policies, ALAM raises the average success rate from 47.9% to 85.0% on MetaWorld MT50 and from 94.1% to 98.1% on LIBERO, with consistent gains on real-world manipulation tasks. Ablations further confirm that the strongest improvements arise from the synergy between algebraically structured latent transitions and joint flow matching.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>视觉-语言-动作模型仍受限于带动作标注的机器人数据稀缺，而无动作视频提供了丰富的物理世界变化证据。隐动作模型是从视频中提取此类先验的潜在方案，但基于重建训练的隐编码不一定适合策略生成：它们能预测未来观测，却缺乏与机器人动作协同复用或生成所需的结构。我们提出ALAM（代数隐动作模型），一种代数一致的隐动作模型，它将无动作视频中的时序关系转化为结构监督。给定帧三元组，ALAM学习基于重建约束的隐状态转移，同时通过复合与反转一致性进行正则化，从而诱导出局部可加的转移空间。在下游VLA学习中，我们冻结预训练编码器，将其隐状态转移序列作为辅助生成目标，在联合流匹配目标下与机器人动作共同生成。这实现了结构化隐状态转移与基于流的策略生成的耦合，使策略能够利用ALAM的局部一致转移几何结构，而无需隐状态到动作的解码。表征探测显示，相较于无结构隐动作基线，ALAM将可加性与可逆性误差降低了25-85倍，并提升了长程累计重建性能。当迁移至VLA策略时，ALAM在MetaWorld MT50上将平均成功率从47.9%提升至85.0%，在LIBERO上从94.1%提升至98.1%，并在真实世界操作任务中持续取得增益。消融实验进一步证实，最显著的改进源于代数结构化隐状态转移与联合流匹配的协同效应。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>
