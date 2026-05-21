@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Q-ARVD: Quantizing Autoregressive Video Diffusion Models</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Autoregressive video diffusion models (ARVDs) have emerged as a promising architecture for streaming video generation, paving the way for real-time interactive video generation and world modeling. Despite their potential, the substantial inference cost of ARVDs remains a major obstacle to practical deployment, making model quantization a natural direction for improving efficiency. However, quantization for ARVDs remains largely unexplored. Our empirical analysis shows that directly applying existing quantization schemes developed for standard diffusion transformers to ARVDs leads to suboptimal performance, revealing quantization behaviors that differ from those observed in bidirectional diffusion models. In this paper, we identify two critical challenges in quantizing ARVDs: (C1) Highly unbalanced frame-wise quantization sensitivity. Error accumulation during autoregressive generation can induce severely skewed quantization sensitivity across frames, following an exponential-like decay pattern. (C2) Prominent and heterogeneous outlier patterns in weights. Weight distributions exhibit pronounced outlier channels, whose patterns vary substantially across layer types and block depths. To address these issues, we propose Q-ARVD, a novel framework for accurate ARVD quantization. (S1) To tackle the highly unbalanced frame-wise sensitivity, Q-ARVD incorporates a final-quality aware frame-weighting mechanism into the quantization objective. (S2) To prevent heterogeneous outliers from degrading performance, Q-ARVD introduces an outlier-aware adaptive dual-scale quantization, which automatically detects the presence and quantity of outlier channels for an arbitrary layer, and isolates them to protect normal channels. Extensive experiments demonstrate the superiority of Q-ARVD.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>自回归视频扩散模型（ARVDs）已成为流式视频生成的一种有前景的架构，为实时交互式视频生成和世界建模铺平了道路。尽管潜力巨大，但ARVDs的高昂推理成本仍是实际部署的主要障碍，使得模型量化成为提升效率的自然方向。然而，ARVDs的量化问题尚未得到充分探索。我们的实证分析表明，直接将现有为标准扩散变换器设计的量化方案应用于ARVDs会导致性能次优，揭示了其量化行为与双向扩散模型中的观察结果存在差异。在本文中，我们识别了量化ARVDs时面临的两个关键挑战：（C1）高度不平衡的帧级量化敏感性。自回归生成过程中的误差积累可能导致帧间量化敏感性呈指数式衰减的严重偏斜。（C2）权重中显著且异构的异常值模式。权重分布呈现明显的异常值通道，其模式在不同层类型和模块深度间差异显著。为解决这些问题，我们提出了Q-ARVD，一种用于精确ARVD量化的新框架。（S1）针对高度不平衡的帧级敏感性，Q-ARVD在量化目标中引入了最终质量感知的帧加权机制。（S2）为防止异构异常值降低性能，Q-ARVD引入了异常值感知的自适应双尺度量化，可自动检测任意层中异常值通道的存在与数量，并将其隔离以保护正常通道。大量实验证明了Q-ARVD的优越性。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

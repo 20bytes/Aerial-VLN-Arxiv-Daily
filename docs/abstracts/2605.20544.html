@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>The Yes-Man Syndrome: Benchmarking Abstention in Embodied Robotic Agents</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Vision-language models (VLMs) are used as high-level planners for embodied agents, translating natural language instructions and visual observations into action plans. While prior work has studied abstention in LLMs, existing benchmarks are largely text-only and do not capture the perceptual grounding and physical constraints inherent to embodied robotics environments. In such settings, abstention requires recognizing when instructions are ambiguous, physically infeasible, based on false premises, or otherwise unresolvable given the available sensory modalities and context. To address this gap, we introduce a taxonomy to categorize abstention in the context of embodied robotics and present RoboAbstention, a scalable and auditable framework for generating abstention instructions grounded in images gathered from five robotics datasets. RoboAbstention instantiates the taxonomy through a three-phase pipeline: (1) structured visual grounding, (2) deterministic constraint derivation, and (3) controlled instruction generation via category-specific templates. This enables the construction of a diverse dataset with verifiable abstention conditions. We evaluate several frontier VLMs and find that all models exhibit significant weaknesses in abstention, including those with advanced reasoning capabilities. The best-performing model, Gemini 2.5 Flash, abstains on only 39.0% of our 6,069 benchmark instructions, while the embodied planner Gemini Robotics ER 1.6 Preview abstains on just 16.5%. We further explore methods for improving abstention in VLM planners, such as defensive prompting and in-context learning, and find that these interventions substantially improve performance, reaching 93.6% abstention rate for Gemini Robotics ER 1.6 Preview and 88.6% for GPT 5.4 Mini, yet no approach fully solves the problem. We open-source RoboAbstention at https://purseclab.github.io/RoboAbstention/.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>视觉语言模型（VLMs）被用作具身智能体的高级规划器，将自然语言指令和视觉观察转化为行动方案。尽管已有研究关注大语言模型（LLMs）的节制行为，但现有基准大多仅基于文本，未能捕捉具身机器人环境固有的感知基础和物理约束。在此类环境中，节制行为要求识别指令是否模糊、物理上不可行、基于错误前提或由于可用感知模态和上下文而无法解决。为填补这一空白，我们提出一种分类法，用于对具身机器人环境中的节制行为进行分类，并介绍RoboAbstention——一个可扩展且可审计的框架，用于生成基于五个机器人数据集的图像中的节制指令。RoboAbstention通过三阶段流水线实例化该分类法：（1）结构化视觉基础，（2）确定性约束推导，（3）通过类别特定模板进行受控指令生成。这使得能够构建一个具有可验证节制条件的高质量数据集。我们评估了若干前沿视觉语言模型，发现所有模型在节制行为上均表现出显著缺陷，包括具备高级推理能力的模型。表现最佳的模型Gemini 2.5 Flash在我们的6,069条基准指令中仅有39.0%的节制率，而具身规划器Gemini Robotics ER 1.6 Preview的节制率仅为16.5%。我们进一步探索了改进视觉语言模型规划器节制行为的方法，如防御性提示和上下文学习，发现这些干预措施大幅提升了性能，使Gemini Robotics ER 1.6 Preview的节制率达到93.6%，GPT 5.4 Mini达到88.6%，但尚无方法完全解决该问题。我们在https://purseclab.github.io/RoboAbstention/开源了RoboAbstention。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

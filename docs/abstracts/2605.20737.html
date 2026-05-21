@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Resolving Long-Tail Ambiguity in Unsupervised 3D Point Cloud Segmentation with Language Priors</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Existing approaches for unsupervised 3D point cloud segmentation predominantly rely on a purely visual similarity-based learning-by-clustering paradigm, which suffers from a fundamental limitation: long-tail ambiguity. In such a paradigm, features of minor classes are consistently absorbed by dominant clusters, leading to severely imbalanced predictions. To address this issue, we propose LangTail, a language-guided hierarchical learning framework that leverages the balanced world knowledge encoded in language models to mitigate long-tail ambiguity in unsupervised 3D segmentation. The key idea is to establish multi-level associations between language-derived semantic priors and visually underrepresented minor classes, thereby compensating for the biased attention of purely visual clustering toward dominant classes. Specifically, LangTail first constructs an entity-level semantic prior from language models, capturing balanced and fine-grained world knowledge across categories. These priors are injected into a hierarchical clustering framework via contrastive alignment. This guides multi-granularity semantic structure formation and prevents minor classes from being absorbed by dominant clusters, yielding more discriminative representations for underrepresented categories. Extensive experiments on ScanNet-v2, S3DIS, and nuScenes demonstrate that LangTail consistently outperforms existing methods by significant margins, \ie, +13.5, +12.9, and +8.9 mIoU, respectively. These results demonstrate the effectiveness of language priors in improving the representation of minority classes in 3D point clouds. The code will be released at: https://github.com/Whisky0129/langtail_official.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>现有的无监督三维点云分割方法主要依赖于基于纯视觉相似性的聚类学习范式，该范式存在一个根本性局限：长尾模糊性问题。在这种范式中，次要类别的特征不断被主导聚类吸收，导致预测结果严重不平衡。为解决此问题，我们提出LangTail——一种语言引导的层次化学习框架，利用语言模型中编码的平衡世界知识来减轻无监督三维分割中的长尾模糊性。其关键思想是建立语言导出的语义先验与视觉上代表性不足的次要类别之间的多层次关联，从而补偿纯视觉聚类对主导类别的偏颇关注。具体而言，LangTail首先从语言模型中构建实体级语义先验，捕捉跨类别的平衡且细粒度的世界知识。这些先验通过对比对齐注入层次化聚类框架中，引导多粒度语义结构形成，并防止次要类别被主导聚类吸收，从而为代表性不足的类别生成更具判别性的表征。在ScanNet-v2、S3DIS和nuScenes上的大量实验表明，LangTail以显著优势持续优于现有方法，即mIoU分别提升+13.5、+12.9和+8.9。这些结果证明了语言先验在改善三维点云中少数类别表征方面的有效性。代码将发布于：https://github.com/Whisky0129/langtail_official。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Mind the Sim-to-Real Gap &amp; Think Like a Scientist</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Suppose a planner has a pre-trained simulator of a sequential decision problem and the option to run real experiments in the field. The simulator is cheap to query but inherits confounding and drift from its calibration data. Experimentation is unbiased but consumes one real unit per trial. We study when, and how, the planner should supplement the simulator with experiments. We give three results. First, an extended simulation lemma decomposes the simulator&#x27;s value error into a calibration--deployment shift that randomization can identify and a parametric residual that no further interaction can reduce. Second, the value gap between the simulator-optimal policy and the optimum splits into a local component, on states the deployed policy already visits, and a reachability component, on states it does not. The reachability component stays bounded away from zero at any horizon under purely passive learning. Third, we propose Fisher-SEP, a simulation-aided experimental policy (SEP) that minimizes the posterior predictive variance of a target policy&#x27;s value, with reward-only and transition-only specializations. Two case studies illustrate the regimes. In a vending-machine supply chain, front-loaded experimentation overtakes posterior updating once the horizon is long enough to amortize the pilot. In an HIV mobile-testing example with a corridor that separates a well-surveilled region from a poorly-surveilled one, only designed exploration reaches the poorly-surveilled region.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>假设规划者拥有一个序贯决策问题的预训练模拟器，并可以选择在实地进行真实实验。模拟器查询成本低廉，但其校准数据存在混杂和漂移问题。实验虽无偏，但每次试验消耗一个真实单位。我们研究规划者何时以及如何用实验补充模拟器。我们给出三个结果。第一，一个扩展的仿真引理将模拟器的价值误差分解为校准-部署偏移（随机化可识别）和参数残差（进一步交互无法减少）。第二，模拟器最优策略与全局最优之间的价值差距可分为局部分量（在已部署策略访问的状态上）和可达分量（在未访问的状态上）。在纯被动学习下，可达分量在任何时域下都保持非零有界。第三，我们提出Fisher-SEP，一种模拟辅助实验策略（SEP），它最小化目标策略价值的后验预测方差，并具有仅奖励和仅转移两种特化形式。两个案例研究说明了不同机制。在自动售货机供应链中，当时域足够长以摊销试点时，前期实验会超越后验更新。在HIV移动检测案例中，存在一条走廊分隔监测良好与监测不足的区域，只有设计性探索能到达监测不足的区域。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

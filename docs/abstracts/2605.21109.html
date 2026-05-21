@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Anomaly-Informed Confidence Calibration for Vision-Based Safety Prediction</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Reliable confidence estimates are important for safely deploying vision-based controllers in autonomous racing, where safety predictions must be derived from camera images, yet modern predictors become dangerously overconfident under test-time distribution shifts. We identify a critical perception-dynamics gap in existing anomaly signals: widely used scores, such as autoencoder reconstruction error, capture visual corruptions but miss dynamics anomalies (e.g., actuation bias, latency), where images remain plausible while the trajectory degrades. To address this, we propose an Anomaly-Informed Online Calibration approach that, without retraining any model component, fuses two complementary anomaly scores extracted from a world model: a perceptual score from reconstruction error and a dynamics score from epistemic uncertainty and control-stream statistics. Based on these fused scores, a lightweight temperature-scaling calibrator leverages test-time augmentation to selectively reduce overconfidence under shift while preserving nominal-condition performance. Experiments on a physical DonkeyCar under four real-world anomaly protocols unseen during training (darkness, blur, actuation bias, processing latency) reduce average expected calibration error from 0.184 to 0.116, a 37% improvement over the best baseline, without modifying the base safety predictor.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>可靠的置信度估计对于在自主竞速中安全部署基于视觉的控制器至关重要——其安全性预测必须从摄像头图像中推导得出，然而当前预测器在测试时分布偏移下会变得极度过度自信。我们指出现有异常信号中存在的关键感知-动力学鸿沟：广泛使用的分数（如自编码器重建误差）能捕获视觉污染，但遗漏了动力学异常（例如执行偏差、延迟），此时图像虽保持合理但轨迹已退化。为解决此问题，我们提出一种异常感知的在线校准方法，无需重新训练任何模型组件，即可融合从世界模型中提取的两个互补异常分数：来自重建误差的感知分数，以及来自认知不确定性和控制流统计量的动力学分数。基于融合后的分数，一个轻量级的温度缩放校准器利用测试时增强，在保持标称条件性能的同时，有选择性地降低偏移下的过度自信。在真实DonkeyCar平台上，针对训练期间未见过的四种真实异常协议（黑暗、模糊、执行偏差、处理延迟）的实验表明，在不修改基础安全预测器的情况下，平均期望校准误差从0.184降至0.116，相比最优基线提升了37%。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

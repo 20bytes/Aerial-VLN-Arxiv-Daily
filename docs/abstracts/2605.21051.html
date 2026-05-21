@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Transcoding a 3D Gaussian Splatting Model from a Plenoptic Point Cloud or Mesh without the Original Multi-view Images</h1>
+      <h2>Abstract (EN)</h2>
+      <p>In this paper, we propose an end-to-end transcoding pipeline, to create 3D Gaussian splatting (3DGS) models from existing 3D plenoptic point cloud or mesh models, when the original multi-view images of the captured 3D object or scene are not available. We also propose a custom initialisation to guide the 3DGS model learning, with constraints to ensure that the final 3DGS model aligns closely with the input point cloud or mesh surface. Tests on a high-quality, standard plenoptic point cloud dataset show that our pipeline produces 3DGS models of high visual quality, with many fewer splats than points in the original dense point clouds. Additionally, our custom initialisation leads to much faster convergence and cleaner surface representation than when starting from the default SfM-based initialisation that is typically used for 3DGS model learning.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>本文提出了一种端到端的转码管线，用于在无法获取捕获的3D物体或场景的原始多视图图像时，从现有的3D全光点云或网格模型创建3D高斯泼溅（3DGS）模型。我们还提出了一种自定义初始化方法，通过约束条件引导3DGS模型学习，确保最终模型与输入点云或网格表面紧密对齐。在高质量标准全光点云数据集上的测试表明，本管线生成的3DGS模型视觉质量高，且其高斯泼溅数量远少于原始密集点云中的点数量。此外，与基于默认SfM初始化的典型3DGS模型学习方法相比，我们的自定义初始化方法实现了更快的收敛速度和更清晰的表面表示。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>
