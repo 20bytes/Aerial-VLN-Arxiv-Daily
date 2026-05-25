@@ -20,9 +20,9 @@
 <body>
   <div class="wrap">
     <div class="card">
-      <h1>OP2GS: Object-Aware 3D Gaussian Splatting with Dual-Opacity Primitives</h1>
+      <h1>OP2GS: Object-Aware 3D Gaussian Splatting with Dual-Opacity Primitives&lt;br&gt;[摘要](abstracts/2605.20044.html)</h1>
       <h2>Abstract (EN)</h2>
-      <p>3D Gaussian Splatting (3DGS) provides an explicit and efficient scene representation, but its primitives lack inherent object-level identity, hindering downstream tasks such as open-vocabulary scene understanding. Existing methods typically address this by either distilling high-dimensional feature embeddings into Gaussians or by lifting 2D mask labels into 3D via heuristic refinement. However, feature-based approaches incur heavy storage and decoding overhead, while lifting-based pipelines remain vulnerable to label contamination: Gaussians necessary for appearance reconstruction often receive incorrect object labels during 2D-to-3D projection. We propose OP2GS, an object-aware Gaussian representation that augments each primitive with an explicit instance identity and a dedicated instance opacity $σ^{*}$ for object-mask rendering. The original opacity $σ$ remains responsible for visual reconstruction, while $σ^{*}$ models whether a Gaussian should contribute to a particular object mask. This dual-opacity formulation decouples visual existence from instance occupancy: mislabeled Gaussians can remain available for image rendering while becoming transparent in the object-mask branch. To learn this representation, we introduce a random object loss that optimizes the 1D instance occupancy field using the standard transmittance-based visibility of 3DGS. Semantic descriptors are then attached at the object level through multi-view aggregation, eliminating per-Gaussian feature storage. Compared with feature-training approaches, OP2GS achieves competitive open-vocabulary performance while significantly reducing computational overhead. Compared with training-free pipelines, it leverages physically consistent occupancy learning to resolve visibility ambiguities.</p>
+      <p>Abstract not available.</p>
       <h2>摘要 (ZH)</h2>
       <p>未生成（可稍后重试翻译）</p>
       <p><a href="../index.html">← Back</a></p>

@@ -9,7 +9,7 @@
 
 > 🚀 每日自动追踪 **无人机视觉语言导航 (Aerial-VLN)**, **3DGS场景重建与仿真** 和 **具身智能基础模型** 的最新 Arxiv 论文。
 
-## 📅 Updated on 2026.05.21
+## 📅 Updated on 2026.05.25
 <details>
   <summary>点击查看目录 (Table of Contents)</summary>
   <ol>
@@ -46,7 +46,7 @@
 |**2026-03-10**|**WESPR: Wind-adaptive Energy-Efficient Safe Perception & Planning for Robust Flight with Quadrotors<br>WESPR：面向四旋翼稳健飞行的风适应性能效安全感知与规划<br>[摘要](https://20bytes.github.io/Awesome-Aerial-VLN-Arxiv-Daily/abstracts/2603.09194.html)**|Pratap Tokekar Team|[2603.09194](http://arxiv.org/abs/2603.09194)|[HJFY](https://hjfy.top/arxiv/2603.09194v1)|
 |**2026-03-09**|**ViSA-Enhanced Aerial VLN: A Visual-Spatial Reasoning Enhanced Framework for Aerial Vision-Language Navigation<br>ViSA增强型空中视觉语言导航：一种视觉-空间推理增强的空中视觉语言导航框架<br>[摘要](https://20bytes.github.io/Awesome-Aerial-VLN-Arxiv-Daily/abstracts/2603.08007.html)**|Chenghao Lin Team|[2603.08007](http://arxiv.org/abs/2603.08007)|[HJFY](https://hjfy.top/arxiv/2603.08007v1)|
 
-<p align=right>(<a href=#updated-on-20260521>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20260525>back to top</a>)</p>
 
 ### 📌 3DGS场景重建与仿真
 
@@ -133,7 +133,7 @@
 |**2026-04-09**|**MotionScape: A Large-Scale Real-World Highly Dynamic UAV Video Dataset for World Models<br>MotionScape：面向世界模型的大规模真实世界高动态无人机视频数据集<br>[摘要](https://20bytes.github.io/Awesome-Aerial-VLN-Arxiv-Daily/abstracts/2604.07991.html)**|Lei Wang Team|[2604.07991](http://arxiv.org/abs/2604.07991)|[HJFY](https://hjfy.top/arxiv/2604.07991v1)|
 |**2026-04-09**|**Generative 3D Gaussian Splatting for Arbitrary-ResolutionAtmospheric Downscaling and Forecasting<br>基于生成式三维高斯泼溅的任意分辨率大气降尺度与预报<br>[摘要](https://20bytes.github.io/Awesome-Aerial-VLN-Arxiv-Daily/abstracts/2604.07928.html)**|Lei Bai Team|[2604.07928](http://arxiv.org/abs/2604.07928)|[HJFY](https://hjfy.top/arxiv/2604.07928v1)|
 
-<p align=right>(<a href=#updated-on-20260521>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20260525>back to top</a>)</p>
 
 ### 📌 具身智能基础模型与数据
 
@@ -220,7 +220,7 @@
 |**2026-04-09**|**Harnessing Embodied Agents: Runtime Governance for Policy-Constrained Execution<br>驾驭具身智能体：面向策略约束执行的运行时治理<br>[摘要](https://20bytes.github.io/Awesome-Aerial-VLN-Arxiv-Daily/abstracts/2604.07833.html)**|Zhijun Li Team|[2604.07833](http://arxiv.org/abs/2604.07833)|[HJFY](https://hjfy.top/arxiv/2604.07833v1)|
 |**2026-04-09**|**Learning Without Losing Identity: Capability Evolution for Embodied Agents<br>学习而不失身份：具身智能体的能力进化<br>[摘要](https://20bytes.github.io/Awesome-Aerial-VLN-Arxiv-Daily/abstracts/2604.07799.html)**|Zhijun Li Team|[2604.07799](http://arxiv.org/abs/2604.07799)|[HJFY](https://hjfy.top/arxiv/2604.07799v1)|
 
-<p align=right>(<a href=#updated-on-20260521>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20260525>back to top</a>)</p>
 
 [contributors-shield]: https://img.shields.io/github/contributors/20bytes/Awesome-Aerial-VLN-Arxiv-Daily.svg?style=for-the-badge
 [contributors-url]: https://github.com/20bytes/Awesome-Aerial-VLN-Arxiv-Daily/graphs/contributors
