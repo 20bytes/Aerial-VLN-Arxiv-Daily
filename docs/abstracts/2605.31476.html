@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>IDOL: Inverse-Dynamics-Guided Future Prediction for End-to-End Autonomous Driving</h1>
+      <h2>Abstract (EN)</h2>
+      <p>End-to-end autonomous driving has emerged as a compelling paradigm for learning planning directly from sensor observations, while recent world-model-based approaches further enrich this paradigm by enabling explicit reasoning about how the scene may evolve in the future. Yet future prediction alone does not guarantee better planning unless the predicted evolution can be converted into planning-relevant trajectory updates. Many current methods still forecast future scene states without explicitly decoding the motion implications hidden in state transitions. As a result, future reasoning often remains descriptively useful but only weakly coupled to executable motion generation. To address this limitation, we propose \mathbf{IDOL}, an inverse-dynamics-guided future prediction framework for world-model-based end-to-end planning in latent BEV space, where inverse dynamics serves as the key bridge between future prediction and trajectory optimization. IDOL first predicts multiple future latent scene states with a BEV world model, then applies an inverse dynamics model to adjacent latent futures to decode transition-aware trajectory features and recover planning-relevant motion deltas that explain how the latent world evolves over time. These inverse-dynamics-derived signals are used to optimize the planned trajectory, turning future forecasting from passive scene anticipation into actionable planning guidance. A lightweight closed-loop refinement module further improves long-horizon consistency by reusing the optimized trajectory for another round of future-aware reasoning. By introducing inverse dynamics into latent future reasoning, IDOL tightens the coupling between world modeling and planning. Extensive experiments on the NAVSIM v1 and NAVSIM v2 benchmarks show that IDOL achieves state-of-the-art performance among comparable methods.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>端到端自动驾驶作为一种直接从传感器观测中学习规划的范式已崭露头角，而近期基于世界模型的方法通过显式推理场景未来演化进一步丰富了这一范式。然而，未来预测本身并不能保证更好的规划，除非预测的演化能够转化为与规划相关的轨迹更新。当前许多方法仍仅预测未来场景状态，而未明确解码状态转换中隐含的运动含义。因此，未来推理通常仅停留于描述性用途，与可执行的运动生成耦合较弱。为解决此问题，我们提出IDOL——一种基于逆动力学引导的未来预测框架，适用于潜在鸟瞰图空间中基于世界模型的端到端规划，其中逆动力学作为未来预测与轨迹优化之间的关键桥梁。IDOL首先利用鸟瞰图世界模型预测多个未来潜在场景状态，然后对相邻潜在未来状态应用逆动力学模型，以解码过渡感知轨迹特征并恢复与规划相关的运动增量，从而解释潜在世界随时间演化的方式。这些逆动力学导出的信号被用于优化规划轨迹，将未来预测从被动的场景预期转化为可操作的规划指导。一个轻量级的闭环精化模块通过重用优化后的轨迹进行另一轮未来感知推理，进一步提升长时域一致性。通过在潜在未来推理中引入逆动力学，IDOL增强了世界建模与规划之间的耦合。在NAVSIM v1和NAVSIM v2基准上的大量实验表明，IDOL在同类方法中达到了最先进的性能。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

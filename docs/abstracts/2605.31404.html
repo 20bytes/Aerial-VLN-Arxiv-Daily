@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>The Sword, Shield, and Achilles&#x27; Heel: Characterizing the Linguistic Inductive Bias of Large Language Models for Spatial Reasoning in Navigation Planning</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Large Language Model (LLM)-based navigation systems commonly construct explicit spatial representations (e.g., topological graphs, semantic raster maps) and translate them into textual descriptions as LLMs&#x27; inputs. However, the linguistic structures of such text-based spatial representations and the choices of contextual features (e.g., topology, geometry) they contain are often treated as neutral engineering decisions rather than key factors that shape LLMs&#x27; behavior. To fill the gap, we propose a dual-interventional framework that disentangles linguistic structures from different contextual cues to evaluate the linguistic inductive bias of LLMs for navigation planning. In the framework, representation intervention varies the linguistic format and the degree of linguistic compression, clarifying when linguistic representations support or inhibit navigation planning. Context intervention, combined with contextual feature combination and conflict probing, explicitly clarifies the preferences and weaknesses of LLMs when processing different contextual cues. Experiments across diverse spatial reasoning tasks and multiple model scales reveal a consistent pattern: topological information is a sturdy shield and the backbone of robust planning; linguistic format is a double-edged sword whose effect depends on model size, task demands, and the compression level; and semantic information is a fatal Achilles&#x27; heel -- incorrect semantic cues can systematically derail the planning process. Overall, our study shows that effective text-based spatial representations in LLM-based navigation should preserve topological integrity, calibrate representational compression to model capacity, and ensure semantic correctness, rather than simply adopting a single representation. Our code is publicly available at https://github.com/jonesdong150/LLM-Navigation-Inductive-Bias.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>基于大型语言模型（LLM）的导航系统通常构建显式的空间表征（如拓扑图、语义栅格地图），并将其转换为文本描述作为LLM的输入。然而，这类基于文本的空间表征的 linguistic 结构以及其中包含的上下文特征（如拓扑、几何）的选择，常被视为中性的工程决策，而非塑造LLM行为的关键因素。为填补这一空白，我们提出一个双干预框架，将 linguistic 结构与不同上下文线索解耦，以评估LLM在导航规划中的语言归纳偏差。在该框架中，表征干预改变语言格式及语言压缩程度，阐明何时语言表征支持或抑制导航规划。上下文干预结合上下文特征组合与冲突探测，明确LLM在处理不同上下文线索时的偏好与弱点。跨不同空间推理任务及多模型规模的实验揭示出一致模式：拓扑信息是坚固的盾牌与稳健规划的主干；语言格式是双刃剑，其效果取决于模型规模、任务需求及压缩程度；而语义信息是致命的弱点——错误的语义线索会系统性地破坏规划过程。总体而言，本研究表明，基于LLM的导航中有效的文本空间表征应保持拓扑完整性、根据模型容量校准表征压缩，并确保语义正确性，而非简单采用单一表征。我们的代码公开于https://github.com/jonesdong150/LLM-Navigation-Inductive-Bias。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

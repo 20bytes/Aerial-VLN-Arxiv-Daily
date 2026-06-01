@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>QVGGT: Post-Training Quantized Visual Geometry Grounded Transformer</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Estimating 3D attributes directly from images has advanced rapidly with the Visual Geometry Grounded Transformer (VGGT), which predicts camera parameters, depth maps, and point clouds in a single forward pass. However, its 1.2B-parameter scale severely limits deployment on resource-constrained platforms such as UAVs and mobile AR devices. To address this limitation, we introduce QVGGT, a tailored quantization framework designed to compress VGGT. Our approach starts from the observation that transformer blocks within VGGT exhibit heterogeneous sensitivity to quantization. We thus analyze per-block quantization sensitivity and propose a selective mixed-precision strategy that allocates higher precision to the most fragile transformer blocks. To address the amplification of quantization error caused by high-variance camera and register tokens, we further introduce token filtering with camera information compensation, which removes these outliers from activation calibration and restores their geometric cues using a PCA-derived global compensation token. Finally, we develop a task-aware scale search mechanism that evaluates candidate quantization scales not only through layer reconstruction but also through multi-head supervision and cross-head geometric consistency among camera poses, depth maps, and point maps. Extensive experiments on multiple geometry perception benchmarks demonstrate that QVGGT achieves near-lossless W4A16 quantization, preserving the accuracy of all 3D prediction heads while delivering 3$\sim$4.9$\times$ memory reduction and up to 2.8$\times$ real hardware speedup over FP32. Our approach makes high-fidelity 3D perception feasible on edge devices, enabling practical deployment of feed-forward 3D reconstruction models in real-world constrained environments.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>通过视觉几何基础变换器（VGGT），从图像直接估计3D属性取得了显著进展，该模型可在单次前向传播中预测相机参数、深度图和点云。然而，其12亿参数规模严重限制了在无人机和移动AR设备等资源受限平台上的部署。为解决此问题，我们提出QVGGT，一个专为压缩VGGT设计的量化框架。我们的方法基于以下观察：VGGT内的变换器模块对量化表现出异质性敏感性。因此，我们分析了每模块的量化敏感性，并提出一种选择性混合精度策略，为最脆弱的变换器模块分配更高精度。为解决高方差相机标记和注册标记导致的量化误差放大问题，我们进一步引入带相机信息补偿的标记过滤，从激活校准中移除这些异常值，并通过PCA导出的全局补偿标记恢复其几何线索。最后，我们开发了一种任务感知的缩放因子搜索机制，不仅通过层重建，还通过多头监督以及相机姿态、深度图和点图之间的跨头几何一致性来评估候选量化缩放因子。在多个几何感知基准上的大量实验表明，QVGGT实现了几乎无损的W4A16量化，在保持所有3D预测头精度的同时，相比FP32实现了3∼4.9倍的内存压缩和高达2.8倍的硬件加速。我们的方法使得在边缘设备上进行高保真3D感知成为可能，推动了前馈3D重建模型在真实受限环境中的实际部署。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Prior Availability in Industrial Visual Sim-to-Real: A Review of CAD-Guided and CAD-Unavailable Regimes</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Industrial visual sim-to-real is often described as transferring from synthetic images to real images, but industrial deployment usually involves a broader mismatch between available evidence and required decisions. A system may be built from CAD renderings, simulated RGB-D observations, normal reference images, synthetic defects, pretrained feature spaces, or language prompts, yet deployed under different sensors, lighting, materials, fixtures, calibration, production variation, and rare defect modes. This review reframes industrial visual sim-to-real as a domain-gap problem organized by prior availability. We distinguish CAD-available settings, where explicit object geometry can support rendering, calibration, pose estimation, segmentation, and test-time geometric verification; CAD-unavailable settings, where geometry is replaced by normal-reference appearance, feature distributions, teacher-student residuals, synthetic anomaly assumptions, foundation features, or vision-language priors; and boundary-prior settings, where approximate models, templates, reference views, or semantic correspondences preserve only part of the CAD role. This framing connects CAD-based detection and 6D pose-estimation literature with industrial anomaly and surface-inspection literature that is usually reviewed separately. To make the taxonomy concrete, we use empirical anchors on T-LESS/BOP, MVTec AD, and VisA. The anchors show that CAD render count alone does not close transfer; source-distribution design, detector capacity, and small real calibration can matter more. They also show that CAD at test time creates a distinct verification channel through mask, pose, and depth consistency, whereas CAD-unavailable inspection relies on calibrated normality and feature deviation. The review therefore argues against a single cross-task leaderboard and instead asks what prior grounds the deployment decision.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>工业视觉的仿真到现实转换通常被描述为从合成图像向真实图像的迁移，但工业部署往往涉及可用证据与所需决策之间更广泛的错配。系统可能基于CAD渲染图、模拟RGB-D观测、正常参考图像、合成缺陷、预训练特征空间或语言提示构建，却在不同的传感器、光照、材料、夹具、标定、生产变异及罕见缺陷模式下部署。本综述将工业视觉仿真到现实重新定义为以先验可用性组织的域间隙问题。我们区分了CAD可用场景（其中显式物体几何可支持渲染、标定、姿态估计、分割及测试时几何验证）与CAD不可用场景（其中几何被正常参考外观、特征分布、师生残差、合成异常假设、基础特征或视觉语言先验所替代），以及边界先验场景（其中近似模型、模板、参考视图或语义对应仅保留CAD的部分作用）。这一框架将通常被分开评述的基于CAD的检测与6D姿态估计文献、以及工业异常与表面检测文献联系起来。为使分类具体化，我们以T-LESS/BOP、MVTec AD和VisA为实证锚点。锚点表明，仅靠CAD渲染数量无法弥合迁移；源分布设计、检测器容量和小规模真实标定可能更为关键。它们也表明，测试时CAD通过掩码、姿态和深度一致性创建了独特的验证通道，而CAD不可用的检测则依赖于标定的正态性与特征偏差。因此，本综述反对单一跨任务排行榜，而是追问何种先验支撑着部署决策。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>
