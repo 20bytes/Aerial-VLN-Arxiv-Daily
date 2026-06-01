@@ -20,11 +20,11 @@
 <body>
   <div class="wrap">
     <div class="card">
-      <h1>Scaling Multi-Hop Training Data via Graph-Constrained Path Selection</h1>
+      <h1>Scaling Multi-Hop Training Data via Graph-Constrained Path Selection&lt;br&gt;基于图约束路径选择的大规模多跳训练数据生成&lt;br&gt;[摘要](abstracts/2605.31238.html)</h1>
       <h2>Abstract (EN)</h2>
-      <p>Endowing large language models with compositional reasoning over specialized documents requires multi-hop training data at scale, where such data rarely exists outside of curated benchmarks built on structured sources. To construct it directly from plain, unannotated text, existing methods ask a single teacher model to jointly discover an evidence path through a document and verbalize it as a question-answer pair. However, these methods degrade sharply when documents are structured around repetitive templates and densely cross-referencing clauses, conditions that characterize most real-world specialized corpora. In this work, we decouple the two operations: reasoning paths are enumerated offline over a graph of contextual keyword centroids, and the teacher is invoked only to verbalize pre-validated paths. The graph enforces five geometric admissibility constraints, for which we provide Gram-matrix arguments establishing that local similarity bounds alone admit endpoint drift up to ${\sim}91^{\circ}$, and that an upper similarity bound is necessary to exit dense embedding cliques formed by boilerplate text. A matched-size ablation isolates the mechanism: at equal training scale, constrained and unconstrained chains yield indistinguishable downstream performance, and the gain at full scale comes from a 4.4$\times$ expansion of the usable corpus rather than from higher per-chain quality -- reframing the role of graph constraints, in this setting, as raising teacher synthesizability rather than improving chain content. Fine-tuning Qwen3-32B on 80K examples constructed from the CUAD legal contract corpus improves closed-book Token F1 from 21.66% to 38.58%. We have released our codes at https://github.com/hkgai-official/GCSCS.</p>
+      <p>Abstract not available.</p>
       <h2>摘要 (ZH)</h2>
-      <p>为大型语言模型赋予对专业文档的组合推理能力，需要大规模的多跳训练数据，而此类数据除基于结构化源构建的精选基准外几乎不存在。为直接从纯文本、无标注的文档中构建此类数据，现有方法要求单一教师模型联合发现文档中的证据路径并将其表述为问答对。然而，当文档围绕重复模板和密集交叉引用从句（这是大多数真实世界专业语料库的特征）构建时，这些方法性能急剧下降。在本工作中，我们将这两步操作解耦：推理路径在上下文关键词质心的图上离线枚举，仅需调用教师模型对预验证路径进行语言化表述。该图强制执行五条几何可容许性约束，我们提供了Gram矩阵论证，证明仅靠局部相似性界限可导致端点漂移高达约91°，且需要上相似性界限才能退出由模板文本形成的密集嵌入团。一项匹配规模的消融实验揭示了机制：在同等训练规模下，有无约束的链生成的下游性能无显著差异，而全规模下的性能提升源于可用语料库扩展了4.4倍，而非每条链的质量提高——在此设定下，图约束的作用被重新定义为提高教师模型的可综合化能力，而非改善链内容。在CUAD法律合同语料库构建的8万样本上微调Qwen3-32B，将闭卷Token F1从21.66%提升至38.58%。我们的代码已开源在https://github.com/hkgai-official/GCSCS。</p>
+      <p>未生成（可稍后重试翻译）</p>
       <p><a href="../index.html">← Back</a></p>
     </div>
   </div>
