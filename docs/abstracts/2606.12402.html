@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>DIRECT: When and Where Should You Allocate Test-Time Compute in Embodied Planners?</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Vision-Language Models (VLMs) are increasingly deployed as high-level planners for embodied agents, with an emerging strategy of scaling test-time compute to improve capability. However, we observe that doing so increases latency, token usage, and FLOPs while yielding uneven, often diminishing gains in downstream success, limiting where embodied agents can be deployed. We argue that choosing when and where to spend test-time compute is central to bringing frontier performance to the real world. We introduce DIRECT, a routing framework that uses multimodal scene context to allocate compute per prompt, improving the success--cost Pareto frontier over fixed model selection. Across three dominant scaling axes, namely chain-of-thought depth, model size, and memory history, our experiments on VLABench and RoboMME show that test-time compute is not a uniform lever: different axes yield qualitatively distinct capability gains. We validate these insights on a physical Franka arm in a DROID setup spanning zero-shot manipulation and long-horizon chaining, where our router matches or exceeds a stronger model&#x27;s success rate at up to 65% lower average latency. Ultimately, our results show that naively scaling test-time compute is wasteful, and that DIRECT can provide frontier-level embodied planning in robotic systems at a fraction of the cost. Project page can be found at jadee-dao.github.io/direct/.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>视觉语言模型正越来越多地被部署为具身代理的高级规划器，其中扩展测试时计算资源以提升能力成为一种新兴策略。然而，我们观察到这种做法会增加延迟、令牌使用量和FLOPs，同时在下游任务中产生不均匀且常常递减的收益，限制了具身代理的部署场景。我们认为，选择何时何地投入测试时计算资源是将前沿性能带入现实世界的关键。我们提出DIRECT，一种基于多模态场景上下文为每个提示分配计算资源的路由框架，相较于固定模型选择，它能改善成功率与成本之间的帕累托前沿。在三个主要的扩展维度上（思维链深度、模型大小和记忆历史），我们在VLABench和RoboMME上的实验表明，测试时计算并非均匀的杠杆：不同维度带来性质不同的能力提升。我们在物理Franka机械臂上（采用DROID设置，涵盖零样本操作和长周期任务链）验证了这些见解，我们的路由器在平均延迟降低高达65%的情况下，匹配或超越了更强模型的成功率。最终，我们的结果表明，简单地扩展测试时计算是一种浪费，而DIRECT能以极低的成本为机器人系统提供前沿级别的具身规划能力。项目页面可访问 jadee-dao.github.io/direct/。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>World Model Self-Distillation: Training World Models to Solve General Tasks</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Pretrained video generators are promising visual world models that exhibit emergent task-solving abilities; however, their reliance on detailed textual descriptions limits their direct use for planning and decision-making. Existing approaches either outsource this reasoning to language or vision-language models, or rely on supervised fine-tuning with paired task-execution videos, which are costly to collect and difficult to scale. We propose a scalable framework that elicits task-solving ability in such models by combining self-distillation with reinforcement learning. Given an unlabeled scene image, a vision-language model generates a candidate task and a detailed step-by-step solution. The solution conditions a pretrained video diffusion model, the Demonstrator; we distill its behavior into an Executor conditioned only on the image and a short task prompt. This transfers execution knowledge from caption-guided generation to instruction-conditioned task solving without curated task-video supervision. We further improve the Executor with reinforcement learning from VLM feedback, exploiting the asymmetry between judging whether a sampled video satisfies a task and generating the solution. Experiments on our proposed WorldTasks-Benchmark and the DreamGen robotics benchmark show that the Executor surpasses the Demonstrator under our VLM-based evaluation protocol and transfers competitively to robotic tasks.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>预训练的视频生成器作为有前景的视觉世界模型，展现出涌现的任务解决能力；然而，它们对详细文本描述的依赖限制了其在规划和决策中的直接应用。现有方法要么将此推理过程外包给语言模型或视觉语言模型，要么依赖于使用配对的执行任务视频进行监督微调，而这些视频收集成本高且难以扩展。我们提出了一种可扩展的框架，通过结合自蒸馏与强化学习，激发此类模型的任务解决能力。给定一张无标注场景图像，视觉语言模型生成一个候选任务和详细的逐步解决方案。该解决方案作为条件输入一个预训练的视频扩散模型（演示器）；我们将其行为蒸馏到一个仅以图像和简短任务提示为条件的执行器中。这将在无需策划任务-视频监督的情况下，将描述引导生成中的执行知识迁移到指令条件任务解决中。我们进一步通过来自视觉语言模型反馈的强化学习来改进执行器，利用判断采样视频是否满足任务与生成解决方案之间的不对称性。在我们提出的WorldTasks-Benchmark和DreamGen机器人基准测试上的实验表明，基于我们的视觉语言模型评估协议，执行器超越了演示器，并能有效迁移至机器人任务。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

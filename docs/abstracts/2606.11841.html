@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Scene-Adaptive Nonlinear Tone Curves for Pseudo Ground-Truth Generation in Low-Light 3D Gaussian Splatting</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Low-light novel view synthesis is challenging because dark multi-view images contain noise, weak structural detail, and compressed dynamic range. Recent 3D Gaussian Splatting (3DGS) methods address these challenges by generating pseudo ground-truth (pseudo-GT) images as supervision targets when paired normal-light references are unavailable. Existing pseudo-GT methods apply a uniform linear gain to all pixels, which clips bright regions while providing insufficient enhancement in dark regions, limiting reconstruction quality. We observe that nonlinear tone mappings, long established in 2D low-light enhancement, have not been explored for pseudo-GT generation in 3D reconstruction. Accordingly, we propose a scene-adaptive nonlinear tone-curve framework that replaces linear pseudo-GT with nonlinear alternatives. The framework introduces percentile-based normalisation for scene-agnostic curve application, a scene-adaptive offset for automatic black-level adjustment, and two complementary curves: Adaptive SoftExp (ASE), a bounded exponential curve, and Adaptive Poly3 (AP3), a data-driven cubic polynomial. The module changes only the pseudo-GT computation and leaves the 3DGS backbone unchanged. Experiments on three benchmarks covering 21 scenes show that both curves consistently outperform the linear baseline with PSNR improvements up to +4.34 dB on LOM and +3.25 dB on RealX3D. Both curves achieve similar performance despite their different mathematical forms, suggesting the improvement is curve-agnostic. Code is available at https://github.com/lvmingzhe/adaptiveToneCurve</p>
+      <h2>摘要 (ZH)</h2>
+      <p>低光照下新视角合成极具挑战性，因为暗光多视图图像包含噪声、微弱的结构细节以及压缩的动态范围。最近的3D高斯泼溅（3DGS）方法通过生成伪真值（pseudo-GT）图像作为监督目标来解决这些挑战，前提是缺乏配对的正常光照参考图像。现有的伪真值方法对所有像素施加统一的线性增益，这会导致明亮区域过曝，同时暗区增强不足，从而限制了重建质量。我们观察到，已在2D低光照增强中广泛确立的非线性色调映射，尚未被探索用于3D重建中的伪真值生成。因此，我们提出了一种场景自适应非线性色调曲线框架，用非线性替代方案替换线性伪真值。该框架引入了基于百分位数归一化以实现与场景无关的曲线应用，一种场景自适应偏移用于自动黑电平调整，以及两条互补曲线：自适应SoftExp（ASE）（一种有界指数曲线）和自适应Poly3（AP3）（一种数据驱动的三次多项式）。该模块仅改变伪真值的计算方式，而保持3DGS主干网络不变。在涵盖21个场景的三个基准上的实验表明，两条曲线均持续优于线性基线，在LOM上PSNR提升高达+4.34 dB，在RealX3D上提升+3.25 dB。尽管数学形式不同，两条曲线实现了相似的性能，这表明改进与曲线形式无关。代码可在https://github.com/lvmingzhe/adaptiveToneCurve获取。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>
