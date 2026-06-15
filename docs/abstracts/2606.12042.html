@@ -20,11 +20,11 @@
 <body>
   <div class="wrap">
     <div class="card">
-      <h1>KinematicRL: A Sim-to-Real Reinforcement Learning Framework For Social Navigation With Kinodynamic Feasibility</h1>
+      <h1>KinematicRL: A Sim-to-Real Reinforcement Learning Framework For Social Navigation With Kinodynamic Feasibility&lt;br&gt;运动学强化学习：一种面向社交导航且兼顾动力学可行性的仿真到现实强化学习框架&lt;br&gt;[摘要](abstracts/2606.12042.html)</h1>
       <h2>Abstract (EN)</h2>
-      <p>Deep Reinforcement Learning (DRL) has shown promise for social navigation, yet its real-world deployment remains hindered by a persistent sim-to-real gap arising from simplified first-order dynamics and context-specific human state estimation pipelines. This work presents a unified framework that addresses these limitations to produce dynamically feasible navigation policies suitable for real-world deployment. First, theoretical analysis reveals that tracking error between simulated and actual robot position decays exponentially with increased control order, motivating the use of higher-order control inputs as DRL action space. A second-order control formulation tailored to differential drive robots is developed, complemented by a stochastic iterative Linear Quadratic Regulator (iLQR) that pretrains the policy via a divergence minimization objective. Second, to avoid the added system complexity of camera-LiDAR fusion, a cluster-based human tracking pipeline using only 2D LiDAR is introduced. Human detections are associated according to both spatial proximity and velocity similarity, enabling reliable differentiation of nearby pedestrians and yielding stable velocity estimates through temporal aggregation. Third, we introduce an unbiased residual gating block to balance reaction- and memory-based behaviors while handling time-varying crowd sizes, both critical for social navigation. The resulting policy, KinematicRL, consistently improves kinematic performance and adapts to varying number of detected humans. Experiments in real-world environments demonstrate that, when combined with the proposed tracking pipeline, KinematicRL can be deployed on a real differential drive robot with minimal modifications.</p>
+      <p>Abstract not available.</p>
       <h2>摘要 (ZH)</h2>
-      <p>深度强化学习（DRL）在社交导航领域展现出潜力，但其实际部署仍受限于因简化的一阶动力学模型和情境特定的人体状态估计流程而导致的持续仿真到现实差距。本研究提出一个统一框架，旨在解决上述局限性，从而生成适用于实际部署的动态可行导航策略。首先，理论分析表明，模拟机器人位置与实际位置之间的跟踪误差随控制阶数的增加呈指数衰减，这促使我们采用高阶控制输入作为DRL的动作空间。我们为差分驱动机器人开发了一种二阶控制方法，并辅以随机迭代线性二次型调节器（iLQR），通过散度最小化目标对策略进行预训练。其次，为避免相机-激光雷达融合带来的额外系统复杂性，我们引入了一种仅使用二维激光雷达的基于聚类的行人跟踪流程。人体检测根据空间邻近性和速度相似性进行关联，从而能够可靠地区分附近行人，并通过时间聚合获得稳定的速度估计。第三，我们引入了一个无偏残差门控模块，以平衡基于反应和基于记忆的行为，同时处理时变的人群规模——这两点对社交导航至关重要。由此得到的策略KinematicRL持续提升了运动学性能，并能适应检测人数变化的情况。在真实环境中的实验表明，结合所提出的跟踪流程后，KinematicRL可在对真实差分驱动机器人进行最小修改的情况下部署。</p>
+      <p>未生成（可稍后重试翻译）</p>
       <p><a href="../index.html">← Back</a></p>
     </div>
   </div>
