@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>EgoPhys: Learning Generalizable Physics Models of Deformable Objects from Egocentric Video</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Humans naturally understand object physics through everyday interactions, but faithfully predicting complex deformable dynamics, such as elastic materials and fabrics, remains a major challenge for computer vision and robotics. We present EgoPhys, a framework that constructs deformable physical digital twins from egocentric RGB-only video using generalizable priors. EgoPhys overcomes the limitations of existing methods to enable controllable deformable digital twin generation from egocentric videos by distilling per-object inverse-physics solutions into a compact codebook, enabling prediction of dense spring stiffness fields for unseen objects without per-spring test-time optimization. Trained with generalizable priors from diverse egocentric interactions, EgoPhys outperforms baselines in reconstruction, future prediction, and zero-shot generalization. To support training and evaluation, we curate an egocentric interaction dataset covering diverse deformable objects, scenes, and manipulation styles. We deploy EgoPhys on a real xArm6 robot, demonstrating that a digital twin initialized from a single egocentric human play video can serve as an internal world representation to aid in deformable-object planning, highlighting egocentric RGB observations as a scalable path toward real-to-sim pipelines.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>人类通过日常交互自然地理解物体物理特性，但精确预测弹性材料、织物等复杂可变形动力学仍是计算机视觉与机器人领域的重大挑战。本文提出EgoPhys框架，利用通用先验知识从仅含RGB图像的第一人称视频中构建可变形物理数字孪生。EgoPhys通过将每个物体的逆物理求解结果蒸馏为紧凑码本，克服现有方法局限，实现对未见物体密集弹簧刚度场的预测而无需测试时每根弹簧的优化。基于多样化第一人称交互中的通用先验训练，EgoPhys在重建、未来预测和零样本泛化任务中均优于基线方法。为支持训练与评估，我们整理了一个涵盖多种可变形物体、场景和操作风格的第一人称交互数据集。我们将EgoPhys部署于真实xArm6机器人，证明从单段人类操作第一人称视频初始化的数字孪生可作为内部世界表征辅助可变形物体规划，突显第一人称RGB观测作为通向真实-仿真管线的可扩展路径的潜力。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

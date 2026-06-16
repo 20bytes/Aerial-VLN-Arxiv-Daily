@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>BRICKS-WM: Building Reusability via Interface Composition Kinetics for Structured World Models</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Model-based Reinforcement Learning (MBRL) has achieved remarkable success in continuous control by leveraging latent world models. However, prevailing approaches typically rely on monolithic latent dynamics, entangling environment dynamics into a coupled process. This coupling severely limits reusability: altering the agent necessitates retraining the entire world from scratch, even if the environment remains constant. To address this, we introduce BRICKS-WM (Building Reusability via Interface Composition Kinetics for Structured World Models), a framework for the modular assembly of structured world models. Driven by the insight that the physical world is composed of independent entities, we posit that global dynamics can be modeled as a composition of distinct dynamical modules interacting via latent interfaces. As a minimal instantiation, we factorize the latent state space into an actuated Agent module and an external Background module, bridged by a learned latent interface. Unlike prior object-centric methods that prioritize visual segmentation, BRICKS-WM enforces a functional separation in transition dynamics, ensuring that background dynamics remains agnostic to the agent&#x27;s dynamics. Empirically, BRICKS-WM achieves control performance comparable to strong monolithic baselines when trained from scratch, and enables the reuse of frozen background dynamics across agents.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>基于模型的强化学习（MBRL）通过利用潜在世界模型在连续控制中取得了显著成功。然而，当前方法通常依赖单一的整体潜在动力学，将环境动态耦合为一个整体过程。这种耦合严重限制了可复用性：即使环境保持不变，修改智能体也需要从头重新训练整个世界模型。为解决此问题，我们提出BRICKS-WM（通过接口组合动力学构建结构化世界模型的可复用性），一种结构化世界模型的模块化组装框架。受物理世界由独立实体组成的启发，我们假设全局动态可建模为通过潜在接口交互的独立动态模块的组合。作为最小实现，我们将潜在状态空间分解为受控的智能体模块和外部的背景模块，并通过学习得到的潜在接口连接。与先前强调视觉分割的面向对象方法不同，BRICKS-WM在转移动力学中强制实现功能分离，确保背景动态与智能体动态无关。实验表明，BRICKS-WM从头训练时可达到与强整体基线相当的控制性能，并支持在不同智能体间复用冻结的背景动态。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

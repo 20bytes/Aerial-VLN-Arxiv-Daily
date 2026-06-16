@@ -20,11 +20,11 @@
 <body>
   <div class="wrap">
     <div class="card">
-      <h1>CosFly-Track: A Large-Scale Multi-Modal Dataset for UAV Visual Tracking via Multi-Constraint Trajectory Optimization&lt;br&gt;CosFly-Track：基于多约束轨迹优化的大规模无人机视觉跟踪多模态数据集&lt;br&gt;[摘要](abstracts/2605.17776.html)</h1>
+      <h1>CosFly-Track: A Large-Scale Multi-Modal Dataset for UAV Visual Tracking via Multi-Constraint Trajectory Optimization</h1>
       <h2>Abstract (EN)</h2>
-      <p>Abstract not available.</p>
+      <p>Recent aerial vision-language navigation (VLN) datasets have grown rapidly, but they primarily address goal-oriented navigation to static destinations, leaving UAV visual tracking -- continuously following a moving target while maintaining visibility -- largely without dedicated training data. We introduce CosFlyTrack, a large-scale multi-modal dataset and scalable generation pipeline for UAV visual tracking in urban environments. The dataset provides approximately 12,000 expert and perturbed UAV trajectories generated from 6,000 pedestrian paths, comprising 2.4 million timesteps (approximately 334 hours) with seven aligned data channels: RGB, metric depth, semantic segmentation, six-degree-of-freedom drone pose, target state with visibility flag, bilingual (Chinese-English) instructions, and trajectory-pair metadata. To generate high-quality expert trajectories, we develop MuCO, a multi-constraint optimizer that plans directly in continuous three-dimensional space with BVH-accelerated collision and visibility queries, jointly enforcing target visibility, viewpoint quality, collision avoidance, smoothness, and kinematic feasibility, avoiding the discretization artifacts and post-hoc smoothing of grid-based planners. Fine-tuning experiments on seven vision-language models show that CosFlyTrack improves tracking performance to 78.3 to 95.6 percent SR@1 meter, a 53 to 69 percentage point gain over zero-shot baselines, supporting the dataset as a training resource for dynamic target-following agents. The dataset is publicly available at https://huggingface.co/datasets/AutelRobotics/CosFly; evaluation scripts and pre-trained checkpoints are hosted at https://huggingface.co/AutelRobotics/CosFly-Track.</p>
       <h2>摘要 (ZH)</h2>
-      <p>未生成（可稍后重试翻译）</p>
+      <p>近年来，空中视觉语言导航（VLN）数据集发展迅速，但这些数据集主要针对到达静态目标的导向性导航任务，而无人机视觉跟踪——即在持续跟随移动目标的同时保持目标可见性——很大程度上缺乏专门的训练数据。本文提出CosFlyTrack，一个大规模多模态数据集及其可扩展生成管道，专用于城市环境中的无人机视觉跟踪。该数据集包含从6000条行人路径生成的约12000条专家轨迹和扰动轨迹，共计240万时间步（约334小时），并配有七个对齐的数据通道：RGB图像、度量深度、语义分割、六自由度无人机位姿、带可见性标志的目标状态、双语（中英）指令以及轨迹对元数据。为生成高质量的专家轨迹，我们开发了MuCO（多约束优化器），该优化器直接在连续三维空间中规划，并利用基于BVH加速的碰撞与可见性查询，联合施加目标可见性、视点质量、碰撞避免、轨迹平滑性和运动学可行性约束，避免了基于网格规划器的离散化伪影和事后平滑处理。在七个视觉语言模型上的微调实验表明，CosFlyTrack将跟踪性能提升至78.3%至95.6%的SR@1米，相比零样本基线提高了53至69个百分点，证明了该数据集可作为动态目标跟踪代理的训练资源。该数据集公开于https://huggingface.co/datasets/AutelRobotics/CosFly；评估脚本和预训练检查点托管于https://huggingface.co/AutelRobotics/CosFly-Track。</p>
       <p><a href="../index.html">← Back</a></p>
     </div>
   </div>

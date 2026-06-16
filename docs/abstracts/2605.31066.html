@@ -20,11 +20,11 @@
 <body>
   <div class="wrap">
     <div class="card">
-      <h1>Can Aerial VLA Models Cooperate? Evaluating Closed-Loop Air-Ground Coordination with CARLA-Air&lt;br&gt;空中视觉-语言-动作模型能否协同？基于CARLA-Air的闭环空地协同评估&lt;br&gt;[摘要](abstracts/2605.31066.html)</h1>
+      <h1>Can Aerial VLA Models Cooperate? Evaluating Closed-Loop Air-Ground Coordination with CARLA-Air</h1>
       <h2>Abstract (EN)</h2>
-      <p>Abstract not available.</p>
+      <p>Recent aerial vision-language-action (VLA) models show promising single-UAV capabilities, such as tracking moving objects and navigating to language-specified landmarks. However, it remains unclear whether these capabilities can transfer to air-ground cooperation, where a UAV and a UGV must act jointly in a shared, closed-loop physical world.   We study this question with CARLA-Air, a single-process air-ground evaluation environment that unifies CARLA and AirSim inside one Unreal Engine runtime. By sharing the same world state, physics tick, and sensing pipeline, CARLA-Air enables physically consistent UAV--UGV interaction and precise measurement of simulation-timestamp alignment and effective coordination latency.   Using CARLA-Air, we evaluate representative aerial VLA and planning baselines on two complementary diagnostic tasks: moving-platform landing and occlusion-recovery escort. The results show that current aerial VLA models can often track or follow a ground partner, but struggle to convert this single-agent competence into stable cooperative behavior. State prompting provides limited benefit, and naive bidirectional interaction fails to consistently improve performance and can amplify errors for most baselines. These findings suggest that, under the tested text-based cue interfaces, zero-shot cooperative air-ground VLA requires three components beyond the current paradigm: explicit partner-state grounding, low-latency action coordination, and team-level objective alignment. Our code is available at https://github.com/louiszengCN/CarlaAir.</p>
       <h2>摘要 (ZH)</h2>
-      <p>未生成（可稍后重试翻译）</p>
+      <p>近年来的空中视觉-语言-动作（VLA）模型在单无人机任务中展现出潜力，例如追踪移动物体和根据语言指令导航至指定地标。然而，这些能力能否迁移至空地协同场景——即无人机与无人地面车需在共享的闭环物理世界中联合行动——尚不明确。我们借助CARLA-Air（一个在Unreal Engine运行时中统一CARLA与AirSim的单进程空地评估环境）来研究该问题。通过共享相同世界状态、物理时钟与感知流水线，CARLA-Air实现了物理一致的无人机-无人地面车交互，并可精确测量仿真时间戳对齐度与有效协同延迟。基于CARLA-Air，我们在两个互补的诊断任务（移动平台降落与遮挡恢复护航）上评估了代表性空中VLA模型与规划基线。结果表明，当前空中VLA模型通常能追踪或跟随地面伙伴，但难以将这种单智能体能力转化为稳定的协同行为。状态提示带来的收益有限，而朴素的双向交互未能持续提升性能，反而可能放大多数基线的错误。这些发现表明，在测试的基于文本的交互接口下，零样本空地协同VLA需要超越当前范式的三个要素：显式伙伴状态接地、低延迟动作协调以及团队级目标对齐。我们的代码已开源至https://github.com/louiszengCN/CarlaAir。</p>
       <p><a href="../index.html">← Back</a></p>
     </div>
   </div>

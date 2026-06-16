@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>BadWorld: Adversarial Attacks on World Models</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Visual world models (VWMs) synthesize interactive, action-conditioned rollouts from a single context image. However, it remains an open question how robust these models are to adversarial perturbations. Standard adversarial attacks fail to assess this vulnerability because attackers lack ground-truth future videos and cannot predict subsequent user controls. We introduce BadWorld, a label-free adversarial framework tailored for autoregressive VWMs that systematically overcomes both constraints. First, to bypass the need for future supervision, we propose a self-supervised velocity attack that directly disrupts the early denoising dynamics of the model. Second, to ensure the attack generalizes across unpredictable user actions, we formulate a trajectory-adaptive bi-level optimization that actively mines hard control sequences to forge control-agnostic perturbations. Evaluated on representative VWMs with continuous and discrete controls, BadWorld exposes severe structural fragility. Visually indistinguishable adversarial images reliably trigger catastrophic degradation in future rollouts, leading to incomplete denoising, structural collapse, and control inconsistency. These findings reveal critical risks for deploying VWMs in safety-critical systems while highlighting a practical mechanism for privacy protection.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>视觉世界模型（VWMs）能够从单张上下文图像合成交互式、行动条件化的展开序列。然而，这些模型对对抗性扰动的鲁棒性仍是一个未解决的问题。标准对抗攻击无法评估这一脆弱性，因为攻击者缺乏真实未来视频的标注，也无法预测后续的用户控制。我们提出了BadWorld，一种专为自回归视觉世界模型设计的无标签对抗框架，系统性地克服了上述两个限制。首先，为绕过对未来监督的需求，我们提出了一种自监督速度攻击，直接破坏模型早期的去噪动态。其次，为确保攻击能泛化到不可预测的用户动作，我们设计了一种轨迹自适应双层优化，通过主动挖掘困难控制序列来生成与具体控制无关的扰动。在具有连续和离散控制的代表性视觉世界模型上评估后，BadWorld暴露了严重的结构脆弱性。视觉上难以区分的对抗图像可靠地引发了未来展开序列的灾难性退化，导致去噪不完全、结构崩溃和控制不一致。这些发现揭示了在安全关键系统中部署视觉世界模型的关键风险，同时为隐私保护提供了一种实用机制。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

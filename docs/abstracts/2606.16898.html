@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Semantic Flip: Synthetic OOD Generation for Robust Refusal in Embodied Question Answering and Spatial Localization</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Detecting unanswerable user queries remains essential for the reliable deployment of real-world embodied agents. However, modern vision-language models (VLMs) often generate overly confident answers even when the available visual memory cannot support the query. Such overconfidence poses various task-dependent risks. The agent may provide misleading information to the user in Embodied Question Answering and select an arbitrary coordinate and physically guide the user there in spatial reasoning for navigation. Despite these high stakes, only a few prior studies directly address when and how an embodied VLM should respond with &quot;I do not know.&quot; This work proposes Semantic Flip, a simple yet effective framework that synthesizes auxiliary out-of-distribution (OOD) samples for embodied refusal without requiring external OOD annotations. The key idea is to independently transform the query and video memory to construct auxiliary OOD pairs that lack sufficient visual grounding. These synthesized pairs enable training a lightweight rejection module on top of a frozen pretrained VLM. The module attaches to any existing VLM-based pipeline without retraining the underlying model. Across two complementary benchmarks, Semantic Flip consistently outperforms strong prompting baselines. This work also introduces SpaceReject, a new refusal benchmark for spatial localization with deliberately unanswerable queries over long video memory, where Semantic Flip achieves an $F_1$ score of 0.9559. The source codes and datasets are publicly available at https://github.com/ndb796/SemanticFlip.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>检测不可回答的用户查询对于现实世界中具身代理的可靠部署至关重要。然而，当前的视觉语言模型（VLMs）即使当可用视觉记忆无法支持查询时，也常常生成过度自信的答案。这种过度自信会带来各种任务依赖的风险：在具身问答中，代理可能向用户提供误导性信息；在空间推理导航中，代理可能选择任意坐标并将用户物理引导至该位置。尽管风险如此之高，但先前仅有少数研究直接探讨具身VLM应何时及如何回答“我不知道”。本文提出语义翻转（Semantic Flip），一个简单而有效的框架，通过合成辅助的分布外（OOD）样本实现具身拒答，且无需外部OOD标注。其核心思想是独立转换查询和视频记忆以构建缺乏充分视觉依据的辅助OOD对。这些合成对使得能够在冻结的预训练VLM之上训练一个轻量级拒绝模块。该模块可附加到任何现有基于VLM的流水线中，无需重新训练底层模型。在两个互补基准测试中，语义翻转持续优于强提示基线。本文还引入了SpaceReject，一个针对空间定位的新拒答基准，包含基于长视频记忆的刻意不可回答查询，其中语义翻转实现了0.9559的F1分数。源代码和数据集已在https://github.com/ndb796/SemanticFlip公开。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>
