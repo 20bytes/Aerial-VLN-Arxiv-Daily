@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Finetuning Vision-Language-Action Models Requires Fewer Layers Than You Think</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Vision-Language-Action (VLA) models pre-trained on massive video-robot datasets have revolutionized robotic manipulation, yet their multi-billion parameter architectures impose prohibitive computational burdens during downstream fine-tuning and real-time inference. In this work, we reveal a highly non-trivial architectural characteristic of these continuous control foundation policies (e.g., pi_0, GR00T-N1.5): despite being trained on diverse physical trajectories, they exhibit severe layer-wise representational redundancy. To exploit this, we introduce a structural compression pipeline that is entirely training-free, bypassing the need of existing methods to load full-scale models to learn optimized token reductions or dynamic layer selectors. Instead, using only a single forward pass via Centered Kernel Alignment to identify redundant layer features, we remove twin layers to permanently compress the model depth by up to 50% across both the VLM backbone and the continuous control policy head. Downstream fine-tuning of this streamlined architecture yields a dual acceleration benefit: a 40-50% reduction in training time and up to 30% faster real-time inference, while matching or exceeding full-scale base model performance. We comprehensively validate our method across three simulation benchmarks (LIBERO, RoboCasa, SimplerEnv) and 10 diverse real-world manipulation tasks across 4 unique robotic embodiments. These results prove that advanced VLAs require significantly fewer layers than previously assumed, offering a highly compute-efficient paradigm for scalable robot learning.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>视觉-语言-动作(VLA)模型在大量视频-机器人数据集上预训练后，彻底改变了机器人操作领域，但其数十亿参数架构在下游微调和实时推理过程中带来了巨大的计算负担。在这项工作中，我们揭示了这些连续控制基础策略(如pi_0、GR00T-N1.5)的一个高度非平凡的架构特性：尽管它们是在多样化的物理轨迹上训练的，却表现出严重的逐层表征冗余。为了利用这一特性，我们引入了一种完全无需训练的结构性压缩流水线，绕过了现有方法需要加载完整规模模型来学习优化标记缩减或动态层选择器的需求。相反，仅通过一次使用中心核对齐的前向传递来识别冗余层特征，我们移除孪生层，从而将VLM骨干网络和连续控制策略头的模型深度永久压缩高达50%。这种精简架构的下游微调带来了双重加速效益：训练时间减少40-50%，实时推理速度提升高达30%，同时性能达到或超过完整规模的基础模型。我们在三个模拟基准测试(LIBERO、RoboCasa、SimplerEnv)和10个跨4种独特机器人实体的真实世界操作任务上全面验证了我们的方法。这些结果证明，先进的VLA模型所需的层数远低于先前假设，为可扩展的机器人学习提供了高效计算的新范式。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

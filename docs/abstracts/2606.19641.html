@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Scaling Self-Play for End-to-End Driving</h1>
+      <h2>Abstract (EN)</h2>
+      <p>End-to-end autonomous driving models are typically trained on offline human-demonstration datasets that provide limited state coverage and often no closed-loop feedback, making them prone to compounding errors when deployed in closed-loop and brittle to long-tail agent interactions. To overcome these limitations, we propose an alternative strategy for training end-to-end driving models: large-scale self-play directly from pixels in simulation. While prior self-play approaches have shown promising transfer to real-world driving, they typically assume vectorized Bird&#x27;s-Eye-View (BEV) observations that are incompatible with end-to-end policies operating directly on sensor observations. To this end, we introduce Gigapixel, a high-throughput batched driving simulator with perspective rendering, enabling scalable self-play directly from pixel observations. Rather than targeting compute-costly photorealistic sensor simulation, Gigapixel renders a simplified bounding-box world that preserves essential scene structure while achieving throughput at 50k agent steps per second. Since direct pixel-space self-play RL is prohibitively sample-inefficient at end-to-end model scale, we propose self-play DAgger training: we train pixel-based policies in self-play via on-policy distillation from a privileged RL teacher. To bridge the sim-to-real gap, we subsequently transfer the self-play trained policies to real-world sensor data through lightweight perception adaptation. Policies trained in Gigapixel and adapted to real-world sensor data achieve competitive performance on the HUGSIM and NAVSIM-v2 benchmarks without human trajectory supervision. Moreover, scaling self-play training yields proportional gains in policy performance, establishing self-play as a practical and scalable strategy for training end-to-end models.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>端到端自动驾驶模型通常在离线的人类演示数据集上训练，这些数据集提供的状态覆盖有限，且通常缺乏闭环反馈，导致在闭环部署时容易出现累积误差，并对长尾的智能体交互场景表现脆弱。为克服这些局限，我们提出一种训练端到端驾驶模型的替代策略：直接在仿真环境中基于像素进行大规模自我对弈。尽管先前的自我对弈方法已显示出向真实驾驶场景迁移的潜力，但它们通常依赖矢量化的鸟瞰图观测，这与直接基于传感器观测运作的端到端策略不兼容。为此，我们引入Gigapixel——一种具备透视渲染的高吞吐量批处理驾驶模拟器，使得基于像素观测的可扩展自我对弈成为可能。Gigapixel并未追求计算成本高昂的光照真实传感器仿真，而是渲染简化边界框的世界，保留关键场景结构的同时，实现每秒50000个智能体步长的高吞吐量。由于直接基于像素空间的自我对弈强化学习在端到端模型规模下样本效率极低，我们提出自我对弈DAgger训练方法：通过有策略的教师蒸馏，在自我对弈中在线训练基于像素的策略。为弥合仿真到真实的差距，我们随后通过轻量级感知适配将自我对弈训练的策略迁移到真实世界传感器数据。在Gigapixel中训练并适配到真实传感器数据后，策略在HUGSIM和NAVSIM-v2基准测试中取得了具有竞争力的性能，且无需人类轨迹监督。此外，扩大自我对弈训练规模可获得策略性能的比例提升，从而确立自我对弈作为训练端到端模型的实用且可扩展策略。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

@@ -20,11 +20,11 @@
 <body>
   <div class="wrap">
     <div class="card">
-      <h1>PhysGuard: Fisher-Guided Gradient Projection for Sim-to-Real Neural PDE Surrogates</h1>
+      <h1>PhysGuard: Fisher-Guided Gradient Projection for Sim-to-Real Neural PDE Surrogates&lt;br&gt;PhysGuard：基于Fisher引导的梯度投影实现神经PDE代理模型的仿真到现实迁移&lt;br&gt;[摘要](abstracts/2606.16602.html)</h1>
       <h2>Abstract (EN)</h2>
-      <p>Neural operator models trained on simulation data often lose accuracy when applied to experimental measurements due to the sim-to-real gap. Standard fine-tuning with limited real data can reduce this gap, but it may also damage the core physics-relevant representations learned during pretraining. Although knowledge-preserving adaptation has been widely investigated in vision or language tasks, it remains unclear whether these methods are suitable for neural operators whose architectures and protected knowledge are fundamentally different. Neural operators need to preserve core-scale physical structures rather than semantic or visual features. We propose PhysGuard, a physics-preserving framework for accurate sim-to-real adaptation of neural operators. Specifically, PhysGuard uses the empirical Fisher Information Matrix computed on simulation data to identify physics-critical parameter directions, then restricts fine-tuning updates to directions that do not interfere with them. A layer-wise Gram-matrix formulation makes this efficient for models with millions of parameters, while an adaptive threshold automatically determines the protected subspace size. A spectral probe experiment shows that the dominant Fisher directions are strongly associated with low-frequency output structures. Experiments on benchmark across four neural operator architectures and different physical systems show that PhysGuard performs strongly on most evaluation metrics compared to baselines. The benefits are most evident under severe domain shift, where it reduces low-frequency error by up to 32\% compared to standard fine-tuning while maintaining adaptability. Our code is available at https://github.com/ZhouChaunge/PhysGuard.</p>
+      <p>Abstract not available.</p>
       <h2>摘要 (ZH)</h2>
-      <p>在仿真数据上训练的神经算子模型应用于实验测量时，常因仿真-现实差距而损失精度。使用有限真实数据进行标准微调可缩小这一差距，但可能损害预训练阶段学到的核心物理相关表征。尽管知识保持型自适应方法已在视觉或语言任务中得到广泛研究，但这些方法是否适用于架构与受保护知识根本不同的神经算子仍不明确。神经算子需要保留核心尺度的物理结构而非语义或视觉特征。我们提出PhysGuard，一种面向神经算子精确仿真-现实自适应的物理保持框架。具体而言，PhysGuard利用仿真数据上计算的实证Fisher信息矩阵识别物理关键参数方向，然后将微调更新约束在不干扰这些方向的方向上。通过逐层格拉姆矩阵公式，该方法对百万级参数模型保持高效，同时自适应阈值自动确定受保护子空间大小。谱探测实验表明，主导Fisher方向与低频输出结构强相关。在四种神经算子架构和不同物理系统的基准实验表明，PhysGuard在大多数评估指标上优于基线方法。其优势在严重领域偏移下最为显著，与标准微调相比低频误差降低高达32%，同时保持适应性。我们的代码开源在https://github.com/ZhouChaunge/PhysGuard。</p>
+      <p>未生成（可稍后重试翻译）</p>
       <p><a href="../index.html">← Back</a></p>
     </div>
   </div>

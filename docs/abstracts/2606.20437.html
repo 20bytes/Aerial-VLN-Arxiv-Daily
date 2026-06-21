@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>HEPTv2: End-to-End Efficient Point Transformer for Charged Particle Reconstruction</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Charged-particle tracking -- reconstructing trajectories from sparse detector measurements -- is a fundamental high-energy-physics inference problem and a canonical example of learning under extreme combinatorial ambiguity. At the High-Luminosity Large Hadron Collider (HL-LHC), tracking must remain accurate and efficient despite unprecedented collision densities. Graph neural networks perform strongly, but incur substantial costs from graph construction and processing, while transformer-based approaches rely on auxiliary stages that prevent end-to-end optimization. To address this, we present HEPTv2, an end-to-end point-transformer architecture that reconstructs tracks from detector hits in one trainable pipeline. HEPTv2 combines a locality-aware point encoder with a track decoder that predicts complete trajectories without graph-building, clustering, or filtering. The encoder uses locality-sensitive hashing in detector coordinate space to preserve tracking-relevant geometry while enabling efficient local attention. The decoder resolves ambiguities through sectorized decoding and direct hit-to-track prediction under joint encoder-decoder supervision, allowing the full pipeline to be optimized end-to-end. On TrackML, HEPTv2 achieves 98.6% double-majority tracking efficiency at a 0.8% fake rate, while requiring only $\sim$15~ms inference time and 0.4~GB peak memory per event on a NVIDIA A100 GPU. Latency and memory scale approximately linearly for events with up to $5\times10^5$ hits. HEPTv2 establishes a new state of the art in the accuracy-latency trade-off, improving efficiency by 4.5% over the strongest prior transformer and by 1.1--2.2% over optimized graph-based pipelines, while reducing latency by factors of 7 and 38--52, respectively. These results show end-to-end transformers can deliver the accuracy and efficiency required for real-time particle reconstruction at the HL-LHC.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>带电粒子跟踪——从稀疏探测器测量值中重建轨迹——是一个基础的高能物理推断问题，也是极端组合歧义下学习的典型范例。在高亮度大型强子对撞机（HL-LHC）上，跟踪必须在前所未有的对撞密度下保持准确和高效。图神经网络性能强劲，但图构建和处理带来高昂成本，而基于Transformer的方法依赖辅助阶段，阻碍了端到端优化。为此，我们提出HEPTv2，一种端到端点云Transformer架构，通过单一可训练流水线从探测器击中点重建轨迹。HEPTv2结合了局部感知的点编码器与轨迹解码器，无需图构建、聚类或过滤即可直接预测完整轨迹。编码器在探测器坐标空间中采用局部敏感哈希，以保留跟踪相关的几何结构并实现高效局部注意力机制。解码器通过分区解码和联合编码器-解码器监督下的直接击中-轨迹预测消除歧义，从而使整个流水线实现端到端优化。在TrackML上，HEPTv2在假阳性率0.8%下达到98.6%的双多数跟踪效率，同时在NVIDIA A100 GPU上每事件仅需约15毫秒推理时间和0.4 GB峰值内存。对于包含高达5×10^5击中点的事件，延迟和内存大致呈线性扩展。HEPTv2在精度-延迟权衡上树立了新标杆，相较于此前最强的Transformer方法效率提升4.5%，相较于优化的图方法提升1.1-2.2%，同时延迟分别降低7倍和38-52倍。这些结果表明，端到端Transformer能够满足HL-LHC上实时粒子重建所需的精度与效率。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>
