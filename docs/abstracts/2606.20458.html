@@ -20,11 +20,11 @@
 <body>
   <div class="wrap">
     <div class="card">
-      <h1>Slow Brain, Fast Planner: Latency-Resilient VLM-Augmented Urban Navigation</h1>
+      <h1>Slow Brain, Fast Planner: Latency-Resilient VLM-Augmented Urban Navigation&lt;br&gt;慢思考的头脑，快规划的行动：面向延迟容忍的VLM增强城市导航&lt;br&gt;[摘要](abstracts/2606.20458.html)</h1>
       <h2>Abstract (EN)</h2>
-      <p>Learning-based planners for sidewalk navigation can generate diverse candidate trajectories in real time, yet their scoring functions often fail to select the best trajectory in challenging situations, outputting trajectories that make the mobile robot drive onto grass, toward pedestrians, or in the wrong direction, even when better candidates exist in the same set. We call this the trajectory scoring gap: in real-world sidewalk navigation, the gap between an anchor-based planner&#x27;s top choice and the best possible candidate is substantial, likely due to limited high-level scene understanding capability of the planner. Rather than replacing the planner with an end-to-end Vision-Language-Action model, we propose a VLM-Planner interface that uses a VLM to select a candidate index from the planner&#x27;s proposal set and then fuse it with the planner&#x27;s initial output. However, VLMs take 1--3s per query and so cannot directly drive a 5--20Hz control loop. We contribute a training-free, latency-resilient trajectory-level fusion layer that turns a stale VLM selection into real-time planner scoring via geometric similarity with exponential decay. On $\sim$2,000 challenging real-world scenarios (e.g., junctions, pedestrian encounters), VLM selection achieves 30% ADE reduction versus the planner&#x27;s best selection, while the planner remains competitive in routine situations. In simulation, Score Fusion maintains &gt;80% success rate with delays up to 5s. We demonstrate the full system on a mobile robot navigating challenging campus sidewalks with varied network latency.</p>
+      <p>Abstract not available.</p>
       <h2>摘要 (ZH)</h2>
-      <p>基于学习的侧道导航规划器能够实时生成多样化的候选轨迹，但其评分函数在复杂场景下往往无法选出最优轨迹，导致移动机器人驶入草地、冲向行人或偏离正确方向——即便同一候选集合中存在更优选择。我们将此称为轨迹评分鸿沟：在真实侧道导航中，基于锚点的规划器对最优候选的识别能力与理论最佳值之间存在显著差距，这很可能源于规划器缺乏高层场景理解能力。本文并未采用端到端视觉-语言-动作模型替代规划器，而是提出了一种VLM-规划器接口：利用视觉语言模型从规划器生成的候选集合中选择候选索引，并将其与规划器的初始输出进行融合。然而，VLM每次查询需要1-3秒，无法直接驱动5-20Hz的控制循环。为此，我们贡献了一种无需训练、延迟容忍的轨迹级融合层——通过几何相似性与指数衰减机制，将过时的VLM选择结果转化为实时规划器评分。在约2000个真实挑战场景（如交叉口、行人交汇）中，相较于规划器的最佳选择，VLM选择使平均位移误差降低30%，而在常规场景下规划器仍保持竞争力。仿真实验中，评分融合机制在延迟高达5秒时仍维持超过80%的成功率。我们已在复杂校园侧道导航场景中，通过移动机器人完整系统验证了不同网络延迟下的有效性。</p>
+      <p>未生成（可稍后重试翻译）</p>
       <p><a href="../index.html">← Back</a></p>
     </div>
   </div>
