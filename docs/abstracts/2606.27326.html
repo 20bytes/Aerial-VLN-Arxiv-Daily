@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Hallucination in World Models is Predictable and Preventable</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Modern generative world models render increasingly realistic action-controllable futures, yet they frequently hallucinate: rollouts remain visually fluent while drifting from the ground-truth dynamics. We hypothesize that hallucination concentrates in low-coverage regions of the state-action space, where lightweight data-centric signals can both detect it and guide mitigation. To test this, we introduce MMBench2, a 427-hour, 210-task dataset for visual world modeling with ground-truth actions, rewards, and live simulators, and train a 350M-parameter world model on it. We identify three distinct hallucination modes: perceptual, action-marginalized, and scene-diverging -- each anchored to a different stage of the pipeline, and develop three signals that accurately predict where the model will fail. To close coverage gaps at training time, we develop a coverage-aware sampling technique; to close them online, our hallucination predictors serve as curiosity rewards for targeted data collection, yielding a data-efficient finetuning recipe that adapts the pretrained world model to entirely unseen environments with as few as 50 real environment trajectories. Overall, our findings reveal that hallucination in world models is inherently a data coverage issue, and that the same signals used to detect it can also be used for mitigation.   An interactive web version of our paper is available at https://www.nicklashansen.com/mmbench2</p>
+      <h2>摘要 (ZH)</h2>
+      <p>现代生成式世界模型能够渲染出越来越逼真且动作可控的未来画面，然而它们经常出现幻觉：生成的滚动画面在视觉上流畅，但偏离了真实动态。我们假设幻觉集中在状态-动作空间的低覆盖区域，而轻量级、以数据为中心的信号既可以检测幻觉，也可以指导缓解。为了验证这一点，我们引入了MMBench2——一个包含427小时、210个任务的视觉世界建模数据集，带有真实动作、奖励和实时模拟器，并在此基础上训练了一个3.5亿参数的世界模型。我们识别出三种不同的幻觉模式：感知性幻觉、动作边缘化幻觉和场景发散性幻觉——每种模式对应于流程的不同阶段，并开发了三种信号来准确预测模型将在何处失败。为了在训练时弥补覆盖缺口，我们开发了一种覆盖感知采样技术；为了在在线环境下弥补覆盖缺口，我们的幻觉预测器作为好奇心奖励用于定向数据收集，从而形成一种数据高效微调方案，使预训练的世界模型能够仅用50条真实环境轨迹就能适应完全未见的环境。总体而言，我们的发现表明，世界模型中的幻觉本质上是一个数据覆盖问题，而用于检测幻觉的同一信号也可用于缓解幻觉。我们的论文交互式网页版可在 https://www.nicklashansen.com/mmbench2 查看。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

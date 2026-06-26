@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Advancing Omnimodal Embodied Agents from Isolated Skills to Everyday Physical Autonomy</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Building persistent embodied agents in unstructured environments demands unified orchestration of heterogeneous tools spanning both cyber (APIs, IoT) and physical (manipulation, navigation) domains, coupled with autonomous recovery from physical failures that inevitably arise over extended operation. Existing systems treat these as separate problems: VLM-based planners lack a unified cyber-physical action space, agent frameworks accumulate unbounded context that degrades temporal coherence, and VLA policies execute open-loop without detecting their own failures. We argue that persistent autonomy requires not a monolithic model but a hierarchical asynchronous architecture with explicit separation of planning, memory, and verification. To this end, we present OmniAct, a framework integrating a multimodal semantic planner for skill routing across unified action spaces, an adaptive hierarchical memory with event-boundary-driven compression for sub-linear context growth, and an asynchronous visual preemption engine that closes the semantic loop during physical execution. Across 40 real-world long-horizon tasks on two robotic platforms coordinating four IoT devices, OmniAct achieves consistent improvements in end-to-end success across all complexity levels, maintains near-flat token consumption over under 100k+ accumulated interaction tokens, and elevates mid-scale open-weight models to proprietary-level performance.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>在非结构化环境中构建持久性具身智能体需要统一协调跨越网络域（API、物联网）和物理域（操控、导航）的异构工具，同时具备从长时间运行中不可避免的物理故障中自主恢复的能力。现有系统将这些视为分离问题：基于视觉语言模型的规划器缺乏统一的网络-物理动作空间，智能体框架积累无界上下文导致时间连贯性退化，而视觉-语言-动作策略以开环方式执行却无法检测自身故障。我们认为，持久自主性并非需要一个单一模型，而是需要一种分层异步架构，明确分离规划、记忆与验证功能。为此，我们提出OmniAct框架，它整合了跨统一动作空间进行技能路由的多模态语义规划器、通过事件边界驱动压缩实现次线性上下文增长的自适应分层记忆，以及在物理执行期间闭合语义环的异步视觉抢占引擎。在涉及两个机器人平台协调四个物联网设备的40项真实世界长时任务中，OmniAct在所有复杂度层级上均实现了端到端成功率的一致提升，在超过10万累积交互令牌下保持近乎平坦的令牌消耗，并将中等规模开源模型的性能提升至专有模型水平。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

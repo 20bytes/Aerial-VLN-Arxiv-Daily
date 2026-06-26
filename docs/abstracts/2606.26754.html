@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Capacity-Controlled Multi-View Stylization of 3D Gaussian Splatting</h1>
+      <h2>Abstract (EN)</h2>
+      <p>While 3D Gaussian Splatting (3DGS) provides an efficient and explicit representation for novel view synthesis, enforcing stylistic coherence across viewpoints remains challenging. Existing 3D stylization methods typically apply 2D feature-matching losses independently per rendered view, which leads to unstable style allocation, many-to-one feature reuse, and limited cross-view consistency. We propose a capacity-controlled framework for multi-view stylization of 3DGS, grounded in optimal transport. Specifically, we reformulate local style matching as a semi-balanced optimal transport problem. By introducing explicit column-capacity constraints with tunable strength, our formulation mitigates many-to-one matching and enables controllable allocation of style features. This transport-based objective provides a principled mechanism for balancing feature coverage and stylistic diversity while maintaining stable correspondences across viewpoints. To further enhance cross-view coherence, we incorporate a novel cross-view matching guidance to constrain correspondences between scene content and style patterns. In addition, we introduce several geometric regularizations to enhance the vanilla 3DGS, thereby enabling optimized Gaussian primitives to represent finer-grained textures during stylization. Extensive experiments demonstrate that our approach significantly improves multi-view stylistic consistency and produces stable, expressive 3D stylizations while preserving the core semantic structure of the scene.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>尽管三维高斯泼溅（3DGS）为新视角合成提供了高效且显式的表示，但跨视角强制风格一致性仍具挑战性。现有三维风格化方法通常针对每个渲染视图独立应用二维特征匹配损失，这会导致不稳定的风格分配、多对一特征复用以及有限的跨视角一致性。本文提出一种基于最优传输的容量可控框架，用于3DGS的多视角风格化。具体而言，我们将局部风格匹配重新表述为半平衡最优传输问题，通过引入具有可调强度的显式列容量约束，缓解了多对一匹配问题，并实现了风格特征的可控分配。这种基于传输的目标函数提供了一种原则性机制，在平衡特征覆盖与风格多样性的同时，维持跨视角的稳定对应关系。为进一步增强跨视角一致性，我们引入了一种新颖的跨视角匹配引导机制，对场景内容与风格模式间的对应关系施加约束。此外，我们还引入了若干几何正则化项以增强基础3DGS，使优化后的高斯基元在风格化过程中能表示更精细的纹理。大量实验证明，我们的方法显著提升了多视角风格一致性，在保持场景核心语义结构的同时，生成了稳定且富有表现力的三维风格化结果。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>VibeAct: Vibration to Actions for Contact-Rich Reactive Robot Dexterity</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Dexterous manipulation depends on contact events that are fast, local, and often visually occluded. Piezoelectric microphones offer a compact and high-bandwidth way to sense these interactions, but the resulting vibro-acoustic signals are difficult to simulate faithfully enough for end-to-end sim-to-real policy learning on dexterous robot hands. We propose VibeAct, a framework that bridges real vibrotactile sensing and simulation-based reinforcement learning through a shared physical representation of contact and slip. In the real world, we embed piezoelectric microphones into a dexterous robot hand and collect vibro-acoustic data through teleoperation, then replay the recordings in a calibrated digital clone to automatically label per-finger contact and slip. A tactile estimator learns to predict contact and slip from real microphone waveforms, while manipulation policies are trained in simulation on the same representation computed directly from simulated contacts. This decoupling lets policies exploit rapid tactile feedback without simulating raw audio. Across five contact-rich tasks spanning regrasping, in-hand reorientation, and insertion, VibeAct consistently outperforms a proprioception-and-point-cloud baseline in simulation, with the largest gains on tasks requiring sustained reactive control, where the continuous slip-magnitude channel proves the most informative observation. The learned policies transfer to a physical dexterous hand-arm platform, improving success rates on deployed tasks. Project videos and additional details are at https://vibeact.github.io/.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>灵巧操作依赖于快速、局部且常被视觉遮挡的接触事件。压电麦克风提供了一种紧凑且高带宽的交互感知方式，但由此产生的振动声学信号难以被足够逼真地模拟，以用于灵巧机器人手的端到端仿真到现实策略学习。我们提出VibeAct框架，通过接触与滑移的共享物理表示，桥接真实振动触觉感知与基于仿真的强化学习。在真实环境中，我们将压电麦克风嵌入灵巧机器人手，通过遥操作收集振动声学数据，然后在校准的数字克隆中回放记录，自动标注每根手指的接触与滑移。触觉估计器从真实麦克风波形中预测接触与滑移，而操作策略在仿真中基于同一表示（直接从仿真接触计算得出）进行训练。这种解耦使策略能够利用快速触觉反馈，而无需模拟原始音频。在涵盖重抓取、手中重定向和插入的五项高接触任务中，VibeAct在仿真中持续优于基于本体感觉与点云的基线方法，在需要持续反应控制的任务中提升最大，其中连续的滑移幅度通道被证明是最具信息量的观测值。学到的策略可迁移至物理灵巧手-臂平台，提升了部署任务的成功率。项目视频及更多详情请见https://vibeact.github.io/。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

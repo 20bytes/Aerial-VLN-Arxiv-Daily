@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>PhysiFormer: Learning to Simulate Mechanics in World Space</h1>
+      <h2>Abstract (EN)</h2>
+      <p>We present PhysiFormer, a diffusion transformer for physically-plausible 3D object motion. Unlike video world models that operate in view-dependent pixel space, PhysiFormer represents objects as 3D meshes expressed in world coordinates. Given the initial vertex positions and velocities, as well as object material type, rigid or elastic, the model samples future vertex trajectories. While related neural physics approaches build on ad-hoc latent spaces or explicitly enforce rigidity and causality, PhysiFormer shows that excellent results can be obtained without any such inductive biases, by casting vertex trajectory prediction as a single denoising diffusion process directly in world coordinates. The probabilistic formulation captures uncertainty in the learned dynamics, enabling diverse plausible futures from initial conditions, making this framework potentially useful for applications with unobserved uncertainty. The model features attention factorised over time, space, and objects for efficiency, enabling permutation-invariant multi-object reasoning without needing explicit object encoding. Trained on over 100k simulated trajectories, PhysiFormer generates rigid and elastic mechanics, and generalises to mixed-material settings, unseen real-world geometries, and larger object counts. It substantially outperforms autoregressive baselines in trajectory accuracy, rigidity preservation, and momentum-based physical consistency. Our results position coordinate-space diffusion as a promising step toward view-invariant, geometry-aware world modelling for robotics, graphics, and physical design. Visualisations, code, and models are available at https://yimingc9.github.io/physiformer.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>我们提出PhysiFormer，一种用于物理可信的3D物体运动的扩散变换器。与在视角相关的像素空间中操作的视频世界模型不同，PhysiFormer将物体表示为在世界坐标中表达的3D网格。给定初始顶点位置和速度，以及物体材料类型（刚性或弹性），模型采样未来的顶点轨迹。虽然相关的神经物理方法建立在专门设计的潜在空间或显式强加刚性和因果性之上，但PhysiFormer表明，通过直接将顶点轨迹预测视为世界坐标中的单一去噪扩散过程，可以在没有任何此类归纳偏置的情况下获得卓越的结果。概率公式化捕捉了学习动力学中的不确定性，使得从初始条件生成多样化的可信未来成为可能，从而使该框架可能对含有未观测不确定性的应用有用。该模型的特征在于注意力机制在时间、空间和物体上的分解以提高效率，实现了无需显式物体编码的排列不变的多物体推理。经过超过10万条模拟轨迹的训练，PhysiFormer能够生成刚性和弹性力学，并泛化到混合材料设置、未见过的真实世界几何形状以及更大的物体数量。在轨迹准确性、刚性保持和基于动量的物理一致性方面，它显著优于自回归基线。我们的结果将坐标空间扩散定位为面向机器人学、图形学和物理设计的视角不变、几何感知世界建模的一个有前景的步骤。可视化、代码和模型可在https://yimingc9.github.io/physiformer获取。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>ForesightSafety-VLA: A Unified Diagnostic Safety Benchmark for Vision-Language-Action Models</h1>
+      <h2>Abstract (EN)</h2>
+      <p>In embodied intelligence, safety is a prerequisite for reliable robot deployment in the physical world. Current vision-language-action (VLA) models continue to advance toward general-purpose task capability, yet their embodied safety limits remain poorly understood. To address this gap, we introduce ForesightSafety-VLA, a diagnostic benchmark that makes safety the primary evaluation target for VLA systems. We define a 13-category safety taxonomy covering physical interaction safety (Safe-Core), instruction-side safety (Safe-Lang), and perception-side safety (Safe-Vis), and evaluate policies under three controlled dimensions of variation -- scene structure, language command, and visual observation -- so that failure sources can be diagnosed rather than hidden in a single aggregate score. Beyond binary task success, ForesightSafety-VLA measures process-level risk through cumulative safety cost (CC) and risk exposure time (RET), together with a four-quadrant decomposition of safe/unsafe success and failure. We instantiate 66 safety-augmented base scenarios in RoboTwin across 5 embodiments and report results on representative VLA baselines. Across the evaluated baselines, even the strongest policy incurs non-trivial safety cost and unsafe nominal success, while structure and visual variation induce substantially stronger safety degradation than ordinary language variation. These results suggest that embodied safety is tightly coupled to perception, grounding, and control competence rather than being reducible to post-hoc safety filtering alone.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>在具身智能领域，安全性是机器人在物理世界中可靠部署的前提条件。当前视觉-语言-动作模型正持续向通用任务能力迈进，但其具身安全边界尚不明确。为填补这一空白，我们提出了ForesightSafety-VLA——一个以安全性为主要评估目标的诊断性基准。我们定义了涵盖物理交互安全（Safe-Core）、指令侧安全（Safe-Lang）和感知侧安全（Safe-Vis）的13类安全分类法，并在场景结构、语言指令和视觉观测三个受控变化维度下评估策略，从而能够诊断故障来源而非将其隐藏于单一综合评分中。除二元任务成功指标外，ForesightSafety-VLA通过累积安全代价和风险暴露时间测量过程级风险，并结合安全/不安全的成功与失败四象限分解。我们在RoboTwin中实例化了66个安全增强基础场景，涵盖5种具身形态，并报告了代表性VLA基线的结果。在评估的基线中，即使最强策略也会产生不可忽视的安全代价和不安全的标称成功，而结构与视觉变化比普通语言变化导致更显著的安全退化。这些结果表明，具身安全性紧密耦合于感知、基础能力与控制能力，而非仅能通过事后安全过滤来简化处理。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>
