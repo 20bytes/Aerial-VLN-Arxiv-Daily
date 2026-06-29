@@ -20,11 +20,11 @@
 <body>
   <div class="wrap">
     <div class="card">
-      <h1>Guided Diffusion with Distilled Vision-Language Reliability for Aerial Navigation</h1>
+      <h1>Guided Diffusion with Distilled Vision-Language Reliability for Aerial Navigation&lt;br&gt;融合蒸馏视觉-语言可靠性的引导扩散用于空中导航&lt;br&gt;[摘要](abstracts/2606.13883.html)</h1>
       <h2>Abstract (EN)</h2>
-      <p>Autonomous UAV navigation is conventionally solved by pipelines that separate perception, mapping, and planning into distinct stages, which propagates errors, accumulates latency, and requires environment-specific retuning. End-to-end generative models remove these interfaces by mapping raw observations directly to trajectories, but inherit a subtle failure mode: trained on clean data, they cannot recognise when an observation is unreliable, and treat degraded regions such as glass, mirrors, and overexposed surfaces as valid evidence for planning. We present a reliability-aware diffusion planner for 3D UAV navigation. It conditions trajectory generation on the observation together with a scene-level reliability heatmap that marks where perception cannot be trusted, produced by a lightweight network that distils the open-vocabulary reasoning of a vision-language model within the real-time planning budget. To generalise to unseen environments without retraining, we steer the denoising process with a differentiable two-stage ESDF cost that treats physical obstacles from depth and virtual obstacles from highly unreliable regions on equal footing. In simulation and on a real quadrotor, our planner produces markedly safer trajectories than a state-of-the-art diffusion baseline, reducing the obstacle-violation rate from 40.3% to 9.6% and raising the mean reliability of traversed regions from 0.588 to 0.925. Ablating the reliability term alone drops mean reliability from 0.898 to 0.783, confirming it as the decisive component, while distillation runs the framework up to 2 times faster than the full vision-language model.</p>
+      <p>Abstract not available.</p>
       <h2>摘要 (ZH)</h2>
-      <p>自主无人机导航通常通过将感知、建图和规划分离为不同阶段的流水线来解决，这会导致误差传播、延迟累积，并需要针对特定环境重新调整参数。端到端生成模型通过将原始观测直接映射到轨迹来消除这些接口，但继承了一个微妙的故障模式：在干净数据上训练后，模型无法识别观测数据何时不可靠，并将玻璃、镜子和过曝表面等退化区域视为有效的规划证据。我们提出了一种用于3D无人机导航的可靠性感知扩散规划器。该规划器将轨迹生成条件建立在观测数据以及场景级可靠性热力图之上——该热力图标记了感知不可信的区域，由一个轻量级网络生成，该网络在实时规划预算内蒸馏了视觉-语言模型的开放词汇推理能力。为了在无需重新训练的情况下泛化到未见过的环境，我们通过一个可微分的两阶段ESDF代价来引导去噪过程，该代价将来自深度的物理障碍与来自高度不可靠区域的虚拟障碍平等对待。在仿真和真实四旋翼飞行器实验中，我们的规划器产生的轨迹比最先进的扩散基线方法显著更安全，将障碍违规率从40.3%降至9.6%，并将穿越区域的平均可靠性从0.588提升至0.925。仅消融可靠性项会使平均可靠性从0.898降至0.783，证实了其决定性作用，而蒸馏方法使框架运行速度比完整视觉-语言模型快2倍。</p>
+      <p>未生成（可稍后重试翻译）</p>
       <p><a href="../index.html">← Back</a></p>
     </div>
   </div>
