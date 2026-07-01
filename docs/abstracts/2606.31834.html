@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Real-Time Source-Free Object Detection</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Real-world detectors for autonomous driving, surveillance, and robotics must handle domain-shifts under strict latency and memory constraints, yet existing source-free object detection (SFOD) methods rely on heavyweight architectures that prioritize accuracy alone. We show this trade-off is unnecessary: building on YOLOv10, an NMS-free dual-head detector, we achieve state-of-the-art adaptation accuracy while being faster and more compact. We observe that directly applying vanilla mean-teacher self-training to dual-head detectors leads to suboptimal adaptation performance due to two key factors. First, simple pseudo-label generation strategies, such as using a single head or directly combining high-confidence predictions from both heads, yield suboptimal supervision under domain-shift. We propose DHF (Dual-Head Pseudo-Label Fusion) which selectively admits one-to-one (O2O) and one-to-many (O2M) head predictions, preserving precision and recovering missed objects. Second, we observe domain-shift collapses multi-scale feature discriminability. We propose the use of our MARD (Multi-scale Adaptive Representation Diversification) loss which mitigates this by enforcing detection-aware variance and covariance constraints on multi-scale feature maps. Both modules are training-time only, leaving inference unchanged. Across domain-shift benchmarks, our method, RT-SFOD yields 1.4 to 3.5\% mAP gains, 1.3$\times$ higher throughput, with $\sim$2$\times$ fewer parameters than prior state-of-the-art SFOD methods, thus advancing the Pareto frontier of the speed-accuracy-model size trade-off. We report main results with YOLOv10, and demonstrate generalizability with additional YOLO- and DETR-based dual-head detectors. Code is available here: https://github.com/Sairam13001/RT-SFOD/</p>
+      <h2>摘要 (ZH)</h2>
+      <p>自动驾驶、监控和机器人领域的实际检测器必须在严格的延迟和内存限制下处理域偏移，然而现有的无源目标检测方法依赖于优先考虑精度的重型架构。我们证明这种权衡并非必要：基于无NMS双头检测器YOLOv10，我们在实现更快的速度和更紧凑的模型的同时，取得了最先进的适应精度。我们观察到，直接将标准均值教师自训练方法应用于双头检测器会导致次优的适应性能，原因有两个关键因素。首先，简单的伪标签生成策略（例如使用单个头或直接结合两个头的高置信度预测）在域偏移下会产生次优的监督信号。我们提出了DHF（双头伪标签融合），该方法选择性地接受一对一（O2O）和一对多（O2M）头的预测，从而保持精度并恢复遗漏的目标。其次，我们观察到域偏移会破坏多尺度特征的可判别性。我们提出了MARD（多尺度自适应表示多样化）损失，通过对多尺度特征图施加检测感知的方差和协方差约束来缓解这一问题。这两个模块仅在训练时使用，不影响推理过程。在多个域偏移基准测试中，我们的方法RT-SFOD相比先前最先进的无源目标检测方法，获得了1.4%至3.5%的mAP提升，吞吐量提高了1.3倍，参数减少了约2倍，从而推进了速度-精度-模型大小权衡的帕累托前沿。我们使用YOLOv10报告了主要结果，并通过其他基于YOLO和DETR的双头检测器展示了方法的通用性。代码已开源：https://github.com/Sairam13001/RT-SFOD/</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

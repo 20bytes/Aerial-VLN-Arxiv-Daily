@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Long-term Traffic Simulation via Structured Autoregressive Modeling</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Interactive traffic simulation is a vital world model for autonomous driving. A central challenge in long-horizon simulation is modeling sustained multi-agent interactions, which is further exacerbated by dynamic token cardinality as agents continuously enter and exit the scene. In this work, we propose that the solution lies in the synergy between the architectural inductive biases and statistical priors of large-scale sequence models, e.g., Large Language Models (LLMs). Our probing experiments reveal that the transferability of attention mechanisms and the distributional consistency between motion tokens and natural language enable small-scale, heavily frozen LLMs to rapidly adapt to traffic modeling. Building on this insight, we introduce RosettaSim, a unified framework that projects scene topology, agent states, and spawning intents into a structured autoregressive stream with variable length, achieving both strong short-term accuracy and stable long-horizon simulation fidelity. Furthermore, evaluating extended rollouts presents yet another hurdle, as one-to-one agent correspondence inevitably fades over time. To address this, we introduce Retrieval-based Traffic Evaluation (RTE), which retrieves semantically similar real-world scenarios as context-aware reference anchors. Experiments on the Waymo Open Sim Agent Challenge (WOSAC) demonstrate that RosettaSim achieves state-of-the-art performance in both short- and long-term simulation. Furthermore, RTE exhibits a stronger correlation with standard metrics ($r=0.83$) than existing approaches ($r=0.74$), indicating improved alignment with long-horizon simulation fidelity.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>交互式交通仿真是自动驾驶中重要的世界模型。长时域仿真的核心挑战在于建模持续的多元交互，而车辆持续进出场景导致的动态标记数量进一步加剧了这一难题。本工作提出，解决方案在于大规模序列模型（如大型语言模型）的架构归纳偏置与统计先验之间的协同作用。我们的探测实验表明，注意力机制的可迁移性以及运动标记与自然语言之间的分布一致性，使轻量级且大量冻结参数的大型语言模型能够快速适应交通建模。基于这一发现，我们提出RosettaSim——一个统一框架，将场景拓扑、智能体状态和生成意图投影为可变长度的结构化自回归流，同时实现高短期精度与稳定的长时域仿真保真度。此外，评估扩展轨迹输出（rollouts）带来了另一挑战：一对一的智能体对应关系会随时间不可避免地衰减。为解决这一问题，我们引入基于检索的交通评估方法（RTE），该方法检索语义相似的真实场景作为上下文感知的参考锚点。在Waymo开放仿真智能体挑战赛（WOSAC）上的实验表明，RosettaSim在短期和长期仿真中均达到了最先进性能。此外，RTE与标准指标的相关性（r=0.83）优于现有方法（r=0.74），表明其与长时域仿真保真度具有更优的一致性。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

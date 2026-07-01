@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>DynFly: Dynamic-Aware Continuous Trajectory Generation for UAV Vision-Language Navigation in Urban Environments</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Recent advances in multimodal large models have significantly improved UAV vision-language navigation (UAV-VLN) by enhancing high-level perception and reasoning. However, existing methods mainly focus on predicting discrete actions, local targets, or sparse waypoints, while the continuous transition from navigation intent to executable UAV motion remains weakly modeled. This motion-interface gap limits the continuity, stability, and executability of generated UAV trajectories. To address this gap, we propose DynFly, a dynamic-aware continuous trajectory generation framework that bridges high-level navigation reasoning and executable UAV motion. DynFly bridges high-level navigation intent and continuous UAV motion through a lightweight trajectory generation layer. Specifically, it represents expert trajectories in B-spline control-point space and employs a Spline-DiT generator to learn conditional trajectory generation via flow matching. Furthermore, we introduce UAV-oriented dynamic-aware supervision over position, finite-difference velocity, finite-difference acceleration, heading consistency, and local target alignment, enabling the generated trajectories to better satisfy UAV motion characteristics. And our trajectory generation framework can also be integrated with an existing UAV-VLN framework while preserving its original visual-language reasoning pipeline. Extensive experiments on the OpenUAV UAV-VLN benchmark show that DynFly improves both navigation performance and trajectory quality. On the Test Unseen Full split, DynFly improves the strongest baseline by 4.69 NDTW, 2.40 SDTW, 2.14 SR points and 4.87 OSR points, while reducing NE by 4.51 m.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>多模态大模型的最新进展通过增强高层感知与推理能力，显著提升了无人机视觉-语言导航（UAV-VLN）的性能。然而，现有方法主要集中于预测离散动作、局部目标或稀疏航点，而从导航意图到可执行无人机运动之间的连续转换仍缺乏有效建模。这种“运动-接口”鸿沟限制了生成轨迹的连续性、稳定性和可执行性。为弥补这一不足，我们提出DynFly——一种动态感知的连续轨迹生成框架，该框架桥接了高层导航推理与可执行无人机运动。DynFly通过一个轻量级轨迹生成层，将高层导航意图与连续无人机运动相连接。具体而言，它采用B样条控制点空间表示专家轨迹，并利用Spline-DiT生成器通过流匹配学习条件轨迹生成。此外，我们引入了面向无人机的动态感知监督机制，涵盖位置、有限差分速度、有限差分加速度、航向一致性以及局部目标对齐的约束，使生成轨迹更符合无人机运动特性。该轨迹生成框架可集成至现有UAV-VLN框架中，同时保留其原有的视觉-语言推理流程。在OpenUAV无人机视觉-语言导航基准上的大量实验表明，DynFly在导航性能与轨迹质量上均实现了提升。在Test Unseen Full测试集上，DynFly将最强基线提升了4.69 NDTW、2.40 SDTW、2.14 SR分数和4.87 OSR分数，同时将NE降低了4.51米。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

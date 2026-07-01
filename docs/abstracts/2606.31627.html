@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Multi-Scale Contrastive Attention for Light-Curve Representation Learning</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Current and next-generation time-domain surveys demand automated techniques capable of analyzing millions of light curves, observed in multiple filters, without relying on exhaustive human annotation or scarce spectroscopic follow-up. We present Astra-CLR, an attention-based, self-supervised contrastive learning framework which enables the representation of raw light curves into a highly discriminative latent space. Pre-trained on $\sim$2.1 million unlabeled Zwicky Transient Facility light curves, the framework utilizes partial light curves as input sequences to generate asymmetric, multi-scale temporal views (explicitly contrasting shorter sequences against longer ones) forcing the network to learn a robust &quot;local-to-global&quot; mapping strategy. Furthermore, we introduce a novel multi-view late fusion architecture that extends the model to efficiently handle longer light curves with larger numbers of observations while accommodating the different cadences associated with each filter. The discriminatory power of the resulting representations was evaluated by using them as input to a Multinomial Logistic Regression classifier, trained to identify 12 broad classes of variability. Final accuracy achieved $\sim 0.70$. When applying a label-efficient, partial top-layer fine-tuning strategy, the topological structure of the latent space is significantly refined, boosting results to $\sim$0.77. Astra-CLR is the first publicly available multi-filter time-series Transformer trained exclusively on real ZTF light curves. Results presented here demonstrate that it provides an ideal foundation for the development of end-to-end pipelines, taking into account color evolution and respecting the inhomogeneous nature of astronomical light curve sampling.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>当前及下一代时域巡天需要自动化技术，能够分析数百万条在多波段观测到的光变曲线，而无需依赖大量人工标注或稀缺的光谱后续观测。我们提出了Astra-CLR，一种基于注意力机制的自监督对比学习框架，能够将原始光变曲线表示到高判别性的隐空间中。该框架在约210万条未标记的Zwicky瞬变设施光变曲线上进行预训练，利用部分光变曲线作为输入序列，生成非对称的多尺度时间视图（显式对比短序列与长序列），迫使网络学习鲁棒的“局部到全局”映射策略。此外，我们引入了一种新颖的多视角后期融合架构，扩展模型以高效处理具有更多观测数量的较长光变曲线，同时适应每个波段相关的不同采样节奏。通过将所得表示输入到多项逻辑回归分类器（训练识别12个广义变源类别）评估其判别能力，最终准确率达到约0.70。采用标签高效的部分顶层微调策略后，隐空间的拓扑结构得到显著优化，准确率提升至约0.77。Astra-CLR是首个公开可用的、仅在真实ZTF光变曲线上训练的多波段时间序列Transformer。本文结果表明，它为开发端到端流程提供了理想基础，兼顾颜色演化并尊重天文光变曲线采样的非均匀特性。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

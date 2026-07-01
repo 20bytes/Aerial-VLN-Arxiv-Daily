@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>OopsieVerse: A Safety Benchmark with Damage-Aware Simulation for Robot Manipulation</h1>
+      <h2>Abstract (EN)</h2>
+      <p>While robotic manipulation capabilities have advanced rapidly, physical safety remains a major barrier to deploying household robots: task success is insufficient if the robot damages itself or its surroundings. Simulation offers a harm-free alternative to costly and dangerous real-world training and evaluation, yet existing simulators lack general mechanisms to detect, quantify, and represent damage. To address this gap, we introduce OOPSIEVERSE, a unified simulation framework and benchmark for damage-aware household manipulation. OOPSIEVERSE provides damage as an explicit, physically-grounded, and taskagnostic signal by converting sources such as contact forces, temperature changes, and liquid interactions into corresponding mechanical, thermal or fluid damage. OOPSIEVERSE comprises two core elements: (1) DAMAGESIM, a simulator-agnostic framework for detecting and quantifying damage during navigation and manipulation, and (2) a suite of household tasks designed to evaluate common damage modes and distinguish between task completion and safe execution. We demonstrate the generality of our framework by instantiating DAMAGESIM in two simulators with different physics backends, OmniGibson (Nvidia Omniverse) and RoboCasa (MuJoCo). We further showcase the utility of OOPSIEVERSE across multiple use cases, including (1) guiding safer demonstration collection via real-time damage feedback, (2) learning safer manipulation policies through damage-conditioned imitation learning and reinforcement learning, (3) benchmarking the safety of state-of-the-art Vision Language Action policies, and (4) improving real-world safety of sim-to-real transferred policies. Together, our results highlight the potential of OOPSIEVERSE as an open-source foundation for systematic, scalable research on safe robot manipulation. For code and more information, please refer to https://robin-lab.cs.utexas.edu/oopsieverse/</p>
+      <h2>摘要 (ZH)</h2>
+      <p>尽管机器人操作能力已取得快速进展，但物理安全仍是部署家用机器人的主要障碍：如果机器人损坏自身或周围环境，任务成功也是不充分的。模拟为昂贵且危险的真实世界训练与评估提供了一种无伤害替代方案，然而现有模拟器缺乏检测、量化和表示损伤的通用机制。为解决这一空白，我们引入了OOPSIEVERSE，一个用于损伤感知家用操作任务的统一模拟框架与基准。OOPSIEVERSE通过将接触力、温度变化和液体相互作用等来源转化为相应的机械、热或流体损伤，将损伤作为一种显式、基于物理且任务无关的信号提供。OOPSIEVERSE包含两个核心要素：(1) DAMAGESIM，一个与模拟器无关的框架，用于在导航和操作过程中检测和量化损伤；(2) 一套设计用于评估常见损伤模式并区分任务完成与安全执行的家用任务。我们通过在两个具有不同物理后端的模拟器——OmniGibson（Nvidia Omniverse）和RoboCasa（MuJoCo）——中实例化DAMAGESIM，展示了框架的通用性。我们还展示了OOPSIEVERSE在多个用例中的实用性，包括(1) 通过实时损伤反馈引导更安全的演示收集，(2) 通过损伤条件模仿学习和强化学习学习更安全的操作策略，(3) 对最先进的视觉-语言-动作策略进行安全基准测试，以及(4) 提高从模拟到真实迁移策略的实际世界安全性。我们的结果共同凸显了OOPSIEVERSE作为安全机器人操作系统化、可扩展研究的开源基础的潜力。有关代码和更多信息，请参考 https://robin-lab.cs.utexas.edu/oopsieverse/</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

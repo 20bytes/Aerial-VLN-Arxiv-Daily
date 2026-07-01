@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>ScratchWorld: Evaluating If World Models Compute Executable Consequences</h1>
+      <h2>Abstract (EN)</h2>
+      <p>World-model evaluations often score a predicted future by overlap with a target state or observation. In sparse-change worlds, this can turn copied persistent state into apparent accuracy. We introduce ScratchWorld, an offline diagnostic benchmark that treats Scratch projects as executable worlds and uses a pinned Scratch VM to produce replay-verified transitions, hidden variables, causal traces, and counterfactual outcomes. ScratchWorld evaluates next-state prediction, long-horizon tracking, causal event attribution, and counterfactual prediction; each replay-verified target can be presented under raw-program, structured-state, natural-language, or rendered input modalities, and our experiments use the structured-state condition. Its primary state metric is value-aware changed-field $F_1$, which gives credit only for the changed field and its executed value. In a 659-example release, seven prompted language/reasoning models reach at most 13.8% value-aware changed-field $F_1$ in a state-only partial-observation stress test. A same-instance copy diagnostic makes the overlap confound concrete: copying the input state reaches 98.0% implied full-state field accuracy and 0.0% changed-field $F_1$, with the largest inflation on real projects. Auxiliary diagnostics separate hidden-state rollout drift, intervention sensitivity, causal attribution, and perturbation robustness. Across these settings, models often react to actions or interventions without following the executable rule that determines the changed value.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>世界模型评估通常通过预测结果与目标状态或观测值的重叠度来评分。在稀疏变化的世界中，这种评估方式可能使复制的持久状态表现为表面上的准确性。我们引入ScratchWorld，一个离线诊断基准，将Scratch项目视为可执行世界，并使用固定Scratch虚拟机生成可回放验证的转移、隐藏变量、因果轨迹及反事实结果。ScratchWorld评估下一状态预测、长程跟踪、因果事件归因及反事实预测；每个经回放验证的目标可通过原始程序、结构化状态、自然语言或渲染输入模态呈现，而我们的实验采用结构化状态条件。其主要状态度量是价值感知的变化字段F1，仅对变化字段及其执行值给予评分。在含659个样本的发布集中，七个提示型语言/推理模型在仅状态的部分观测压力测试下，价值感知的变化字段F1最高仅达13.8%。同实例复制诊断揭示了重叠混淆的具体表现：复制输入状态可达到98.0%的隐含全状态字段准确率，但变化字段F1为0.0%，且在真实项目上膨胀效应最为显著。辅助诊断分离了隐藏状态展开漂移、干预敏感性、因果归因及扰动鲁棒性。在这些设置下，模型往往对动作或干预做出反应，却未遵循决定变化值的可执行规则。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>
