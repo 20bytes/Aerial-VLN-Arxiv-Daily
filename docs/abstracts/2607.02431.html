@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>WorldSample: Closed-loop Real-robot RL with World Modelling</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Reinforcement learning (RL) can overcome the demonstration-coverage limitation of imitation learning (IL) by allowing robots to improve through trial-and-error interaction beyond the states observed in demonstrations. However, deploying RL on real robots remains constrained by high interaction costs, since each physical rollout is costly and reflects only one realized action-outcome path. To address this challenge, we propose WorldSample, a physically grounded data augmentation framework for real-robot RL that closes a real-synthetic loop between physical rollouts, world-model generation, and policy improvement. Grounded on real rollouts, WorldSample generates high-fidelity synthetic transitions through a post-trained world model, which greatly lowers the visual hallucination. Specifically, rather than simply using these transitions as real-world experience, WorldSample introduces Policy-Paced Learning (PPL) to regulate the training process through sample selection and scheduling, balancing useful augmentation against value overestimation and mitigating the hallucination-induced noise. Experiments on robot manipulation tasks involving contact-rich and precise tasks show that WorldSample improves policy success rate by 28% while reducing training steps by 59% compared with baselines. Furthermore, WorldSample improves world model visual fidelity by 19.4dB in PSNR and 0.47 in SSIM over demonstration-only post-training, validating the effectiveness of the real-synthetic loop for both policy and world model performance.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>强化学习（RL）能够克服模仿学习（IL）在演示覆盖范围上的局限性，使机器人能够通过与演示中观察到的状态之外的试错交互来改进。然而，在真实机器人上部署RL仍然受到高交互成本的制约，因为每次物理交互成本高昂，且仅反映一条实现的动作-结果路径。为应对这一挑战，我们提出WorldSample，一种物理锚定的数据增强框架，用于真实机器人RL，该框架在物理交互、世界模型生成和策略改进之间形成了真实-合成闭环。基于真实交互，WorldSample通过后训练的世界模型生成高保真的合成转移，从而大幅降低视觉幻觉。具体而言，WorldSample并非简单地将这些转移用作真实世界经验，而是引入策略节奏学习（PPL），通过样本选择和调度来调控训练过程，平衡有效增强与价值过高估计，并缓解幻觉引发的噪声。在涉及接触密集和精确任务的机器人操作实验表明，与基线相比，WorldSample将策略成功率提升28%，同时将训练步骤减少59%。此外，WorldSample在PSNR和SSIM上分别将世界模型视觉保真度提升19.4dB和0.47（相对于仅演示的后训练），验证了真实-合成闭环对策略和世界模型性能的有效性。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

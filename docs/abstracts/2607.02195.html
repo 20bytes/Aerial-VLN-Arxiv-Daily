@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Bridge-WA: Predicting Where and How the World Changes for Robotic Action</h1>
+      <h2>Abstract (EN)</h2>
+      <p>General-purpose vision-language-action models benefit from large vision-language priors, but effective manipulation also requires anticipating action-relevant scene changes. Existing world-action models often rely on large generative world models or dense future rollouts, which are expensive and spend capacity on visual details weakly coupled to control. We present Bridge-WA, a lightweight world-action framework that distills a frozen future-change teacher into three compact priors: future tokens for intended outcomes, change maps for intervention support, and motion-flow maps for local transition direction. A WorldBridge conditions the action transformer on these priors through multi-source attention memories and spatial-temporal biases, while the teacher model is removed at inference. Across VLABench, RoboTwin2.0, LIBERO-Plus and real-robot evaluations, Bridge-WA improves task success, progress, and robustness, with particularly clear gains under out-of-distribution visual shifts. By focusing action generation on where and how the scene will change, Bridge-WA suppresses nuisance appearance factors such as background, lighting, and distractors, leading to better generalization without deployment-time dense future-image generation. Code and visualizations are available at: https://hcplab-sysu.github.io/BRIDGE-WA .</p>
+      <h2>摘要 (ZH)</h2>
+      <p>通用视觉-语言-动作模型受益于大型视觉-语言先验知识，但有效的操控还需要预测与动作相关的场景变化。现有世界-动作模型通常依赖大型生成式世界模型或密集的未来推演，这些方法计算成本高，且将容量浪费在与控制弱耦合的视觉细节上。我们提出Bridge-WA，一种轻量级世界-动作框架，它将冻结的未来变化教师模型蒸馏为三个紧凑先验：用于预期结果的未来令牌、用于干预支持的变化图，以及用于局部运动方向的光流图。通过多源注意力记忆和时空偏置，WorldBridge模块基于这些先验条件化动作变换器，同时教师模型在推理阶段被移除。在VLABench、RoboTwin2.0、LIBERO-Plus以及真实机器人评估中，Bridge-WA提升了任务成功率、进展和鲁棒性，尤其在分布外视觉偏移场景下增益显著。通过将动作生成聚焦于场景在何处及如何变化，Bridge-WA抑制了背景、光照和干扰物等无关外观因素，从而在不需部署时生成密集未来图像的前提下实现更好的泛化。代码与可视化结果见：https://hcplab-sysu.github.io/BRIDGE-WA</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

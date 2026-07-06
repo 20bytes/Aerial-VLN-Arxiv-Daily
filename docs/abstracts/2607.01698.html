@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Structure-Aware Gaussian Splatting for Large-Scale Scene Reconstruction</h1>
+      <h2>Abstract (EN)</h2>
+      <p>3D Gaussian Splatting has demonstrated remarkable potential in novel view synthesis. In contrast to small-scale scenes, large-scale scenes inevitably contain sparsely observed regions with excessively sparse initial points. In this case, supervising Gaussians initialized from low-frequency sparse points with high-frequency images often induces uncontrolled densification and redundant primitives, degrading both efficiency and quality. Intuitively, this issue can be mitigated with scheduling strategies, which can be categorized into two paradigms: modulating target signal frequency via densification and modulating sampling frequency via image resolution. However, previous scheduling strategies are primarily hardcoded, failing to perceive the convergence behavior of scene frequency. To address this, we reframe the scene reconstruction problem from the perspective of signal structure recovery and propose SIG, a novel scheduler that synchronizes image supervision with Gaussian frequencies. Specifically, we derive the average sampling frequency and bandwidth of 3D representations, and then regulate the training image resolution and the Gaussian densification process based on scene frequency convergence. Furthermore, we introduce Sphere-Constrained Gaussians, which leverage the spatial prior of initialized point clouds to control Gaussian optimization. Our framework enables frequency-consistent, geometry-aware, and floater-free training, achieving state-of-the-art performance by a substantial margin in both efficiency and rendering quality in large-scale scenes. The code is available at: https://github.com/weiyixue999/Signal_Structure_Aware_Gaussian</p>
+      <h2>摘要 (ZH)</h2>
+      <p>三维高斯泼溅在新型视图合成中展现了显著潜力。与小规模场景相比，大规模场景不可避免地包含稀疏观测区域，其初始点过于稀疏。在这种情况下，用高频图像监督由低频稀疏点初始化的高斯函数，往往会导致不受控制的稠密化和冗余基元，降低效率和质量。直观上，可以通过调度策略缓解此问题，这些策略可分为两类：通过稠密化调节目标信号频率，以及通过图像分辨率调节采样频率。然而，以往的调度策略主要是硬编码的，无法感知场景频率的收敛行为。为解决这一问题，我们从信号结构恢复的角度重新构架场景重建问题，并提出SIG——一种新的调度器，能够同步图像监督与高斯基函数的频率。具体而言，我们推导了三维表示的平均采样频率和带宽，然后根据场景频率收敛性调节训练图像分辨率和高斯函数的稠密化过程。此外，我们引入了球面约束高斯函数，利用初始化点云的空间先验来控制高斯函数的优化。我们的框架实现了频率一致、几何感知且无浮动伪影的训练，在大规模场景的效率和渲染质量上均以显著优势达到了最先进性能。代码已开源：https://github.com/weiyixue999/Signal_Structure_Aware_Gaussian</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>
