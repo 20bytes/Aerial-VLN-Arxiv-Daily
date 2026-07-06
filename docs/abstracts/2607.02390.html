@@ -20,11 +20,11 @@
 <body>
   <div class="wrap">
     <div class="card">
-      <h1>DecompRL: Solving Harder Problems by Learning Modular Code Generation</h1>
+      <h1>DecompRL: Solving Harder Problems by Learning Modular Code Generation&lt;br&gt;DecompRL：通过学习模块化代码生成解决更困难的问题&lt;br&gt;[摘要](abstracts/2607.02390.html)</h1>
       <h2>Abstract (EN)</h2>
-      <p>How can Large Language Models (LLMs) solve problems they currently cannot? Repeated sampling scales test-time compute but GPU cost grows linearly with attempts, while reinforcement learning (RL) with verifiable rewards improves single-attempt accuracy at the expense of sample diversity. Both strategies ultimately fail when the base policy has near-zero probability of producing a correct solution: no amount of sampling or gradient signal can overcome a search space that is simply too large. We take a different approach: rather than sampling harder, we make the task easier by decomposing problems into smaller, independently solvable sub-functions whose implementations can be recombined. Since off-the-shelf models are not trained for this modular generation, we introduce DecompRL, an RL algorithm that explicitly learns to decompose and implement hierarchical code structures. Recombining $k$ implementations of $n$ modules yields up to $k^{n}$ candidate solutions, shifting the bottleneck from GPU inference to cheap CPU evaluation and cutting GPU token cost by $\sim$50$\times$. On LiveCodeBench and CodeContests (Qwen~2.5~7B, Code World Model~32B), DecompRL outperforms standard and diversity-optimized RL baselines beyond $10^5$ tokens per problem, solving problems that standard generation cannot reach.</p>
+      <p>Abstract not available.</p>
       <h2>摘要 (ZH)</h2>
-      <p>大型语言模型（LLMs）如何解决当前无法解决的问题？重复采样虽然扩展了测试时计算，但GPU成本随尝试次数线性增长；而基于可验证奖励的强化学习（RL）虽提高了单次尝试的准确性，却以牺牲样本多样性为代价。当基础策略产生正确解的概率接近零时，这两种策略最终都会失败：无论多少采样或梯度信号都无法克服过大的搜索空间。我们采用不同的方法：不是更努力地采样，而是通过将问题分解为更小、可独立求解的子函数来降低任务难度，这些子函数的实现可以重新组合。由于现成的模型并未针对这种模块化生成进行训练，我们引入了DecompRL，这是一种明确学习分解和实现层次化代码结构的RL算法。将n个模块的k种实现重新组合可产生多达k^n个候选解，这将瓶颈从GPU推理转移到廉价的CPU评估上，并将GPU token成本降低了约50倍。在LiveCodeBench和CodeContests（Qwen 2.5 7B，Code World Model 32B）上，DecompRL在每个问题超过10^5个token的情况下优于标准和多样性优化的RL基线，解决了标准生成无法触及的问题。</p>
+      <p>未生成（可稍后重试翻译）</p>
       <p><a href="../index.html">← Back</a></p>
     </div>
   </div>
