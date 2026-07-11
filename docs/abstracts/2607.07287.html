@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>TouchWorld: A Predictive and Reactive Tactile Foundation Model for Dexterous Manipulation</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Dexterous manipulation in everyday environments requires both anticipation and reaction: a robot must predict how contact should evolve while rapidly correcting local errors caused by slip, misalignment, unstable grasping, or force mismatch. Vision and language provide semantic and geometric guidance, but they cannot reliably reveal hidden contact states such as force, slip, and contact stability. Although tactile sensing exposes these physical cues, most existing policies treat touch as a low-frequency observation stream within a monolithic action model, coupling slow task reasoning, action generation, and fast contact feedback in a single loop. We introduce TouchWorld, a predictive-and-reactive tactile foundation model for dexterous manipulation. TouchWorld uses a hierarchical policy that separates vision-language subtask planning, tactile world-model prediction, visuo-tactile goal-conditioned action generation, and high-frequency tactile residual refinement. A High-Level Planning Layer produces executable subtasks and predicts tactile subgoals; a Visuo-Tactile Goal-Conditioned Policy generates nominal action chunks; and a Tactile-Conditioned Refinement Policy performs online residual correction using recent tactile and proprioceptive feedback. By using touch as both a predictive contact reference and a fast feedback signal, TouchWorld preserves the semantic generalization of vision-language-action policies while improving local contact adaptation. Across six long-horizon and contact-rich dexterous manipulation tasks, TouchWorld achieves 65.0% success in the clean setting and 53.7% success under human perturbations, outperforming the strongest baseline by 15.7 and 18.5 percentage points, respectively.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>日常环境中的灵巧操作既需要预判也需要反应：机器人必须预测接触应如何演变，同时快速纠正由滑动、错位、抓取不稳或力不匹配引起的局部误差。视觉和语言提供了语义与几何引导，但无法可靠揭示隐藏的接触状态，如力、滑动和接触稳定性。尽管触觉感知能暴露这些物理线索，但现有大多数策略将触觉视为单块动作模型中的低频观测流，在单一循环中耦合了慢速任务推理、动作生成和快速接触反馈。我们提出了TouchWorld，一个面向灵巧操作、兼具预测与反应能力的触觉基础模型。TouchWorld采用分层策略，将视觉-语言子任务规划、触觉世界模型预测、视觉-触觉目标条件动作生成以及高频触觉残差修正相分离。高层规划层生成可执行的子任务并预测触觉子目标；视觉-触觉目标条件策略生成名义动作块；触觉条件修正策略则利用近期触觉和本体感觉反馈进行在线残差修正。通过将触觉同时作为预测性接触参考和快速反馈信号，TouchWorld在保留视觉-语言-动作策略语义泛化能力的同时，增强了局部接触适应性。在六项长时域且接触密集的灵巧操作任务中，TouchWorld在清洁环境下成功率达65.0%，在人为扰动下成功率达53.7%，分别比最强基线高出15.7和18.5个百分点。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

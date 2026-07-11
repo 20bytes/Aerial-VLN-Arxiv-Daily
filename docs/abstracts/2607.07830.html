@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Physics-Guided Biomechanical Gait Adaptation for Humanoid Locomotion on Extreme Sloped Terrains</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Model-free reinforcement learning has enabled impressive humanoid locomotion; however, control on steep slopes remains largely unexplored. Unlike flat or discrete terrains, sloped terrains impose a persistent gravitational bias that demands simultaneous stability and posture control. Consequently, under generic reward formulations, policies can converge to slow, conservative low-center-of-mass (CoM) crouched gaits.   In this work, we propose a novel two-stage physics-guided framework, dubbed HumoSlope, dedicated to robust humanoid locomotion on diverse sloped terrains. Specifically, Stage I establishes a terrain-consistent balance prior by introducing a slope-adaptive Zero Moment Point (ZMP) regularizer evaluated directly on the local inclined support plane rather than a world-horizontal reference. To prevent the resulting policy from defaulting to a crouched posture, Stage II introduces the Biomechanical Slope Gait Adapter (BSGA). Utilizing extracted macroscopic terrain descriptors as privileged, training-only signals, BSGA dynamically gates soft reward priors to modulate CoM height and lower-limb coordination based on the estimated slope geometry -- encouraging hip-dominant uphill propulsion and knee-oriented downhill braking. Crucially, the deployed actor remains entirely proprioceptive, requiring no online exteroceptive sensing.   Extensive Sim-to-Real experiments demonstrate that our framework effectively mitigates posture degeneration and enables blind, continuous traversal of outdoor grass slopes up to 62.7% ($32.1^\circ$), validating a physics-guided approach to challenging slope terrain adaptation.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>无模型强化学习已实现令人瞩目的双足机器人运动控制，但在陡峭斜坡上的控制仍鲜有探索。与平坦或离散地形不同，斜坡地形会产生持续的引力偏置，要求同时兼顾稳定性与姿态控制。因此，在通用奖励函数框架下，策略可能收敛到缓慢、保守的低质心（CoM）蹲伏步态。本文提出一种新颖的两阶段物理引导框架HumoSlope，专用于双足机器人在多样化斜坡地形上的鲁棒运动。具体而言，第一阶段通过引入斜坡自适应零力矩点（ZMP）正则化器建立地形一致的平衡先验——该正则化器直接基于局部倾斜支撑平面而非世界水平参考系进行评估。为防止所得策略默认采用蹲伏姿态，第二阶段引入生物力学斜坡步态适配器（BSGA）。BSGA利用提取的宏观地形描述符作为特权训练信号，基于估计的斜坡几何动态门控软奖励先验，从而调节质心高度与下肢协调性——鼓励以髋关节主导的上坡推进和膝关节主导的下坡制动。关键的是，部署的actor完全基于本体感知，无需在线外部感知。广泛的仿真到实物实验表明，我们的框架有效缓解姿态退化，并使双足机器人能够盲态连续穿越坡度高达62.7%（32.1°）的户外草地斜坡，验证了这种物理引导方法对挑战性斜坡地形自适应的有效性。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

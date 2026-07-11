@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>EVIS: A Physics-Grounded Event Camera Plugin for NVIDIA Isaac Sim</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Event cameras offer microsecond temporal resolution, low latency, and high dynamic range, making them attractive for robotics. However, labeled event-camera data for a specific robot and scene is scarce and expensive to collect, which slows the development of event-based perception and control. We present EVIS: a physics-grounded event camera plugin for NVIDIA Isaac Sim that generates high-rate, fully labeled event streams directly inside a physics simulator. The plugin implements a faithful log-intensity contrast event model with per-pixel asynchronous reference updates; it migrates from a normal RGB camera with few changes and integrates into any Isaac Sim / Isaac Lab scene, inheriting the simulator&#x27;s physics and frame-perfect ground truth. It is fully configurable, and offers an interpolation option that renders only sparse keyframes and synthesizes the in-between frames through bidirectional motion-vector warping, making real-time generation on a single GPU possible. Optional sensor noise and motion blur further narrow the gap to real cameras. The generated streams are directly usable by pretrained event networks for downstream tasks. Code repository: https://github.com/spikelab-jhu/isaac-sim-event-camera-plugin</p>
+      <h2>摘要 (ZH)</h2>
+      <p>事件相机具有微秒级时间分辨率、低延迟和高动态范围，使其在机器人领域极具吸引力。然而，针对特定机器人和场景的带标注事件相机数据稀缺且采集成本高昂，这阻碍了基于事件的感知与控制技术的发展。我们提出EVIS：一个基于物理原理的NVIDIA Isaac Sim事件相机插件，它能在物理模拟器内部直接生成高帧率、完全标注的事件流。该插件实现了忠实于对数强度对比度的事件模型，具备逐像素异步参考更新功能；它只需对普通RGB相机进行少量修改即可迁移，并能集成到任何Isaac Sim/Isaac Lab场景中，继承模拟器的物理特性与帧级完美标注。该插件完全可配置，并提供插值选项，仅渲染稀疏关键帧，并通过双向运动向量扭曲合成中间帧，使得在单GPU上实时生成成为可能。可选传感器噪声与运动模糊进一步缩小了与实际相机的差距。生成的事件流可直接用于预训练事件网络，以完成下游任务。代码仓库：https://github.com/spikelab-jhu/isaac-sim-event-camera-plugin</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

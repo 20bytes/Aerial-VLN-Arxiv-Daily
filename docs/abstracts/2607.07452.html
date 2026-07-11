@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>GeoGS-SLAM: Geometry-Only Gaussian Splatting for Dense Monocular SLAM</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Dense visual SLAM is a fundamental problem in robotics. Recent advances in 3DGS have demonstrated its potential for dense SLAM. Existing 3DGS frameworks focus on both appearance and geometry modeling. However, scene geometry is typically more critical for SLAM than novel view synthesis because downstream robotic tasks, such as navigation and obstacle avoidance, rely primarily on accurate spatial geometry rather than photorealistic rendering. This observation raises a natural question: Is it feasible for 3DGS to perform 3D reconstruction without scene appearance modeling? Motivated by this, we propose Geometry-only Gaussian Splatting (GeoGS), which directly reconstructs scene geometry, and further present GeoGS-SLAM, a dense visual SLAM system built upon this representation. Specifically, GeoGS retains only spatial parameters to reduce the number of per-primitive parameters by over 80%. In contrast to existing 3DGS methods, GeoGS focuses solely on geometric reconstruction, which significantly reduces the number of Gaussian primitives, accelerates geometric convergence, and enhances robustness to illumination variations. In addition, we present an effective training framework that optimizes the Gaussian primitives via single-view and multi-view geometric and photometric supervision, and speeds up geometry convergence with a local-plane driven initialization that better aligns primitives with local structures. Furthermore, we introduce a map update strategy for loop closure that globally transforms the Gaussian map to align it with the corrected pose estimates, thereby preventing map tearing caused by inconsistent per-viewpoint pose corrections in existing methods. Extensive experiments on synthetic and real-world benchmarks demonstrate that our method outperforms SOTA methods in terms of online mapping efficiency and geometric reconstruction quality.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>稠密视觉SLAM是机器人领域的基本问题。近期3D高斯泼溅（3DGS）的进展展示了其在稠密SLAM中的潜力。现有3DGS框架同时关注外观与几何建模，然而场景几何对SLAM通常比新视角合成更为关键——因为下游机器人任务（如导航与避障）主要依赖精确的空间几何而非照片级渲染。这一观察引发了一个自然问题：3DGS能否在不进行场景外观建模的情况下实现三维重建？受此启发，我们提出纯几何高斯泼溅（GeoGS），直接重建场景几何，并进一步提出基于该表示的稠密视觉SLAM系统GeoGS-SLAM。具体而言，GeoGS仅保留空间参数，将每个基元的参数数量减少超过80%。与现有3DGS方法相比，GeoGS专注于几何重建，显著减少了高斯基元数量，加速了几何收敛，并增强了对光照变化的鲁棒性。此外，我们提出了一种高效的训练框架，通过单视图与多视图几何及光度监督优化高斯基元，并利用局部平面驱动的初始化方法使基元更贴合局部结构，从而加速几何收敛。同时，我们引入了用于闭环检测的地图更新策略，通过全局变换高斯地图以对齐修正后的位姿估计，从而避免现有方法中因单视角位姿修正不一致导致的地图撕裂问题。在合成与真实世界基准上的大量实验表明，我们的方法在在线建图效率与几何重建质量方面均优于现有最优方法。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

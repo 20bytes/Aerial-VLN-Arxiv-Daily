@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Dual Latent Memory in Vision-Language-Action Models for Robotic Manipulation</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Mainstream Vision-Language-Action (VLA) models predict actions primarily from the current observation under a Markovian assumption, thus struggling with long-horizon, temporally dependent tasks. Existing memory-augmented VLAs either expand the observation window or retrieve history from the memory bank as auxiliary policy-side context. However, they leave memory outside the native latent embedding space of VLA reasoning, preventing historical experience from being fluidly interleaved with multimodal reasoning and action formation. To this end, we introduce LaMem-VLA, a latent-memory-native framework that reconstructs historical experience into latent memory tokens and directly interweaves them with VLA reasoning. At its core, LaMem-VLA introduces four coordinated components: (i) a curator that organizes historical experience into two complementary short-term and long-term memory vaults; (ii) a seeker that queries both vaults using the multimodal cognition to retrieve context-relevant evidence; (iii) a condenser that reconstructs the retrieved evidence into compact short-term and long-term latent memory tokens; and (iv) a weaver that injects these memory tokens with the current observation and instruction into one continuous embedding sequence. By representing, retrieving, and consuming historical experience entirely in the same continuous latent space, LaMem-VLA enables memory to directly participate in VLA reasoning and guide action generation under a bounded context. Extensive experiments on SimplerEnv and LIBERO demonstrate the superiority of our LaMem-VLA.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>主流视觉-语言-动作（VLA）模型在马尔可夫假设下主要基于当前观测预测动作，因此在处理长期且具有时间依赖性的任务时效果不佳。现有的增强记忆VLA方法要么扩展观测窗口，要么从记忆库中检索历史信息作为辅助策略上下文。然而，这些方法将记忆置于VLA推理的本征潜在嵌入空间之外，导致历史经验无法与多模态推理和动作形成流畅地交织。为此，我们提出LaMem-VLA，一种原生潜在记忆框架，它将历史经验重构为潜在记忆标记，并直接与VLA推理交织。其核心包含四个协调组件：(i) 组织者，将历史经验组织为互补的短期和长期记忆库；(ii) 搜索者，利用多模态认知查询两个记忆库以检索上下文相关证据；(iii) 压缩者，将检索到的证据重构为紧凑的短期和长期潜在记忆标记；(iv) 编织者，将这些记忆标记与当前观测和指令注入到一个连续的嵌入序列中。通过在同一连续潜在空间中表示、检索和利用历史经验，LaMem-VLA使记忆能够直接参与VLA推理，并在有界上下文下指导动作生成。在SimplerEnv和LIBERO上的大量实验证明了我们的LaMem-VLA的优越性。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>
