@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>FORGE-plus: Force-Budgeted Recovery for Contact-Rich Assembly with a Frozen LLM Supervisor</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Force-conditioned reinforcement learning (RL) enables tight-clearance assembly under a commanded force ceiling, but practical deployment requires determining an appropriate force limit for each object and recovering from insertion failures without exceeding it. We present a two-layer framework in which a frozen, text-only large language model (LLM) assigns a per-object force ceiling before execution and selects recovery maneuvers from a fixed action menu using compact textual force signatures. The LLM never controls force directly: a low-level controller enforces the force ceiling, the recovery policy cannot increase it, and the hidden breaking-force threshold is known only to the evaluator.   We evaluate the framework on fragile bottle placement and 0.4 mm diametral-clearance gear insertion using two grippers (Robotiq 2F-140 and Franka Panda hand). A single policy passes 256/256 evaluation episodes on both fragile and robust objects without breakage, correctly predicts release timing, and completes a full table-pick-and-insert pipeline with a mean peak force of 5.4 N. Under injected in-grip slip, the force-signature recovery strategy resolves 40% and 64% of failures on the two grippers, whereas a press-harder baseline is either ineffective or causes frequent breakage. We also report negative results, including the failure of PPO to solve the task under strict force constraints and unsuccessful learned release strategies. All experiments are conducted in rigid-body simulation with hidden force-threshold breakage; no sim-to-real claim is made.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>未生成（可稍后重试翻译）</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>
