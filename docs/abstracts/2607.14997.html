@@ -20,11 +20,11 @@
 <body>
   <div class="wrap">
     <div class="card">
-      <h1>AeroAct: Action-Centered World-Action Models for Language-Conditioned Quadrotor Flight&lt;br&gt;[摘要](abstracts/2607.14997.html)</h1>
+      <h1>AeroAct: Action-Centered World-Action Models for Language-Conditioned Quadrotor Flight</h1>
       <h2>Abstract (EN)</h2>
-      <p>Abstract not available.</p>
+      <p>Language-conditioned quadrotor flight requires a policy to ground semantic goals, anticipate the visual consequences of ego-motion, and output control references that remain smooth and dynamically executable under rapidly changing first-person views. Existing aerial vision-language navigation and vision-language-action methods commonly use discrete actions, high-level waypoints, or instantaneous velocity commands, which provide limited supervision about how flight actions change future observations. We present AeroAct, an action-centered world-action model (WAM) for quadrotor navigation. To the best of our knowledge, AeroAct is the first WAM instantiated and demonstrated for real-world aerial flight. The model adapts a pretrained video diffusion Transformer to predict local trajectory-action chunks from egocentric visual history, proprioception, and language. Future first-person frames are used during training as dense consequence supervision, while deployment directly decodes actions without generating future video. To obtain aligned visual, state, language, and dynamically feasible action data, we build a DiffAero-based pipeline with complementary Isaac Lab and 3D Gaussian splatting renderers. We further introduce a low-cost handheld collection device that couples camera observations with motion estimates to recreate flight-like egocentric trajectories, and a self-guidance procedure that improves temporal consistency across overlapping trajectory chunks. Closed-loop simulation and real-world experiments show that temporal visual context improves target tracking and object-search performance, and that WAM-based policies can be executed on a physical quadrotor.</p>
       <h2>摘要 (ZH)</h2>
-      <p>未生成（可稍后重试翻译）</p>
+      <p>语言条件下的四旋翼飞行要求策略能够理解语义目标，预测自我运动带来的视觉后果，并在快速变化的第一人称视角下输出平滑且动态可执行的参考控制。现有的空中视觉语言导航和视觉-语言-动作方法通常使用离散动作、高层航点或瞬时速度指令，这些方法对飞行动作如何改变未来观测提供的监督有限。我们提出AeroAct，一种面向四旋翼导航的以动作中心的世界-动作模型（WAM）。据我们所知，AeroAct是首个在真实世界空中飞行中实例化并演示的WAM。该模型改编了预训练的视频扩散Transformer，从第一人称视觉历史、本体感觉和语言中预测局部轨迹-动作片段。训练期间使用未来的第一人称帧作为密集后果监督，而部署时直接解码动作而不生成未来视频。为了获得对齐的视觉、状态、语言和动态可行的动作数据，我们构建了一个基于DiffAero的流水线，并辅以互补的Isaac Lab和3D高斯溅射渲染器。我们进一步引入了一种低成本的 handheld 采集设备，该设备将相机观测与运动估计耦合，以重现类似飞行的第一人称轨迹，以及一种自我引导程序，以提高重叠轨迹片段的时间一致性。闭环仿真和真实世界实验表明，时间视觉上下文改善了目标跟踪和物体搜索性能，并且基于WAM的策略可以在物理四旋翼上执行。</p>
       <p><a href="../index.html">← Back</a></p>
     </div>
   </div>

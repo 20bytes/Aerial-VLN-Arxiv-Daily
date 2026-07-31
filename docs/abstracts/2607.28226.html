@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Security of World-Model-Based Embodied AI: A Lifecycle of Threats, Defenses, and Evaluation</h1>
+      <h2>Abstract (EN)</h2>
+      <p>World models give embodied AI a predictive core: they compress observations into states, simulate action-conditioned futures, and enable planning beyond reactive control. This predictive layer, however, opens a new security boundary-compromise can propagate from data, sensors, prompts, or feedback into physical action. Rather than treating world models as an isolated component, this survey traces threats across their entire lifecycle-from data construction and representation learning, through state grounding and imagination, to trajectory evaluation, execution, and long-term adaptation via memory and tools. We show that familiar attack families: poisoning, backdoors, adversarial examples, sensor spoofing, prompt injection, trajectory manipulation, and supply-chain attacks take on distinct meanings when they corrupt world states, learned dynamics, affordance estimates, or safety costs. We also highlight a duality: world models can serve as runtime safety shields, yet when compromised or over-trusted they generate predictive safety illusions. The survey offers a lifecycle taxonomy, maps existing attacks to world-model security properties, outlines evaluation protocols for safety failures, and structures defenses across provenance, robust grounding, uncertainty-aware prediction, trajectory gating, feedback auditing, and deployment assurance.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>世界模型为具身智能提供了一个预测核心：它们将观测压缩为状态，模拟基于行动条件的未来，并实现超越反应式控制的规划。然而，这一预测层开辟了新的安全边界——从数据、传感器、提示或反馈到物理行动的妥协可能传播。本综述并没有将世界模型视为孤立的组件，而是追溯威胁在整个生命周期中的演变——从数据构建和表征学习，经状态接地和想象，到轨迹评估、执行以及通过记忆和工具进行的长期适应。我们展示了熟悉的攻击家族：投毒、后门、对抗样本、传感器欺骗、提示注入、轨迹操纵和供应链攻击，在它们破坏世界状态、学习到的动力学、可供性估计或安全成本时具有不同的含义。我们还强调了一种二元性：世界模型可以作为运行时安全防护屏障，但当它们受到损害或被过度信任时，会产生预测性的安全幻觉。本综述提供了一个生命周期分类法，将现有攻击映射到世界模型的安全属性，概述了安全失效的评估协议，并跨来源、稳健接地、不确定性感知预测、轨迹门控、反馈审计和部署保障构建了防御体系。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

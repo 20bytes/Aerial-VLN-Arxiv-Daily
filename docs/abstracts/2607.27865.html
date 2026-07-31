@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Learning to Understand Body Language from Flight through Robust 3D Avatar Placing</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Perceiving human motion and intent at long range is a prerequisite for socially intelligent aerial robots, yet the data to learn it barely exists. We introduce Drones2BodyLanguage, a dataset grounding human motion in real UAV footage: avatars manifesting ten communicative intents are placed into unmodified 4K drone scenes with metrically correct position, scale and orientation, maintained over hundreds of frames of camera motion. Enabling it is a lightweight geometric world model of the local scene - semantically selected anchors lifted to 3D through streaming monocular depth - in which a placement point is predicted as an affine anchor combination with provably rigid-invariant weights, and re-rendered under an SVD-fitted ground rotation. Across twelve architectures on scene- and motion-disjoint splits, training on placed data lifts mean intent accuracy by a wide margin for real, retargeted and generated motion alike, with gains confirmed on two in-the-wild scenes.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>感知远距离人类运动和意图是社交智能空中机器人的先决条件，然而学习这一能力所需的数据几乎不存在。我们引入了Drones2BodyLanguage数据集，该数据集将人类运动与真实无人机视频相结合：表现十种交流意图的化身被放置到未经修改的4K无人机场景中，具有度量上正确的位置、尺度和方向，并在数百帧相机运动中保持稳定。实现这一点的是一种轻量级的局部场景几何世界模型——通过流式单目深度将语义选择的锚点提升至3D——其中放置点被预测为仿射锚点组合，具有可证明的刚性不变权重，并在SVD拟合的地面旋转下重新渲染。在场景和运动不相交的数据划分上，跨十二种架构，使用放置数据训练可使真实、重定向和生成运动的意图平均准确率大幅提升，增益在两个野外场景中得到确认。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

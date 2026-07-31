@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>AtlasLC: Fast Codec-Ready Compression of Object-Centric 3D Gaussian Splatting</h1>
+      <h2>Abstract (EN)</h2>
+      <p>3D Gaussian Splatting (3DGS) enables photorealistic novel-view synthesis with real-time rendering, but deploying compressed object-centric 3DGS in XR requires more than image-space rate-distortion. In practical XR asset pipelines, reusable objects are repeatedly packaged, transmitted, decoded, and instantiated, making asset-preparation cost, codec compatibility, decoding latency, and preservation of depth and silhouette cues first-class concerns. Existing 3DGS compression methods are largely developed for scene-scale captures and often rely on heavy layout generation or aggressive global pruning, assumptions that transfer poorly to semantically concentrated foreground objects. We present AtlasLC, a source-free, training-free compression pipeline for object-centric 3DGS that operates directly on released Gaussian assets, without original images, camera poses, or per-asset optimization. AtlasLC couples local-competition pruning with deterministic atlas packing to remove the mapping/remapping bottleneck while preserving object-wide foreground support; a lightweight single-pass sort-based conditional transport is used as a shared coordinate backbone for these stages. Across the evaluated assets, AtlasLC reduces atlas-preparation time by up to a factor of 25 and end-to-end compression time by up to a factor of 5, while offering a favorable deployment-aware balance of payload, decode latency, runtime FPS, and 3D geometry relative to the evaluated compressed baselines. Relative to similarly compact structured baselines, it uses about 6 to 8 percent fewer bits while maintaining comparable perceptual and geometric quality. These results show that object-centric 3DGS compression should be optimized for a deployment-aware operating point enabling scalable XR asset libraries.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>三维高斯泼溅（3DGS）实现了实时渲染下的照片级逼真新视角合成，但在XR中部署压缩的对象中心3DGS所需的不只是图像空间率失真。在实际的XR资产管线中，可重用对象被反复打包、传输、解码和实例化，这使得资产准备成本、编解码器兼容性、解码延迟以及深度和轮廓线索的保持成为首要关注点。现有的3DGS压缩方法主要针对场景级采集开发，通常依赖繁重的布局生成或激进的全局剪枝，这些假设难以良好迁移到语义集中的前景对象上。我们提出AtlasLC，一种无需原始数据、无需训练的对象中心3DGS压缩管线，直接操作已发布的高斯资产，无需原始图像、相机位姿或每资产优化。AtlasLC将局部竞争剪枝与确定性图集打包相结合，消除了映射/重映射瓶颈，同时保留了对象整体的前景支持；一个轻量级的单遍排序条件传输被用作这些阶段的共享坐标骨干。在评估的资产上，AtlasLC将图集准备时间最多减少25倍，端到端压缩时间最多减少5倍，同时在有效载荷、解码延迟、运行时帧率和3D几何方面相对于评估的压缩基线提供了有利的部署感知平衡。相对于同等紧凑的结构化基线，它使用约6至8%更少的比特，同时保持可比的感知和几何质量。这些结果表明，对象中心3DGS压缩应针对部署感知的工作点进行优化，以实现可扩展的XR资产库。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

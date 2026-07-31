@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Reinforcement Learning on Cost-Constrained Quadrupedal Hardware</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Deploying learned control policies on low-cost robotic platforms introduces transport latencies and noisy motor feedback that systematically widens the sim-to-real gap. The chasm of simulation to deployment in hardware lies in the delay of the actuator reaching the commanded position. On platforms such as the Mini Pupper 2, a measured &gt;50 ms transport delay transforms the locomotion task from a standard Markov decision process into a partially observable one. In this paper, we take a biologically inspired approach of handling noisy and delayed feedback to close the sim-to-real gap, thereby expanding the capability of reinforcement learning on cost-constrained hardware. Using a low-cost quadrupedal hardware platform, we find that using a forward model of the average actuator delay, paired with a time-aware neural network results in robust locomotion. Additionally, our time-aware neural network learned a central pattern generator (CPG): a self-sustaining rhythmic gait that is robust to +320 ms latency perturbations, mirroring the CPGs found in the spinal cords of vertebrates. We posit that temporal self-organization may be a general strategy for cost-constrained locomotion.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>在低成本机器人平台上部署学习控制策略会引入传输延迟和噪声电机反馈，这些因素系统性地扩大了模拟到现实的差距。模拟到硬件部署之间的鸿沟在于执行器达到指令位置时的延迟。在诸如Mini Pupper 2这样的平台上，实测超过50毫秒的传输延迟将运动任务从标准马尔可夫决策过程转化为部分可观测过程。在本文中，我们采用了一种受生物学启发的方法来处理噪声和延迟反馈，以缩小模拟到现实的差距，从而扩展强化学习在成本受限硬件上的能力。利用低成本四足硬件平台，我们发现使用平均执行器延迟的前向模型，结合时间感知神经网络，能够实现稳健的运动。此外，我们的时间感知神经网络学习到了一个中央模式生成器（CPG）：一种自我维持的节律性步态，对+320毫秒的延迟扰动具有鲁棒性，这反映了脊椎动物脊髓中发现的CPG。我们推测，时间自组织可能是成本受限运动的一种通用策略。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>
