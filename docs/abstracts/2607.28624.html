@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>PhiZero: A World Model Built Around Physical Language</h1>
+      <h2>Abstract (EN)</h2>
+      <p>We introduce PhiZero, a physical world model built around physical language, a compact discrete representation of world-state transitions. Existing physical world models typically predict future videos directly in pixel space, leaving the underlying world dynamics implicit within high-dimensional visual predictors. Motivated by humans&#x27; ability to abstract predictive structure from visual experience and organize it in natural language for explicit reasoning, we learn physical language from in-the-wild videos through self-supervision and use it to explicitly reason about how the physical world evolves. Accordingly, PhiZero adopts a reason-then-render paradigm: it first infers future world evolution as a physical-language sequence and then renders the inferred transitions into videos. Extensive experiments across generation and understanding benchmarks validate the ability of PhiZero to model physically coherent world evolution. We further show its potential for realistic and interactive world modeling, fine-grained action-conditioned simulation, and zero-shot motion transfer.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>我们介绍了PhiZero，一个围绕物理语言构建的物理世界模型，物理语言是一种世界状态转换的紧凑离散表示。现有的物理世界模型通常直接在像素空间中预测未来视频，将底层世界动态隐含在高维视觉预测器中。受人类从视觉经验中抽象预测结构并以自然语言组织起来进行显式推理的能力的启发，我们从野外视频中通过自我监督学习物理语言，并用它来显式推理物理世界如何演化。因此，PhiZero采用了一种先推理后渲染的范式：它首先将未来的世界演化推断为物理语言序列，然后将推断出的转换渲染为视频。在生成和理解基准上的广泛实验验证了PhiZero模拟物理连贯世界演化的能力。我们进一步展示了其在逼真交互式世界建模、细粒度动作条件模拟和零样本运动迁移方面的潜力。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

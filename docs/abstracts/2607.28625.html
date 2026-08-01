@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>ACE-Data-0: Human-Centric Ambient Capture as Embodied Data Engine</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Embodied intelligence faces a fundamental data bottleneck. Models must capture how first-person perception, whole-body motion, dexterous manipulation, object state, sound, and touch evolve together as humans pursue goals over time. Existing datasets fragment this experience across viewpoints, modalities, or spatial scales, leaving the full perception-action loop only partially observed. We introduce the Ambient Capture Engine (ACE), a human-centric data engine that transforms real home environments into spatially calibrated, temporally synchronized recording studios. ACE operates at two complementary scales: a table-scale configuration resolves hand-object manipulation, while a room-scale configuration captures whole-body motion, locomotion, and interactions across a furnished home. ACE records egocentric and multi-view exocentric video, full-body and articulated hand motion, object geometry and 6-DoF trajectories, audio, and tactile signals as a unified multisensory stream. Using ACE, we build ACE-Data-0, comprising 150 hours and 17M video frames across 200 task categories, performed by 50 participants in 2 environments, for a total of 75,000 interaction episodes. The dataset spans atomic manipulation, long-horizon chains of household activities, and human-scene interaction, while preserving natural behavioral variation through goal-level rather than step-by-step instructions. We further introduce a hierarchical benchmark that progresses from signals to scene components and then to interactions. Evaluations of state-of-the-art methods expose substantial gaps under contact, occlusion, egomotion, and long temporal horizons. ACE-Data-0 provides synchronized human demonstrations with aligned perceptual, kinematic, and contact supervision, offering a scalable foundation for imitation learning, world models, vision-language-action systems, and embodied AI.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>具身智能面临根本性的数据瓶颈。模型必须捕捉第一人称感知、全身运动、灵巧操作、物体状态、声音和触觉在人类追求目标过程中如何随时间共同演化。现有数据集将这些体验分散在视角、模态或空间尺度上，导致完整的感知-行动循环仅被部分观察。我们引入了环境捕捉引擎（ACE），一个以人为中心的数据引擎，将真实家庭环境转变为空间校准、时间同步的录制工作室。ACE在两种互补的尺度上运行：桌面尺度配置解决手-物操作，而房间尺度配置则捕捉家具齐全家庭中的全身运动、移动和交互。ACE记录第一人称和多视角外部视频、全身和铰接手部运动、物体几何和6自由度轨迹、音频和触觉信号，作为统一的多感官流。利用ACE，我们构建了ACE-Data-0，包含150小时和1700万视频帧，涵盖200个任务类别，由50名参与者在2个环境中执行，总共75,000个交互片段。该数据集覆盖原子操作、长时程家庭活动链以及人-场景交互，同时通过目标级而非逐步指令保持自然行为变化。我们进一步引入了一个层次化基准，从信号进展到场景组件，再到交互。对最先进方法的评估揭示了在接触、遮挡、自我运动和长时间视野下的实质性差距。ACE-Data-0提供了同步的人类演示，带有对齐的感知、运动和接触监督，为模仿学习、世界模型、视觉-语言-行动系统和具身AI提供了可扩展的基础。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

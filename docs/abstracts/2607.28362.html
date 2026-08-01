@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>ShadowDancer: Teaching Video World Models Any Action by Learning Unified Dynamics Representations from a Video and Its Shadow</h1>
+      <h2>Abstract (EN)</h2>
+      <p>We present ShadowDancer, a novel approach to any-action, frame-level control of interactive video world models. The obstacle is representational: existing interfaces either encode an action loosely, leaving how it unfolds for the model to improvise, or encode it exactly through structured signals that serve one family and are hard to acquire, so precise control across diverse dynamics remains impractical. Demonstration videos are the natural remedy, specifying any dynamics frame by frame; yet a video shows its dynamics only through one particular appearance, a single shadow of the underlying dynamics, so actions learned from demonstrations transfer poorly to new scenes. ShadowDancer addresses this with two key innovations: (1) shadow pairs, video pairs that replay the same dynamics under independently resampled appearance, constructed at scale by our Shadow Library, so that a dynamics family becomes controllable exactly when such pairs can be constructed for it; and (2) cross-shadow prediction, which learns actions by predicting one shadow from the other, so that whatever the pairing resamples is discarded by construction and whatever it preserves becomes the action, yielding a unified dynamics representation that drives a block-causal world model. Any demonstrated clip thus becomes a reusable action asset, replayed in new environments without action labels, motion estimators, or fine-tuning. Experiments demonstrate improved action transfer and long action rollout over strong latent-action and interactive world model baselines across diverse dynamics families, with an average blinded win rate of 86% in rollout comparisons. We show video results at https://ShadowDancer-1.github.io</p>
+      <h2>摘要 (ZH)</h2>
+      <p>我们提出了ShadowDancer，一种用于交互式视频世界模型的任意动作、帧级控制的新方法。障碍在于表征层面：现有接口要么松散地编码动作，让模型即兴发挥其展开方式，要么通过结构化信号精确编码动作，但这类信号仅适用于单一动作族且难以获取，因此跨多样动态的精确控制仍不切实际。演示视频是自然的补救措施，可以逐帧指定任意动态；然而视频仅通过一种特定外观来展示其动态，即底层动态的单一影子，因此从演示中学习的动作难以迁移到新场景。ShadowDancer通过两项关键创新解决了这一问题：（1）影子对，即在独立重采样外观下重放相同动态的视频对，由我们的影子库大规模构建，从而当且仅当能为某个动态族构建此类对时，该动态族才变得可控；（2）跨影子预测，即通过预测一个影子到另一个影子来学习动作，这样配对重采样的内容在构建中被丢弃，而保留的内容成为动作，从而产生驱动块因果世界模型的统一动态表征。任何演示片段因此成为可重用的动作资产，可在新环境中重放，无需动作标签、运动估计器或微调。实验表明，在多样动态族上，与强潜在动作和交互式世界模型基线相比，动作迁移和长动作展开性能均有提升，展开比较中平均盲胜率为86%。视频结果见https://ShadowDancer-1.github.io</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>
