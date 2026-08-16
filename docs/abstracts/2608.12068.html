@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>From Simulation to Real Scans: Anomaly Detection in Maritime Cargo with Muon Scattering Tomography</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Maritime cargo inspection requires imaging technologies capable of detecting concealed threats within dense, sealed containers, a role for which Muon Scattering Tomography (MST) is well suited: it images their interior through the density-dependent deflection of naturally occurring cosmic muons. However, MST remains constrained by the scarcity of labeled scans and by a cosmic muon flux that is both low and stochastic. Anomaly detection algorithms must therefore be trained on simulations, yet operate on measured scans acquired under different conditions, a sim-to-real gap that remains a central obstacle to operational deployment. We present the first end-to-end anomaly detection framework for maritime MST, from physically consistent simulations to validation on real container scans from the SilentBorder demonstration campaign. The task is cast as an out-of-distribution problem: the framework learns the spatial configurations of benign cargo and flags threats as deviations in the reconstruction error space, remaining agnostic to threat type and geometry. An attention U-Net, trained exclusively on benign synthetic scenes, preserves small-scale scattering signatures through its skip connections, and contraband consequently persists in the pixel-wise reconstruction error instead of being absorbed into the reconstructed background. A scoring function, the Homogeneity Index (HI), suppresses spatially uniform cosmic-ray statistical noise while amplifying coherent anomaly signatures: where pixel-level metrics collapse under a change of cargo configuration, HI retains its discriminative power. We evaluate three training strategies across two distinct cargo configurations under operational one-hour scan times, and test the best model on real muon cargo scans. The results for the studied scenarios indicate that the sim-to-real gap can be bridged.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>海运货物检查需要能够在密集、密封的容器内探测隐蔽威胁的成像技术，而缪子散射断层成像（MST）正适合这一角色：它通过自然宇宙缪子密度相关的偏转来成像容器内部。然而，MST仍受限于标记扫描数据的稀缺性以及宇宙缪子通量的低且随机性。因此，异常检测算法必须在模拟数据上训练，却要应用于在不同条件下采集的实际测量扫描，这种模拟到现实的差距仍是实际部署的主要障碍。我们提出了首个用于海运MST的端到端异常检测框架，涵盖从物理一致的模拟到SilentBorder示范活动中真实集装箱扫描的验证。该任务被表述为一个分布外问题：框架学习正常货物的空间配置，并在重建误差空间中将威胁标记为偏差，对威胁类型和几何形状保持不可知。仅用正常合成场景训练的注意力U-Net，通过其跳跃连接保留小尺度散射特征，因此违禁品持续存在于逐像素重建误差中，而非被吸收到重建背景中。评分函数同质性指数（HI）抑制空间均匀的宇宙射线统计噪声，同时放大相干异常特征：当像素级指标在货物配置变化时失效，HI仍保持其判别能力。我们评估了三种训练策略在两种不同货物配置下、运行时间为一小时的实际扫描情况，并测试了最佳模型在真实缪子货物扫描上的表现。对研究场景的结果表明，模拟到现实的差距可以被弥合。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

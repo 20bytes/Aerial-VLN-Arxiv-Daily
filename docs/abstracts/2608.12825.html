@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>LocusGS: Spatially Grounded Tokens for Feed-Forward 3D Gaussian Splatting</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Recent query-based feed-forward 3DGS methods represent a scene using learnable queries, each aggregating multi-view evidence and decoding a group of Gaussians. Ideally, different queries should specialize in coherent local regions of the scene. However, we observe that Gaussians decoded from the same query often scatter across distant scene regions, resulting in weak query-level spatial coherence and poor alignment with the scene structure. We attribute this behavior to the purely latent representation of existing Gaussian queries. To address this limitation, we introduce LocusGS, which augments each Gaussian query with a 3D anchor state consisting of a center and a support radius. The anchor state is progressively refined across decoder layers and is used throughout query interaction, multi-view feature aggregation, and Gaussian generation. Specifically, an anchor-to-ray geometric bias guides each query toward spatially relevant image observations, while anchor-centered decoding organizes its Gaussians within a local region. Experiments on novel view synthesis benchmarks show that LocusGS improves rendering quality over query-based Gaussian token baselines under the same Gaussian budget. Further analysis shows that the learned anchors form coherent spatial layouts and lead to more structured Gaussian distributions, demonstrating that explicit anchor states improve the spatial organization. Our project page: https://leo-frank.github.io/LocusGS_viewer.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>最近的基于查询的前馈3DGS方法使用可学习的查询来表示场景，每个查询聚合多视图证据并解码一组高斯。理想情况下，不同的查询应专注于场景的相干局部区域。然而，我们观察到从同一查询解码出的高斯常常散布在遥远的场景区域，导致查询级空间相干性弱且与场景结构对齐不良。我们将此归因于现有高斯查询的纯潜在表示。为了解决这一局限性，我们引入了LocusGS，它为每个高斯查询增加了一个由中心和支撑半径组成的3D锚点状态。锚点状态在解码器层间逐步细化，并用于查询交互、多视图特征聚合和高斯生成。具体而言，锚点到射线的几何偏差引导每个查询朝向空间相关的图像观测，而锚点中心的解码将其高斯组织在局部区域内。在新视图合成基准上的实验表明，在相同的高斯预算下，LocusGS比基于查询的高斯标记基线提高了渲染质量。进一步分析显示，学习到的锚点形成相干的空间布局，并导致更有结构的高斯分布，表明显式锚点状态改善了空间组织。我们的项目页面：https://leo-frank.github.io/LocusGS_viewer。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

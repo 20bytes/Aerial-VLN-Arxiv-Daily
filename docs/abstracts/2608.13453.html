@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>UniTexture: Cross-Task Universal Adversarial Textures for Vision-Language-Action Models</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Vision-Language-Action (VLA) models have emerged as generalist robotic policies capable of following diverse language instructions and performing a wide range of manipulation tasks. However, their direct control over embodied agents also exposes them to adversarial interference that may cause unsafe physical behaviors. Existing attacks on robotic policies are typically optimized for a single task or instruction, leaving the cross-task vulnerabilities of multitask VLAs largely unexplored. We introduce UniTexture, a cross-task universal adversarial texture attack that uses a single textured 3D object to induce targeted deviations in VLA action predictions across multiple tasks. UniTexture backpropagates gradients from the policy&#x27;s action outputs to surface texture parameters through a differentiable renderer. It jointly optimizes the shared texture over a distribution of tasks, instructions, states, and viewpoints using a targeted action-space objective, steering predicted actions toward attacker-defined targets without optimizing a separate texture for each task. We evaluate UniTexture on OpenVLA and $π_{0.5}$ across diverse manipulation tasks and multiple evaluation settings. UniTexture reduces the mean task success rate from 90.0% under benign conditions to 48.4% under attack, induces target-aligned action shifts, and further exhibits cross-suite and cross-model transfer without re-optimization. Together, these findings reveal shared cross-task vulnerabilities in multitask VLAs that can be systematically exploited through a single adversarial surface texture.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>视觉-语言-动作（VLA）模型已成为能够遵循多种语言指令并执行广泛操作任务的通用机器人策略。然而，它们对具身智能体的直接控制也使其面临可能引发不安全物理行为的对抗干扰。现有的针对机器人策略的攻击通常针对单一任务或指令进行优化，使得多任务VLA的跨任务脆弱性在很大程度上未被探索。我们引入了UniTexture，一种跨任务的通用对抗纹理攻击，它使用单个带纹理的3D对象来诱导VLA在多个任务中的动作预测产生目标偏差。UniTexture通过可微分渲染器将策略动作输出的梯度反向传播到表面纹理参数。它通过目标动作空间目标，在任务、指令、状态和视点的分布上联合优化共享纹理，将预测动作引导至攻击者定义的目标，而无需为每个任务优化单独的纹理。我们在OpenVLA和π_{0.5}上对UniTexture进行了评估，涵盖多种操作任务和多种评估设置。UniTexture将平均任务成功率从良性条件下的90.0%降低到攻击下的48.4%，诱导了目标对齐的动作偏移，并进一步展示了无需重新优化的跨套件和跨模型迁移。这些发现共同揭示了多任务VLA中共享的跨任务脆弱性，这些脆弱性可以通过单一对抗性表面纹理被系统性利用。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

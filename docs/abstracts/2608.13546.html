@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Alaya-EVOKE: From Linear-Scaling Supervision to Endless World</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Interactive world models must support persistent memory, responsive interaction, and long-horizon generation, yet these requirements place conflicting demands on the model. Maintaining history in the denoiser context or key-value cache incurs growing cost, forcing a trade-off between session length and retained memory, while low-latency interaction relies on few-step generation whose capabilities are bounded by its teacher. Evoke addresses both limitations by externalizing persistent world state and redesigning the teacher for long-horizon interactive generation. Scene geometry is maintained in an external, camera-indexed world state bank, from which only view-relevant information is retrieved, keeping the denoiser context bounded as the session grows. Rather than treating the teacher as a fixed generator, we design it for long-horizon supervision: its sparse attention combines chunk-wise grouping, retrieval of selected distant frames, and a linear-attention global state, yielding linear growth in memory and compute while enabling supervision over long horizons. Such supervision exposes content drift that stays locally plausible within short windows, while per-chunk conditioning enables prompt changes and event control throughout the sequence. A 30-second distribution-matching objective, applied under self-forced rollouts, transfers both capabilities to a three-step student that uses no classifier-free guidance, improving resistance to long-term drift while preserving responsive conditioning. With bounded context and recurrent external memory, Evoke supports open-ended, continuously evolving generation; on a single H200 at $384\times 640$, each $1.5\,\mathrm{s}$ chunk is generated in $2.11\,\mathrm{s}$. As a three-step world model, Evoke achieves state-of-the-art performance on WBench while remaining competitive on VBench-Long and VBench-2.0.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>交互式世界模型必须支持持久记忆、响应式交互和长时程生成，然而这些需求对模型提出了相互冲突的要求。在去噪器上下文或键值缓存中维护历史记录会带来不断增长的成本，迫使在会话长度和保留记忆之间进行权衡，而低延迟交互依赖于少步生成，其能力受限于其教师模型。Evoke通过外部化持久世界状态并重新设计用于长时程交互生成的教师模型来解决这两个限制。场景几何信息维护在外部、相机索引的世界状态库中，仅检索与视图相关的信息，从而在会话增长时保持去噪器上下文有界。我们并未将教师模型视为固定的生成器，而是将其设计用于长时程监督：其稀疏注意力结合了分块分组、选择性检索远距离帧以及线性注意力全局状态，使内存和计算呈线性增长，同时能够对长时程进行监督。这种监督暴露了在短窗口内局部看似合理的内容漂移，而逐块条件化则实现了整个序列中的提示更改和事件控制。在自强制展开下应用的30秒分布匹配目标，将这两种能力转移到一个不使用无分类器引导的三步学生模型中，提高了对长期漂移的抵抗力，同时保持了响应式条件化。凭借有界上下文和循环外部记忆，Evoke支持开放式的持续演化生成；在单个H200上，分辨率为$384\times 640$时，每个$1.5\,\mathrm{s}$块在$2.11\,\mathrm{s}$内生成。作为三步世界模型，Evoke在WBench上达到了最先进的性能，同时在VBench-Long和VBench-2.0上保持竞争力。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

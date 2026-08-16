@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>AeroDPO: Unleashing Lightweight UAV Navigation with High-Fidelity Perception and Automated Preference Optimization</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Vision-Language Navigation for Unmanned Aerial Vehicles (UAV-VLN) requires rapid and reactive control in complex 3D environments. Recent minimalist end-to-end paradigms show great promise but typically rely on massive language models containing billions of parameters, incurring prohibitive latency for real-world edge deployment. In this paper, we challenge this parameter-heavy reliance. Comprehensive cross-scale evaluations reveal the critical insight that perception quality fundamentally outweighs language reasoning capacity. We demonstrate that a lightweight 2B model equipped with high-fidelity visual inputs completely matches the overall success rates of massive 7B baselines. However, this minimalist policy exposes a fundamental robustness flaw inherent to pure Behavior Cloning (BC). Lacking explicit negative feedback, the agent fails to internalize robust spatial constraints and exhibits alarming collision rates in out-of-distribution (OOD) scenarios. To overcome this vulnerability without relying on unscalable human annotations, we propose AeroDPO, a zero-cost automated Direct Preference Optimization pipeline driven by deterministic physical simulation state rollback. Upon detecting collisions, the system autonomously rewinds the environment to extract causal reasoning errors as rejected actions, applies decoupled privileged interventions to synthesize collision-avoidance preferred maneuvers, and leverages an offline vision language inspector to filter visual ambiguities. By equipping our 2B model with this automated data flywheel, AeroDPO boosts success rates to 49.16% on unmapped scenarios while drastically suppressing collision rates, establishing a new SOTA for autonomous aerial agents.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>无人机视觉语言导航（UAV-VLN）需要在复杂三维环境中进行快速反应式控制。近期极简端到端范式展现出巨大潜力，但通常依赖包含数十亿参数的庞大语言模型，导致在实际边缘部署中产生难以接受的延迟。本文挑战这种参数密集型依赖。全面的跨尺度评估揭示了关键洞见：感知质量从根本上优于语言推理能力。我们证明，配备高保真视觉输入的轻量级2B模型完全匹配大规模7B基线的整体成功率。然而，这种极简策略暴露了纯行为克隆（BC）固有的根本性鲁棒性缺陷。由于缺乏显式负面反馈，智能体无法内化鲁棒的空间约束，在分布外（OOD）场景中表现出惊人的碰撞率。为克服这一脆弱性而不依赖不可扩展的人工标注，我们提出AeroDPO，一个由确定性物理模拟状态回滚驱动的零成本自动化直接偏好优化流水线。在检测到碰撞时，系统自动回滚环境以提取因果推理错误作为拒绝动作，应用解耦特权干预合成避碰偏好操作，并利用离线视觉语言检查器过滤视觉模糊性。通过为我们的2B模型配备这一自动化数据飞轮，AeroDPO在未映射场景中将成功率提升至49.16%，同时大幅抑制碰撞率，为自主空中智能体确立了新的SOTA。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

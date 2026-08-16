@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>DreamX-Phi 1.0: Action-Conditioned Video World Model for Robotic Manipulation</h1>
+      <h2>Abstract (EN)</h2>
+      <p>We present \textbf{DreamX-Phi 1.0}, an action-conditioned video world model for robotic manipulation that, given an observed frame, a language instruction, and a prescribed action sequence comprising end-effector poses and gripper states, predicts the resulting future observations. Yet realism alone does not guarantee faithfulness: a convincing rollout can still move the wrong arm or lose the manipulated object. To ensure the prediction respects each arm&#x27;s commanded path, we inject per-arm $\mathrm{SE}(3)$ transformations into attention via \textbf{PRoPE-style geometric encoding}, preserving arm identity and rigid-motion structure. Action control alone does not fully constrain scene geometry or the evolution of small manipulated objects. We therefore add a lightweight \textbf{depth branch} for scene-level geometry and use \textbf{SAM3 masks} with a frozen \textbf{V-JEPA teacher} to maintain object consistency throughout grasping. We further distill the multi-step generator into a few-step student via distribution-matching distillation for efficient deployment. At the time of writing, \model{} achieves first place on Track~1 and second place on Track~2 of the WorldArena~2.0 Challenge. Our model and code will be publicly available.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>我们提出了 DreamX-Phi 1.0，一种用于机器人操作的动作条件视频世界模型，给定一个观察帧、一条语言指令和一组由末端执行器姿态和夹爪状态组成的指定动作序列，该模型预测未来的观察结果。然而，仅凭逼真度并不能保证保真度：一个令人信服的展开仍可能移动错误的机械臂或丢失被操作的物体。为了确保预测遵循每个机械臂的指令路径，我们通过 PRoPE 风格的几何编码将每个机械臂的 SE(3) 变换注入注意力机制中，从而保留机械臂的身份和刚体运动结构。仅靠动作控制并不能完全约束场景几何或小型被操作物体的演变。因此，我们增加了一个轻量级的深度分支来捕捉场景级几何，并使用 SAM3 掩码和冻结的 V-JEPA 教师模型来在抓取过程中保持物体一致性。我们进一步通过分布匹配蒸馏将多步生成器蒸馏成少步学生模型，以实现高效部署。在撰写本文时，该模型在 WorldArena 2.0 挑战赛中获得了 Track 1 的第一名和 Track 2 的第二名。我们的模型和代码将公开提供。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

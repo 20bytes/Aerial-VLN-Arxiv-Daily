@@ -9,7 +9,7 @@
 
 > 🚀 每日自动追踪 **无人机视觉语言导航 (Aerial-VLN)**, **3DGS场景重建与仿真** 和 **具身智能基础模型** 的最新 Arxiv 论文。
 
-## 📅 Updated on 2026.08.10
+## 📅 Updated on 2026.08.16
 <details>
   <summary>点击查看目录 (Table of Contents)</summary>
   <ol>
@@ -23,6 +23,16 @@
 
 |Publish Date (YYYY-MM-DD)|Title|Authors|PDF|HJFY|
 |---|---|---|---|---|
+|**2026-08-13**|**AirForesight: Current-to-Future Spatial Map Imagination with Cross-Space Planning Consistency for UAV-VLN<br>AirForesight：面向无人机视觉语言导航的当前到未来空间地图想象与跨空间规划一致性<br>[摘要](https://20bytes.github.io/Awesome-Aerial-VLN-Arxiv-Daily/abstracts/2608.12835.html)**|Jianlong Wu Team|[2608.12835](http://arxiv.org/abs/2608.12835)|[HJFY](https://hjfy.top/arxiv/2608.12835v1)|
+|**2026-08-12**|**DreamFly: Causal Memory and Receding-Horizon Diffusion Planning for Aerial Vision-Language Navigation<br>[摘要](https://20bytes.github.io/Awesome-Aerial-VLN-Arxiv-Daily/abstracts/2608.12308.html)**|Fei Xu Team|[2608.12308](http://arxiv.org/abs/2608.12308)|[HJFY](https://hjfy.top/arxiv/2608.12308v1)|
+|**2026-08-10**|**From Semantic Grounding to Decision Optimization: A Unified Framework for Long-Horizon UAV Vision-Language Navigation<br>从语义锚定到决策优化：长时程无人机视觉语言导航的统一框架<br>[摘要](https://20bytes.github.io/Awesome-Aerial-VLN-Arxiv-Daily/abstracts/2608.09564.html)**|Di Huang Team|[2608.09564](http://arxiv.org/abs/2608.09564)|[HJFY](https://hjfy.top/arxiv/2608.09564v1)|
+|**2026-08-10**|**RecoverFly: A Failure-Aware Reinforcement Learning Post-Training Framework for Aerial Vision-Language Navigation<br>RecoverFly：一种面向空中视觉-语言导航的故障感知强化学习后训练框架<br>[摘要](https://20bytes.github.io/Awesome-Aerial-VLN-Arxiv-Daily/abstracts/2608.09467.html)**|Daxin Tian Team|[2608.09467](http://arxiv.org/abs/2608.09467)|[HJFY](https://hjfy.top/arxiv/2608.09467v1)|
+|**2026-08-10**|**GRASP: Granularity-Aware Region Alignment and Semantic Prototype Learning for Fine-Grained Cross-Modal Understanding in Drone Views<br>GRASP：面向无人机视角细粒度跨模态理解的粒度感知区域对齐与语义原型学习<br>[摘要](https://20bytes.github.io/Awesome-Aerial-VLN-Arxiv-Daily/abstracts/2608.09270.html)**|Yiru Wang Team|[2608.09270](http://arxiv.org/abs/2608.09270)|[HJFY](https://hjfy.top/arxiv/2608.09270v1)|
+|**2026-08-02**|**AeroDPO: Unleashing Lightweight UAV Navigation with High-Fidelity Perception and Automated Preference Optimization<br>AeroDPO：以高保真感知与自动偏好优化释放轻量级无人机导航潜力<br>[摘要](https://20bytes.github.io/Awesome-Aerial-VLN-Arxiv-Daily/abstracts/2608.07557.html)**|Shaohua Wan Team|[2608.07557](http://arxiv.org/abs/2608.07557)|[HJFY](https://hjfy.top/arxiv/2608.07557v1)|
+|**2026-08-06**|**Iterative Hybrid Discrete-Continuous Viewpoint Planning for UAV Photogrammetry<br>无人机摄影测量的迭代混合离散-连续视点规划<br>[摘要](https://20bytes.github.io/Awesome-Aerial-VLN-Arxiv-Daily/abstracts/2608.05718.html)**|Dylan Seychell Team|[2608.05718](http://arxiv.org/abs/2608.05718)|[HJFY](https://hjfy.top/arxiv/2608.05718v1)|
+|**2026-08-04**|**Flying over The Uncertain Nature (FORTUNE): Intelligent and Humanistic 3D Path Planning for Low-Altitude Collaboration<br>飞越不确定自然（FORTUNE）：面向低空协同的智能且人性化三维路径规划<br>[摘要](https://20bytes.github.io/Awesome-Aerial-VLN-Arxiv-Daily/abstracts/2608.03408.html)**|Xianbin Wang Team|[2608.03408](http://arxiv.org/abs/2608.03408)|[HJFY](https://hjfy.top/arxiv/2608.03408v1)|
+|**2026-08-03**|**Biconvex Optimization for Smooth Minimum-Time Trajectories around Convex Obstacles<br>[摘要](https://20bytes.github.io/Awesome-Aerial-VLN-Arxiv-Daily/abstracts/2608.02834.html)**|Daniela Rus Team|[2608.02834](http://arxiv.org/abs/2608.02834)|[HJFY](https://hjfy.top/arxiv/2608.02834v1)|
+|**2026-08-03**|**CoNav-UAV: Cooperative Dual-Altitude Aerial Navigation via Stackelberg Learning<br>CoNav-UAV：基于Stackelberg学习的协作双高度空中导航<br>[摘要](https://20bytes.github.io/Awesome-Aerial-VLN-Arxiv-Daily/abstracts/2608.01802.html)**|Wen Yao Team|[2608.01802](http://arxiv.org/abs/2608.01802)|[HJFY](https://hjfy.top/arxiv/2608.01802v1)|
 |**2026-07-16**|**AeroAct: Action-Centered World-Action Models for Language-Conditioned Quadrotor Flight<br>AeroAct：面向语言条件四旋翼飞行的以行动为中心的世界-行动模型<br>[摘要](https://20bytes.github.io/Awesome-Aerial-VLN-Arxiv-Daily/abstracts/2607.14997.html)**|Gang Wang Team|[2607.14997](http://arxiv.org/abs/2607.14997)|[HJFY](https://hjfy.top/arxiv/2607.14997v1)|
 |**2026-07-09**|**FSD-VLN: Fast-Slow Dual-System Modeling for Aerial Long-Horizon Vision-Language Navigation<br>FSD-VLN：面向航空长时程视觉-语言导航的快慢双系统建模<br>[摘要](https://20bytes.github.io/Awesome-Aerial-VLN-Arxiv-Daily/abstracts/2607.08359.html)**|Yonghong Tian Team|[2607.08359](http://arxiv.org/abs/2607.08359)|[HJFY](https://hjfy.top/arxiv/2607.08359v1)|
 |**2026-07-04**|**TRISTAR: Triple-Signal Stair Recognition and Vision-Only Indoor Navigation for Search-and-Rescue Micro-UAVs<br>[摘要](https://20bytes.github.io/Awesome-Aerial-VLN-Arxiv-Daily/abstracts/2607.03818.html)**|Stelian Spînu Team|[2607.03818](http://arxiv.org/abs/2607.03818)|[HJFY](https://hjfy.top/arxiv/2607.03818v1)|
@@ -62,12 +72,22 @@
 |**2026-03-10**|**WESPR: Wind-adaptive Energy-Efficient Safe Perception & Planning for Robust Flight with Quadrotors<br>WESPR：面向四旋翼稳健飞行的风适应性能效安全感知与规划<br>[摘要](https://20bytes.github.io/Awesome-Aerial-VLN-Arxiv-Daily/abstracts/2603.09194.html)**|Pratap Tokekar Team|[2603.09194](http://arxiv.org/abs/2603.09194)|[HJFY](https://hjfy.top/arxiv/2603.09194v1)|
 |**2026-03-09**|**ViSA-Enhanced Aerial VLN: A Visual-Spatial Reasoning Enhanced Framework for Aerial Vision-Language Navigation<br>ViSA增强型空中视觉语言导航：一种视觉-空间推理增强的空中视觉语言导航框架<br>[摘要](https://20bytes.github.io/Awesome-Aerial-VLN-Arxiv-Daily/abstracts/2603.08007.html)**|Chenghao Lin Team|[2603.08007](http://arxiv.org/abs/2603.08007)|[HJFY](https://hjfy.top/arxiv/2603.08007v1)|
 
-<p align=right>(<a href=#updated-on-20260810>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20260816>back to top</a>)</p>
 
 ### 📌 3DGS场景重建与仿真
 
 |Publish Date (YYYY-MM-DD)|Title|Authors|PDF|HJFY|
 |---|---|---|---|---|
+|**2026-08-13**|**GS $^{2}$CI: Robust Gaussian Splatting For Snapshot Compressive Imaging via Large Vision Model Priors<br>GS$^{2}$ CI：基于大视觉模型先验的鲁棒高斯溅射快照压缩成像方法<br>[摘要](https://20bytes.github.io/Awesome-Aerial-VLN-Arxiv-Daily/abstracts/2608.13502.html)**|Chi Zhang Team|[2608.13502](http://arxiv.org/abs/2608.13502)|[HJFY](https://hjfy.top/arxiv/2608.13502v1)|
+|**2026-08-13**|**RGB-D Video Generation for Improving Human-to-Robot Object Handover Prediction<br>[摘要](https://20bytes.github.io/Awesome-Aerial-VLN-Arxiv-Daily/abstracts/2608.13028.html)**|Guosheng Lin Team|[2608.13028](http://arxiv.org/abs/2608.13028)|[HJFY](https://hjfy.top/arxiv/2608.13028v1)|
+|**2026-08-13**|**EgoPHI: Estimating Contact and Force from Egocentric Vision<br>[摘要](https://20bytes.github.io/Awesome-Aerial-VLN-Arxiv-Daily/abstracts/2608.13014.html)**|Christian Holz Team|[2608.13014](http://arxiv.org/abs/2608.13014)|[HJFY](https://hjfy.top/arxiv/2608.13014v1)|
+|**2026-08-13**|**HumanoidVLN: A Physics-Grounded Simulator and Benchmark for Vision-Language Navigation Across Diverse Humanoid Embodiments<br>HumanoidVLN：面向多样人形机器人形态的物理仿真平台与视觉语言导航基准<br>[摘要](https://20bytes.github.io/Awesome-Aerial-VLN-Arxiv-Daily/abstracts/2608.12860.html)**|Quan Nguyen Team|[2608.12860](http://arxiv.org/abs/2608.12860)|[HJFY](https://hjfy.top/arxiv/2608.12860v1)|
+|**2026-08-13**|**LocusGS: Spatially Grounded Tokens for Feed-Forward 3D Gaussian Splatting<br>LocusGS：用于前馈3D高斯溅射的空间接地标记<br>[摘要](https://20bytes.github.io/Awesome-Aerial-VLN-Arxiv-Daily/abstracts/2608.12825.html)**|Yong Dou Team|[2608.12825](http://arxiv.org/abs/2608.12825)|[HJFY](https://hjfy.top/arxiv/2608.12825v1)|
+|**2026-08-12**|**From Simulation to Real Scans: Anomaly Detection in Maritime Cargo with Muon Scattering Tomography<br>从模拟到真实扫描：基于缪子散射断层成像的海运货物异常检测<br>[摘要](https://20bytes.github.io/Awesome-Aerial-VLN-Arxiv-Daily/abstracts/2608.12068.html)**|Sarah Barnes Team|[2608.12068](http://arxiv.org/abs/2608.12068)|[HJFY](https://hjfy.top/arxiv/2608.12068v1)|
+|**2026-08-12**|**Real-time topological rate at non-zero momentum in quenched QCD<br>淬火QCD中非零动量下的实时拓扑速率<br>[摘要](https://20bytes.github.io/Awesome-Aerial-VLN-Arxiv-Daily/abstracts/2608.12066.html)**|Giovanni Villadoro Team|[2608.12066](http://arxiv.org/abs/2608.12066)|[HJFY](https://hjfy.top/arxiv/2608.12066v1)|
+|**2026-08-12**|**Learning Loco-Manipulation From SMPC Demonstrations With Sparse Offline-to-Online RL<br>从SMPC演示中学习带稀疏离线到在线强化学习的运动-操作技能<br>[摘要](https://20bytes.github.io/Awesome-Aerial-VLN-Arxiv-Daily/abstracts/2608.12063.html)**|Jan Brüdigam Team|[2608.12063](http://arxiv.org/abs/2608.12063)|[HJFY](https://hjfy.top/arxiv/2608.12063v1)|
+|**2026-08-12**|**Seed2GS: Camera-Free, Training-Free Object Extraction from 3D Gaussian Scenes via a Single Reference-View Grounding<br>Seed2GS：通过单参考视图接地从3D高斯场景中免相机、免训练提取物体<br>[摘要](https://20bytes.github.io/Awesome-Aerial-VLN-Arxiv-Daily/abstracts/2608.11928.html)**|Min Li Team|[2608.11928](http://arxiv.org/abs/2608.11928)|[HJFY](https://hjfy.top/arxiv/2608.11928v1)|
+|**2026-08-12**|**DaViNCi: A Dataset Towards Outdoor Vision-and-Language Navigation with Continuous Actions and Dynamic Elements<br>DaViNCi：面向连续动作与动态元素的户外视觉-语言导航数据集<br>[摘要](https://20bytes.github.io/Awesome-Aerial-VLN-Arxiv-Daily/abstracts/2608.11901.html)**|Hua Yang Team|[2608.11901](http://arxiv.org/abs/2608.11901)|[HJFY](https://hjfy.top/arxiv/2608.11901v1)|
 |**2026-07-30**|**S-Avatar: Diffusion-Guided Gaussian Head Avatars from a Single Image<br>S-Avatar：基于扩散引导的单图像高斯头部化身<br>[摘要](https://20bytes.github.io/Awesome-Aerial-VLN-Arxiv-Daily/abstracts/2607.28164.html)**|Woontack Woo Team|[2607.28164](http://arxiv.org/abs/2607.28164)|[HJFY](https://hjfy.top/arxiv/2607.28164v1)|
 |**2026-07-30**|**Split and Drive: Dual-Axis Disentanglement for Real-Time Gaussian Head Avatars<br>分裂与驱动：用于实时高斯头部虚拟形象的双轴解耦<br>[摘要](https://20bytes.github.io/Awesome-Aerial-VLN-Arxiv-Daily/abstracts/2607.28032.html)**|Kaska Musial-Gabrys Team|[2607.28032](http://arxiv.org/abs/2607.28032)|[HJFY](https://hjfy.top/arxiv/2607.28032v1)|
 |**2026-07-30**|**Cross-Embodiment Transfer via Behavior-Aligned Representations<br>跨本体迁移：通过行为对齐表示实现<br>[摘要](https://20bytes.github.io/Awesome-Aerial-VLN-Arxiv-Daily/abstracts/2607.27549.html)**|Dorsa Sadigh Team|[2607.27549](http://arxiv.org/abs/2607.27549)|[HJFY](https://hjfy.top/arxiv/2607.27549v1)|
@@ -249,12 +269,22 @@
 |**2026-04-09**|**MotionScape: A Large-Scale Real-World Highly Dynamic UAV Video Dataset for World Models<br>MotionScape：面向世界模型的大规模真实世界高动态无人机视频数据集<br>[摘要](https://20bytes.github.io/Awesome-Aerial-VLN-Arxiv-Daily/abstracts/2604.07991.html)**|Lei Wang Team|[2604.07991](http://arxiv.org/abs/2604.07991)|[HJFY](https://hjfy.top/arxiv/2604.07991v1)|
 |**2026-04-09**|**Generative 3D Gaussian Splatting for Arbitrary-ResolutionAtmospheric Downscaling and Forecasting<br>基于生成式三维高斯泼溅的任意分辨率大气降尺度与预报<br>[摘要](https://20bytes.github.io/Awesome-Aerial-VLN-Arxiv-Daily/abstracts/2604.07928.html)**|Lei Bai Team|[2604.07928](http://arxiv.org/abs/2604.07928)|[HJFY](https://hjfy.top/arxiv/2604.07928v1)|
 
-<p align=right>(<a href=#updated-on-20260810>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20260816>back to top</a>)</p>
 
 ### 📌 具身智能基础模型与数据
 
 |Publish Date (YYYY-MM-DD)|Title|Authors|PDF|HJFY|
 |---|---|---|---|---|
+|**2026-08-13**|**PlayWorld: Benchmarking World Models with Agent Players over Long-Horizon Objectives<br>PlayWorld：以智能体玩家在长期目标下对世界模型进行基准测试<br>[摘要](https://20bytes.github.io/Awesome-Aerial-VLN-Arxiv-Daily/abstracts/2608.13552.html)**|Hengshuang Zhao Team|[2608.13552](http://arxiv.org/abs/2608.13552)|[HJFY](https://hjfy.top/arxiv/2608.13552v1)|
+|**2026-08-13**|**Alaya-EVOKE: From Linear-Scaling Supervision to Endless World<br>Alaya-EVOKE：从线性扩展监督到无尽世界<br>[摘要](https://20bytes.github.io/Awesome-Aerial-VLN-Arxiv-Daily/abstracts/2608.13546.html)**|Feng Zhao Team|[2608.13546](http://arxiv.org/abs/2608.13546)|[HJFY](https://hjfy.top/arxiv/2608.13546v1)|
+|**2026-08-13**|**Intervention-Aware Clinical World Model for Post-Op Outcome Forecasting in Cardiology<br>干预感知的临床世界模型用于心脏病学术后结果预测<br>[摘要](https://20bytes.github.io/Awesome-Aerial-VLN-Arxiv-Daily/abstracts/2608.13518.html)**|Jihun Hamm Team|[2608.13518](http://arxiv.org/abs/2608.13518)|[HJFY](https://hjfy.top/arxiv/2608.13518v1)|
+|**2026-08-13**|**AlayaWorld: Interactive Long-Horizon World Modeling - Full Technical Report (v1.1)<br>AlayaWorld：交互式长时程世界建模 - 完整技术报告（v1.1）<br>[摘要](https://20bytes.github.io/Awesome-Aerial-VLN-Arxiv-Daily/abstracts/2608.13492.html)**|Zihui Gao Team|[2608.13492](http://arxiv.org/abs/2608.13492)|[HJFY](https://hjfy.top/arxiv/2608.13492v1)|
+|**2026-08-13**|**DreamX-Phi 1.0: Action-Conditioned Video World Model for Robotic Manipulation<br>DreamX-Phi 1.0：用于机器人操作的动作条件视频世界模型<br>[摘要](https://20bytes.github.io/Awesome-Aerial-VLN-Arxiv-Daily/abstracts/2608.13489.html)**|Pengfei Zhang Team|[2608.13489](http://arxiv.org/abs/2608.13489)|[HJFY](https://hjfy.top/arxiv/2608.13489v1)|
+|**2026-08-13**|**Decoding Task Progress from VLA Representations<br>从VLA表示中解码任务进度<br>[摘要](https://20bytes.github.io/Awesome-Aerial-VLN-Arxiv-Daily/abstracts/2608.13474.html)**|Preston Culbertson Team|[2608.13474](http://arxiv.org/abs/2608.13474)|[HJFY](https://hjfy.top/arxiv/2608.13474v1)|
+|**2026-08-13**|**A Unifying Perspective on Causal World Models: From Observations to Representations to Structure<br>[摘要](https://20bytes.github.io/Awesome-Aerial-VLN-Arxiv-Daily/abstracts/2608.13456.html)**|Fabrizio Russo Team|[2608.13456](http://arxiv.org/abs/2608.13456)|[HJFY](https://hjfy.top/arxiv/2608.13456v1)|
+|**2026-08-13**|**UniTexture: Cross-Task Universal Adversarial Textures for Vision-Language-Action Models<br>UniTexture：面向视觉-语言-动作模型的跨任务通用对抗纹理<br>[摘要](https://20bytes.github.io/Awesome-Aerial-VLN-Arxiv-Daily/abstracts/2608.13453.html)**|Lei Zhu Team|[2608.13453](http://arxiv.org/abs/2608.13453)|[HJFY](https://hjfy.top/arxiv/2608.13453v1)|
+|**2026-08-13**|**ContactGuard: Pre-Contact Execution Monitoring with Action-Conditioned Latent World Models<br>ContactGuard：基于行动条件潜在世界模型的接触前执行监控<br>[摘要](https://20bytes.github.io/Awesome-Aerial-VLN-Arxiv-Daily/abstracts/2608.13438.html)**|Weiming Zhi Team|[2608.13438](http://arxiv.org/abs/2608.13438)|[HJFY](https://hjfy.top/arxiv/2608.13438v1)|
+|**2026-08-13**|**Enhancing Virtual Agents through SLMs and Edge-Computing: An Exploratory Evaluation of Think and Memory Processes<br>通过小型语言模型与边缘计算增强虚拟代理：思考与记忆过程的探索性评估<br>[摘要](https://20bytes.github.io/Awesome-Aerial-VLN-Arxiv-Daily/abstracts/2608.13420.html)**|Louis Nisiotis Team|[2608.13420](http://arxiv.org/abs/2608.13420)|[HJFY](https://hjfy.top/arxiv/2608.13420v1)|
 |**2026-07-30**|**ACE-Data-0: Human-Centric Ambient Capture as Embodied Data Engine<br>ACE-Data-0：以人为中心的環境捕捉作為具身數據引擎<br>[摘要](https://20bytes.github.io/Awesome-Aerial-VLN-Arxiv-Daily/abstracts/2607.28625.html)**|Ziwei Liu Team|[2607.28625](http://arxiv.org/abs/2607.28625)|[HJFY](https://hjfy.top/arxiv/2607.28625v1)|
 |**2026-07-30**|**PhiZero: A World Model Built Around Physical Language<br>[摘要](https://20bytes.github.io/Awesome-Aerial-VLN-Arxiv-Daily/abstracts/2607.28624.html)**|Zhaoxiang Zhang Team|[2607.28624](http://arxiv.org/abs/2607.28624)|[HJFY](https://hjfy.top/arxiv/2607.28624v1)|
 |**2026-07-30**|**AuricularWorld: Hierarchical Action-Guided World Modeling for Fine-Grained Auricular Structure Segmentation from CT Scans<br>AuricularWorld：层次化动作引导的世界建模用于CT扫描中精细耳廓结构分割<br>[摘要](https://20bytes.github.io/Awesome-Aerial-VLN-Arxiv-Daily/abstracts/2607.28487.html)**|Haiyue Jiang Team|[2607.28487](http://arxiv.org/abs/2607.28487)|[HJFY](https://hjfy.top/arxiv/2607.28487v1)|
@@ -441,7 +471,7 @@
 |**2026-04-09**|**Harnessing Embodied Agents: Runtime Governance for Policy-Constrained Execution<br>驾驭具身智能体：面向策略约束执行的运行时治理<br>[摘要](https://20bytes.github.io/Awesome-Aerial-VLN-Arxiv-Daily/abstracts/2604.07833.html)**|Zhijun Li Team|[2604.07833](http://arxiv.org/abs/2604.07833)|[HJFY](https://hjfy.top/arxiv/2604.07833v1)|
 |**2026-04-09**|**Learning Without Losing Identity: Capability Evolution for Embodied Agents<br>学习而不失身份：具身智能体的能力进化<br>[摘要](https://20bytes.github.io/Awesome-Aerial-VLN-Arxiv-Daily/abstracts/2604.07799.html)**|Zhijun Li Team|[2604.07799](http://arxiv.org/abs/2604.07799)|[HJFY](https://hjfy.top/arxiv/2604.07799v1)|
 
-<p align=right>(<a href=#updated-on-20260810>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20260816>back to top</a>)</p>
 
 [contributors-shield]: https://img.shields.io/github/contributors/20bytes/Awesome-Aerial-VLN-Arxiv-Daily.svg?style=for-the-badge
 [contributors-url]: https://github.com/20bytes/Awesome-Aerial-VLN-Arxiv-Daily/graphs/contributors

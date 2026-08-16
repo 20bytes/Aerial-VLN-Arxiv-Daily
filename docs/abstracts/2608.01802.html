@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>CoNav-UAV: Cooperative Dual-Altitude Aerial Navigation via Stackelberg Learning</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Target-oriented vision-and-language navigation (VLN) on aerial platforms is attracting growing attention for missions such as disaster rescue, infrastructure inspection, and security patrol. In this task, an unmanned aerial vehicle (UAV) needs to locate targets given only a concise description of their appearance and surroundings. This requires global exploration and grounding as well as collision-free close-range approach, two interleaved processes difficult to reconcile within a single agent. Most existing methods transfer the ground VLN paradigm to a low-altitude UAV and compensate for its inefficient exploration with external assistance. A recent attempt deploys two UAVs at complementary altitudes yet still relies on privileged information and trains its two agents independently, precluding any mutual adaptation essential for cooperation. Here we propose CoNav-UAV, which explicitly models the task as a Stackelberg game between a high-altitude leader and a low-altitude follower, with the system operating on onboard visual and linguistic inputs alone. To solve this game, we introduce Iterative Stackelberg Learning. The leader&#x27;s high-level vision-language reasoning is refined via memory-based in-context learning, while the follower&#x27;s precise motion control is updated via DAgger-style expert distillation. The alternation drives both agents toward a Stackelberg equilibrium. CoNav-UAV consistently outperforms single- and dual-agent baselines across three high-fidelity urban scenes from the AerialVLN benchmark. Success rate improves by up to 30.8 points on the learning scene, and 9.0 points under cross-scene transfer while using about 3x less adaptation data. Further analyses validate the complementary gains of the leader and follower updates and reveal robust gains yet distinct learning dynamics across VLM backbones.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>面向目标的视觉与语言导航（VLN）在航空平台上正引起越来越多的关注，用于灾难救援、基础设施检查和安保巡逻等任务。在此任务中，无人机（UAV）需要仅根据目标外观及周围环境的简要描述来定位目标。这要求全局探索与定位以及无碰撞的近距离接近，这两个相互交织的过程难以在单一智能体中调和。大多数现有方法将地面VLN范式转移到低空无人机，并通过外部辅助弥补其低效探索。最近的尝试在互补高度部署两架无人机，但仍依赖特权信息，并独立训练两个智能体，排除了合作所必需的相互适应。这里我们提出CoNav-UAV，明确将任务建模为高空领导者与低空跟随者之间的Stackelberg博弈，系统仅依赖机载视觉和语言输入运行。为解决该博弈，我们引入了迭代Stackelberg学习。领导者的高层视觉-语言推理通过基于记忆的上下文学习进行优化，而跟随者的精确运动控制通过DAgger式专家蒸馏进行更新。交替过程推动两个智能体朝向Stackelberg均衡。CoNav-UAV在AerialVLN基准的三个高保真城市场景中始终优于单智能体和双智能体基线。成功率在训练场景中最高提升30.8个百分点，在跨场景迁移下提升9.0个百分点，同时使用约3倍少的适应数据。进一步分析验证了领导者和跟随者更新的互补增益，并揭示了跨VLM骨干的稳健增益但不同的学习动态。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>
