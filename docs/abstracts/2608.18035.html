@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Plug-and-Play Traffic Element Awareness for End-to-End Autonomous Driving</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Traffic elements such as traffic lights and road signs play a fundamental role in human driving decisions and should naturally influence end-to-end driving performance. However, existing end-to-end driving research predominantly focuses on dynamic road participants (e.g., vehicles and pedestrians), while the role of traffic elements remains largely unexplored. The community still lacks a systematic study quantifying their impact, largely because public datasets rarely provide structured traffic-element annotations and modern driving systems vary widely in architecture and training paradigm. In this work, we present the first systematic investigation of traffic element awareness for end-to-end autonomous driving. We construct a unified research infrastructure by augmenting multiple public driving datasets with comprehensive traffic-element annotations. To support diverse model families, we adopt a minimal and universal integration design that incorporates traffic-element signals into existing pipelines in a plug-and-play manner with negligible architectural modification. We evaluate this design across modern paradigms, including perception-prediction-planning pipelines, vision-language-action models (VLA), regression-based planners, diffusion-based policies, and trajectory-scoring frameworks, on nuScenes, NAVSIM-v1, NAVSIM-v2, and Bench2Drive. Across all paradigms and datasets, this simple integration consistently improves driving performance, demonstrating that traffic element awareness provides a robust and generalizable signal for end-to-end driving systems. Notably, on the challenging NAVSIM-v2 benchmark, our approach significantly improves state-of-the-art architectures and data pipelines, establishing a new state of the art.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>交通信号灯和路标等交通元素在人类驾驶决策中起着基础性作用，自然应影响端到端驾驶性能。然而，现有的端到端驾驶研究主要关注动态道路参与者（如车辆和行人），而交通元素的作用在很大程度上仍未得到探索。社区仍缺乏系统性的研究来量化其影响，主要是因为公共数据集很少提供结构化的交通元素标注，且现代驾驶系统在架构和训练范式上差异很大。在这项工作中，我们首次对端到端自动驾驶中的交通元素感知进行了系统性研究。我们通过为多个公共驾驶数据集添加全面的交通元素标注，构建了一个统一的研究基础设施。为了支持多样化的模型家族，我们采用了一种最小且通用的集成设计，以即插即用的方式将交通元素信号纳入现有流程，且几乎不进行架构修改。我们在nuScenes、NAVSIM-v1、NAVSIM-v2和Bench2Drive上，跨现代范式评估了该设计，包括感知-预测-规划流程、视觉-语言-动作模型（VLA）、基于回归的规划器、基于扩散的策略和轨迹评分框架。在所有范式和数据集上，这种简单的集成持续改善了驾驶性能，表明交通元素感知为端到端驾驶系统提供了稳健且可泛化的信号。值得注意的是，在具有挑战性的NAVSIM-v2基准上，我们的方法显著提升了最先进的架构和数据流程，确立了新的最先进水平。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

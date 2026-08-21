@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Differentiable Voronoi Ray Tracing Beyond Rasterization Speeds</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Real-time novel view synthesis is dominated by rasterized explicit primitives. These projection-based pipelines provide high throughput but require specialized extensions for non-pinhole effects such as distortion, rolling shutter, and depth of field. Ray-based rendering expresses these effects naturally but is generally assumed too slow for competitive real-time rendering. We analyze the factors governing throughput in differentiable Voronoi ray tracing and identify traversal length, per-cell work, and memory locality as principal determinants. Guided by this, we introduce VoroTracing, which co-designs the scene representation, optimization, and GPU execution to reduce these costs. Compact octahedral appearance textures reduce memory traffic, while surface-concentrated opacity promotes early termination. The fixed-budget representation is optimized without pruning or densification and rendered with a GPU implementation designed for coherent traversal. On Mip-NeRF 360, VoroTracing renders at 623 FPS on an RTX 5090, providing $3.2\times$ the throughput of the fastest prior ray-based method and $2.8\times$ that of 3D Gaussian Splatting, while maintaining competitive reconstruction quality. Our renderer supports fisheye, rolling-shutter, motion-blur, and depth-of-field effects through ray generation and sampling, requiring no specialized rasterization. These results show that real-time throughput can be achieved with the flexibility of ray-based rendering. We release our source code, see https://research.zenseact.com/publications/vorotracing</p>
+      <h2>摘要 (ZH)</h2>
+      <p>实时新视角合成主要由光栅化的显式基元主导。这些基于投影的流水线提供了高吞吐量，但需要专门的扩展来处理非针孔效应，如畸变、卷帘快门和景深。基于光线的渲染自然表达这些效应，但通常被认为速度过慢，难以实现具有竞争力的实时渲染。我们分析了可微分沃罗诺伊光线追踪中影响吞吐量的因素，并确定遍历长度、每单元工作量和内存局部性是主要决定因素。在此指导下，我们引入了VoroTracing，它协同设计场景表示、优化和GPU执行以减少这些成本。紧凑的八面体外观纹理减少了内存流量，而表面集中的不透明度促进了提前终止。固定预算的表示在无需剪枝或稠密化的情况下进行优化，并通过为相干遍历设计的GPU实现进行渲染。在Mip-NeRF 360上，VoroTracing在RTX 5090上以623 FPS渲染，提供比最快先前的基于光线的方法高3.2倍的吞吐量，比3D高斯泼溅高2.8倍，同时保持具有竞争力的重建质量。我们的渲染器通过光线生成和采样支持鱼眼、卷帘快门、运动模糊和景深效果，无需专门的栅格化。这些结果表明，实时吞吐量可以通过基于光线的渲染的灵活性来实现。我们发布了源代码，请参见https://research.zenseact.com/publications/vorotracing</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

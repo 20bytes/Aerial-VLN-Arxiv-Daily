@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Iterative Grasp Pose Refinement: A Deep Reinforcement Learning Approach for 2D Vision</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Developing robots capable of understanding and manipulating objects requires compact, interpretable, and generalizable representations. This work proposes a reinforcement learning-based framework for robotic grasp refinement, integrating keypoint-based object representations with a Deep Q-Network (DQN). Using 2D overhead images captured in a simulated environment, a geometric-based algorithm generates initial grasp candidates, which are iteratively refined by the proposed framework, transforming failed grasps into successful ones. Experiments conducted on 300 objects from the Dex-Net dataset using a UR5 manipulator demonstrate the framework&#x27;s effectiveness, achieving a 100% success rate on objects previously deemed ungraspable by geometrical methods. The framework&#x27;s sim-to-real transferability is further validated through physical experiments on a Delta parallel robot, where a refined grasp successfully manipulates an object that was previously ungraspable. The findings underscore the effectiveness of reinforcement learning in addressing challenges in robotic grasping, offering a scalable and adaptable solution for contact-rich manipulation tasks.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>开发能够理解和操作物体的机器人需要紧凑、可解释且可泛化的表示。本研究提出了一种基于强化学习的机器人抓取优化框架，将基于关键点的物体表示与深度Q网络（DQN）相结合。利用模拟环境中捕获的二维俯视图像，一种基于几何的算法生成初始抓取候选，并通过所提出的框架进行迭代优化，将失败的抓取转化为成功的抓取。在Dex-Net数据集的300个物体上使用UR5机械臂进行的实验证明了该框架的有效性，在先前被几何方法判定为不可抓取的物体上实现了100%的成功率。该框架的仿真到现实迁移能力进一步通过Delta并联机器人的物理实验得到验证，其中优化的抓取成功操纵了一个先前不可抓取的物体。研究结果强调了强化学习在解决机器人抓取挑战中的有效性，为接触丰富的操作任务提供了可扩展且适应性强的解决方案。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

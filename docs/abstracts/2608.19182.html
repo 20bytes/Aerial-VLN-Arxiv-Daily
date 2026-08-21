@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>ADEPT: Accelerating Dexterity via Pre-Training and Post-Training using Reinforcement Learning</h1>
+      <h2>Abstract (EN)</h2>
+      <p>We introduce Accelerating Dexterity via Pre-Training (ADEPT), a large-scale reinforcement learning (RL) framework for learning sim-to-real transferable dexterity across high degree-of-freedom (DoF) robot embodiments that can solve long-horizon tasks directly from raw visuo-tactile perception. ADEPT pretrains a dexterous policy on a generic object reposing task, then post-trains downstream policies with this pretrained behavior as a prior. ADEPT enables learning new behaviors that are otherwise difficult to discover from scratch on multi-fingered robots and avoids learning the same set of skills over again for every new downstream task. The pretrained policy zero-shots the reposing phase of downstream tasks, but naïve RL fine-tuning rapidly degrades this capability during transfer. We address this with a stable post-training recipe combining behavior-cloning distillation, critic warm-up, and conservative on-policy updates. To safely exploit the full kinematic dexterity, we introduce a joint-space Geometric Fabric that mediates between the RL policy and the robot. We distill post-trained teachers into perceptive students that zero-shot sim-to-real transfer on two embodiments: a 23 DoF Kuka-Allegro with two RGB cameras, and a 29 DoF Flexiv-Sharpa with two RGB cameras and five vision-based tactile sensors, and can solve long-horizon tasks from challenging initial states with dexterity at human-level speed.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>我们引入了加速灵巧性预训练（ADEPT），这是一个大规模强化学习（RL）框架，用于学习跨高自由度（DoF）机器人形态的模拟到现实可迁移的灵巧性，能够直接从原始视觉-触觉感知解决长时程任务。ADEPT在通用物体重新定位任务上预训练灵巧策略，然后以该预训练行为作为先验对下游策略进行后训练。ADEPT使得在多指机器人上学习那些原本难以从零开始发现的新行为成为可能，并避免了为每个新下游任务重复学习相同技能集。预训练策略能够零样本完成下游任务的重新定位阶段，但朴素的RL微调在迁移过程中会迅速降低此能力。我们通过一种稳定的后训练方案来解决这一问题，该方案结合了行为克隆蒸馏、评论员预热和保守的在线策略更新。为了安全地利用完整的运动学灵巧性，我们引入了一个关节空间几何中介（Geometric Fabric），它在RL策略与机器人之间进行协调。我们将后训练的教师模型蒸馏为感知学生模型，这些模型在两个形态上实现零样本模拟到现实迁移：一个具有两个RGB摄像头的23自由度Kuka-Allegro，以及一个具有两个RGB摄像头和五个基于视觉的触觉传感器的29自由度Flexiv-Sharpa，并能够从具有挑战性的初始状态以人类水平的速度解决长时程任务，并展现灵巧性。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>
