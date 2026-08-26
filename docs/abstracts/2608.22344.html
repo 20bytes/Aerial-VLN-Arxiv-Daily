@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Fast and Compact 3D Gaussian Splatting with Polarized Opacity Prior</h1>
+      <h2>Abstract (EN)</h2>
+      <p>3D Gaussian Splatting (3DGS) achieves state-of-the-art rendering quality at real-time speeds but suffers from &quot;model bloat&quot; - a large number of redundant, low-opacity Gaussians that inflate memory usage and training costs. This inefficiency stems from the standard &quot;densify-then-prune&quot; paradigm, which expands the model aggressively before relying on pruning to achieve compactness. To mitigate this problem, we present an efficient training framework that builds an intrinsically compact representation, replacing the conventional densify-then-prune cycle. Our method leverages a synergistic design: an L2 reconstruction loss to provide error-proportional gradients that stabilize optimization, and a novel Polarized Opacity Prior (POP) to actively manage the Gaussian population. POP steers informative primitives toward full opacity and uninformative ones toward transparency, enabling natural pruning and accelerating rendering through Early Ray Termination. Experiments on three public datasets demonstrate that our approach consistently achieves accelerated 3DGS training with significantly fewer Gaussians while maintaining comparable visual reconstruction quality. These results show that the proposed framework provides a simple and effective path toward fast and inherently compact 3DGS training.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>3D高斯溅射（3DGS）在实时速度下实现了最先进的渲染质量，但 suffers 于“模型膨胀”——大量冗余、低不透明度的高斯体使内存使用和训练成本膨胀。这种低效源于标准的“先稠密化后剪枝”范式，该范式在依赖剪枝实现紧凑性之前激进地扩展模型。为缓解此问题，我们提出了一种高效的训练框架，构建固有紧凑表示，取代传统的稠密化后剪枝循环。我们的方法利用协同设计：L2重建损失提供与误差成比例的梯度以稳定优化，以及新颖的极化不透明度先验（POP）积极管理高斯种群。POP将信息性基元导向全不透明度，非信息性基元导向透明，实现自然剪枝并通过早期光线终止加速渲染。在三个公开数据集上的实验表明，我们的方法始终实现加速的3DGS训练，同时显著减少高斯数量并保持可比的视觉重建质量。这些结果表明，所提框架为快速且固有紧凑的3DGS训练提供了一条简单有效的路径。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

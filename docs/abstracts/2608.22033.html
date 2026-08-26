@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>DELTA: Deformable Elevation-Based Local Terrain Attention Encoder for Sparse-Terrain Quadrupedal Locomotion</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Stable quadrupedal locomotion on sparse terrain requires selecting state-relevant terrain evidence for precise foot placement. Model-based foothold planners provide precise foothold selection but rely heavily on explicit model assumptions. Recent attention-based map encoding (AME) studies show that end-to-end reinforcement learning (RL) can learn implicit foothold guidance. However, the computational cost of dense AME encoding grows with map resolution, limiting its scalability to fine-grained sparse terrain. We propose DELTA, a Deformable Elevation-Based Local Terrain Attention encoder. DELTA predicts state-conditioned sampling locations, forms terrain evidence tokens from adaptive local elevation patches, and attends only to a fixed-size token set. With fixed sampling and patch settings, DELTA&#x27;s encoder cost is independent of map resolution. Experiments show that DELTA achieves final traversal performance comparable to AME at the standard resolution while improving learning efficiency. This fixed encoder cost enables the use of higher-resolution terrain maps, improving traversal on fine-grained sparse terrain. DELTA also demonstrates strong generalization to unseen mixed evaluation courses composed of continuous and discrete terrain elements. Beyond simulation, DELTA demonstrates successful sim-to-real transfer on RAIBO2. Analysis of the learned sampling offsets and attention weights shows that DELTA samples steppable regions and attends to terrain evidence relevant to future touchdowns without foothold labels or attention supervision.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>在稀疏地形上实现稳定的四足运动需要选择与状态相关的地形证据以进行精确的足部放置。基于模型的落足点规划器提供了精确的落足点选择，但严重依赖显式模型假设。最近的基于注意力的地图编码（AME）研究表明，端到端强化学习（RL）可以学习隐式的落足点引导。然而，密集AME编码的计算成本随地图分辨率增长，限制了其在细粒度稀疏地形上的可扩展性。我们提出了DELTA，一种基于可变形高程的局部地形注意力编码器。DELTA预测状态条件化的采样位置，从自适应局部高程块中形成地形证据令牌，并且仅关注固定大小的令牌集。在固定的采样和块设置下，DELTA的编码器成本与地图分辨率无关。实验表明，DELTA在标准分辨率下实现了与AME相当的最终穿越性能，同时提高了学习效率。这种固定的编码器成本使得使用更高分辨率的地形图成为可能，从而改善了细粒度稀疏地形上的穿越性能。DELTA还展现了对由连续和离散地形元素组成的未见过的混合评估路线的强大泛化能力。除了仿真之外，DELTA在RAIBO2上展示了成功的仿真到现实迁移。对学习到的采样偏移和注意力权重的分析表明，DELTA在无需落足点标签或注意力监督的情况下，采样可踩踏区域并关注与未来触地相关的地形证据。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

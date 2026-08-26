@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>AquaFlow: A Monocular Gaussian Splatting SLAM for Underwater Streaming Reconstruction</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Recent monocular 3D Gaussian Splatting (3DGS) streaming reconstruction methods have achieved impressive performance by balancing reconstruction quality and efficiency. However, extending these frameworks to underwater scenes remains challenging due to severe visual degradation, such as light attenuation and scattering, which degrades camera pose tracking and distorts scene geometry. To address these challenges, we propose AquaFlow, a monocular Gaussian Splatting streaming reconstruction framework for efficient and high-fidelity underwater reconstruction. Specifically, AquaFlow fine-tunes a 3D vision foundation model on large-scale underwater data for robust pose and pointmap estimation, and introduces a medium-guided incremental Gaussian initialization strategy for streaming mapping. Furthermore, we develop a streaming-compatible hybrid scene representation that integrates structured, distance-conditioned neural Gaussians with a physics-inspired optical model to compensate for underwater image formation effects, enabling accurate scene reconstruction. We evaluate AquaFlow on a comprehensive dataset of 62 diverse underwater trajectories, collected from both public benchmarks and in-the-wild web videos across various scales. Extensive experiments demonstrate that AquaFlow achieves state-of-the-art tracking and rendering performance, reducing average localization error by 13.2% and improving PSNR by 4.74 dB compared to WaterSplat-SLAM.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>近期，单目三维高斯溅射（3DGS）流式重建方法通过在重建质量和效率之间取得平衡，取得了令人瞩目的性能。然而，将这些框架扩展到水下场景仍具挑战性，因为严重的光学退化（如光衰减和散射）会降低相机位姿跟踪精度并扭曲场景几何结构。为解决这些问题，我们提出了AquaFlow，一种用于高效、高保真水下重建的单目高斯溅射流式重建框架。具体而言，AquaFlow在大规模水下数据上微调3D视觉基础模型，以获得鲁棒的位姿和点图估计，并引入一种介质引导的增量高斯初始化策略用于流式建图。此外，我们开发了一种流式兼容的混合场景表示，将结构化的、距离条件下的神经高斯与物理启发光学模型相结合，以补偿水下成像效应，从而实现精确的场景重建。我们在包含62条多样化水下轨迹的综合数据集上评估了AquaFlow，该数据集涵盖公共基准和野外网络视频，且尺度各异。大量实验表明，与WaterSplat-SLAM相比，AquaFlow在跟踪和渲染性能上达到了最先进水平，平均定位误差降低了13.2%，PSNR提高了4.74dB。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

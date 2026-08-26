@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>RoboRacer Arena: Scaling High-Fidelity Autonomous Racing in Isaac Sim</h1>
+      <h2>Abstract (EN)</h2>
+      <p>RoboRacer offers a standardized platform for research using 1:10-scale autonomous vehicles, but the variety of available tracks hinders the process of acquiring policies. Although existing occupancy-grid simulators allow for the quick addition of new maps, they fail to include physical contact, while 3D simulators require each circuit to be implemented as a separate asset, thus limiting their scalability. In order to overcome this issue, we have developed RoboRacer Arena, a system that creates 3D racing environments directly from occupancy maps. Our method starts by using a flood fill algorithm to extract the drivable corridors and to identify the track boundaries, which are then used to establish the barriers. A distance field is calculated to define the collision boundaries. The track surfaces, collision properties, and materials are assembled into a USD stage, which allows for the automated and reproducible generation of the environment in Isaac Sim. The input maps can be obtained from SLAM sessions, from rescaled Formula 1 circuits, or from natural-language descriptions. When the input is based on natural language, we use Gemma 4 31B to generate a track specification without specifying any coordinates or geometry. To guarantee consistency and reproducibility, we apply geometric screening, procedural generation, and raster-level validation. The simulation environments are initialized in a time range of 1.18 to 2.48 seconds, with the initialization time increasing linearly as the raster size increases. In 30 matched trials involving 10 tracks and 3 seeds, 21 maps were generated and all passed validation. RoboRacer Arena currently contains 130 tracks and supports the generation of tracks from natural language. In benchmark tests, the system attains 8,707 vehicle-steps per second when using 256 parallel rigid-body vehicles, excluding the time taken for rendering and policy execution.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>RoboRacer为使用1:10比例自动驾驶车辆的研究提供了一个标准化平台，但可用赛道的多样性阻碍了策略的获取。尽管现有的占用网格模拟器允许快速添加新地图，但它们未能包含物理接触，而3D模拟器要求每条赛道作为单独的资源进行实现，从而限制了其可扩展性。为了克服这一问题，我们开发了RoboRacer Arena，这是一个直接从占用地图创建3D赛车环境的系统。我们的方法首先使用洪水填充算法提取可行驶走廊并识别赛道边界，然后利用这些边界设置护栏。计算距离场以定义碰撞边界。赛道表面、碰撞属性和材质被组装到USD场景中，从而允许在Isaac Sim中自动且可重复地生成环境。输入地图可以从SLAM会话、重新缩放的F1赛道或自然语言描述中获得。当输入基于自然语言时，我们使用Gemma 4 31B生成赛道规格，无需指定任何坐标或几何形状。为了保证一致性和可重复性，我们应用了几何筛选、程序化生成和栅格级验证。模拟环境的初始化时间范围为1.18至2.48秒，初始化时间随栅格尺寸增大而线性增加。在涉及10条赛道和3个种子的30次匹配试验中，生成了21张地图，且全部通过验证。RoboRacer Arena目前包含130条赛道，并支持从自然语言生成赛道。在基准测试中，系统在使用256个平行刚体车辆时实现了每秒8,707个车辆步进，不包括渲染和策略执行所需的时间。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

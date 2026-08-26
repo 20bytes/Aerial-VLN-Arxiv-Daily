@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>LagrangeGS: Non-Conservative Lagrangian System on Dynamic 3D Gaussian Splatting</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Dynamic 3D Gaussian Splatting (3DGS) achieves photorealistic reconstruction of time-varying scenes, and recent physics-aware extensions improve extrapolation by explicitly predicting velocity fields. However, these extensions merely fit vector fields to visual deformations without satisfying Lagrangian mechanics, leading to three major issues: (i) physically inconsistent trajectories, (ii) lack of time-reversibility, and (iii) geometric collapse during long-term extrapolation. In this paper, we propose LagrangeGS, which formulates dynamic 3DGS as a non-conservative Lagrangian system. While this Lagrangian formulation fundamentally solves (i), a direct application of general LNNs to dynamic 3DGS requires a large velocity-Hessian inversion for millions of Gaussian particles. To overcome this computational bottleneck, we approximate the velocity-Hessian as an identity matrix, decoupling particle dynamics for computational tractability. For (ii), we restrict the non-conservative forces to be explicitly time independent, enabling consistent backward integration. Finally, to address (iii), we introduce local rigid alignment that regularizes particle trajectories. Extensive evaluations on dynamic scene benchmarks demonstrate that LagrangeGS enables stable long-term extrapolation, consistent time reversal, and counterfactual physics-based editing without retraining.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>动态3D高斯溅射（3DGS）实现了随时间变化场景的照片级真实重建，而近期基于物理的扩展通过显式预测速度场改进了外推能力。然而，这些扩展仅仅将向量场拟合到视觉变形上，并未满足拉格朗日力学，导致三个主要问题：（i）物理上不一致的轨迹，（ii）缺乏时间可逆性，以及（iii）长期外推过程中的几何坍缩。在本文中，我们提出了LagrangeGS，将动态3DGS表述为一个非保守的拉格朗日系统。虽然这种拉格朗日表述从根本上解决了问题（i），但将通用LNN直接应用于动态3DGS需要对数百万个高斯粒子进行大规模的速度- Hessian矩阵求逆。为克服这一计算瓶颈，我们将速度- Hessian矩阵近似为单位矩阵，从而解耦粒子动力学以实现计算可行性。针对问题（ii），我们限制非保守力明确地不依赖于时间，从而实现一致的后向积分。最后，为解决（iii），我们引入了局部刚性对齐来正则化粒子轨迹。在动态场景基准上的广泛评估表明，LagrangeGS无需重新训练即可实现稳定的长期外推、一致的时间反转以及基于反事实物理的编辑。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>
