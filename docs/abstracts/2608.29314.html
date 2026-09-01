@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>All You Need Is Non-Commutative Words</h1>
+      <h2>Abstract (EN)</h2>
+      <p>We represent lexical tokens as unitary matrices and encode each sentence as their ordered product. The noncommutativity of matrix product captures word order without positional encodings (PEs). The same algebra yields several capabilities, including antisymmetric self-attention with no query, key, or value projections, and parallel composition of variable-length text chunks at a reduced attention cost. Furthermore, it provides a canonical-coset readout layer that encodes all true unitary degrees of freedom compactly, while supporting continual learning through nested group extensions that enlarge the operator space with each new task preserving prior representations exactly. Across standard text-classification benchmarks, the method matches or exceeds bag-of-words baselines. Achieving higher accuracy on IMDB and comparable performance on AG News. Notably, this is accomplished by replacing the conventional $\sim$30,000-dimensional vocabulary space with a dense, 64-parameter real-valued encoding, highlighting the expressive efficiency of our parameterization.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>我们将词元表示为酉矩阵，并将每个句子编码为其有序乘积。矩阵乘积的非交换性在不使用位置编码（PEs）的情况下捕捉了词序。同一代数产生了多种能力，包括无需查询、键或值投影的反对称自注意力，以及以降低注意力成本的方式并行组合可变长度文本块。此外，它提供了一个规范陪集读出层，紧凑地编码所有真正的酉自由度，同时通过嵌套群扩展支持持续学习，每次新任务都会扩大算子空间，并精确保留先前表示。在标准的文本分类基准测试中，该方法匹配或超过了词袋基线。在IMDB上取得了更高的准确率，在AG News上取得了相当的性能。值得注意的是，这是通过用密集的、64参数的实值编码取代传统的约30,000维词汇空间实现的，突显了我们参数化的表达效率。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>AcrossWAM1.0:A Modular Latent World-Action Stack for Compact Robot Policies</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Latent world-action models avoid rendering future pixels by predicting an action-relevant visual subgoal in feature space. LaWAM established this formulation, but its original presentation left the world model, multimodal backbone, and deployment checkpoint tightly coupled. We introduce AcrossWAM1.0, a modularization and scaling study of this latent world-action stack. Rather than presenting latent subgoals as a new algorithm, we make the module boundary explicit: a policy adapter produces latent-action and action-generation contexts; a retained latent world decoder grounds the predicted transition in the current scene;and a flow-matching expert generates continuous action chunks. We further separate training-only teachers from the inference graph and provide a verifiable deployment export. On 2,000 paired LIBERO episodes, replacing a Qwen3-VL-2B backbone with Qwen3.5-0.8B yields 97.45% success versus 98.00% for the 2B model (a-0.55percentage-point difference; exact McNemarp=0.266). This does not prove equivalence, but it meets a prespecified two-point retention criterion. The compact, inference-reachable checkpoint contains 1,472.6M unique parameters, 42.4% fewer than the original 2B policy, while all retained tensors are bitwise identical to the source checkpoint. Cross-family execution is additionally checked with a MiniCPM-V adapter smoke test; closed-loop cross-family transfer remains an open evaluation. AcrossWAM1.0 therefore contributes an auditable software and evaluation boundary for compact latent world-action policies, distinct from LaWAM&#x27;s original latent-subgoal contribution.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>潜在世界-动作模型通过在特征空间中预测与动作相关的视觉子目标，避免了渲染未来像素。LaWAM确立了这一框架，但其原始呈现将世界模型、多模态骨干网络和部署检查点紧密耦合。我们引入了AcrossWAM1.0，这是对该潜在世界-动作堆栈的模块化和扩展研究。我们并未将潜在子目标作为新算法提出，而是明确模块边界：策略适配器生成潜在动作和动作生成上下文；保留的潜在世界解码器将预测的转换基于当前场景；流匹配专家生成连续动作块。我们进一步将仅用于训练的教师模型与推理图分离，并提供可验证的部署导出。在2,000个配对的LIBERO情节中，用Qwen3-VL-2B骨干替换为Qwen3.5-0.8B后，成功率分别为97.45%和98.00%（差异为-0.55个百分点；精确McNemar检验p=0.266）。这并不能证明等价性，但满足预设的两点保留标准。紧凑的、可推理检查点包含1,472.6M个唯一参数，比原始2B策略少42.4%，而所有保留的张量与源检查点逐位相同。跨家族执行还通过MiniCPM-V适配器冒烟测试进行了检查；闭环跨家族迁移仍是待评估的开放问题。因此，AcrossWAM1.0为紧凑潜在世界-动作策略贡献了可审计的软件和评估边界，这与LaWAM原始的潜在子目标贡献不同。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

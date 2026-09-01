@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Self-Aware Active Learning Enables Continual Improvement in Autonomous Driving</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Learning-based autonomous driving (AD) systems can perform reliably in familiar conditions, yet rare distribution shifts and long-tail events remain a major source of abrupt failure. A central limitation is that most agents learn primarily from passive experience and lack mechanisms to estimate when their competence is insufficient, seek timely assistance, and convert safety-critical encounters into targeted improvement. Here we present self-aware guided exploration (SAGE), an active learning framework for post-training adaptation in AD. SAGE learns a predictive world model that generates two online intrinsic signals: fear, which estimates short-horizon predictive risk and model uncertainty, and curiosity, which measures novelty through prediction error. Curiosity adaptively calibrates the intervention threshold for fear, allowing the agent to regulate risk in a context-dependent manner. When predicted fear exceeds this adaptive threshold, the agent transfers control to an expert or fallback policy and uses the resulting takeover trajectories for focused imitation learning. In parallel, fear is integrated into policy optimization and evaluation as a safety-oriented constraint to reduce performance regressions during adaptation. We evaluate SAGE in simulated route-transfer tasks, Waymo-based logged driving scenarios, CARLA occlusion hazards, and real-world mobile robot navigation tests. Across these settings, SAGE improves robustness in novel and safety-critical scenarios, reduces safety violations, and maintains task performance comparable to strong baseline policies. These results suggest that agents can improve after initial training by estimating the limits of their competence, requesting guidance when needed, and learning selectively from rare high-value events.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>基于学习的自动驾驶（AD）系统在熟悉条件下能够可靠运行，但罕见的数据分布变化和长尾事件仍然是突然失效的主要来源。一个核心限制是，大多数智能体主要从被动经验中学习，缺乏机制来估计自身能力何时不足、寻求及时帮助，并将安全关键遭遇转化为有针对性的改进。本文提出了自我感知的引导探索（SAGE），一种用于AD训练后适应的主动学习框架。SAGE学习一个预测性世界模型，生成两种在线内在信号：恐惧，用于估计短期预测风险与模型不确定性；好奇心，通过预测误差衡量新颖性。好奇心自适应地校准恐惧的干预阈值，使智能体能够以上下文相关的方式调节风险。当预测恐惧超过此自适应阈值时，智能体将控制权转移给专家或回退策略，并利用由此产生的接管轨迹进行有针对性的模仿学习。同时，恐惧作为安全导向约束被整合到策略优化和评估中，以减少适应过程中的性能退化。我们在模拟路线转移任务、基于Waymo的记录驾驶场景、CARLA遮挡危险以及真实世界移动机器人导航测试中评估了SAGE。在这些设置中，SAGE提高在新颖和安全关键场景中的鲁棒性，减少安全违规，并保持与强基线策略相当的任务性能。这些结果表明，智能体在初始训练后可以通过估计自身能力边界、在需要时请求指导，并从罕见高价值事件中选择性学习来改进。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

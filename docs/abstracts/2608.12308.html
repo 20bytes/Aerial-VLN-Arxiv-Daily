@@ -20,11 +20,11 @@
 <body>
   <div class="wrap">
     <div class="card">
-      <h1>DreamFly: Causal Memory and Receding-Horizon Diffusion Planning for Aerial Vision-Language Navigation&lt;br&gt;[摘要](abstracts/2608.12308.html)</h1>
+      <h1>DreamFly: Causal Memory and Receding-Horizon Diffusion Planning for Aerial Vision-Language Navigation</h1>
       <h2>Abstract (EN)</h2>
-      <p>Abstract not available.</p>
+      <p>Aerial vision-language navigation (VLN) requires an embodied agent to integrate visual evidence over time, plan future actions, and determine when it has reached a navigation goal under partial observability. Although recent VLA models offer a promising perception-to-action paradigm, adapting them to aerial navigation remains challenging due to limited historical context, short planning horizons, and unreliable implicit termination. To address these challenges, we propose DreamFly, a diffusion-based aerial VLN framework built on Dream-VLA. DreamFly introduces a causally aligned historical memory that augments the current visual representation using only observations preceding the current decision step, enabling temporal reasoning without future information leakage. We further formulate navigation as receding-horizon diffusion planning, where the policy predicts a $K$-step action chunk but executes only the first action before replanning. This plan-$K$, execute-one strategy uses future actions as auxiliary planning targets while preserving closed-loop visual feedback. Finally, LiteStop estimates the stop probability directly from action logits at the initial all-mask state, decoupling explicit termination from action generation. Experiments on the OpenFly benchmark demonstrate consistent improvements in seen and unseen environments. DreamFly achieves 32.04%/29.46% SR and 28.22%/23.54% SPL on the test-seen/test-unseen splits, respectively, outperforming all compared methods on both metrics while attaining the lowest navigation error. These results demonstrate the effectiveness of jointly modeling historical context, future action structure, and explicit termination for aerial VLN.</p>
       <h2>摘要 (ZH)</h2>
-      <p>未生成（可稍后重试翻译）</p>
+      <p>航空视觉-语言导航（VLN）要求具身智能体在部分可观测条件下，随时间整合视觉证据、规划未来动作，并判断是否已到达导航目标。尽管最近的VLA模型提供了一种有前景的感知-动作范式，但将其应用于航空导航仍面临挑战，原因在于历史上下文有限、规划视野短以及隐式终止不可靠。为解决这些问题，我们提出了DreamFly，一个基于Dream-VLA的扩散式航空VLN框架。DreamFly引入了一种因果对齐的历史记忆，仅利用当前决策步骤之前的观测来增强当前视觉表示，从而在不泄露未来信息的情况下实现时间推理。我们进一步将导航表述为滚动时域扩散规划，其中策略预测一个$K$步动作块，但仅执行第一个动作后重新规划。这种计划K步、执行一步的策略将未来动作作为辅助规划目标，同时保持闭环视觉反馈。最后，LiteStop直接从初始全掩码状态下的动作logits估计停止概率，将显式终止与动作生成解耦。在OpenFly基准上的实验表明，在可见和不可见环境中均有持续改进。DreamFly在测试可见/测试不可见分割上分别实现了32.04%/29.46%的SR和28.22%/23.54%的SPL，在所有比较方法中两项指标均最优，同时实现了最低的导航误差。这些结果证明了联合建模历史上下文、未来动作结构和显式终止对于航空VLN的有效性。</p>
       <p><a href="../index.html">← Back</a></p>
     </div>
   </div>

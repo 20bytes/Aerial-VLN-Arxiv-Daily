@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Matrix-Game 3.5: Enhancing Real-Time Streaming Interactive World Models with Patch Memory</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Interactive world models extend video generation from offline clip synthesis toward persistent simulation of interactive virtual worlds, enabling applications in games, robotics, embodied agents, and XR. Achieving stable long-horizon interactive generation, however, remains challenging, as the model must simultaneously preserve scene geometry, dynamic consistency, and camera control while supporting real-time autoregressive generation. Building upon Matrix-Game 3.0, we present Matrix-Game 3.5, as shown in Figure 1, which advances real-time interactive world generation toward geometry-aware and long-horizon consistent simulation through three key improvements. First, we propose a unified geometry-aware memory framework, whose patch-memory and tiled-PRoPE components introduce no additional learnable parameters, combining explicit 3D patch retrieval with projective camera conditioning to enable geometry-consistent camera control and faithful long-horizon scene recall. Second, we introduce a static-dynamic disentangled world representation that separately models static scene geometry and dynamic subjects, preserving both geometric consistency and subject identity throughout long-horizon generation. Third, we develop a two-stage progressive real-time distillation framework that converts a bidirectional diffusion model into a few-step causal generator through Perceptual Flow Matching and curriculum based Self-Rollout DMD, enabling minute-long real-time interactive generation. Extensive experiments demonstrate that, with a unified training corpus spanning Unreal simulation environments, open-world games, and internet videos, MatrixGame 3.5 achieves strong performance in long-horizon scene recall, precise camera control, subject consistency, prompt-driven world generation, and stable real-time open-world interaction.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>交互式世界模型将视频生成从离线片段合成扩展到持久模拟交互式虚拟世界，使得在游戏、机器人、具身智能体和XR中的应用成为可能。然而，实现稳定的长时程交互生成仍然具有挑战性，因为模型必须同时保持场景几何、动态一致性和相机控制，并支持实时自回归生成。基于Matrix-Game 3.0，我们提出了Matrix-Game 3.5，如图1所示，通过三项关键改进推进了实时交互世界生成向几何感知和长时程一致模拟的发展。首先，我们提出了一种统一的几何感知记忆框架，其补丁记忆和分块PROPE组件不引入额外可学习参数，结合显式3D补丁检索与投影相机条件化，实现几何一致的相机控制和忠实的长时间场景回忆。其次，我们引入了一种静态-动态解耦的世界表示，分别建模静态场景几何和动态主体，在整个长时程生成过程中保持几何一致性和主体身份。第三，我们开发了一个两阶段渐进式实时蒸馏框架，通过感知流匹配和基于课程的自我回放DMD，将双向扩散模型转换为少步因果生成器，实现分钟级实时交互生成。大量实验表明，凭借涵盖Unreal仿真环境、开放世界游戏和互联网视频的统一训练语料库，MatrixGame 3.5在长时程场景回忆、精确相机控制、主体一致性、提示驱动世界生成和稳定实时开放世界交互方面取得了强劲性能。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

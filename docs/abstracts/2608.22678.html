@@ -20,11 +20,11 @@
 <body>
   <div class="wrap">
     <div class="card">
-      <h1>RACO: Reliability-Aware Coarse-Goal Optimization for Inspection-Oriented UAV Vision-Language Navigation&lt;br&gt;RACO：面向巡检的无人机视觉-语言导航中可靠性感知的粗粒度目标优化&lt;br&gt;[摘要](abstracts/2608.22678.html)</h1>
+      <h1>RACO: Reliability-Aware Coarse-Goal Optimization for Inspection-Oriented UAV Vision-Language Navigation</h1>
       <h2>Abstract (EN)</h2>
-      <p>Abstract not available.</p>
+      <p>UAV vision-language navigation (UAV-VLN) is commonly evaluated as goal reaching, but inspection-oriented deployment requires the agent to stop within a valid inspection region and avoid falsely confirming visually or semantically similar distractors. This requirement exposes a key weakness in existing coarse-to-fine UAV-VLN policies: the coarse goal predicted before local refinement is often treated as reliable, although it may drift toward plausible but incorrect object regions and limit the ability of the local stage to recover. To systematically evaluate this problem, we introduce LG-UVI, an object-centric inspection evaluation setting derived from CityNav/CityRefer. LG-UVI extends standard UAV-VLN episodes with target objects, hard distractors, type-aware inspection regions, and diagnostics for inspection-region arrival and object-level confirmation. To address this inspection-oriented setting, we further propose RACO, a reliability-aware adaptive coarse-to-fine navigation framework. Instead of treating the predicted coarse goal as a fixed waypoint, RACO views it as a runtime hypothesis and uses object-level candidate anchors to check and correct coarse localization before Stage 1 and at the Stage 1-to-Stage 2 boundary. RACO also applies scale-adaptive terminal refinement to handle terminal near-miss cases using runtime-observable geometric and anchor-based evidence. Under a unified online evaluation protocol, RACO improves SR over the reproduced HETT baseline by 9.53 and 7.98 percentage points on validation-unseen and test-unseen, respectively. It also improves inspection-region arrival and reduces false verification risk, showing that coarse-goal reliability optimization is an effective complement to existing coarse-to-fine UAV-VLN policies.</p>
       <h2>摘要 (ZH)</h2>
-      <p>未生成（可稍后重试翻译）</p>
+      <p>无人机视觉-语言导航（UAV-VLN）通常以到达目标来评估，但面向检查的部署要求智能体在有效的检查区域内停止，并避免错误确认视觉或语义上相似的干扰物。这一要求暴露了现有从粗到细的UAV-VLN策略的一个关键弱点：在局部细化之前预测的粗目标通常被视为可靠的，尽管它可能漂移到看似合理但不正确的物体区域，并限制局部阶段恢复的能力。为了系统地评估这一问题，我们引入了LG-UVI，一种源自CityNav/CityRefer的面向对象的检查评估设置。LG-UVI将标准UAV-VLN场景扩展为目标物体、硬干扰物、类型感知检查区域以及用于检查区域到达和物体级确认的诊断。为了解决这一面向检查的设置，我们进一步提出了RACO，一种可靠性感知的自适应从粗到细的导航框架。RACO不将预测的粗目标视为固定航点，而是将其视为运行时假设，并使用物体级候选锚点在阶段1之前以及阶段1到阶段2的边界处检查和纠正粗定位。RACO还应用尺度自适应终端细化，以使用运行时可观察的几何和基于锚点的证据处理终端接近未命中案例。在统一的在线评估协议下，RACO在验证未见和测试未见上分别将SR相对于复现的HETT基线提高了9.53和7.98个百分点。它还改善了检查区域的到达并降低了错误验证风险，表明粗目标可靠性优化是现有从粗到细的UAV-VLN策略的有效补充。</p>
       <p><a href="../index.html">← Back</a></p>
     </div>
   </div>

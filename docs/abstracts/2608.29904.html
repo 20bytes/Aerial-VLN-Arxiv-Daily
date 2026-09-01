@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Off-Manifold Refinement: Guiding Video Generators with a Frozen World Model</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Modern video generators routinely fail at physical dynamics: objects float, trajectories violate gravity, contacts vanish. Standard denoising and flow-matching objectives fit visual data distributions but do not explicitly penalize such physical violations. Existing remedies can improve physical consistency, but typically add substantial inference or training cost. Candidate-selection methods generate and score multiple videos, while gradient-based world-model guidance repeatedly decodes and re-encodes intermediate estimates. Generator-internal refinement adds perturbation and re-denoising loops, whereas post-training requires curated data and additional optimization. We propose Off-Manifold Refinement (OMR), an inference-time method that instead injects world-model feedback directly into a single sampling trajectory. During scheduled middle ODE steps, we augment the generator velocity with the gradient of an adapter-space V-JEPA 2.1 surprise energy. This external correction can move the latent away from the uncorrected sampling trajectory and toward regions ranked as more physically plausible by the frozen predictor, after which the generator continues rendering from the corrected state. A small trained latent-to-embedding adapter keeps the gradient tractable at inference, and both the video generator and the world model remain frozen. On our fixed 400-prompt VideoPhy-2 detailed subset, OMR lifts the joint Semantic-Adherence-and-Physical-Commonsense metric from 47.0% to 52.0% (+5.0pp absolute, +10.6% relative) over the base Wan2.2-T2V-A14B sampler. On a separate fixed 50-prompt efficiency subset, it requires $1.71 \times$ the base runtime rather than the multiplicative cost of reward/search alternatives. Project page: https://itruonghai.github.io/omr.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>现代视频生成器在物理动力学方面经常失败：物体漂浮、轨迹违反重力、接触消失。标准的去噪和流匹配目标拟合视觉数据分布，但并未明确惩罚此类物理违规。现有的补救措施可以提高物理一致性，但通常会增加大量的推理或训练成本。候选选择方法生成并对多个视频进行评分，而基于梯度的世界模型引导则反复解码和重新编码中间估计。生成器内部精炼增加了扰动和重新去噪循环，而后期训练则需要精心策划的数据和额外的优化。我们提出了流形外精炼（OMR），一种推理时方法，将世界模型反馈直接注入单个采样轨迹。在计划中的中间ODE步骤中，我们用适配器空间V-JEPA 2.1惊奇能量的梯度来增强生成器速度。这种外部校正可以将潜在向量移离未校正的采样轨迹，并朝向冻结预测器认为更物理合理的区域移动，然后生成器从校正后的状态继续渲染。一个小型训练好的潜在到嵌入适配器使梯度在推理时易于处理，视频生成器和世界模型均保持冻结。在我们固定的400提示的VideoPhy-2详细子集上，OMR将联合语义一致性与物理常识指标从47.0%提升至52.0%（绝对+5.0个百分点，相对+10.6%），相对于基础Wan2.2-T2V-A14B采样器。在另一个固定的50提示的效率子集上，它需要基准运行时1.71倍的时间，而不是奖励/搜索替代方案的乘法成本。项目页面：https://itruonghai.github.io/omr。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

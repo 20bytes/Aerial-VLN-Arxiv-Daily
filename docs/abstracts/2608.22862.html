@@ -20,11 +20,11 @@
 <body>
   <div class="wrap">
     <div class="card">
-      <h1>JANUS: Online Jacobian-Aligned Infill for Black-Box Optimization&lt;br&gt;JANUS: 黑盒优化的在线雅可比对齐填充&lt;br&gt;[摘要](abstracts/2608.22862.html)</h1>
+      <h1>JANUS: Online Jacobian-Aligned Infill for Black-Box Optimization</h1>
       <h2>Abstract (EN)</h2>
-      <p>Abstract not available.</p>
+      <p>Population optimizers such as CMA-ES, DE, and multi-objective evolutionary algorithms drive search mainly through selection signals that are scalar or rank based: such a signal indicates that one candidate outperforms another, but not the local direction responsible for the improvement. JANUS (\emph{Jacobian-Aligned Newton-Unified Search}) is a plug-and-play infill module that extracts this missing local geometric signal without replacing the host optimizer. It estimates a local Jacobian from the recent evaluation trace; the same Jacobian yields both a damped Gauss--Newton exploitation candidate and a trace-preserving exploration metric, reserving a fraction of the host&#x27;s per-generation candidate slots for geometry-guided infill rather than spending evaluations on top of the host&#x27;s budget. Unlike MetaBBO methods, JANUS needs no offline training or task distribution, estimating this geometry on the fly from the current run alone, while the host keeps full control of selection, survival, covariance adaptation, and step-size control. Under same-protocol comparisons, JANUS improves the CMA-ES host on \textbf{11--15/16} BBOB functions across $d\in\{30,100,500\}$. It also attains the best mean error on \textbf{13 of the 16} functions at $d{=}500$ in the complete NN-BBO/MetaBBO baseline comparison, with no training cost, and yields a $936\times$ geometric-mean improvement over the host on a $d{=}1000$ BBOB subset. On structured and multi-objective tasks, JANUS gives the best mean cost on 1135-dimensional UAV path planning ($-12.8\%$ vs.\ the strongest baseline), and it improves SMS-EMOA/AGE-MOEA2 hosts on 12/38 multi-objective tasks with zero significant regressions. Code is available at https://github.com/hongyuanyu/JANUS.</p>
       <h2>摘要 (ZH)</h2>
-      <p>未生成（可稍后重试翻译）</p>
+      <p>种群优化器，如CMA-ES、DE和多目标进化算法，主要依靠标量或基于排名的选择信号来驱动搜索：这种信号表明一个候选解优于另一个，但并未指出造成改进的局部方向。JANUS（雅可比对齐牛顿-统一搜索）是一种即插即用的插补模块，在不替换宿主优化器的情况下提取这一缺失的局部几何信号。它从最近的评估轨迹中估计局部雅可比矩阵；该雅可比矩阵同时提供阻尼高斯-牛顿利用候选解和保持轨迹的探索度量，将宿主每代候选解槽位的一部分用于几何引导的插补，而不是在宿主预算之外额外花费评估。与MetaBBO方法不同，JANUS不需要离线训练或任务分布，仅从当前运行中实时估计该几何信息，而宿主保留对选择、生存、协方差适应和步长控制的完全控制。在相同协议下，JANUS在d∈{30,100,500}的16个BBOB函数上改善了CMA-ES宿主的性能（在11-15个函数上）。在完整的NN-BBO/MetaBBO基线比较中，它在d=500的16个函数中的13个上达到了最佳平均误差，且无需训练成本，并在d=1000的BBOB子集上相对于宿主实现了936倍的几何平均改进。在结构化任务和多目标任务中，JANUS在1135维无人机路径规划上取得了最佳平均成本（相对于最强基线改善-12.8%），并在12/38个多目标任务上改善了SMS-EMOA/AGE-MOEA2宿主，且无显著退化。代码可在https://github.com/hongyuanyu/JANUS获取。</p>
       <p><a href="../index.html">← Back</a></p>
     </div>
   </div>

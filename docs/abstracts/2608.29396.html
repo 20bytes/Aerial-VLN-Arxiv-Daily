@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Toward Trustworthy Robot-Assisted Sliding Palpation for Shallow Vessel Localisation with a Calibrated Digital Twin</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Reliable localisation of shallow subsurface vessels is important for safe robot-assisted venous access and vessel-aware manipulation, but collecting diverse tactile data on physical hardware is costly, time-consuming, and can degrade soft vision-based tactile sensors. We present a robot-assisted sliding-palpation framework in which a calibrated digital twin generates labelled tactile sequences, reducing reliance on real-world data. The twin models sensor-vessel contact, is calibrated against real palpation trajectories using Bayesian-optimisation-based domain adaptation, and is randomised over sliding direction and contact conditions. A spatio-temporal graph neural network trained on simulated marker trajectories performs per-node vessel classification and produces a human-verifiable top-view localisation map through 2D-to-3D-to-2D geometric projection. We evaluate three datasets: Sim, Silicone, and Meat, the latter a raw-meat phantom with vessel models at nominal depths of 0 to 30 mm, using four train-to-test configurations: Sim to Sim, Sim to Silicone, Sim to Meat, and Meat to Silicone. The calibrated twin achieves a simulated-to-real marker-alignment mean absolute error of 0.50 mm at deepest contact across four canonical interactions. After reprojection onto a 1 mm top-view grid, predicted vessel pixels lie on average 1.05 to 5.49 mm from the nearest true vessel pixel across the four models, with 1.05 to 1.31 mm for all except Sim to Meat. The larger error for Sim to Meat reflects the greater domain shift and current limit of simulation transfer. These results demonstrate progress toward trustworthy tactile palpation through calibrated simulation, interpretable localisation, and transparent cross-domain evaluation. Code, model weights, and data are publicly available on GitHub and Zenodo.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>浅表皮下血管的可靠定位对于安全的机器人辅助静脉穿刺和血管感知操作至关重要，但在物理硬件上收集多样化的触觉数据成本高昂、耗时，并且可能降低基于视觉的软触觉传感器的性能。我们提出了一种机器人辅助滑动触诊框架，其中校准的数字孪生生成带标签的触觉序列，减少了对真实世界数据的依赖。该孪生模型模拟传感器-血管接触，通过基于贝叶斯优化的域适应针对真实触诊轨迹进行校准，并在滑动方向和接触条件上进行随机化。基于模拟标记轨迹训练的时空图神经网络执行逐节点血管分类，并通过2D到3D再到2D的几何投影生成人类可验证的俯视定位图。我们评估了三个数据集：Sim、Silicone和Meat（后者为生肉模型，血管模型位于0至30毫米标称深度），并使用四种训练到测试的配置：Sim到Sim、Sim到Silicone、Sim到Meat以及Meat到Silicone。校准后的孪生模型在四种典型交互中，在最大接触深度下实现了模拟到真实的标记对齐平均绝对误差为0.50毫米。在重新投影到1毫米俯视图网格后，预测的血管像素在四种模型中平均距离最近的真实血管像素为1.05至5.49毫米，除Sim到Meat外，其余为1.05至1.31毫米。Sim到Meat的较大误差反映了更大的域偏移和当前仿真迁移的局限性。这些结果表明，通过校准仿真、可解释定位和透明的跨域评估，在实现可信触觉触诊方面取得了进展。代码、模型权重和数据可在GitHub和Zenodo上公开获取。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

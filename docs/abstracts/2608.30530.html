@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>WebWorld: The Browser as a World Model for Self-Improving Web Code</h1>
+      <h2>Abstract (EN)</h2>
+      <p>VLM-driven self-improvement of web code has a structural flaw: the model that proposes the repair is the model that judges it, and visual plausibility under that judge is a poor proxy for whether the page actually works. What the loop is missing is a counterparty the VLM cannot fool, and the browser already is that counterparty: a deterministic, executable simulator of how an HTML artifact behaves under user actions, and in everything but name a world model for web code. We present WebWorld, the interface that lets a VLM prior interact with this browser-as-world-model autonomously and decides which interactions become supervision. Each round, the VLM emits a critique that the planner compiles into a typed interaction contract; the browser re-executes the candidate and issues an acceptance certificate only when both target progress and preservation of every previously verified capability hold; certified transitions accumulate as a quality ratchet that is the only thing the SFT export ever sees. Under matched training, WebWorld-27B improves Raw-27B by 5.3 points on HTMLBench-400 and 14.9 points on MiniAppBench-Val, and reaches the level of strong frontier systems such as Kimi-K2.6 and GPT-5.4 on interactive HTML generation. Equal-size ablations show that browser-backed admission carries the gain: without the certificate, the matched 9B lift nearly disappears.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>基于视觉语言模型（VLM）驱动的Web代码自我改进存在结构性缺陷：提出修复的模型与评判修复的模型是同一个，而该评判者眼中的视觉合理性并不能很好地代表页面是否真正可用。该循环缺少的是一个VLM无法欺骗的对手方，而浏览器正是这样一个对手方：它是一个确定性的、可执行的模拟器，模拟HTML产物在用户操作下的行为，并且除名称外，它就是Web代码的世界模型。我们提出了WebWorld，这是一个接口，让VLM先验能够自主地与这种“浏览器即世界模型”交互，并决定哪些交互成为监督信号。每一轮中，VLM输出批评意见，由规划器将其编译为类型化的交互契约；浏览器重新执行候选方案，并且仅当目标进展和所有先前已验证能力的保留均成立时，才签发接受证书；经认证的转换累积成质量棘轮，这是SFT导出所能看到的唯一内容。在匹配训练条件下，WebWorld-27B在HTMLBench-400上将Raw-27B提升了5.3个百分点，在MiniAppBench-Val上提升了14.9个百分点，并在交互式HTML生成方面达到了Kimi-K2.6和GPT-5.4等强大前沿系统的水平。同等规模的消融实验表明，浏览器支持的准入机制带来了性能提升：如果没有证书，匹配的9B提升几乎消失。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

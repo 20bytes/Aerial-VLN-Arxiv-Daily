@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>How do World Models and Policies Compose in LLM Agents? A Joint Spectral and Behavioral Account</h1>
+      <h2>Abstract (EN)</h2>
+      <p>How do LLM agents come to both understand environments they act in and master tasks set within them? Through controlled experiments combining world-model training (next-state prediction) and policy training (reward maximization), we investigate this question. We dissect the resulting models through their additive parameter updates. Geometrically, we find effective world-model updates are low-rank and share an input-feature subspace with policy updates while writing to nearly orthogonal output directions, whether trained separately or sequentially. However, we find that, in projection interventions, the sequential update induces more robustness than separate policy RL when removing the world model&#x27;s leading input directions, suggesting that it has learned alternative input pathways. Behaviorally, we find the sequentially trained agent explores a wider range of states and actions. Based on this, we ask: does policy training preserve world knowledge as well as it could? We probe this with training-free merging built on the geometrically motivated input basis plus an online world-model loss during policy RL, and show both improve over the untreated baseline. Our findings suggest world knowledge and task-directed ability can be learned in geometrically complementary forms, and that future post-training pipelines should consider how best to engineer the interface between them.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>大语言模型智能体如何同时理解其所处的环境并掌握其中设定的任务？通过结合世界模型训练（下一状态预测）和策略训练（奖励最大化）的受控实验，我们研究了这一问题。我们通过加性参数更新来剖析所得模型。从几何角度看，我们发现有效的世界模型更新是低秩的，并且与策略更新共享输入特征子空间，同时写入近乎正交的输出方向，无论是分别训练还是顺序训练都是如此。然而，在投影干预中，我们发现顺序更新比单独的策略强化学习在移除世界模型的主要输入方向时更具鲁棒性，这表明它学习了替代的输入路径。从行为角度看，我们发现顺序训练的智能体探索了更广泛的状态和动作范围。基于此，我们提出疑问：策略训练是否尽可能保留了世界知识？我们通过基于几何启发的输入基的无训练合并以及策略强化学习期间的在线世界模型损失来探究这一点，并展示两者都优于未处理的基线。我们的研究结果表明，世界知识和任务导向能力可以以几何上互补的形式学习，未来的后训练流程应考虑如何最好地设计它们之间的接口。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

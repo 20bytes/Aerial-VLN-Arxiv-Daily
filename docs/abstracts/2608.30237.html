@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Motus2: A Self-Evolving General World Model for Dexterous Manipulation</h1>
+      <h2>Abstract (EN)</h2>
+      <p>General embodied agents should perceive, predict, act, evaluate, and improve within a unified system. World models have shown great promise in building such agents, yet existing models typically append an action output head to a world simulator, without coupling them into a closed decision-and-learning loop for policy improvement. We present Motus2, a self-evolving general world model for dexterous manipulation. Motus2 advances world modeling through model scaling and data scaling. For model scaling, a single model with shared weights exposes three control interfaces: a policy (world-action model), a simulator (action-conditioned world model), and an evaluator (value model). The policy proposes candidate action chunks, the simulator predicts their visual consequences, and the evaluator assesses the predicted outcomes. Their coupling forms a closed decision-and-learning loop for policy improvement. This formulation uses curated expert demonstrations for action learning, while failed and suboptimal interactions provide valuable evidence for dynamics modeling and value learning. For data scaling, Motus2 progresses from large-scale monocular egocentric data to synchronized stereo egocentric data, followed by robot-domain adaptation with robot trajectories and supplementary human-robot alignment data. Motus2 further studies global-autoregressive and hybrid-memory extensions of its sliding-window context, adds tactile feedback for contact-aware control, and is instantiated on a fully biomimetic platform with stereo vision, dual arms, dual dexterous hands, and tactile sensing. Together, egocentric data scaling and closed-loop general world model scaling provide a general path toward self-evolving dexterous manipulation.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>通用具身智能体应在统一系统中感知、预测、行动、评估和改进。世界模型在构建此类智能体方面展现出巨大潜力，然而现有模型通常只是将动作输出头附加到世界模拟器上，而未能将其耦合到用于策略改进的闭环决策与学习循环中。我们提出Motus2，一个用于灵巧操作的自演化通用世界模型。Motus2通过模型扩展和数据扩展推进世界建模。在模型扩展方面，一个共享权重的单一模型暴露了三个控制接口：策略（世界-动作模型）、模拟器（动作条件的世界模型）和评估器（价值模型）。策略提出候选动作块，模拟器预测其视觉后果，评估器评估预测结果。它们的耦合形成了用于策略改进的闭环决策与学习循环。该公式使用精选的专家演示进行动作学习，而失败和次优交互为动力学建模和价值学习提供了有价值的证据。在数据扩展方面，Motus2从大规模单目自我中心数据发展到同步立体自我中心数据，随后通过机器人轨迹和补充的人-机器人对齐数据进行机器人领域适应。Motus2还进一步研究了其滑动窗口上下文的全局自回归和混合记忆扩展，增加了触觉反馈以实现接触感知控制，并在一个具有立体视觉、双臂、双灵巧手和触觉感知的全仿生平台上实现。总之，自我中心数据扩展和闭环通用世界模型扩展为自演化灵巧操作提供了一条通用路径。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

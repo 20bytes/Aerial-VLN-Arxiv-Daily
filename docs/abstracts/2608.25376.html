@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>GPU-Accelerated Quantum Annealing-Inspired UAV Path Planning for Smart Agriculture</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Traditional path planning methods are often constrained by local optima, limited scalability, and slow convergence, which significantly restrict their effectiveness in solving large-scale problems. To address these limitations, this paper shifts the problem-solving paradigm from algorithmic refinement to parallelization of computational architecture. We propose a novel optimization framework utilizing a Graphics Processing Unit (GPU)-parallelized Ising solver. Our method mimics the operational principles of quantum annealing on GPU hardware, enabling rapid search for the minimum-energy state of Ising models. Unlike physical quantum devices, which are often constrained by the number of qubits, our approach leverages the Fixstars Amplify (FA) platform to perform parallel annealing on highly parallelized GPUs. This enables the simultaneous evaluation of thousands of potential path candidates and vast state transitions. By leveraging large-scale parallel processing, the core strength of this framework lies in minimizing computation time even as the problem scale increases. Furthermore, to solve the path planning problem using the FA platform, we formulate the problem as a Quadratic Unconstrained Binary Optimization (QUBO) model. This formulation converts the objectives of flight constraints and operational time minimization into an energy state, enabling problem processing via the Ising-based architecture. Simulation results demonstrate that our proposed method consistently identifies superior flight paths while maintaining stable computational performance compared with the genetic algorithm and simulated annealing method. These findings highlight its potential as a robust, scalable real- time solution for next-generation large-scale smart agriculture.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>传统的路径规划方法常常受限于局部最优、扩展性有限和收敛速度慢，这严重制约了它们在解决大规模问题时的有效性。为应对这些限制，本文从算法优化转向计算架构并行化来改变问题求解范式。我们提出了一种利用图形处理单元（GPU）并行化Ising求解器的新型优化框架。该方法在GPU硬件上模拟量子退火的运行原理，能够快速搜索Ising模型的最小能量状态。与物理量子设备受限于量子比特数量不同，我们的方法利用Fixstars Amplify（FA）平台在高并行化的GPU上执行并行退火，从而能够同时评估数千个潜在路径候选方案和大量状态转换。通过利用大规模并行处理，该框架的核心优势在于即使问题规模增大，也能最小化计算时间。此外，为了在FA平台上求解路径规划问题，我们将该问题建模为二次无约束二进制优化（QUBO）模型。该表述将飞行约束和作业时间最小化的目标转换为能量状态，从而能够通过基于Ising的架构进行处理。仿真结果表明，与遗传算法和模拟退火方法相比，我们提出的方法能够持续找到更优的飞行路径，同时保持稳定的计算性能。这些发现凸显了其作为下一代大规模智慧农业中稳健、可扩展的实时解决方案的潜力。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>
