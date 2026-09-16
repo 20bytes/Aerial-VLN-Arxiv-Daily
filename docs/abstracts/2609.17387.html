@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>PanoGS-SLAM: Panoramic 3D Gaussian Splatting SLAM</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Real-time dense SLAM is a core capability for robotics applications that require robust localization and high- quality mapping in dynamic or fast-changing environments. Recent 3D Gaussian Splatting (3DGS)-based SLAM methods have shown promising performance, but most are designed for narrow-FoV pinhole cameras, where limited angular coverage weakens pose observability and often leads to unstable photo- metric optimization under rapid motion and large viewpoint changes. We present PanoGS-SLAM, the first panoramic dense SLAM system built on 3D Gaussian Splatting. Our method per- forms differentiable rendering and pose optimization directly in the spherical domain, enabling omnidirectional photometric constraints for more stable tracking. To improve geometric consistency and robustness, we introduce (1) a sphere-consistent photometric loss that compensates for the area distortion of equirectangular projection, and (2) a depth-guided Gaussian initialization strategy that stabilizes incremental mapping in newly observed regions. Extensive experiments on both real and synthetic panoramic benchmarks (PALVIO and SynPano) show that PanoGS-SLAM consistently outperforms geometric and GS-based baselines in tracking accuracy and rendering quality, while achieving fast front-end convergence and real-time perfor- mance. In addition, controlled field-of-view experiments reveal a clear monotonic improvement in optimization conditioning and convergence stability as angular coverage increases, high- lighting the fundamental role of sensing geometry in shaping the optimization landscape of differentiable Gaussian-based SLAM. The source code will be made publicly available.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>实时密集SLAM是机器人应用的核心能力，需要在动态或快速变化的环境中实现鲁棒的定位和高质量建图。最近基于3D高斯泼溅（3DGS）的SLAM方法已展现出良好性能，但大多针对窄视场针孔相机设计，其有限的角度覆盖削弱了位姿可观测性，并常在快速运动和大视角变化下导致不稳定的光度优化。我们提出PanoGS-SLAM，首个基于3D高斯泼溅的全景密集SLAM系统。我们的方法直接在球面域中进行可微渲染和位姿优化，从而实现全向光度约束，使跟踪更稳定。为提高几何一致性和鲁棒性，我们引入了：（1）球面一致的光度损失，以补偿等距柱状投影的面积畸变；（2）深度引导的高斯初始化策略，以稳定新观测区域的增量建图。在真实和合成全景基准（PALVIO和SynPano）上的大量实验表明，PanoGS-SLAM在跟踪精度和渲染质量上始终优于几何和基于GS的基线方法，同时实现快速前端收敛和实时性能。此外，受控视场实验揭示了随着角度覆盖增加，优化条件和收敛稳定性呈现明显的单调改善，突显了传感几何在塑造基于可微高斯SLAM优化景观中的根本作用。源代码将公开提供。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

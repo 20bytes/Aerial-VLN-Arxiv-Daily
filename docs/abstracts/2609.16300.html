@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Policy Gradient over History-Dependent Policy Classes for LQR with Domain Randomization</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Domain Randomization (DR) has been widely used to overcome the sim-to-real gap by training a controller on a distribution of simulated environments via reinforcement learning. While DR can achieve robust performance simply using controllers synthesized via policy gradient (PG) methods, the optimization landscape is not well understood, even in the case of linear quadratic regulator (LQR) objectives. To this end, we first study PG of domain randomized LQR over history-dependent policy classes, such as finite impulse response controllers, as they can extend the possibilities of simultaneous stabilization. Second, to find such a stabilizing controller, we propose a curriculum learning based algorithm which gradually expands the memory of the controller. Finally, we show that PG with the proposed algorithm converges globally to the minimizer of a sample average approximation of the DR objective under suitable bounds on the heterogeneity of environments. Empirical results support our findings and highlight promising directions for future work, including nonlinear domain-randomized control.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>域随机化（DR）已被广泛用于通过强化学习在模拟环境分布上训练控制器，以克服仿真到现实的差距。虽然DR可以简单地使用通过策略梯度（PG）方法合成的控制器来实现鲁棒性能，但即使在线性二次调节器（LQR）目标的情况下，优化景观也尚未被充分理解。为此，我们首先研究了域随机化LQR在历史依赖策略类（如有限脉冲响应控制器）上的PG，因为它们可以扩展同时镇定的可能性。其次，为了找到这样的镇定控制器，我们提出了一种基于课程学习的算法，该算法逐渐扩展控制器的记忆。最后，我们表明，在环境异质性的适当界限下，采用所提算法的PG全局收敛到DR目标的样本平均近似的极小值点。实证结果支持了我们的发现，并突出了未来工作的有希望的方向，包括非线性域随机化控制。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

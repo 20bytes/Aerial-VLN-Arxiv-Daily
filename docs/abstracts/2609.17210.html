@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>FluxVLA Engine: A One-Stop VLA Engineering Platform for Embodied Intelligence</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Vision-language-action (VLA) models, world-action models (WAMs), and offline reinforcement learning methods are rapidly expanding the design space of embodied policies, yet turning these algorithms into reliable robot systems remains constrained by fragmented data formats, training stacks, evaluation protocols, inference runtimes, and embodiment-specific interfaces. We present $\mathrm{FluxVLA}$ Engine, an open, configuration-driven platform that turns heterogeneous embodied-policy components into a reproducible data-to-deployment workflow. Rather than introducing another policy model, $\mathrm{FluxVLA}$ standardizes interfaces for datasets, visual-language and world models, action heads, reward- or advantage-weighted learning, distributed training, simulation evaluation, optimized inference, and robot operators. The engine further integrates compositional dual-arm simulation, scalable automatic data generation, and model-decoupled human-in-the-loop rollout, takeover, correction collection, and reward annotation. For responsive physical execution, it combines Real-Time Chunking (RTC) with accelerated inference backends, lightweight remote GPU serving, and configurable trajectory post-processing. Together, these capabilities connect offline learning, simulation validation, online correction, and real-robot execution through shared and auditable contracts. $\mathrm{FluxVLA}$ therefore targets the engineering bottlenecks separating promising embodied-learning algorithms from reproducible evaluation and dependable deployment. Code is available at https://github.com/FluxVLA/FluxVLA</p>
+      <h2>摘要 (ZH)</h2>
+      <p>视觉-语言-动作（VLA）模型、世界动作模型（WAM）以及离线强化学习方法正在迅速扩展具身策略的设计空间，然而将这些算法转化为可靠的机器人系统仍然受限于碎片化的数据格式、训练栈、评估协议、推理运行时以及针对具体具身的接口。我们提出了$\mathrm{FluxVLA}$引擎，一个开放的、配置驱动的平台，能够将异构的具身策略组件转化为可复现的从数据到部署的工作流。$\mathrm{FluxVLA}$并非引入另一个策略模型，而是为数据集、视觉-语言与世界模型、动作头、奖励或优势加权学习、分布式训练、仿真评估、优化推理以及机器人操作器标准化了接口。该引擎进一步集成了组合式双臂仿真、可扩展的自动数据生成，以及模型解耦的人在回路中的滚动、接管、纠正收集和奖励标注。为了实现响应式物理执行，它将实时分块（RTC）与加速推理后端、轻量级远程GPU服务和可配置的轨迹后处理相结合。通过这些能力，离线学习、仿真验证、在线纠正和真实机器人执行得以通过共享且可审计的契约连接起来。因此，$\mathrm{FluxVLA}$旨在解决那些将有前景的具身学习算法与可复现评估和可靠部署分隔开来的工程瓶颈。代码可在https://github.com/FluxVLA/FluxVLA获取。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

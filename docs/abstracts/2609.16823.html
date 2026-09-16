@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>LCAP: Population-Informed Latent Chip Adaptation from Few Output Probes for Photonic Neural Networks</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Photonic neural networks (PNNs) offer efficient analog inference, but parameters optimized under ideal device models can degrade after fabrication, creating a persistent simulation-to-hardware (sim-to-real) gap. When many identically designed chips are deployed, calibrating each device from scratch compounds this cost. We propose Latent Chip Adaptation from Probes (LCAP), a population-informed framework that decomposes hardware adaptation into a transferable population correction and probe-inferred latent personalization. LCAP first learns a shared correction from 80 historical chips, then extracts a low-dimensional correction space from device-specific refinements. At deployment, 32 fixed unlabeled output probes infer an unseen chip&#x27;s latent correction coordinates, enabling feed-forward personalization without target-device optimization. On a three-layer 64-mode MZI simulator with phase variation, beam-splitter errors, quantization, and crosstalk, accuracy improves from 80.4147% under direct deployment to 92.6860% after shared calibration and 93.3617% with LCAP. LCAP improves 27/30 unseen chips and raises worst-device accuracy from 89.18% to 90.54%.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>光子神经网络（PNNs）能够高效地进行模拟推理，但在理想器件模型下优化的参数在制造后可能会退化，从而产生持续的仿真到硬件（sim-to-real）差距。当部署许多相同设计的芯片时，从头校准每个设备会加剧这一成本。我们提出了基于探针的隐式芯片自适应（LCAP），这是一个种群信息引导的框架，将硬件自适应分解为可迁移的种群校正和探针推断的隐式个性化。LCAP首先从80个历史芯片中学习共享校正，然后从设备特定的细化中提取低维校正空间。在部署时，32个固定的无标签输出探针推断出未见芯片的隐式校正坐标，实现无需目标设备优化的前馈个性化。在具有相位变化、分束器误差、量化和串扰的三层64模式MZI模拟器上，准确率从直接部署的80.4147%提高到共享校准后的92.6860%，使用LCAP后达到93.3617%。LCAP改善了27/30个未见芯片，并将最差设备的准确率从89.18%提高到90.54%。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

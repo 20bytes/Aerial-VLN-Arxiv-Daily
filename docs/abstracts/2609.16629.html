@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Learning to Optimize UAV Path Planning for Data Sensing in Wireless Sensor Networks</h1>
+      <h2>Abstract (EN)</h2>
+      <p>UAVs have emerged as highly flexible platforms for data sensing in Wireless Sensor Networks (WSNs). Path planning for UAVs in such tasks plays a key role to assure remote sensing effectiveness and friendly energy consumption. However, existing approaches show two key limitations: i) they are primarily hand-crafted with certain design biases that harm adaptation on unseen tasks. ii) they predominantly assume idealized spatial complexities of actual environments through simplified simulation, causing them to underperform during real-world deployment. In this paper, we propose a novel learning-assisted planning framework, termed Landscape-Aware Meta Differential Evolution (LAMDE), to tackle the mentioned limitations. The major contributions come from the following aspects. We first re-formulate such UAV path planning problem to embrace challenging constraints. To efficiently navigate this highly constrained space, we propose a bi-level learning to optimize approach, where the meta-level is a trainable algorithm configuration policy that meta-learns an adaptable planning strategy for low-level planning algorithm. To address the potential training data scarcity and distribution shift in real-world environments, we introduce a landscape-aware automatic augmentation scheme that enriches training data. At the low-level, a Differential Evolution algorithm is deployed for solving the path planning tasks. To enhance the solving flexibility, we further design a variable-length encoding strategy that dynamically prunes redundant hover points and optimizes continuous flight parameters concurrently within a unified search space. Based on all proposed designs, we meta-train LAMDE and compare it with representative baselines. Comprehensive experiments demonstrate that LAMDE achieves state-of-the-art performance on the tested complex UAV path planning tasks in WSN data collection scenarios.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>无人机已成为无线传感器网络（WSN）中高度灵活的数据感知平台。在此类任务中，无人机的路径规划对于确保遥感有效性和友好的能量消耗起着关键作用。然而，现有方法显示出两个主要局限性：i）它们主要基于手工设计，存在某些设计偏差，损害了对未见任务的适应性。ii）它们通常通过简化模拟假设实际环境的理想化空间复杂性，导致在实际部署中表现不佳。在本文中，我们提出了一种新颖的学习辅助规划框架，称为景观感知元差分进化（LAMDE），以解决上述局限性。主要贡献来自以下几个方面。我们首先重新表述了这种无人机路径规划问题，以纳入具有挑战性的约束。为了高效地在这个高度约束的空间中导航，我们提出了一种双层学习优化方法，其中元层是一个可训练的算法配置策略，元学习为低级规划算法提供适应性规划策略。为了解决现实环境中潜在的训练数据稀缺和分布偏移问题，我们引入了一种景观感知的自动增强方案，以丰富训练数据。在低层，部署差分进化算法来解决路径规划任务。为了提高求解灵活性，我们进一步设计了一种可变长度编码策略，动态修剪冗余悬停点，并在统一搜索空间中同时优化连续飞行参数。基于所有提出的设计，我们对LAMDE进行元训练，并与代表性基线进行比较。综合实验表明，LAMDE在WSN数据收集场景中测试的复杂无人机路径规划任务上达到了最先进的性能。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>
