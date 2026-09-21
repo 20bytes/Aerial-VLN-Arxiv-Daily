@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Cube-Splat: High-Fidelity 360° Gaussian Splatting SLAM via Cubemap Factorization and Adjoint-Consistent Optimization</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Recent progress in 3D Gaussian Splatting (3DGS) has enabled dense visual SLAM with pinhole cameras, yet most pipelines are not designed for panoramic imagery. We present Cube-Splat, the first panoramic GS-SLAM framework that factorizes each 360° frame into a cubemap of four fixed-orientation virtual pinhole views sharing a single optical center. By designating the front face as the primary pose state, we accumulate gradients from all faces via an adjoint mapping, thereby enabling multi-face observations to coherently update a single state while strictly preserving cross-view geometric consistency. Concurrently, our mapping module densifies and optimizes anisotropic Gaussians using aggregated cubemap rays for high-fidelity, dense reconstruction. Furthermore, to rigorously evaluate panoramic SLAM under diverse and challenging conditions, we introduce SynPano, a highly scalable, photorealistic synthetic dataset featuring parameterized complex trajectories and multi-modal ground truth. Extensive evaluations on two public benchmarks (PALVIO and OmniBlender) and our SynPano dataset, collectively encompassing both indoor and outdoor scenes, demonstrate that Cube-Splat achieves state-of-the-art (SOTA) performance in tracking accuracy and reconstruction fidelity. Both the source code and the SynPano dataset are available at https://github.com/guoxf304/CubeSplat.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>近期三维高斯泼溅（3DGS）的进展使得针孔相机的稠密视觉SLAM成为可能，然而大多数流程并非为全景图像设计。我们提出Cube-Splat，首个全景GS-SLAM框架，将每个360°帧分解为四个固定方向虚拟针孔视图的立方体贴图，这些视图共享单一光心。通过指定前向面为主位姿状态，我们通过伴随映射从所有面累积梯度，从而使多面观测能够一致地更新单一状态，同时严格保持跨视图几何一致性。同时，我们的建图模块使用聚合的立方体贴图光线来稠密化并优化各向异性高斯，以实现高保真稠密重建。此外，为了在多样且具有挑战性的条件下严格评估全景SLAM，我们引入了SynPano，一个高度可扩展、照片级逼真的合成数据集，具有参数化复杂轨迹和多模态真值。在两个公开基准（PALVIO和OmniBlender）以及我们的SynPano数据集（共同涵盖室内和室外场景）上的广泛评估表明，Cube-Splat在跟踪精度和重建保真度方面达到了最先进（SOTA）性能。源代码和SynPano数据集均可在https://github.com/guoxf304/CubeSplat获取。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

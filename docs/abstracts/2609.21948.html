@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>GALA: Geometry-Aware Latent Action Modeling for Vision-Language-Action Model Pretraining across Embodiments</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Learning large-scale vision-language-action (VLA) models from multi-embodiment datasets remains challenging due to heterogeneous action spaces across end effectors. Although latent action models (LAMs) can learn embodiment-agnostic action representations from diverse video data, existing image-based LAMs often fail to capture fine-grained end-effector articulation, particularly finger-level geometric changes in human and dexterous robot hands. To address this limitation, we propose GALA, a Geometry-Aware Latent-Action modeling framework that augments image-based latent actions with 3D end-effector geometric motion. However, naively incorporating point clouds yields fine-grained action representations with limited shared semantics, hindering cross-embodiment pretraining. To address this issue, we introduce the Unified End-effector Motion Representation (UEMR), which preserves fine-grained motion information while improving the cross-embodiment generalizability of latent actions. Building upon UEMR, GALA combines visual latent actions that capture scene-level dynamics with geometric latent actions that capture shared fine-grained end-effector articulation, providing effective supervision for VLA pretraining from multi-embodiment data, including action-free ego-centric human videos. Experiments on fine-grained motion probing, cross-embodiment retrieval, and downstream VLA evaluation demonstrate GALA&#x27;s effectiveness in modeling generalizable fine-grained motions across embodiments, achieving 68.3% RoboCasa-GR1 success rate and 75.5% real-world success rate. Code, appendix, and demos are available at https://puzhenyuan.github.io/GALA-website/.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>从多具身数据集中学习大规模视觉-语言-动作（VLA）模型仍然具有挑战性，因为不同末端执行器的动作空间存在异质性。尽管潜在动作模型（LAM）能够从多样化的视频数据中学习具身无关的动作表示，但现有的基于图像的LAM往往无法捕捉细粒度的末端执行器关节运动，尤其是人类和灵巧机器人手部的指级几何变化。为了解决这一局限，我们提出了GALA，一个几何感知的潜在动作建模框架，它通过3D末端执行器几何运动来增强基于图像的潜在动作。然而，简单地引入点云会产生细粒度动作表示，但其共享语义有限，阻碍了跨具身预训练。为了解决这个问题，我们引入了统一末端执行器运动表示（UEMR），它保留了细粒度运动信息，同时提高了潜在动作的跨具身泛化能力。基于UEMR，GALA结合了捕捉场景级动态的视觉潜在动作和捕捉共享细粒度末端执行器关节运动的几何潜在动作，为从多具身数据（包括无动作的自我中心人类视频）进行VLA预训练提供了有效的监督。在细粒度运动探测、跨具身检索和下游VLA评估上的实验表明，GALA在跨具身建模可泛化的细粒度运动方面是有效的，在RoboCasa-GR1上达到了68.3%的成功率，在真实世界中达到了75.5%的成功率。代码、附录和演示可在https://puzhenyuan.github.io/GALA-website/获取。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

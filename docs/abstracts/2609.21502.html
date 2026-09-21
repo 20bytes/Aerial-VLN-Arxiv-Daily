@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Adaptive World Memory 3D Foundation Model for Scalable 3D Mapping, Localization, and Rendering</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Recent 3D foundation models enable generalizable geometric reasoning from RGB images but remain limited in persistent memory, scalability, and renderable scene modeling. We present a memory-centric 3D foundation model for scalable robotic localization, reconstruction, and Gaussian rendering. Its core is an adaptive world memory mechanism that combines transformer-based gated updates with test-time temporal-spatial regulation. Learned gates control recurrent memory propagation, while temporal state evolution and spatial observation-state consistency regulate token-wise updates and forgetting over long image sequences. To support large-scale mapping, we organize memory into local submaps and integrate progressive mapping and tracking, loop closure, and SL(4)-based global refinement to maintain local accuracy and global consistency. A Gaussian reconstruction head decodes memory-enhanced features into renderable primitives, unifying camera pose estimation, dense point-cloud reconstruction, and photorealistic rendering within a single model. Experiments on public benchmarks and self-collected datasets from diverse robotic platforms demonstrate improved trajectory accuracy, reconstruction completeness, and rendering quality over existing 3D foundation reconstruction and SLAM baselines. These results support adaptive memory as a foundation for persistent robotic world modeling. The dataset and code will be made publicly available at \href{https://github.com/dtc111111/AWM-3DFM}{https://github.com/dtc111111/AWM-3DFM}.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>近期的3D基础模型能够从RGB图像中进行可泛化的几何推理，但在持久记忆、可扩展性和可渲染场景建模方面仍存在局限。我们提出了一种以记忆为中心的3D基础模型，用于可扩展的机器人定位、重建和高斯渲染。其核心是自适应世界记忆机制，该机制将基于Transformer的门控更新与测试时间时空调节相结合。学习到的门控控制循环记忆传播，而时间状态演化和空间观测-状态一致性则调节长图像序列中逐令牌的更新与遗忘。为支持大规模建图，我们将记忆组织为局部子图，并集成渐进式建图与跟踪、回环检测以及基于SL(4)的全局优化，以保持局部精度和全局一致性。高斯重建头将记忆增强的特征解码为可渲染图元，在单一模型中统一了相机位姿估计、密集点云重建和逼真渲染。在公开基准和来自不同机器人平台的自采数据集上的实验表明，与现有的3D基础重建和SLAM基线相比，轨迹精度、重建完整性和渲染质量均有所提升。这些结果支持将自适应记忆作为持久机器人世界建模的基础。数据集和代码将在\href{https://github.com/dtc111111/AWM-3DFM}{https://github.com/dtc111111/AWM-3DFM}公开。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

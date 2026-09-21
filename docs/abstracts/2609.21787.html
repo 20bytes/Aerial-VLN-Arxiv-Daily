@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Compact but Moving: Intervention-Relevant Geometry in Recurrent World Models</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Learned world models may have compact interventions even when their recurrent state is high-dimensional, but it is unclear what happens to such a correction after it enters the model. We study this question in a controlled recurrent world model where prior work identified a checkpoint-specific rank-4 interface for one-shot counterfactual velocity interventions. The correction rapidly leaves this fixed entry subspace during autonomous rollout. Nevertheless, a low-rank image obtained by transporting the entry directions through the factual recurrent Jacobian chain continues to capture most of the nonlinear correction. Restarts using the tangent-predicted correction preserve substantial counterfactual future function. This transport/function pattern recurs across independently trained structured-GRU models and a parameter-matched LSTM initialized with a privileged compact correction. We further characterize a finite-horizon future-response operator over the full recurrent carrier. Patching shifts its leading future-sensitive directions toward the matched native-counterfactual organization, and the local operator accurately ranks finite perturbation effects over the registered direction panels at the patched and native-counterfactual basepoints. A separate full-amplitude assay finds substantial factual-endpoint tangent residuals and supports response reconfiguration in two of three checkpoints. Together, these results show that compact intervention structure can persist as a moving, state-dependent local geometry embedded in high-dimensional recurrent dynamics, without implying a fixed or dynamically closed low-dimensional state.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>学习到的世界模型即使循环状态是高维的，也可能具有紧凑的干预，但尚不清楚这种校正进入模型后会发生什么。我们在一个受控的循环世界模型中研究这个问题，其中先前的工作确定了一个针对一次性反事实速度干预的检查点特定的秩-4接口。在自主展开过程中，校正迅速离开这个固定的入口子空间。然而，通过事实循环雅可比链将入口方向传输得到的低秩图像仍然捕获了大部分非线性校正。使用切线预测校正的重启保留了大量的反事实未来函数。这种传输/函数模式在独立训练的结构化GRU模型以及用特权紧凑校正初始化的参数匹配LSTM中反复出现。我们进一步刻画了完整循环载体上的有限时域未来响应算子。修补将其主要的未来敏感方向转向匹配的原生反事实组织，并且局部算子准确地对修补和原生反事实基点上注册的方向面板上的有限扰动效应进行排序。一个单独的全振幅测定发现了大量事实端点切线残差，并支持三个检查点中的两个的响应重构。总之，这些结果表明，紧凑的干预结构可以作为嵌入高维循环动力学中的移动的、状态依赖的局部几何结构持续存在，而不意味着一个固定的或动态封闭的低维状态。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>SABER: Learning Attention-based Semantic Affordance for Legged Locomotion</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Perceptive legged locomotion has advanced rapidly by integrating terrain geometry into learned policies, yet the integration of terrain meaning remains sparse: a pipe, a patch of grass, or a fragile box may be geometrically traversable while being inappropriate for contact. In industrial environments, where legged robots increasingly operate, a single misplaced step can damage fragile equipment, destabilize the robot, or endanger the site. To address this, we introduce SABER, a planner-free reinforcement-learning policy that jointly reasons about terrain geometry and semantic contact permission. The policy consumes a unified terrain-affordance map, where each cell encodes local 3D geometry and a semantic contact cost. We augment cross-attention with a learned, signed semantic bias: an additive term on the attention logits, gated by the contact cost, that reweights flagged cells by their distance from the nearest foot. A hazard therefore reshapes attention where it can still affect the next foothold, and its influence fades where it cannot. The resulting policy selects footholds on permitted support and keeps the leg clear of forbidden regions throughout the swing phase. We perform a systematic ablation that isolates the contribution of each architectural component; removing the semantic bias alone increases forbidden contacts by 55% while velocity tracking is unchanged. We validate the policy on a Unitree B2, demonstrating sim-to-real semantic contact selection across indoor and outdoor environments and four semantic obstacle classes.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>感知式足式运动通过将地形几何集成到学习策略中已取得快速进展，但地形语义的集成仍然稀少：管道、草地或脆弱的箱子在几何上可能是可通行的，但不适合接触。在足式机器人日益广泛应用的工业环境中，一次错步就可能损坏精密设备、使机器人失稳或危及现场安全。为此，我们提出了SABER，一种无规划器的强化学习策略，联合推理地形几何与语义接触许可。该策略接收统一的地形可供性地图，其中每个单元编码局部3D几何和语义接触代价。我们通过一个学习的带符号语义偏置增强交叉注意力：在注意力logits上增加一个由接触代价门控的加性项，根据被标记单元与最近足部的距离重新加权。因此，危险区域会在仍能影响下一步落脚点的地方重塑注意力，而在无法影响的地方其作用减弱。所得策略在允许的支撑面上选择落脚点，并在整个摆动阶段使腿部避开禁区。我们进行了系统消融实验，分离每个架构组件的贡献；仅移除语义偏置就使禁止接触增加55%，而速度跟踪性能不变。我们在Unitree B2机器人上验证了该策略，展示了室内外环境及四类语义障碍中的仿真到现实语义接触选择。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>
