@@ -20,11 +20,11 @@
 <body>
   <div class="wrap">
     <div class="card">
-      <h1>Adaptive Rollout Truncation Based on Epistemic Uncertainty for Efficient Offline World Model Training</h1>
+      <h1>Adaptive Rollout Truncation Based on Epistemic Uncertainty for Efficient Offline World Model Training&lt;br&gt;基于认知不确定性的自适应展开截断用于高效离线世界模型训练&lt;br&gt;[摘要](abstracts/2609.21482.html)</h1>
       <h2>Abstract (EN)</h2>
-      <p>Accurate neural world models are central to model-based robotics, where they enable robots to predict future states from previously observed trajectories. Multi-step autoregressive training improves long-horizon prediction, but fixed rollout horizons also increase computational cost and can amplify early training errors when the model is still inaccurate. Existing training schemes typically use the same rollout length throughout optimization, independent of the model&#x27;s current predictive reliability.   We propose an epistemic uncertainty-driven adaptive rollout strategy for offline world model training following an auto-curriculum training scheme. Instead of always unrolling to a fixed horizon, the model terminates autoregressive rollouts once epistemic uncertainty exceeds a threshold calibrated from a warm-up phase. We study two uncertainty estimators: a five-head ensemble with a shared recurrent backbone and Monte Carlo Dropout. A two-stage warm-up procedure stabilizes uncertainty estimates before we enable adaptive truncation.   Experiments on ANYmal-D and ANT show that ensemble-based adaptive truncation matches or improves the prediction accuracy of fixed-horizon training and the RWM-U baseline while requiring substantially fewer cumulative rollout steps. Training a world model on ANYmal-D following the presented approach reaches comparable final performance with the baselines with roughly 72% less rollout computation. These results indicate that epistemic uncertainty is useful not only for downstream policy regularization, but also for making world model training itself more compute-efficient.</p>
+      <p>Abstract not available.</p>
       <h2>摘要 (ZH)</h2>
-      <p>精确的神经世界模型是机器人基于模型方法的核心，使机器人能够从先前观察到的轨迹预测未来状态。多步自回归训练可改善长时程预测，但固定的展开步长也会增加计算成本，并可能在模型仍不准确时放大早期训练误差。现有训练方案通常在优化过程中使用相同的展开长度，与模型当前的预测可靠性无关。我们提出了一种认知不确定性驱动的自适应展开策略，用于离线世界模型训练，并遵循自动课程训练方案。模型不再总是展开到固定步长，而是当认知不确定性超过从预热阶段校准的阈值时终止自回归展开。我们研究了两种不确定性估计器：具有共享循环主干的五头集成和蒙特卡洛丢弃。两阶段预热过程在启用自适应截断之前稳定不确定性估计。在ANYmal-D和ANT上的实验表明，基于集成的自适应截断在预测精度上匹配或优于固定步长训练和RWM-U基线，同时所需的累积展开步数大幅减少。按照所提方法在ANYmal-D上训练世界模型，以约72%更少的展开计算量达到了与基线相当的最终性能。这些结果表明，认知不确定性不仅可用于下游策略正则化，还可使世界模型训练本身更具计算效率。</p>
+      <p>未生成（可稍后重试翻译）</p>
       <p><a href="../index.html">← Back</a></p>
     </div>
   </div>
