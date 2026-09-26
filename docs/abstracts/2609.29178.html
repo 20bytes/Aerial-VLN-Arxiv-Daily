@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Poster: FedWM-Guard: Thwarting Imagination Poisoning in Federated World Model-based Autonomous Driving</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Federated learning (FL) can improve world model (WM)-based autonomous driving (AD) without centralizing raw private vehicle data, but it also turns model aggregation into a safety-critical integrity boundary. We introduce a new threat in federated WM-AD, namely \emph{imagination poisoning}: compromised vehicles submit bounded WM updates that preserve benign short-horizon predictions yet corrupt long-horizon rollouts (e.g., trigger-conditioned) during training, thereby misleading a downstream planner. We present \emph{FedWM-Guard}, to the best of our knowledge, the first defense to characterize planner-facing rollouts in federated WM-AD, screen authenticated updates in hidden-canary scenarios, audit predicted futures against later observations, and invoke a WM-independent safety shield when persistent inconsistency is detected. Unlike parameter-space defenses, it scores what an update makes the model \emph{imagine}, not only how the update looks. We also outline how we plan to evaluate it under non-IID (not independent and identically distributed) data, adaptive attacks, and benign distribution shift. This work highlights an unexplored domain, federated WM-AD, and its threat surface and potential countermeasures.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>联邦学习（FL）可以在不集中原始私有车辆数据的情况下改进基于世界模型（WM）的自动驾驶（AD），但它也将模型聚合变成了一个安全关键的完整性边界。我们在联邦WM-AD中引入了一种新的威胁，即\emph{想象投毒}：受损车辆提交有界的WM更新，这些更新在训练期间保持良性的短时域预测，却破坏了长时域展开（例如，触发器条件），从而误导下游规划器。我们提出了\emph{FedWM-Guard}，据我们所知，这是第一个在联邦WM-AD中描述面向规划器的展开、在隐藏金丝雀场景中筛查已认证更新、根据后续观测审计预测的未来，并在检测到持续不一致时调用独立于WM的安全盾的防御方法。与参数空间防御不同，它评估的是更新使模型\emph{想象}出什么，而不仅仅是更新看起来如何。我们还概述了计划在非独立同分布（非IID）数据、自适应攻击和良性分布偏移下对其进行评估。这项工作突出了一个未被探索的领域——联邦WM-AD，及其威胁面和潜在对策。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

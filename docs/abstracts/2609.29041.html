@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>From Scattered Gaussians to Structured Maps: Efficient Gaussian Splatting Coding via Dual-phase Morton Sorting</h1>
+      <h2>Abstract (EN)</h2>
+      <p>3D Gaussian Splatting (3DGS) enables high fidelity novel view synthesis but suffers from excessive storage and bandwidth requirements due to its unstructured representation. To address this, a projection based video coding framework has emerged as a leading approach, supported by MPEG&#x27;s ongoing standardization, where 3DGS attributes are converted into 2D maps to take advantage of efficient compression using established video codecs such as HEVC and VVC. However, the effectiveness of this approach depends heavily on the spatial coherence of the projected video, which current sorting strategies such as PLAS and Morton ordering fail to preserve adequately, either incurring high computational cost or achieving limited correlation retention. To overcome these limitations, we propose a dual phase Morton spatial sorting algorithm that improves both coding efficiency and processing speed. In the first phase, Morton based 1D indexing is applied to high dimensional attributes to enhance spatial locality. The second phase further refines layout continuity through a structured 2D Morton mapping table that enforces spatial adjacency. This hierarchical strategy generates highly regular, block wise feature maps with strong local correlation, making them well suited for compression via conventional block based coding tools. Experimental results show that our method significantly outperforms existing approaches in both compression performance and runtime efficiency, providing a practical and standard compatible solution for 3DGS data coding.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>3D高斯溅射（3DGS）能够实现高保真新视角合成，但由于其非结构化表示，存在过高的存储和带宽需求。为解决这一问题，基于投影的视频编码框架已成为领先方法，并得到MPEG正在进行的标准化支持，其中3DGS属性被转换为2D地图，以利用HEVC和VVC等成熟视频编解码器的高效压缩。然而，该方法的效果在很大程度上取决于投影视频的空间相干性，而当前诸如PLAS和莫顿排序等排序策略无法充分保持这种相干性，要么计算成本高，要么相关性保持有限。为克服这些局限，我们提出了一种双阶段莫顿空间排序算法，同时提升编码效率和处理速度。第一阶段对高维属性应用基于莫顿的一维索引以增强空间局部性。第二阶段通过结构化的2D莫顿映射表进一步优化布局连续性，强制空间邻接。这种分层策略生成高度规则、块状的特征图，具有强局部相关性，使其非常适合通过传统基于块的编码工具进行压缩。实验结果表明，我们的方法在压缩性能和运行时效率上均显著优于现有方法，为3DGS数据编码提供了一种实用且标准兼容的解决方案。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

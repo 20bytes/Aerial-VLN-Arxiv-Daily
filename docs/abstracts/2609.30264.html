@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>AD-WM: Action-Discriminative World Models for Counterfactual Model Predictive Control</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Latent world models are typically trained to predict factual transitions, whereas model predictive control (MPC) must compare alternative actions from the same state. A model can therefore achieve low factual prediction error yet poorly distinguish candidate actions. We introduce AD-WM, an action-discriminative joint-embedding world model for counterfactual MPC. AD-WM combines residual latent dynamics with predictor-level action-recovery regularization, using inverse dynamics and a normalized recovery objective motivated by conditional mutual information. Both objectives encourage planning transitions to preserve action information; their auxiliary heads are discarded at test time, leaving MPC unchanged. On OGBench-Cube, AD-WM improves hard-start success from 3.7% to 52.0% over a matched LeWM baseline and improves mean success over the reproduced baseline in four of five simulation environments. Planning diagnostics show that factual prediction error and whole-bank action ranking do not follow the closed-loop success ordering, whereas CEM-aligned elite regret tracks success more closely. With a frozen V-JEPA 2 encoder and matched DROID post-training, AD-WM also improves zero-shot transfer to our Franka setup, increasing basic pick-and-place success from 42.2% to 71.1% without lab-specific adaptation. These results suggest that world models for planning should preserve action-dependent differences needed for counterfactual selection, rather than optimize factual prediction accuracy alone. More videos and code are available at https://ad-wm.github.io/.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>潜在世界模型通常被训练来预测事实转移，而模型预测控制（MPC）必须从同一状态比较备选动作。因此，一个模型可能实现低的事实预测误差，却难以区分候选动作。我们提出 AD-WM，一种用于反事实 MPC 的动作判别联合嵌入世界模型。AD-WM 将残差潜在动力学与预测器级别的动作恢复正则化相结合，使用逆动力学和受条件互信息启发的归一化恢复目标。这两个目标鼓励规划转移保留动作信息；它们的辅助头在测试时被丢弃，使 MPC 保持不变。在 OGBench-Cube 上，AD-WM 将困难起始成功率从 3.7% 提高到 52.0%，优于匹配的 LeWM 基线，并在五个仿真环境中的四个提高了相对于复现基线的平均成功率。规划诊断表明，事实预测误差和全库动作排序并不遵循闭环成功率排序，而 CEM 对齐的精英后悔更紧密地跟踪成功率。使用冻结的 V-JEPA 2 编码器和匹配的 DROID 后训练，AD-WM 还改善了我们 Franka 设置上的零样本迁移，将基本拾放成功率从 42.2% 提高到 71.1%，而无需实验室特定适配。这些结果表明，用于规划的世界模型应保留反事实选择所需的动作相关差异，而不是仅优化事实预测准确性。更多视频和代码见 https://ad-wm.github.io/。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

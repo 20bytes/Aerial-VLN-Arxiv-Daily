@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Few-Shot Calibration for Sim-to-Real Single-Channel Speaker Distance Estimation</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Speaker distance estimators are trained almost exclusively on simulated room acoustics, because real recordings annotated with the true talker-to-microphone distance are scarce. We show that models trained this way transfer poorly. On three real corpora we evaluate, simply predicting the average distance of the corpus is more accurate than any learned model. Then, we ask how few labelled real utterances are needed to make a frozen, synthetic-trained estimator useful, and study post-hoc calibration maps that rescale its output without gradients or retraining. An analysis of the achievable error shows that what the calibration is not limited by the absolute accuracy of the estimator, but how well it orders utterances by distance, since a constant bias or a wrong output scale is removed exactly by the calibration itself. Balancing this against the cost of estimating each coefficient from few samples yields a criterion that accounts for which map wins on which corpus and at which annotation budget, together with a shrinkage variant that requires no hard decision. Our findings suggest selecting synthetic checkpoints by linear correlation with true distances rather than by absolute error. Code, datasets, and analysis are available at https://github.com/michaelneri/audio-distance-estimation.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>说话人距离估计器几乎完全在模拟房间声学上进行训练，因为带有真实说话人到麦克风距离标注的真实录音非常稀缺。我们表明，以这种方式训练的模型迁移效果很差。在我们评估的三个真实语料库上，简单地预测语料库的平均距离比任何学习模型都更准确。然后，我们探究需要多少带标签的真实语音才能让一个冻结的、在合成数据上训练的估计器变得有用，并研究事后校准映射，这些映射可以在不进行梯度计算或重新训练的情况下重新缩放其输出。对可达到误差的分析表明，校准的限制不在于估计器的绝对精度，而在于它按距离对语音进行排序的能力，因为恒定偏差或错误的输出尺度会被校准本身精确消除。在这一点与从少量样本估计每个系数的成本之间进行权衡，得出一个标准，该标准考虑了哪种映射在哪个语料库和哪个标注预算下胜出，以及一种无需硬性决策的收缩变体。我们的发现表明，应通过线性相关而非绝对误差来选择合成检查点。代码、数据集和分析可在 https://github.com/michaelneri/audio-distance-estimation 获取。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>WildHSR: Metric Feed-Forward 4D People-Scene Reconstruction from a 3D Foundation Model</h1>
+      <h2>Abstract (EN)</h2>
+      <p>3D foundation models recover video cameras and geometry in one forward pass, but some of the strongest are up to scale. Joint people-scene reconstruction then requires two missing outputs: metric scale and persistent person identity. We ask whether one up-to-scale foundation representation can support both through lightweight adaptation. Exact metric labels are scarce, but unlabeled in-the-wild video is abundant. We use people in curated web video to initialise the solution: a posed metric body and 2D keypoints give an approximate, closed-form scale pseudo-label. These pseudo-labels pretrain a Scale Readout, which is then fine-tuned together with a lightweight adapter using exact metric supervision from standard real-video training splits. At inference the head predicts metric scale from foundation-model tokens, without the ruler or its teachers. For person identity, we probe the pretrained foundation model alone and find evidence that its intermediate query-key features encode person correspondence across frames. In most evaluated moving-person clips, a mid-layer token prefers that person over the vacated location and other people. A tiny projection reads this correspondence; together with metric pelvis motion and proposal confidence, it drives dustbin-aware Sinkhorn association of per-frame bodies. WildHSR combines both readouts to reconstruct metric cameras, scene and people from monocular video. Each window is predicted feed-forward; analytic association and Sim(3) composition connect windows. On EMDB-2, WildHSR is the first feed-forward method in the published comparison to beat the best optimization-based WA-MPJPE and RTE while leading feed-forward methods on all three world-frame metrics. On RICH, it leads feed-forward people-and-scene methods on WA-MPJPE and W-MPJPE. The complete pipeline runs at 10.1 fps on one GPU.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>3D基础模型通过单次前向传播即可恢复视频相机和几何结构，但部分最强模型仅能达到尺度。联合的人物-场景重建则还需要两个缺失输出：度量尺度和持久的人物身份。我们探究是否一个仅达尺度的基础表示能通过轻量适配同时支持两者。精确的度量标签稀缺，但无标签的野外视频丰富。我们利用精选网络视频中的人物来初始化解决方案：带姿态的度量身体和2D关键点给出近似的闭式尺度伪标签。这些伪标签预训练一个尺度读出器，随后与轻量适配器一起使用来自标准真实视频训练分割的精确度量监督进行微调。推理时，该头从基础模型令牌预测度量尺度，无需标尺或其教师。对于人物身份，我们单独探测预训练基础模型，发现证据表明其中间查询-键特征编码了跨帧的人物对应关系。在大多数评估的移动人物片段中，中间层令牌更偏好该人物而非空出位置和其他人物。一个微小投影读取这种对应关系；结合度量骨盆运动和提议置信度，驱动逐帧身体的垃圾桶感知Sinkhorn关联。WildHSR结合两种读出，从单目视频重建度量相机、场景和人物。每个窗口前馈预测；解析关联和Sim(3)组合连接各窗口。在EMDB-2上，WildHSR是已发表比较中首个前馈方法，在WA-MPJPE和RTE上超越最佳优化方法，同时在所有三项世界坐标系指标上领先前馈方法。在RICH上，其在WA-MPJPE和W-MPJPE上领先前馈人物和场景方法。完整流程在单GPU上以10.1 fps运行。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>DAWN: Noise-Robust Quadruped Parkour via Depth-Denoising World Models</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Vision-based legged locomotion methods assume clean depth at training time and rely on hand-tuned post-processing filters at deployment. However, filter parameters are rarely disclosed, hindering reproducibility, and performance degrades substantially when depth noise is left unaddressed. Building noise robustness directly into the learning pipeline would eliminate this dependency. While such robustness has been explored for proprioceptive inputs, analogous approaches for depth perception remain largely absent in legged locomotion. We propose DAWN (Denoising and Alignment in World models for Noise-robustness), a noise-robust perception framework for legged locomotion, which builds noise robustness directly into a world model via two modifications: (1) feeding noisy depth to the encoder while keeping clean depth as the reconstruction target, forcing the model to implicitly denoise its input; and (2) applying contrastive learning to align the latent states of noisy and clean depth. Importantly, DAWN is not tied to a specific noise model, requiring no manual tuning to the noise distribution at deployment. Furthermore, it incurs no additional inference cost over existing world model-based methods. Without any manual filter calibration -- relying solely on the learned noise-robust representation -- DAWN achieves zero-shot quadruped parkour on a Unitree Go1: traversing stairs up to 18 cm, clearing gaps up to 70 cm, and mounting steps up to 45 cm from raw depth observations. Ablation studies show that denoising and contrastive alignment contribute at complementary levels -- reconstruction and representation, respectively -- and yield additive gains when combined. Videos and code are available at: https://dawn-parkour.github.io/</p>
+      <h2>摘要 (ZH)</h2>
+      <p>基于视觉的腿足运动方法假设训练时的深度数据无噪声，并在部署时依赖手动调优的后处理滤波器。然而，滤波器参数很少公开，阻碍了可复现性，并且当深度噪声未处理时性能会显著下降。将噪声鲁棒性直接构建到学习流程中可以消除这种依赖。虽然这种鲁棒性已在本体感知输入中得到探索，但针对深度感知的类似方法在腿足运动中仍然基本缺失。我们提出DAWN（去噪与对齐世界模型以实现噪声鲁棒性），一个用于腿足运动的噪声鲁棒感知框架，它通过两项修改将噪声鲁棒性直接构建到世界模型中：(1) 将噪声深度输入编码器，同时保持干净深度作为重建目标，迫使模型隐式地去噪其输入；(2) 应用对比学习来对齐噪声深度和干净深度的潜在状态。重要的是，DAWN不依赖于特定的噪声模型，在部署时无需针对噪声分布进行手动调优。此外，与现有的基于世界模型的方法相比，它不产生额外的推理成本。在没有任何手动滤波器校准的情况下——仅依靠学习到的噪声鲁棒表示——DAWN在Unitree Go1上实现了零样本四足跑酷：从原始深度观测中穿越高达18厘米的楼梯，跨越高达70厘米的间隙，并登上高达45厘米的台阶。消融研究表明，去噪和对比对齐分别在互补的层面上做出贡献——分别是重建和表示层面——并且结合时产生累加增益。视频和代码可在以下网址获取：https://dawn-parkour.github.io/</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

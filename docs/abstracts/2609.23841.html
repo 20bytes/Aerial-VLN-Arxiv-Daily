@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Structured World-State Reasoning for Agentic Robotic Search</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Long-horizon robotic search must resolve natural language against heterogeneous, incomplete, and often ambiguous evidence: textual information, prior maps, and observations arriving over time. The core challenge is to contextualize these streams and decide where to gather evidence before selecting a target. We present WORLDS: World-state Observation and Reasoning for Language-guided Discovery and Search, a framework that grounds reasoning in a persistent graph initialized from geospatial priors and updated by perception. Parallel Reasoners maintain competing candidate interpretations and request evidence to distinguish between them. We collect and process the requested observations with a multimodal Examiner, after which a Judge selects a grounded target or requests another pass. WORLDS achieves 51.8% navigation success across all 5,311 CityNav test episodes, the highest reported success rate, exceeding the previous published best by 15.7 percentage points under an OSM-only, high-resolution orthographic protocol. On 1,000 shared episodes, it achieves 50.0% versus 27.9% for the strongest adapted baseline using the same model, prior, sensing stack, and movement budget. Observation-based verification by the Examiner contributes 5.9 points of this success, and at a reduced reasoning-effort setting WORLDS still exceeds the adapted GeoNav baseline by 18.8 points while generating fewer tokens. We also demonstrate WORLDS on a quadrotor, which flies the generated sensing waypoints and grounds three language targets, including a vehicle absent from the map, from its onboard imagery.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>长时程机器人搜索必须解决自然语言与异构、不完整且往往模糊的证据（文本信息、先验地图以及随时间到达的观测）之间的关联问题。核心挑战在于将这些数据流语境化，并在选择目标之前决定在何处收集证据。我们提出WORLDS：面向语言引导发现与搜索的世界状态观测与推理框架，该框架将推理建立在由地理空间先验初始化并由感知更新的持久图上。并行推理器维护相互竞争的候选解释，并请求证据以区分它们。我们使用多模态检查器收集和处理所请求的观测，之后由评判器选择基于证据的目标或请求另一轮处理。WORLDS在所有5,311个CityNav测试回合中实现了51.8%的导航成功率，为报告的最高成功率，在仅使用OSM、高分辨率正射影像的协议下，超过此前发表的最佳结果15.7个百分点。在1,000个共享回合上，使用相同的模型、先验、传感栈和移动预算，它实现了50.0%的成功率，而最强的适配基线为27.9%。检查器基于观测的验证贡献了该成功率的5.9个百分点，并且在降低推理努力设置下，WORLDS仍以更少的token生成量超过适配的GeoNav基线18.8个百分点。我们还在四旋翼飞行器上演示了WORLDS，它飞行生成的传感航点，并基于机载图像对三个语言目标（包括一个地图上不存在的车辆）进行了定位。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

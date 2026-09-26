@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>SplatLabel: Pseudo-Labelling through 4D Gaussian Splatting</h1>
+      <h2>Abstract (EN)</h2>
+      <p>While 2D Vision Foundation Models offer a pathway to automate 3D semantic pseudo-labelling, translating these priors into robust 3D representations typically requires complex heuristics or multi-model ensembles. We introduce SplatLabel, an automated pipeline that leverages a 4D Gaussian representation to extract LiDAR segmentation with predictive confidence, as well as semantic occupancy grids at arbitrary voxel resolutions. At its core, SplatLabel handles dynamic environments through an explicit temporal manifold that models the trajectories and lifespans of individual 3D primitives. This allows the system to accurately track moving actors and strictly define when objects appear and disappear, completely eliminating the need for pre-annotated 3D bounding boxes. To robustly support this dynamic tracking, the representation is grounded by structural and semantic priors: we guide scene geometry in unobserved regions by integrating 360-degree LiDAR via virtual depth maps, and rather than relying on domain-specific prompt engineering, we directly distill continuous soft probabilities from 2D models to inherently resolve semantic ambiguities over time and space. Finally, to accurately reflect the real-world trade-off between precision and recall, we reframe pseudo-label evaluation as a selective classification task using a generalized risk-recall metric. Experiments on SemanticKITTI demonstrate that SplatLabel consistently outperforms state-of-the-art baselines across multiple recall levels, establishing a highly robust framework for both 3D LiDAR segmentation and occupancy prediction.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>尽管2D视觉基础模型为自动化3D语义伪标签提供了一种途径，但将这些先验转化为稳健的3D表示通常需要复杂的启发式方法或多模型集成。我们介绍了SplatLabel，一种利用4D高斯表示来自动提取带有预测置信度的LiDAR分割以及任意体素分辨率的语义占据栅格的自动化流程。其核心在于，SplatLabel通过显式的时间流形处理动态环境，该流形对单个3D基元的轨迹和生命周期进行建模。这使得系统能够准确跟踪移动的参与者，并严格定义物体出现和消失的时间，完全消除了对预标注3D边界框的需求。为了稳健地支持这种动态跟踪，该表示由结构和语义先验作为基础：我们通过虚拟深度图整合360度LiDAR来引导未观测区域的场景几何，并且不依赖于特定领域的提示工程，而是直接从2D模型中提炼连续软概率，以在时间和空间上固有地解决语义模糊性。最后，为了准确反映现实世界中精确率和召回率之间的权衡，我们将伪标签评估重新定义为使用广义风险-召回度量的选择性分类任务。在SemanticKITTI上的实验表明，SplatLabel在多个召回水平上始终优于最先进的基线，为3D LiDAR分割和占据预测建立了一个高度稳健的框架。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

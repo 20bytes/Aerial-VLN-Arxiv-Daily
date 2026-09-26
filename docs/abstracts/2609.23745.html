@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>FlockDiffusion: Assignment-Conditioned Diffusion for Multi-Drone Task Allocation and Completion</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Autonomous multi-drone navigation requires fleets to service distributed objectives in cluttered environments under tight computational budgets. Efficient coordination depends on task bundling, where each drone visits multiple objectives along its route. Separate solvers for cost estimation, assignment, and execution incur redundant graph search and produce long, abrupt paths. We propose FlockDiffusion, a learned framework combining a scene graph encoder, an explicit allocation head, an assignment conditioned diffusion transformer, and a closed form trajectory decoder. An autoregressive teacher provides offline supervision for parallel fleet trajectory generation. PyBullet ablations show that bundling increases task completion from 50% to 100%, while our complete teacher further reduces route cost by 8.4% relative to MAGNNET with bundling. In the optimized scalability benchmark, evaluated on 100 scenes per density with ten drones, FlockDiffusion achieves 6.2 to 7.6 times faster inference and approximately 37% shorter routes than the classical pipeline. As nominal task counts increase from 20 to 40, latency rises from 7.8 to 11.1 ms, compared with 48.0 to 75.8 ms for the baseline. In a separate evaluation across five Gazebo environments, FlockDiffusion achieves 100% planner coverage and reduces planned route cost by 15.4% relative to the baseline with bundling. These results demonstrate efficient planning under increasing task density in configurations that are demanding to reproduce with physical drone fleets.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>自主多无人机导航需要无人机集群在狭窄的计算预算下，在杂乱环境中服务分布式目标。高效的协调依赖于任务打包，即每架无人机沿其路线访问多个目标。用于成本估计、分配和执行的独立求解器会引入冗余的图搜索，并产生冗长、突兀的路径。我们提出了FlockDiffusion，一个学习框架，结合了场景图编码器、显式分配头、分配条件扩散变换器以及闭式轨迹解码器。一个自回归教师模型为并行集群轨迹生成提供离线监督。PyBullet消融实验表明，打包将任务完成率从50%提高到100%，而我们的完整教师模型相对于带打包的MAGNNET进一步将路线成本降低了8.4%。在优化的可扩展性基准测试中，针对每种密度100个场景、十架无人机进行评估，FlockDiffusion实现了比经典流水线快6.2至7.6倍的推理速度，路线长度缩短约37%。随着标称任务数量从20增加到40，延迟从7.8毫秒上升到11.1毫秒，而基线为48.0至75.8毫秒。在五个Gazebo环境的单独评估中，FlockDiffusion实现了100%的规划器覆盖率，并相对于带打包的基线将规划路线成本降低了15.4%。这些结果证明了在任务密度不断增加且配置难以用物理无人机集群复现的情况下，该方法的规划效率。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

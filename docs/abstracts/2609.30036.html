@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Aim Short to Reach Far: Your Frozen World Model Can Plan Better Than You Think</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Planners built on visual world models commonly score each predicted outcome by its distance to the encoded goal image. We show that this target can limit control even with exact dynamics and globally optimal short-horizon search: reaching a goal may require actions that initially move away from it. With frozen LeWM models, intermediate targets substantially improve action synthesis and recorded-action ranking on Cube, PushT, Reacher, and TwoRoom. Learned targets and targets drawn from observed experience both produce these gains. We introduce Anchored Planning, which retrieves a recorded segment whose start and end resemble the current and goal observations, then aims at an observation shortly after its start. The frozen model scores actions toward this target from the current state. Without additional training, planning toward observed targets outperforms the released LeWM planner on every task in our long-range evaluation. Additional final-goal search falls short of the same gains. Lower successor-prediction error need not translate into better control. Success also depends on how far ahead the target is placed and on shrinking the retrieval span as execution advances. Changing only the target lets the same frozen model and planner reach goals that final-goal scoring misses.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>基于视觉世界模型的规划器通常根据预测结果与编码目标图像的距离来评分。我们表明，即使动力学精确且全局最优短时域搜索，这种目标也会限制控制：达到目标可能需要最初远离目标的动作。对于冻结的LeWM模型，中间目标在Cube、PushT、Reacher和TwoRoom任务上显著改善了动作合成和记录动作排序。学习的目标和从观察经验中提取的目标都能产生这些增益。我们引入了锚定规划（Anchored Planning），它检索一段起点和终点分别与当前观察和目标观察相似的记录片段，然后瞄准其起点之后不久的观察。冻结模型从当前状态对朝向该目标的动作进行评分。无需额外训练，朝向观察目标的规划在我们长期评估的每个任务上都优于已发布的LeWM规划器。额外的最终目标搜索未能达到同样的增益。较低的后继预测误差不一定转化为更好的控制。成功还取决于目标放置的前瞻距离，以及随着执行进展缩小检索跨度。仅改变目标，就能让相同的冻结模型和规划器达到最终目标评分所遗漏的目标。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

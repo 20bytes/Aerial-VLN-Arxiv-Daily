@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>HarnessPAI: An Evolving Harness for Physical AI</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Physical AI aims to build embodied agents that perceive the world, understand and reason about it, and decide how to act. Yet the field has focused primarily on the last component: the action model that maps observations to low-level controls. The prevailing training recipe can erode the perceptual and reasoning capabilities needed for robust behavior, leaving even strong action models vulnerable to scene perturbations and long-horizon tasks. We introduce HarnessPAI, a model- and embodiment-agnostic Harness framework for Physical AI that treats code as the executable and evolvable interface that organizes the underlying action primitive. The framework separates two timescales: within a rollout, it executes open-loop at the program level, with a fixed program guiding and checking execution; across rollouts, it evolves closed-loop, using execution feedback to revise the program and distill failures into reusable skills. Across desktop robot arms, household robots, a robot vacuum, and a legged walking agent, HarnessPAI improves on both pure action models and code-as-policy baselines without retraining the underlying model: a 61.6-point gain over $π_{0.5}$ on LIBERO-PRO and a 27.2-point gain over WorldDreamer on RoboCasa atomic tasks. Once a program is selected, rollout execution requires no online high-level LLM deliberation. Beyond execution, the converged program is also a cheap and reliable expert-data collector, and fine-tuning $π_{0.5}$ on collected expert data lifts success rate on LIBERO-PRO by 38.8 points. Our results suggest that the frontier of Physical AI depends not only on stronger action models, but also on executable harnesses that integrate perception, task understanding and reasoning, and action execution into a unified, verifiable, and feedback-driven system. Website: https://darwin-agent.github.io/HarnessPAI</p>
+      <h2>摘要 (ZH)</h2>
+      <p>物理AI旨在构建具身智能体，使其能够感知世界、理解并推理世界，并决定如何行动。然而，该领域主要关注最后一个组件：将观测映射到低级控制的动作模型。主流的训练方法可能会侵蚀稳健行为所需的感知和推理能力，使得即使是强大的动作模型也容易受到场景扰动和长时程任务的威胁。我们提出了HarnessPAI，一个面向物理AI的模型和具身无关的Harness框架，它将代码视为可执行且可演化的接口，用于组织底层的动作原语。该框架分离了两个时间尺度：在一次 rollout 内，它在程序层面执行开环控制，由固定程序引导和检查执行；在多次 rollout 之间，它以闭环方式演化，利用执行反馈来修正程序，并将失败提炼为可复用的技能。在桌面机械臂、家用机器人、扫地机器人和足式行走智能体上，HarnessPAI在不重新训练底层模型的情况下，优于纯动作模型和“代码即策略”基线：在LIBERO-PRO上比π_{0.5}提升61.6分，在RoboCasa原子任务上比WorldDreamer提升27.2分。一旦选定程序，rollout执行无需在线的高层LLM deliberation。除了执行，收敛后的程序还是一个廉价且可靠的专家数据收集器，在收集的专家数据上微调π_{0.5}，可将LIBERO-PRO上的成功率提升38.8分。我们的结果表明，物理AI的前沿不仅取决于更强的动作模型，还取决于可执行的Harness，将感知、任务理解与推理以及动作执行整合为一个统一、可验证且反馈驱动的系统。网站：https://darwin-agent.github.io/HarnessPAI</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>CERIDWEN: Fast and Flexible GPU-Accelerated Stellar Population Inference</h1>
+      <h2>Abstract (EN)</h2>
+      <p>JWST has increased both the number of high-redshift galaxies with high-quality spectral energy distributions (SEDs) and their information content. In parallel, wide-area surveys from Euclid, Rubin&#x27;s LSST, and Roman will increase galaxy samples by orders of magnitude. Analysing these datasets requires stellar-population models that are both flexible and computationally efficient. We present CERIDWEN, a GPU-native SED fitting framework written in JAX, with an end-to-end differentiable forward model spanning stellar populations, nebular emission, dust attenuation and emission, and projection into the observer frame. Its vectorised, compiled architecture lets nested sampling replace a batch of live points in parallel on the GPU, which makes flexible stellar-population models tractable under full Bayesian inference. Automatic differentiation also provides exact gradients for the gradient-based samplers in the package. We jointly infer time-dependent chemical-enrichment histories instead of a single stellar metallicity, and demonstrate non-parametric star-formation histories (SFHs) with $\sim$120 age bins. Using $α$-enhanced stellar libraries from FSPS, CERIDWEN can sample stellar [$α$/Fe] jointly with [Fe/H], mass, and SFH, so that the joint posterior represents the [Fe/H]-[$α$/Fe] degeneracy explicitly. In controlled mocks, CERIDWEN recovers parameters with well-calibrated posterior uncertainties, while fits to real JWST observations reproduce posteriors from the established Prospector framework: on a single GPU, CERIDWEN completes a fit in a median sampling time of $\sim$4 min, $\sim$134$\times$ faster per fit than equivalent CPU-based Prospector runs. CERIDWEN therefore makes full Bayesian inference practical for larger galaxy samples and more flexible stellar-population models, reducing computational constraints on the physical complexity explored in SED fitting.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>JWST增加了高质量光谱能量分布（SED）的高红移星系数量及其信息含量。与此同时，来自Euclid、Rubin的LSST和Roman的广域巡天将使星系样本增加几个数量级。分析这些数据集需要既灵活又计算高效的恒星族群模型。我们提出了CERIDWEN，一个用JAX编写的GPU原生SED拟合框架，具有端到端可微的前向模型，涵盖恒星族群、星云发射、尘埃衰减和发射，以及投影到观测者坐标系。其向量化、编译的架构允许嵌套采样在GPU上并行替换一组活点，这使得灵活的恒星族群模型在全贝叶斯推断下变得可行。自动微分还为包中基于梯度的采样器提供了精确梯度。我们联合推断随时间变化的化学富集历史，而不是单一的恒星金属丰度，并展示了具有约120个年龄分箱的非参数恒星形成历史（SFH）。使用来自FSPS的α增强恒星库，CERIDWEN可以联合采样恒星[α/Fe]与[Fe/H]、质量和SFH，从而联合后验明确表示[Fe/H]-[α/Fe]简并。在受控模拟中，CERIDWEN恢复参数并具有良好校准的后验不确定性，而对真实JWST观测的拟合重现了已建立的Prospector框架的后验：在单个GPU上，CERIDWEN完成一次拟合的中位采样时间约为4分钟，比等效的基于CPU的Prospector运行每次拟合快约134倍。因此，CERIDWEN使全贝叶斯推断对更大的星系样本和更灵活的恒星族群模型变得实用，减少了SED拟合中探索的物理复杂性的计算限制。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

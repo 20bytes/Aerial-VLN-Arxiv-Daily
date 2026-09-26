@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>CALM: Current Aligned Link Manipulation for Single Arm Oversized Object Lifting</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Most robots manipulate objects solely with their end effectors, whereas humans flexibly leverage different body parts, such as the forearm and elbow, especially when handling oversized objects. Learning such whole-arm manipulation is chal-lenging due to long-horizon sparse rewards, limited contact sens-ing, and the sim-to-real gap in contact and actuator dynamics. To address these challenges, we propose Current-Aligned Link Manipulation, a framework for learning long-horizon contact-rich manipulation using motor current as joint load related feedback. Three stage-specific policies first learn repositioning, grasping, and lifting using privileged simulation information, and a stage router sequences them to generate complete task demonstrations. For sim-to-real transfer, a causal current mapper predicts physical motor current from simulated joint histories, aligning the actuator current observation between simulation and hardware. A unified student policy then learns from these demonstrations using only deployable sensor observations and is further refined with DAgger. The task policies are trained entirely in simulation, and the final student is deployed on hardware. Experiments demonstrate 76.2% (762/1000 trials) complete-task success in simulation and 73.3% success (22/30 trials) on the physical robot for sequential oversized-object lifting.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>大多数机器人仅依靠末端执行器操作物体，而人类则灵活利用不同身体部位，如小臂和肘部，尤其是在处理超大物体时。由于长时程稀疏奖励、有限的接触感知以及接触和驱动器动力学中的仿真到现实差距，学习这种全臂操作具有挑战性。为了解决这些挑战，我们提出了电流对齐连杆操作（Current-Aligned Link Manipulation）框架，利用电机电流作为与关节负载相关的反馈来学习长时程富接触操作。三个特定阶段的策略首先利用特权仿真信息学习重新定位、抓取和举升，然后由阶段路由器将它们排序以生成完整任务演示。为了实现仿真到现实的迁移，一个因果电流映射器从仿真关节历史中预测物理电机电流，从而对齐仿真与硬件之间的驱动器电流观测。然后，一个统一的学生策略仅使用可部署的传感器观测从这些演示中学习，并通过DAgger进一步优化。任务策略完全在仿真中训练，最终学生策略部署在硬件上。实验表明，在顺序超大物体举升任务中，仿真中完整任务成功率为76.2%（762/1000次试验），物理机器人上成功率为73.3%（22/30次试验）。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

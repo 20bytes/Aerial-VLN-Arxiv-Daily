@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Skytopia: Monocular Drone Navigation with Action-Conditioned Latent World Models</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Monocular drone navigation requires reaching a goal in an unseen environment from a single forward-facing camera, which offers few cues for depth and scale. World models address this by modelling how observations evolve under actions, but they are built to be executed: the prediction is produced at deployment and fed back into action generation at every control step. We argue that what a policy needs from a world model is not the prediction but the representation required to produce it: in flight the executed action explains almost all of the change between observations, so prediction reduces to reprojecting a static scene under a known displacement. We therefore introduce skytopia, a policy built on an action-conditioned latent world model, and the 3D Gaussian Splatting platform on which it is trained. A forward objective predicts the representation of the next observation from the intended motion, and an inverse objective recovers that motion from the predicted transition. Because the prediction never reaches action generation, the predictor is discarded and one policy serves point-goal, image-goal, and goal-free navigation. Simulation experiments show that skytopia outperforms every baseline under all three specifications, attaining 57.8%, 66.0%, and 49.0% success rate, while discarding the predictor removes 59.4% of the inference cost. The same policy is subsequently deployed on a physical drone without fine-tuning and reaches goals in indoor, open outdoor, and woodland environments.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>单目无人机导航需要仅凭单个前向摄像头在未知环境中到达目标，而深度和尺度线索很少。世界模型通过建模观测如何在动作下演变来解决这一问题，但它们的构建是为了执行：预测在部署时产生，并在每个控制步骤反馈到动作生成中。我们认为，策略从世界模型中需要的不是预测，而是产生预测所需的表征：在飞行中，执行的动作解释了观测之间几乎所有的变化，因此预测简化为在已知位移下重新投影静态场景。因此，我们引入 Skytopia，一种建立在动作条件潜在世界模型上的策略，以及用于训练它的3D高斯泼溅平台。前向目标从预期运动预测下一观测的表征，逆向目标从预测的过渡中恢复该运动。由于预测从未到达动作生成，预测器被丢弃，一个策略即可服务于点目标、图像目标和无目标导航。仿真实验表明，Skytopia在所有三种设定下均优于所有基线，分别达到57.8%、66.0%和49.0%的成功率，同时丢弃预测器消除了59.4%的推理成本。随后，同一策略无需微调即部署在物理无人机上，并在室内、开阔室外和林地环境中到达目标。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>
