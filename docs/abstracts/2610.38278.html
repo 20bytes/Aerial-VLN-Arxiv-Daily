@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>BudSplat: Feed-forward 3D Gaussian Splatting under a Rendering Budget</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Feed-forward 3D Gaussian Splatting has recently emerged as a promising alternative to per-scene optimization, enabling fast novel view synthesis by predicting Gaussian primitives directly from input images. However, it quickly faces a bottleneck of rendering efficiency while scaling from sparse to dense multi-view inputs, which offer more geometric constraints but produce a rapidly growing set of candidate Gaussians. Existing solutions cannot reliably distinguish redundant primitives, leading to many redundant primitives from repeatedly observed regions and increased rendering cost without much gain in visual quality. We propose BudSplat, a compact feed-forward 3DGS framework that learns to keep the most valuable Gaussians under a limited primitive count. BudSplat has two novel designs. The first is a detail-aware importance score that is extracted from multi-level visual tokens, providing an explicit cue for regions where pruning is likely to harm perceptual quality. The score can be injected into voxel fusion to preserve high-value local contributors during multi-view aggregation. The second is quality-aware Gaussian pruning that selects a compact set of primitives by jointly considering rendering contribution and detail importance. The quality-aware pruning enables local quota redistribution that helps avoid over-allocating primitives to large redundant regions. Experiments on RE10K, DL3DV, and ACID show that BudSplat achieves a favorable trade-off among rendering quality and efficiency.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>前馈3D高斯泼溅最近作为一种有前景的替代方案出现，取代了逐场景优化，通过直接从输入图像预测高斯图元来实现快速新视角合成。然而，当从稀疏多视角输入扩展到密集多视角输入时，它很快面临渲染效率的瓶颈，因为密集输入提供了更多几何约束，但会产生快速增长的候选高斯集。现有解决方案无法可靠地区分冗余图元，导致来自重复观察区域的大量冗余图元，增加了渲染成本，而视觉质量却没有太大提升。我们提出了BudSplat，一个紧凑的前馈3DGS框架，它学习在有限的图元数量下保留最有价值的高斯。BudSplat有两个新颖的设计。第一个是从多级视觉令牌中提取的细节感知重要性评分，为修剪可能损害感知质量的区域提供明确的线索。该评分可以注入体素融合中，以在多视角聚合期间保留高价值的局部贡献者。第二个是质量感知的高斯修剪，通过联合考虑渲染贡献和细节重要性来选择紧凑的图元集。质量感知修剪实现了局部配额重新分配，有助于避免将图元过度分配给大型冗余区域。在RE10K、DL3DV和ACID上的实验表明，BudSplat在渲染质量和效率之间实现了有利的权衡。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

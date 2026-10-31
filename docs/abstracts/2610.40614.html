@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>L3G-World: Real-Time Infinite World Generation with Latent 3D Gaussian Memory</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Interactive world models generate visual content conditioned on user actions, yet maintaining spatial consistency over long-horizon exploration in real time remains challenging. Existing approaches rely on either temporal context or explicit 3D memory, both of which scale poorly because memory grows with the length of the generated stream. Moreover, explicit 3D memories condition latent video generators by re-encoding RGB renderings, which precludes real-time generation. In this paper, we introduce a Latent 3D Gaussian Memory (L3G) that combines the efficiency of feed-forward reconstruction with a compact, rapidly renderable scene representation. Building on this memory, we propose L3G-World, in which a memory updater and a video diffusion transformer (DiT) alternate autoregressively to generate spatially consistent worlds. The memory updater spawns Gaussians in newly observed regions and refines existing ones, so that the memory grows with scene extent rather than stream length. Each Gaussian further stores a VAE latent feature, allowing the memory to be rendered directly into the DiT&#x27;s latent space without VAE re-encoding. Experiments show that L3G-World achieves state-of-the-art generation quality and long-horizon spatial consistency, with up to $38.6\times$ fewer 3D primitives, $3.2\times$ faster memory updates, and $359\times$ faster memory rendering relative to the most efficient prior 3D-memory baseline for each metric, enabling real-time world generation at 9 FPS.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>交互式世界模型根据用户动作生成视觉内容，但在实时长时程探索中保持空间一致性仍然具有挑战性。现有方法依赖于时间上下文或显式3D记忆，而两者都难以扩展，因为记忆随生成流的长度而增长。此外，显式3D记忆通过重新编码RGB渲染结果来调节潜在视频生成器，这阻碍了实时生成。本文提出了一种潜在3D高斯记忆（L3G），它将前馈重建的效率与紧凑、可快速渲染的场景表示相结合。基于此记忆，我们提出了L3G-World，其中记忆更新器和视频扩散变换器（DiT）交替自回归地生成空间一致的世界。记忆更新器在新观察到的区域生成高斯并细化现有高斯，使得记忆随场景范围而非流长度增长。每个高斯还存储VAE潜在特征，允许记忆直接渲染到DiT的潜在空间中，而无需VAE重新编码。实验表明，L3G-World实现了最先进的生成质量和长时程空间一致性，与最高效的先前3D记忆基线相比，3D基元数量减少多达38.6倍，记忆更新快3.2倍，记忆渲染快359倍（各指标分别对比），从而以9 FPS实现实时世界生成。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

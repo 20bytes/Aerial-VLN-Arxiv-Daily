@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Rendering-Free Event Frame Simulation for Fast Reinforcement Learning of Autonomous Robot Navigation</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Event cameras offer low latency, high dynamic range, and milliwatt-level power consumption, making them ideal for agile robots such as tiny drones navigating through cluttered environments. However, existing simulators generally render photorealistic images before converting them into events, making large-scale reinforcement learning prohibitively slow. We propose an analytic event simulator that exploits what event cameras fundamentally measure - moving contrast edges - to synthesize event streams directly from scene geometry and ego-motion without visual rendering. Our simulator generates a 64x64 event observation in 17 microseconds on a single GPU - over 400x faster than a state-of-the-art rendering pipeline - enabling end-to-end reinforcement learning for goal-directed obstacle avoidance to converge in under 30 minutes - three orders of magnitude faster than training on rendered events. Policies transfer zero-shot to physically based event simulations (ray-traced Isaac Sim). Our policy reaches 83% success in cluttered courses unseen during training (mid-difficulty, traversability probability approx. 0.57), at 2.4 m/s average goal velocity, and retains 70% in a simulated texture-dense indoor hall. Furthermore, we quantized the policy to a 1.2 MB int8 network running fully onboard a 56-gram Crazyflie equipped with a Prophesee GenX320 event camera and an OpenMV N6 microcontroller board. Without any fine-tuning, external processing, or positioning, the policy achieves an average success rate of 82% (5/5, 5/6, 4/6 flights) across three real-world obstacle courses of increasing difficulty. Code: https://github.com/tudelft/rendering-free-event-nav</p>
+      <h2>摘要 (ZH)</h2>
+      <p>事件相机具有低延迟、高动态范围和毫瓦级功耗的特点，使其成为在杂乱环境中导航的微型无人机等敏捷机器人的理想选择。然而，现有模拟器通常先渲染逼真图像再转换为事件，导致大规模强化学习速度极慢。我们提出了一种解析事件模拟器，利用事件相机 fundamentally 测量的内容——运动对比度边缘——直接从场景几何和自我运动合成事件流，无需视觉渲染。我们的模拟器在单个GPU上仅需17微秒即可生成64x64事件观测——比最先进的渲染管线快400倍以上——使得面向目标导向避障的端到端强化学习在30分钟内收敛——比在渲染事件上训练快三个数量级。策略零样本迁移到基于物理的事件模拟（光线追踪Isaac Sim）。我们的策略在训练中未见的杂乱赛道（中等难度，可通行概率约0.57）上达到83%的成功率，平均目标速度为2.4 m/s，并在模拟的纹理密集室内大厅中保持70%的成功率。此外，我们将策略量化为1.2 MB的int8网络，完全板载运行在配备Prophesee GenX320事件相机和OpenMV N6微控制器板的56克Crazyflie上。无需任何微调、外部处理或定位，该策略在三个难度递增的真实世界障碍赛道中平均成功率达到82%（5/5、5/6、4/6次飞行）。代码：https://github.com/tudelft/rendering-free-event-nav</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

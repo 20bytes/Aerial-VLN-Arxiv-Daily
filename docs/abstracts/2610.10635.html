@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Speaking the Navigator&#x27;s Language: Trajectory-Grounded Instruction Translation for Frozen Aerial VLN Agents</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Aerial vision-and-language navigation (VLN) agents are typically trained on detail-rich, trajectory-aligned commands, whereas users issue short, intent-driven instructions; on a frozen OpenFly navigator, this \emph{instruction gap} drops success rate (SR) from $31.03\%$ to $11.33\%$. To scale translator training, we prompt a language model with human-written style examples to convert original commands into paired, intent-centered Weak commands, which yield $15.27\%$ SR. We introduce the \textbf{Trajectory-Grounded Instruction Translator (TGIT)}, a front-end that keeps the navigator frozen and translates Weak inputs into agent-executable commands by learning from its trajectory outcomes. The resulting Weak-trained translator raises Weak-input SR to $37.93\%$ and transfers zero-shot to real human instructions ($11.33\%{\rightarrow}32.51\%$); it also improves held-out OpenFly ($4.95\%{\rightarrow}20.79\%$) and yields recovery on CityNav and AirVLN.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>空中视觉与语言导航（VLN）智能体通常在细节丰富、与轨迹对齐的指令上训练，而用户发出的是简短、意图驱动的指令；在冻结的OpenFly导航器上，这种\emph{指令差距}使成功率（SR）从$31.03\%$降至$11.33\%$。为扩大翻译器训练规模，我们利用人类书写的风格示例提示语言模型，将原始指令转换为配对的、以意图为中心的弱指令，得到$15.27\%$的SR。我们引入\textbf{轨迹对齐指令翻译器（TGIT）}，这是一个前端，保持导航器冻结，并通过学习其轨迹结果将弱输入翻译为智能体可执行的指令。所得的弱训练翻译器将弱输入SR提升至$37.93\%$，并零样本迁移到真实人类指令（$11.33\%{\rightarrow}32.51\%$）；它还改进了留出的OpenFly（$4.95\%{\rightarrow}20.79\%$），并在CityNav和AirVLN上实现了恢复。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

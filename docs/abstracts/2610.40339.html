@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Wizard: Manipulate Any World in Real Time via Agentic Control</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Recent advances in video world models have enabled the generation of increasingly realistic and interactive virtual environments, opening new possibilities for player-customizable gameplay. Agentic frameworks further advance this direction by decoupling explicit game logic and controllable world representations from visual generation. However, existing approaches support only simple game settings and predefined motion patterns, generalize poorly to unseen environments and characters, and offer limited real-time interactivity. In this paper, we introduce Wizard, an agentic game world model that enables real-time, precise control over character motions while generalizing zero-shot across novel scenes, characters, and actions. To achieve this, we construct a diverse dataset spanning 750 scenes and 178 characters, incorporating skeleton and geometry information as structured representations. We leverage these representations as intermediate proxies to condition a video generation model, together with an adaptive masking mechanism that improves alignment between the conditioning signals and generated video rollouts. Furthermore, we introduce an agentic framework that explicitly maintains and updates game states, allowing players to freely configure their virtual worlds and exercise fine-grained control over character motions while preserving visual quality and gameplay consistency. By combining agentic control with structured proxy-based generation, our framework unlocks new possibilities for player-driven game creation with real-time, generalizable, and mechanically consistent world simulation.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>近期视频世界模型的进展使得生成日益逼真和交互式的虚拟环境成为可能，为玩家可定制的游戏玩法开辟了新的可能性。智能体框架通过将显式游戏逻辑和可控世界表示与视觉生成解耦，进一步推进了这一方向。然而，现有方法仅支持简单的游戏设置和预定义的运动模式，对未见环境和角色的泛化能力较差，且实时交互性有限。本文介绍了Wizard，一种智能体游戏世界模型，能够实时精确控制角色运动，同时零样本泛化到新颖场景、角色和动作。为实现这一目标，我们构建了一个涵盖750个场景和178个角色的多样化数据集，并纳入骨架和几何信息作为结构化表示。我们利用这些表示作为中间代理来条件化视频生成模型，并结合自适应掩码机制来改善条件信号与生成视频推演之间的对齐。此外，我们引入了一个智能体框架，显式维护和更新游戏状态，使玩家能够自由配置虚拟世界并对角色运动进行细粒度控制，同时保持视觉质量和游戏一致性。通过将智能体控制与基于结构化代理的生成相结合，我们的框架为玩家驱动的游戏创作解锁了新的可能性，实现了实时、可泛化且机械一致的世界模拟。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

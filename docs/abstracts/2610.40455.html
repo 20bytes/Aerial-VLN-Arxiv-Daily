@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>A Unified Benchmark for Aerial-Enhanced Autonomous Driving: The KITScenes Aerial Dataset</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Aerial imagery provides complementary spatial context for autonomous driving by exposing road structure beyond the immediate perception range of onboard sensors. Yet map construction from aerial imagery, aerial-assisted online HD mapping, and cross-view localization are typically studied on separate data and benchmarks. We introduce KITScenes Aerial, an extension of the KITScenes Multimodal dataset that augments synchronized onboard sensor data, vehicle poses, and rich Lanelet2 map annotations with spatially associated aerial imagery and higher-resolution neural representations, providing a common basis for a variety of research tasks. Our mapping evaluation focuses on all 53 KITScenes map classes across different model designs, spatial ranges, and aerial resolutions, while retaining compatibility with the widely used three-class setting. Representative baselines show that aerial context is particularly beneficial for fine-grained and extended-range mapping, more than doubling 53-class mAP at the larger mapping extent. Higher-resolution aerial imagery yields a further 4.3 mAP (+24 %) improvement, with gains extending to challenging map elements such as traffic lights. We additionally evaluate cross-view localization under geographically disjoint conditions, where an adapted fine-grained feature-matching baseline achieves a mean translation error of 5.13 m. KITScenes Aerial thus enables unified study of aerial and ground-level information across complementary mapping and localization tasks. Project page: https://kitscenes.com/aerial</p>
+      <h2>摘要 (ZH)</h2>
+      <p>航空影像通过揭示车载传感器即时感知范围之外的道路结构，为自动驾驶提供补充性的空间上下文。然而，基于航空影像的地图构建、航空辅助在线高清建图以及跨视角定位通常在独立的数据集和基准上进行研究。我们推出了KITScenes Aerial，这是KITScenes多模态数据集的扩展，它将同步的车载传感器数据、车辆位姿和丰富的Lanelet2地图标注与空间关联的航空影像和更高分辨率的神经表示相结合，为各类研究任务提供共同基础。我们的建图评估聚焦于所有53个KITScenes地图类别，涵盖不同模型设计、空间范围和航空分辨率，同时保持与广泛使用的三类设置的兼容性。代表性基线表明，航空上下文对细粒度和扩展范围建图尤为有益，在较大建图范围下将53类mAP提升一倍以上。更高分辨率的航空影像进一步带来4.3 mAP（+24%）的提升，增益延伸至交通信号灯等具有挑战性的地图元素。我们还在地理不相交条件下评估跨视角定位，其中经过调整的细粒度特征匹配基线实现了5.13米的平均平移误差。因此，KITScenes Aerial使得在互补的建图和定位任务中统一研究航空与地面信息成为可能。项目页面：https://kitscenes.com/aerial</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

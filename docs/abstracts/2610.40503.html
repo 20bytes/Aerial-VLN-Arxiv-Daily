@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Algebraic World Model: From Exploration to Proofs</h1>
+      <h2>Abstract (EN)</h2>
+      <p>AI has made remarkable progress in mathematics, solving challenging problems with machine-checkable proofs in Lean, yet typically relying on predefined mathematical definitions and formal specifications. This raises a natural question: can it reason rigorously about an unknown world? We introduce the Algebraic World Model (AWM), a framework that turns interaction with unfamiliar environments into explicit mathematical models supporting formal reasoning. AWM explores the environment and develops executable Python hypotheses, continually testing and revising them against observations. It then structures these hypotheses into typed objects and shared rules, simplifies their structure through category-theory-guided transformations, and formalizes the resulting model in Lean 4 to prove reachability and impossibility. AWM can formally prove that a goal is unreachable, even beyond explored trajectories. On two impossible game levels, it constructs closed, kernel-checked Lean proofs excluding every legal winning sequence in all six runs, while Claude Opus 5.5 and GPT-6 Astra, equipped with coding tools, produce none in twelve baseline runs. Four of AWM&#x27;s six initial bounds are correct, compared with one for Opus 5.5 and none for GPT-6 Astra; given only feedback that a cheaper win exists, AWM revises its rules and constructs new proofs, reaching six of six correct bounds. Moreover, AWM produces interpretable mathematical models whose rules can be inspected and tested step by step. Across all 25 public ARC-AGI-3 games, these models enable Lean to replay the winning trajectories of all 183 levels and generalize beyond observed play, predicting unseen transitions and detecting changes in game mechanics. With Claude Opus 5, AWM clears all levels with a score of 99.9, while its certified winning trajectories use only 43% of the human baseline&#x27;s actions.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>人工智能在数学领域取得了显著进展，能够解决具有挑战性的问题并给出可在Lean中机器验证的证明，但通常依赖于预定义的数学定义和形式化规范。这引出了一个自然的问题：它能否对一个未知世界进行严谨推理？我们引入了代数世界模型（AWM），这是一个将对陌生环境的交互转化为支持形式化推理的显式数学模型的框架。AWM探索环境并开发可执行的Python假设，不断根据观察结果测试和修正这些假设。然后，它将假设结构化为类型化对象和共享规则，通过范畴论引导的变换简化其结构，并在Lean 4中形式化所得模型，以证明可达性和不可行性。AWM能够形式化证明某个目标不可达，甚至超越已探索的轨迹。在两个不可能完成的游戏关卡上，它构建了封闭的、内核检查的Lean证明，排除了所有六次运行中的每一个合法获胜序列，而配备编码工具的Claude Opus 5.5和GPT-6 Astra在十二次基线运行中均未能产生任何证明。AWM的六个初始界限中有四个是正确的，而Opus 5.5只有一个正确，GPT-6 Astra则没有；仅给出存在更便宜获胜方式的反馈后，AWM修正其规则并构建新的证明，达到六分之六的正确界限。此外，AWM生成可解释的数学模型，其规则可以逐步检查和测试。在所有25个公开的ARC-AGI-3游戏中，这些模型使Lean能够重放全部183个关卡的获胜轨迹，并泛化到观察到的游戏之外，预测未见过的转移并检测游戏机制的变化。使用Claude Opus 5，AWM以99.9的分数通过了所有关卡，而其经过认证的获胜轨迹仅使用了人类基线动作的43%。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

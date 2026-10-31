@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>RFW-A: Agentic Procedural Generation of 400K Articulated Assets over 500 Categories</h1>
+      <h2>Abstract (EN)</h2>
+      <p>High-quality articulated assets are essential for embodied perception, simulation, and manipulation, yet constructing them at scale remains difficult. Manual annotation and procedural modeling require substantial human effort. Recent agentic systems automate asset construction through program synthesis, but repeat costly reasoning and refinement for every new asset. Our key observation is that assets within a category can share construction logic despite variations in structure and appearance. Agentic synthesis and procedural generation are therefore complementary: agents can construct reusable programs, while procedural execution reuses the resulting logic across many samples. We therefore present RFW-A, which combines the two in a new articulated-asset generation paradigm. Starting from existing articulated programs, RFW-A organizes reusable components and their dependencies into category-level generators. Agents test and refine these generators across sampled configurations and motion states. Once constructed and validated, the generators produce diverse assets through procedural execution with no further model calls or token charges. The estimated API cost of generator authoring averages $10.62, amortizing to $0.05 per asset over 200 assets, versus $1.24 for the sampled per-asset agentic synthesis baseline. Using RFW-A, we built RFW-A-400K, containing over 400K sim-ready articulated assets across more than 500 categories. Experiments show high structural and kinematic validity and stable execution across physics simulators. Beyond asset validity, training with RFW-A-400K improves part-level articulation estimation on seen and unseen categories, while policies trained in simulation with retrieved and program-edited assets transfer zero-shot to real articulated objects.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>高质量的关节资产对于具身感知、仿真和操作至关重要，但大规模构建它们仍然困难。手动标注和程序化建模需要大量人力。最近的智能体系统通过程序合成自动化资产生建，但对每个新资产重复昂贵的推理和优化。我们的关键观察是，同一类别内的资产尽管结构和外观不同，但可以共享构建逻辑。因此，智能体合成和程序化生成是互补的：智能体可以构建可重用的程序，而程序化执行则在许多样本中重用所得到的逻辑。因此，我们提出了RFW-A，在新颖的关节资产生成范式中将两者结合。从现有的关节程序出发，RFW-A将可重用组件及其依赖关系组织成类别级生成器。智能体在采样的配置和运动状态中测试和优化这些生成器。一旦构建并验证，生成器通过程序化执行产生多样化的资产，无需进一步模型调用或令牌费用。生成器编写的估计API成本平均为10.62美元，在200个资产上分摊为每个资产0.05美元，而采样的每资产智能体合成基线为1.24美元。使用RFW-A，我们构建了RFW-A-400K，包含超过500个类别的40万多个仿真就绪的关节资产。实验表明，高结构和运动学有效性以及在物理模拟器中的稳定执行。除了资产有效性之外，使用RFW-A-400K进行训练可以改善已见和未见类别上的部件级关节估计，而在仿真中使用检索和程序编辑资产训练的策略可以零样本迁移到真实关节物体。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

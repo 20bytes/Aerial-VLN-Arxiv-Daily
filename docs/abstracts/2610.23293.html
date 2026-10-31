@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>SkyAgent: Revisable Target Memory for Continuous Aerial Search</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Continuous aerial search builds target hypotheses from sparse, viewpoint-dependent observations. When later evidence contradicts a stored hypothesis, however, the candidate can remain available to the planner and continue triggering approach or verification actions. We call this trajectory-level failure false candidate persistence (FCP). We equip SkyAgent with Revisable Target Memory (RTM), which associates evidence with persistent candidates, discounts correlated views, and revises each candidate through Tentative, Confirmed, and Rejected states. The key interface binds every generated waypoint to its source candidate: rejection therefore invalidates stale goals, while conservative reactivation protects temporarily occluded targets. Across four splits from the CityAVOS, UAV-ON, and OpenUAV benchmarks, our SkyAgent equipped with RTM outperforms all competitors, improving SR by 2.90--6.31 points while substantially reducing Behavior-FCP and post-contradiction travel with a low false-rejection rate. Across 35 matched real-world DJI scenarios per method, RTM consistently improves task success and behavioral reliability, further validating its state-to-action correction under physical deployment conditions.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>连续空中搜索从稀疏且依赖视角的观测中构建目标假设。然而，当后续证据与已存储的假设相矛盾时，候选目标仍可能对规划器保持可用，并继续触发接近或验证动作。我们将这种轨迹级失败称为虚假候选持续（FCP）。我们为SkyAgent配备了可修正目标记忆（RTM），该机制将证据与持久候选目标关联，对相关视角进行折扣，并通过暂定、确认和拒绝三种状态修正每个候选目标。关键接口将每个生成的航点绑定到其来源候选目标：因此拒绝会使过时目标失效，而保守的重新激活则保护暂时被遮挡的目标。在来自CityAVOS、UAV-ON和OpenUAV基准的四个划分上，配备RTM的SkyAgent优于所有对比方法，将成功率（SR）提升2.90–6.31个百分点，同时以较低的误拒绝率大幅减少行为-FCP和矛盾后旅行。在每种方法35个匹配的真实世界DJI场景中，RTM持续提升任务成功率和行为可靠性，进一步验证了其在物理部署条件下从状态到动作的修正能力。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

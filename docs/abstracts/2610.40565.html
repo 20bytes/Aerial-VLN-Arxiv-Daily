@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Gym-Anything for Robotics: Scaling physical simulations with digital agents</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Realistic, fast robotics simulations could enable large-scale training of embodied AI models that transfer to the real world. However, despite decades of progress, available simulations cover only a narrow range of real-world tasks and physical phenomena. The core bottleneck is that creating better simulations requires significant expert effort and therefore does not scale. To address this, we introduce Gym-Anything for Robotics, a framework in which coding agents create realistic robotics simulations. Our core insight is that simulation creation is a coding agent task, so improvements in coding agents translate directly into richer and more faithful simulations. We select simulations based on U.S. GDP data to cover economically valuable physical work, define what makes a good simulation and a good task, and develop an adversarial creation-audit loop that checks each simulation and task against these definitions. Using this pipeline, we build RoboWorld, a set of 25 simulations with 25 test and 175 training RL environments of varying difficulty. Even the best frontier models fail on every RoboWorld test task, achieving an average reward of only 0.06. Building on RoboWorld, we introduce several new ways for frontier models to improve, including in-context learning across repeated attempts, a privileged teacher that reads the simulator state and teaches a student in context, self-assisted learning from the model&#x27;s own privileged experience, and code policies that generate demonstrations across varied scenes to train vision-language-action models (VLAs) such as $π_{0.5}$. Each of these substantially improves performance. We release our pipeline, RL environments, and benchmark to facilitate future research. Code and data are available at https://gym-anything.github.io/robotics</p>
+      <h2>摘要 (ZH)</h2>
+      <p>逼真、快速的机器人仿真有望实现具身AI模型的大规模训练，并将所学迁移到真实世界。然而，尽管数十年来取得了进展，现有仿真仍仅覆盖真实世界任务和物理现象的一小部分。核心瓶颈在于：构建更好的仿真需要大量专家投入，因而无法规模化。为解决这一问题，我们提出了面向机器人的Gym-Anything框架，其中编码智能体负责创建逼真的机器人仿真。我们的核心洞见是：仿真创建本质上是一项编码智能体任务，因此编码智能体的进步会直接转化为更丰富、更忠实的仿真。我们依据美国GDP数据选择仿真任务，以覆盖具有经济价值的物理工作，明确何为优质仿真与优质任务，并开发了一种对抗式创建-审计循环，依据这些定义对每个仿真和任务进行检查。利用该流程，我们构建了RoboWorld——包含25个仿真、25个测试环境和175个不同难度的训练RL环境。即使最先进的前沿模型在每个RoboWorld测试任务上均告失败，平均奖励仅为0.06。基于RoboWorld，我们引入了多种新方法以提升前沿模型的表现，包括跨重复尝试的上下文学习、一个读取模拟器状态并在上下文中教导学生的特权教师、从模型自身特权经验中进行的自辅助学习，以及生成跨多样场景演示以训练视觉-语言-动作模型（如$π_{0.5}$）的代码策略。每种方法均显著提升了性能。我们发布了流程、RL环境和基准以促进未来研究。代码与数据见https://gym-anything.github.io/robotics</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

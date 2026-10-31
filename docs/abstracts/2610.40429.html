@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Optimal Path Planning with Localization constraints</h1>
+      <h2>Abstract (EN)</h2>
+      <p>This paper studies UAV path planning in areas where GPS signals are not present. Because these drones can easily get lost when they don&#x27;t have GPS, they must rely on dead reckoning and occasionally pass near cellular towers, which act as landmarks to reset and fix their position. The goal is to find the shortest path from a start to a goal location while keeping the estimation uncertainty within a given bound. To solve this problem, we propose a localization-constrained A* planner that treats uncertainty as a hard constraint during search. The robot state and covariance are propagated using an Extended Kalman Filter (EKF), and only paths that satisfy the covariance limit are considered. We also show that the proposed method does not affect heuristic used in A* and remains admissible and consistent, ensuring optimality among all feasible paths. Extensive Monte Carlo simulations and PyBullet quadrotor test show that the proposed method finds shorter and more reliable paths compared to RRT* and PRM, while always satisfying the uncertainty constraint.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>本文研究了在无GPS信号区域的无人机路径规划问题。由于这些无人机在没有GPS时容易迷失方向，它们必须依靠航位推算，并偶尔经过作为地标的蜂窝基站附近，以重置和修正自身位置。目标是在保持估计不确定性在给定范围内的情况下，找到从起点到目标点的最短路径。为解决这一问题，我们提出了一种定位约束的A*规划器，该规划器在搜索过程中将不确定性视为硬约束。机器人状态和协方差使用扩展卡尔曼滤波器（EKF）进行传播，仅考虑满足协方差限制的路径。我们还证明了所提方法不影响A*中使用的启发式函数，且该启发式函数保持可采纳性和一致性，从而确保在所有可行路径中的最优性。大量的蒙特卡洛仿真和PyBullet四旋翼测试表明，与RRT*和PRM相比，所提方法能找到更短且更可靠的路径，同时始终满足不确定性约束。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

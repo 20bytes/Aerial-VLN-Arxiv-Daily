@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>P^2-Gaussian: Prior-Driven and Projection-Guided Gaussian Splatting for Sparse-View Cone-Beam CT Reconstruction</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Sparse-view cone-beam computed tomography (CBCT) reconstruction reduces imaging dose and scan time, but severe angular undersampling makes the inverse problem highly ill-posed. Existing 3D Gaussian Splatting (3DGS) methods initialize Gaussian primitives from Feldkamp-Davis-Kress (FDK) reconstructions that are contaminated by streak artifacts. The limited angular coverage also leaves the Gaussian parameters underconstrained, producing needle-like artifacts. We propose P2-Gaussian, a prior-driven and projection-guided 3DGS framework. In this framework, a latent rectified flow model, Sparse2Prior, first restores the artifact-corrupted FDK volume into an anatomical prior in approximately 5 s. Gaussian primitives are then initialized from this prior in a tissue-adaptive manner, which yields a compact representation with 62%-65% fewer optimized primitives than random sampling. During optimization, virtual projections synthesized at intermediate angles between the measured projections are activated in rotation, while measured projections remain dominant in the objective function. Experiments on 5, 10 and 20 measured views showed that the proposed P2-Gaussian achieved the highest PSNR and SSIM among all methods. Compared with the optimization-based Gaussian baseline, our method increases PSNR by 5.98, 4.25 and 2.49 dB and accelerates reconstruction by 2.6-3.0 times. These results indicate that coupling a learned anatomical prior with measurement-constrained Gaussian optimization is effective for sparse-view CBCT reconstruction. Code is publicly available at: https://github.com/Ballbo5354/P-2-Gaussian.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>稀疏视图锥束计算机断层扫描（CBCT）重建可减少成像剂量和扫描时间，但严重的角度欠采样使逆问题高度病态。现有的3D高斯溅射（3DGS）方法从受条纹伪影污染的Feldkamp-Davis-Kress（FDK）重建中初始化高斯图元。有限的角度覆盖也导致高斯参数欠约束，产生针状伪影。我们提出P2-Gaussian，一种先验驱动和投影引导的3DGS框架。在该框架中，潜在整流流模型Sparse2Prior首先在大约5秒内将伪影损坏的FDK体积恢复为解剖先验。然后以组织自适应方式从该先验初始化高斯图元，产生紧凑表示，优化的图元比随机采样少62%-65%。在优化过程中，在测量投影之间的中间角度合成的虚拟投影在旋转中激活，而测量投影在目标函数中保持主导地位。在5、10和20个测量视图上的实验表明，所提出的P2-Gaussian在所有方法中获得了最高的PSNR和SSIM。与基于优化的高斯基线相比，我们的方法将PSNR提高了5.98、4.25和2.49 dB，并将重建速度提高了2.6-3.0倍。这些结果表明，将学习到的解剖先验与测量约束的高斯优化相结合对于稀疏视图CBCT重建是有效的。代码公开于：https://github.com/Ballbo5354/P-2-Gaussian。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Fight World Model: Customizable Combat through Visual Interaction Proxies</h1>
+      <h2>Abstract (EN)</h2>
+      <p>A playable, programmable game world must maintain persistent state, enforce executable rules, and support extensible gameplay mechanics. Existing video world models can generate plausible combat, yet struggle to keep hit reactions and health updates consistent with game rules. We introduce Fight World Model (FWM), which separates rule-governed combat execution from video rendering. An executable engine maintains state and resolves interactions. A deterministic compiler encodes these outcomes and attempted actions in a spatially and temporally aligned interaction proxy. The proxy aligns action and skill windows, brief hit reactions, and persistent health by fighter identity and timing. These cues can be controlled separately to render interactions under modified rules. Identity-bound references preserve character appearance across side switches. We train FWM on FightWorld Corpus, spanning 52 skill effects, 187 character-appearance variants, and 15 arenas. Without retraining the renderer, FWM supports damage scaling, limited-hit immunity, lifesteal, and multi-stage skill mechanisms beyond the native game. It also allows character and arena customization. Experiments demonstrate the effectiveness of FWM, which outperforms existing game world models in action fidelity, hit reactions, health-state consistency, and character appearance preservation. Our project is available at https://fight-world-model.github.io.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>一个可玩、可编程的游戏世界必须维护持久状态、执行可执行规则并支持可扩展的游戏玩法机制。现有的视频世界模型能够生成合理的战斗，但难以保持受击反应和生命值更新与游戏规则一致。我们引入了战斗世界模型（FWM），它将受规则约束的战斗执行与视频渲染分离。一个可执行引擎维护状态并解决交互。一个确定性编译器将这些结果和尝试的动作编码为在空间和时间上对齐的交互代理。该代理通过战斗者身份和时机对齐动作和技能窗口、短暂的受击反应以及持久的生命值。这些线索可以单独控制，以在修改后的规则下渲染交互。身份绑定的参考在切换边时保持角色外观。我们在FightWorld语料库上训练FWM，该语料库涵盖52种技能效果、187种角色外观变体和15个竞技场。无需重新训练渲染器，FWM支持伤害缩放、有限命中免疫、生命偷取以及超出原生游戏的多阶段技能机制。它还允许角色和竞技场定制。实验证明了FWM的有效性，它在动作保真度、受击反应、生命状态一致性和角色外观保持方面优于现有的游戏世界模型。我们的项目可在https://fight-world-model.github.io获取。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>
