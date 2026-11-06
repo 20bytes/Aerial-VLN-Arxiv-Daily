@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Beyond Trial-and-Error: A Geospatial-Guided Active Reasoning Framework for Robust Aerial Vision-and-Language Navigation</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Aerial Vision-and-Language Navigation (VLN) requires UAVs to locate language-specified goals in large-scale urban environments, where objects often appear small and visually ambiguous from high-altitude viewpoints. Existing methods largely follow a reactive paradigm common in indoor VLN, repeatedly updating navigation states from local observations while underutilizing the geospatial structure that remains stable during navigation. As a result, visually similar distractors can cause a reactive goal search to repeatedly reinforce locally plausible goal hypotheses based on passively accumulated evidence, leading to unreliable localization. To address this, we propose GeoReasoner, a robust framework that shifts the paradigm of Aerial VLN from reactive trial-and-error to geospatial-guided active reasoning. Specifically, GeoReasoner first performs pre-search geospatial reasoning to derive region-level priors and constrain the goal hypothesis space. Building on these, it further conducts hypothesis-driven exploration to actively acquire discriminative evidence and refine competing goal hypotheses. Finally, consistency-aware goal verification adversarially assesses complementary evidence sources before stopping, hence reducing premature or erroneous goal confirmations. Experiments on the real-world CityNav benchmark demonstrate that GeoReasoner sets a new SOTA among zero-shot Aerial VLN methods while competing favorably with supervised approaches.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>空中视觉语言导航（VLN）要求无人机在大规模城市环境中定位语言指定的目标，而从高空视角看，这些目标往往显得较小且视觉模糊。现有方法大多遵循室内VLN中常见的反应式范式，即根据局部观测反复更新导航状态，却未充分利用导航过程中保持稳定的地理空间结构。因此，视觉上相似的干扰物可能导致反应式目标搜索基于被动积累的证据反复强化局部看似合理的目标假设，从而导致定位不可靠。为解决这一问题，我们提出了GeoReasoner，一个鲁棒的框架，将空中VLN的范式从反应式试错转变为地理空间引导的主动推理。具体而言，GeoReasoner首先执行搜索前的地理空间推理，以推导区域级先验并约束目标假设空间。在此基础上，它进一步进行假设驱动的探索，以主动获取判别性证据并细化相互竞争的目标假设。最后，一致性感知的目标验证在停止前对抗性地评估互补证据源，从而减少过早或错误的目标确认。在真实世界CityNav基准上的实验表明，GeoReasoner在零样本空中VLN方法中创造了新的SOTA，同时与监督方法相比也表现出竞争力。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

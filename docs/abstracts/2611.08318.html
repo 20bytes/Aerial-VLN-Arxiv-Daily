@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Learning the Task or Learning the Verifier? Rethinking Criteria Exposure in Embodied Self-Improvement</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Self-improving embodied agents are increasingly being developed and compared on robot simulation benchmarks. Several recent works expose the benchmark&#x27;s success criteria to the learning agent, a practice we call Criteria Exposure (CE). These criteria, originally written to verify policies trained by imitation learning, often demand more than the corresponding language instructions, so a score from such a verifier may not faithfully reflect whether the instructed task was completed, especially for robot-control programs written by an agent. As embodied coding agents report ever higher benchmark scores, a natural question arises: when a coding agent is exposed to the benchmark&#x27;s criteria, does it generate code that better performs the instructed task, or code that simply overfits to the verification criteria? We conduct controlled experiments with a self-improving agent with and without CE, and find that with CE the agent quickly produces code with a higher success rate under the given criteria, but this advantage disappears when the criteria are changed slightly without departing from the original instructions. More importantly, the skills the agent develops under CE transfer poorly across tasks. We further propose instruction-faithful criteria and show that they better reflect the performance of agent-generated programs.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>自我改进的具身智能体越来越多地在机器人仿真基准上被开发和比较。近期几项工作将基准的成功标准暴露给学习智能体，我们将这种做法称为标准暴露（CE）。这些标准最初是为了验证通过模仿学习训练的策略而编写的，通常比相应的语言指令要求更高，因此来自此类验证器的分数可能无法忠实反映所指示的任务是否完成，尤其是对于由智能体编写的机器人控制程序。随着具身编码智能体报告越来越高的基准分数，一个自然的问题出现了：当编码智能体接触到基准的标准时，它生成的代码是更好地执行了指示的任务，还是仅仅过拟合于验证标准？我们通过有无CE的自我改进智能体进行控制实验，发现有了CE，智能体很快生成在给定标准下成功率更高的代码，但如果不偏离原始指令而稍微改变标准，这一优势就消失了。更重要的是，智能体在CE下发展的技能在不同任务之间的迁移效果很差。我们进一步提出了忠实于指令的标准，并表明它们能更好地反映智能体生成程序的性能。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

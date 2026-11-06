@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Failure Prediction and Classification in Vision-Language-Action Models Via Calibrated Latent Probing</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Vision-Language-Action models (VLAs) enable general-purpose embodied intelligence, but their performance is brittle under distribution shift, where unanticipated failures can damage equipment or endanger people. Deploying VLAs in real-world systems therefore requires a runtime monitor that is timely, calibrated, and informative while being efficient enough to run on the edge. Existing methods fail to fulfill these requirements. We present VLA-Tug, a lightweight probe over the latent layers of a VLA backbone that improves early failure detection and bounds the missed-detection and false-alarm rates, with minimal inference overhead. We show that supervising on the pre-failure segment of a trajectory increases early failure detection at matched false-positive rates by up to 30% over the strongest learned baseline. Under shift to unseen tasks, the bounds on missed-detection and false-alarm rates remain valid in up to 86% of runs, versus at most 21% for baselines. Unlike existing methods, VLA-Tug predicts the failure mode to enable corrective actions, raising top-3 accuracy on unseen tasks by up to 44% over a majority baseline. VLA-Tug enables real-time monitoring where the well-timed and informative probe supports lightweight steering that improves task success. We release a dataset of 3,180 annotated manipulation episodes to support future work on latent failure detection in VLAs at https://vla-tug.github.io.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>视觉-语言-动作模型（VLA）实现了通用具身智能，但其性能在分布偏移下较为脆弱，意外故障可能损坏设备或危及人员。因此，在真实系统中部署VLA需要一个及时、校准且信息丰富的运行时监控器，同时要足够高效以在边缘运行。现有方法无法满足这些要求。我们提出VLA-Tug，一种在VLA骨干网络的潜在层上运行的轻量级探针，它以最小的推理开销改进了早期故障检测，并限定了漏检率和误报率。我们表明，在轨迹的故障前片段上进行监督，在相同的假阳性率下，早期故障检测率比最强的学习基线提高了高达30%。在向未见任务迁移时，漏检率和误报率的界限在高达86%的运行中仍然有效，而基线最多为21%。与现有方法不同，VLA-Tug预测故障模式以支持纠正动作，在未见任务上比多数基线将top-3准确率提高了高达44%。VLA-Tug实现了实时监控，其中时机恰当且信息丰富的探针支持轻量级引导，从而提高了任务成功率。我们发布了一个包含3,180个带标注操作片段的数据集，以支持VLA中潜在故障检测的未来研究，网址为https://vla-tug.github.io。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

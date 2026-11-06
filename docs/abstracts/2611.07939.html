@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>WAM-Sim0.1: World Anchored Memory Meets Online RL for Consistent and Realistic Driving Simulation</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Autoregressive driving world models systematically suffer from structural drift, identity drift, and quality decay over long rollout horizons due to transient conditioning signals that lack persistent state. We present WAM-Sim, a driving world model anchored by a persistent hierarchical memory and optimized via online flow-matching RL. WAM-Sim structures persistent context across three temporal and semantic scales: pose-aligned structural tokens encoding persistent road topology, read-only scene tokens supplying geolocated background appearance, and write-once instance tokens preserving individual traffic participant identities across occlusions and chunk boundaries. To restore visual sharpness and physical plausibility degraded by multi-scale conditioning, we introduce an online post-training framework that optimizes self-generated rollouts via flow-matching RL guided by hierarchy-aligned visual rewards and a vision-language model physical judge. The invariant memory empirically confines policy optimization within the anchored context, helping suppress semantic collapse and reward hacking, while online RL systematically enforces physical commonsense and fine-grained visual fidelity. On the nuScenes benchmark, WAM-Sim achieves a superior generation fidelity (FID=3.47, FVD=25.72) and strong downstream perception performance (24.16 mAP, 71.23 road mIoU). On minute-scale rollouts of self-collected data, WAM-Sim substantially mitigates structural and identity drift, preserving high scene similarity and subject identity coherence across extended horizons. Project page: https://fudan-generative-vision.github.io/WAM-Sim.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>自回归驾驶世界模型由于缺乏持久状态的瞬态条件信号，在长时间推演中系统性地遭受结构漂移、身份漂移和质量衰减。我们提出WAM-Sim，一种由持久分层记忆锚定并通过在线流匹配强化学习优化的驾驶世界模型。WAM-Sim在三个时间和语义尺度上构建持久上下文：编码持久道路拓扑的姿态对齐结构令牌、提供地理定位背景外观的只读场景令牌、以及在遮挡和块边界间保持个体交通参与者身份的一次性写入实例令牌。为恢复因多尺度条件而退化的视觉清晰度和物理合理性，我们引入在线后训练框架，通过由层次对齐视觉奖励和视觉语言模型物理评判器引导的流匹配强化学习来优化自生成推演。不变记忆在实证上将策略优化限制在锚定上下文内，有助于抑制语义崩溃和奖励黑客行为，而在线强化学习系统地强制物理常识和细粒度视觉保真度。在nuScenes基准上，WAM-Sim实现了优越的生成保真度（FID=3.47，FVD=25.72）和强大的下游感知性能（24.16 mAP，71.23道路mIoU）。在自采集数据的分钟级推演中，WAM-Sim大幅缓解了结构和身份漂移，在扩展时间跨度上保持了高场景相似度和主体身份一致性。项目页面：https://fudan-generative-vision.github.io/WAM-Sim。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>La-JEPA: Compact Robot Policies with Latent World Modeling</h1>
+      <h2>Abstract (EN)</h2>
+      <p>World-action models adapt pretrained video generators, and vision-language-action models build on pretrained vision-language backbones; both tie policy architecture and inference cost to large transformers designed for generation rather than control. It remains unclear how much these generation-oriented choices affect control. In this work, we introduce Latent Action JEPA (La-JEPA), a compact world-action model whose policy transformer is trained from scratch in the feature space of a pretrained V-JEPA 2.1 encoder. Following Fast-WAM, La-JEPA learns to predict future features jointly with actions during training and generates only actions at inference. Among policies without embodied pretraining, La-JEPA achieves state-of-the-art performance in clean and randomized RoboTwin 2.0 scenes and on LIBERO-Plus with correct instructions, while using far fewer parameters than the strongest competing policies. It runs substantially faster than Fast-WAM at comparable performance and outperforms the closest JEPA-based methods, LeapBot-WA and JEPA-WAM, on LIBERO-Plus and RoboTwin 2.0 without their pretrained policy backbones. On four real-robot tasks, its average success is comparable to pi0.5 and above non-embodied-pretrained baselines. Through a design study of the choices behind La-JEPA, we show that JEPA features outperform video VAE latents, most clearly out of distribution, and that training-time future prediction choices significantly impact the policy even when future prediction is skipped at inference. We correct the LIBERO-Plus instructions, as the officially released evaluator corrupts them for most variants, and re-evaluate several strong open baselines. Without a generative pretrained policy backbone, La-JEPA is better and faster than far larger policies, suggesting that robot foundation models may benefit from architectures designed for control rather than inherited from generation.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>世界-动作模型改编预训练的视频生成器，而视觉-语言-动作模型则建立在预训练的视觉-语言骨干之上；两者都将策略架构和推理成本与为生成而非控制而设计的大型Transformer绑定。这些面向生成的选择对控制的影响程度尚不清楚。在这项工作中，我们引入了潜在动作JEPA（La-JEPA），这是一种紧凑的世界-动作模型，其策略Transformer在预训练的V-JEPA 2.1编码器的特征空间中从头训练。遵循Fast-WAM，La-JEPA在训练期间学习与动作联合预测未来特征，并在推理时仅生成动作。在没有具身预训练的策略中，La-JEPA在干净和随机化的RoboTwin 2.0场景以及具有正确指令的LIBERO-Plus上实现了最先进的性能，同时使用的参数远少于最强的竞争策略。它以相当的性能比Fast-WAM运行得快得多，并且在LIBERO-Plus和RoboTwin 2.0上优于最接近的基于JEPA的方法LeapBot-WA和JEPA-WAM，而无需它们预训练的策略骨干。在四个真实机器人任务上，其平均成功率与pi0.5相当，并高于非具身预训练的基线。通过对La-JEPA背后选择的设计研究，我们表明JEPA特征优于视频VAE潜在表示，在分布外最为明显，并且训练时的未来预测选择即使在未来预测在推理时被跳过时也会显著影响策略。我们修正了LIBERO-Plus的指令，因为官方发布的评估器对大多数变体损坏了这些指令，并重新评估了几个强大的开放基线。在没有生成式预训练策略骨干的情况下，La-JEPA比大得多的策略更好且更快，这表明机器人基础模型可能受益于为控制而设计的架构，而不是从生成继承的架构。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>
