@@ -20,11 +20,11 @@
 <body>
   <div class="wrap">
     <div class="card">
-      <h1>H-TRIP: Exact Many-to-Many Distance Index for Multi-Robot Exploration</h1>
+      <h1>H-TRIP: Exact Many-to-Many Distance Index for Multi-Robot Exploration&lt;br&gt;H-TRIP：面向多机器人探索的精确多对多距离索引&lt;br&gt;[摘要](abstracts/2611.08139.html)</h1>
       <h2>Abstract (EN)</h2>
-      <p>Frontier-based exploration systems repeatedly evaluate geodesic travel costs between robot poses and candidate viewpoints, and tour-based planners consume the full pairwise distance matrix built from them. Recomputing these matrices with one graph search per source scales with the explored map size, whereas distance caches that refresh only locally affected or newly created frontiers can retain stale costs between surviving pairs when newly discovered free space creates a global shortcut. We present H-TRIP (Hierarchical Tropical Rank-one Incremental Propagation), an exact distance index grounded in Kleene algebra over the min-plus semiring for monotonically growing occupancy grids. H-TRIP partitions the known map into a spatial hierarchy with fixed boundary ports. Each unknown-to-free revelation is decomposed into efficient rank-one min-plus edge insertions at the affected leaf, and only decreased port-to-port summaries are propagated along its ancestor chain. A shared hierarchical lift evaluates the dense many-to-many matrix of shortest distances for all active query points on the occupancy map. We prove that sequential insertions preserve exact shortest-path distances on the grid. Benchmark experiments confirm exact agreement with reference searches on fully built maps and show that dense many-to-many queries at a few dozen viewpoints are up to two orders of magnitude faster than sequential k x BFS. On exploration runs with sixteen robots, in-loop queries on the growing occupancy graph are 2.21x-8.59x faster than co-scheduled k x BFS on maps with side 256, 512, and 1024 cells.</p>
+      <p>Abstract not available.</p>
       <h2>摘要 (ZH)</h2>
-      <p>基于前沿的探索系统会反复评估机器人位姿与候选视点之间的测地旅行成本，而基于巡回的规划器则使用由这些成本构建的完整成对距离矩阵。若对每个源点各执行一次图搜索来重新计算这些矩阵，其计算量会随已探索地图规模增长；而仅局部刷新受影响或新创建前沿的距离缓存，在幸存点对之间可能保留过时成本——当新发现的自由空间形成全局捷径时即出现此问题。我们提出 H-TRIP（分层热带秩一增量传播），这是一种基于最小加半环上 Kleene 代数的精确距离索引，适用于单调增长的占据栅格。H-TRIP 将已知地图划分为具有固定边界端口的分层结构。每次未知到自由的揭示被分解为在受影响叶节点处的高效秩一最小加边插入，且仅将减少的端口到端口摘要沿其祖先链传播。共享的分层提升在占据地图上为所有活跃查询点评估稠密的多对多最短距离矩阵。我们证明顺序插入保持了栅格上精确的最短路径距离。基准实验证实了与完整构建地图上参考搜索的精确一致性，并表明在几十个视点处的稠密多对多查询比顺序 k 次 BFS 快达两个数量级。在十六个机器人的探索运行中，在边长为 256、512 和 1024 个单元的不断增长的占据图上，循环内查询比协同调度的 k 次 BFS 快 2.21 倍至 8.59 倍。</p>
+      <p>未生成（可稍后重试翻译）</p>
       <p><a href="../index.html">← Back</a></p>
     </div>
   </div>
