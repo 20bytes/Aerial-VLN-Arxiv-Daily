@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Incorporating World Models in Decision Making for Next Best View Selection in Active Sensing</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Efficient robotic 3D reconstruction requires selecting views that contribute new surface measurements with few physical captures. Pretrained world models can guide this choice, but a predicted surface may not produce valid depth measurements under the operating conditions of the deployed sensor. We present a deployment adaptation methodology for next-best-view selection that learns a sensor-return adapter from limited local calibration data while keeping the pretrained predictor fixed. The adapter estimates measurement dropout over each predicted surface, allowing the selection method to favor views likely to fill gaps in the measured reconstruction. In a real-robot experiment with a structured-light sensor, the adapted method achieves higher measured surface coverage with 60% fewer captures than nominal selection. The adapted method recovers a surface region that the nominal method repeatedly targets but fails to measure. These results suggest that robots can reuse pretrained predictive models while adapting their decisions to local operating conditions in data-scarce environments.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>高效的机器人三维重建需要选择能够以少量物理采集贡献新表面测量的视角。预训练的世界模型可以指导这一选择，但预测的表面在部署传感器的工作条件下可能无法产生有效的深度测量。我们提出了一种用于下一个最佳视角选择的部署适应方法，该方法从有限的局部校准数据中学习传感器返回适配器，同时保持预训练预测器固定。该适配器估计每个预测表面上的测量丢失，使选择方法能够倾向于可能填补测量重建中缺口的视角。在一项使用结构光传感器的真实机器人实验中，适应后的方法以比标称选择少60%的采集次数实现了更高的测量表面覆盖率。适应后的方法恢复了一个表面区域，而标称方法反复瞄准该区域但未能测量。这些结果表明，机器人可以在数据稀缺的环境中重用预训练预测模型，同时使其决策适应当地操作条件。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

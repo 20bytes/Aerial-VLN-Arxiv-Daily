@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>LaST0.5: A Generalist World Action Model with Interaction-Centric Latent Reasoning</h1>
+      <h2>Abstract (EN)</h2>
+      <p>World Action Models (WAMs) have recently emerged as a promising paradigm for robotic manipulation, endowing policies with strong capabilities for modeling temporal and physical dynamics. Existing WAMs, encompassing both video-first action prediction and joint video-action modeling, directly transfer global physical representations from world models to action generation. However, global scene representations may underemphasize local robot-object interactions, creating a mismatch between representations optimized for world evolution and those required for manipulation. To bridge this gap, we propose LaST0.5, a novel WAM that introduces an interaction-centric physical representation between world modeling and action generation. Specifically, LaST0.5 learns a compact interaction-centric latent space under the supervision of visual interaction cues between the robot and the environment. This reasoning space is instantiated as a latent expert that bridges the world expert and the action expert within a Mixture-of-Transformers architecture. Furthermore, LaST0.5 performs adaptive world-to-action transfer by jointly predicting future representations and progress values, using progress consistency to adjust action execution and trigger future resampling. Finally, we pretrain LaST0.5 on a large-scale robotic data corpus comprising over 14k hours of data, establishing interaction-centric physical reasoning as a scalable and effective paradigm. LaST0.5 achieves 99.5% on LIBERO, surpasses the previous state of the art on ten evaluated RLBench tasks, and demonstrates robust long-horizon execution and precise dexterous manipulation in real-world experiments.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>世界动作模型（WAM）最近已成为机器人操作的一种有前景的范式，赋予策略强大的时间和物理动态建模能力。现有的WAM，包括视频优先的动作预测和联合视频-动作建模，直接将世界模型中的全局物理表示转移到动作生成中。然而，全局场景表示可能低估了局部机器人-物体交互，导致为世界演化优化的表示与操作所需的表示之间不匹配。为了弥合这一差距，我们提出了LaST0.5，一种新颖的WAM，在世界建模和动作生成之间引入以交互为中心的物理表示。具体而言，LaST0.5在机器人与环境之间的视觉交互线索的监督下，学习一个紧凑的以交互为中心的潜在空间。这个推理空间被实例化为一个潜在专家，在混合Transformer架构中连接世界专家和动作专家。此外，LaST0.5通过联合预测未来表示和进度值来执行自适应世界到动作的转移，使用进度一致性来调整动作执行并触发未来重采样。最后，我们在包含超过14,000小时数据的大规模机器人数据语料库上预训练LaST0.5，将以交互为中心的物理推理确立为一种可扩展且有效的范式。LaST0.5在LIBERO上达到99.5%，在十个评估的RLBench任务上超越了之前的最先进水平，并在真实世界实验中展示了稳健的长时程执行和精确的灵巧操作。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

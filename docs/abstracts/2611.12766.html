@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Riemannian Real-Time Optimization for Robotics: Active Set SQP Parametric Pathfollowing</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Robot optimal control often combines Euclidean states with configurations on Lie groups and other smooth manifolds. This paper develops a parametric Riemannian Newton pathfollowing method based on homotopy quadratic programs and parallel strict-working-set tasks. It specifies the event handling, working-set exchanges, matrix factor updates, synchronization, and residual checks used by the algorithm. Tracking guarantees are given under mildly degenerate regularity conditions and the Riemannian strong second-order sufficient condition. Drone navigation and arm manipulation are formulated as geometric optimal-control problems, including finite-force grasp acquisition, transport and supported release. Numerical examples illustrate drone navigation and arm pick-and-place through KKT-residual histories and MuJoCo simulations, together with preliminary initialization results for the full-horizon optimal-control problems.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>机器人最优控制通常将欧几里得状态与李群及其他光滑流形上的构型相结合。本文提出一种基于同伦二次规划和并行严格工作集任务的参数黎曼牛顿路径跟踪方法。文中详细说明了算法所采用的事件处理、工作集交换、矩阵因子更新、同步及残差检查。在轻度退化正则条件和黎曼强二阶充分条件下，给出了跟踪保证。将无人机导航和机械臂操作建模为几何最优控制问题，包括有限力抓取获取、运输和支持释放。数值算例通过KKT残差历程和MuJoCo仿真展示了无人机导航和机械臂拾放，并给出了全时域最优控制问题的初步初始化结果。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

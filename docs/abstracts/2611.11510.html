@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Reaching Is Not Finding: Map-Anchored Visual Prompting for the Last Mile of Aerial Vision-Language Navigation</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Aerial vision-language navigation (VLN) asks a drone to find an object described in natural language. The description usually locates the object relative to named landmarks, such as streets and buildings. We observe that current navigators often bring the drone close to the target and then stop at the wrong place: they reach the target without finding it. This gap is shared by navigators of very different designs, from imitation learners to a fine-tuned 7B vision-language model. A simple test reveals the cause. When we replace the target object in the instruction with another one next to the same landmarks, no navigator goes to it, and most stop where they did before. Navigators learn to reach the landmarks, not to identify the described object. We therefore propose MAP-VP, a plug-and-play module for the last step. After any navigator stops, MAP-VP draws the landmarks named in the instruction onto the drone&#x27;s current view, using the landmark outlines that the benchmark provides on a map. A fine-tuned 4B vision-language model then locates the target relative to these landmarks. The training data are generated automatically from the benchmark annotations. Neither drawing the landmarks nor fine-tuning helps much alone, but together they are highly effective. Without retraining any navigator, MAP-VP significantly improves all six navigators we test on CityNav. It roughly doubles the success rate of the two strongest trained navigators, raising HETT from 25.9% to 54.6% and FlightGPT from 24.2% to 48.9%, whereas CityNav&#x27;s official detector-based last step adds less than two points to HETT.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>空中视觉语言导航（VLN）要求无人机找到用自然语言描述的物体。描述通常将物体相对于命名地标（如街道和建筑物）进行定位。我们观察到，当前的导航器经常将无人机带到目标附近，然后停在错误的位置：它们到达了目标却没有找到它。这一差距在不同设计的导航器中普遍存在，从模仿学习器到微调的7B视觉语言模型。一个简单的测试揭示了原因。当我们将指令中的目标物体替换为同一地标附近的另一个物体时，没有导航器前往它，大多数停在原来的位置。导航器学会了到达地标，而不是识别所描述的物体。因此，我们提出了MAP-VP，一个用于最后一步的即插即用模块。在任何导航器停止后，MAP-VP利用基准在地图上提供的地标轮廓，将指令中命名的地标绘制到无人机当前视图上。然后，一个微调的4B视觉语言模型相对于这些地标定位目标。训练数据从基准标注自动生成。单独绘制地标或微调都帮助不大，但两者结合则非常有效。无需重新训练任何导航器，MAP-VP在我们于CityNav上测试的所有六个导航器上都显著提升性能。它大约将两个最强训练导航器的成功率翻倍，将HETT从25.9%提升到54.6%，将FlightGPT从24.2%提升到48.9%，而CityNav官方的基于检测器的最后一步对HETT的提升不到两个百分点。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

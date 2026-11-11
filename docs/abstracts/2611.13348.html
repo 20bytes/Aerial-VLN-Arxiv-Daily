@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>ProTEUS: A mutation-resolved world model for closed-loop protein evolution</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Protein engineering requires navigating rugged fitness landscapes, where small sequence changes can produce large functional differences, but experimental screening can only sample a small fraction of sequence space. Thus, a central challenge is to efficiently traverse the large combinatorial space of mutations in silico. We introduce ProTEUS, a mutation-resolved world model for closed-loop protein evolution. Pretrained on deep mutational scanning assays, ProTEUS learns a joint representation of sequence, evolutionary, and structural information using MutationFormer, a mutation-biased attention architecture. Variants are represented as states in this joint latent space, and mutations define actions whose functional consequences are predicted. To support exploration of many mutants, we developed a fast, physics-constrained all-atom predictor that utilizes explicit geometric constraint enforcement to achieve &gt;10 fold increase in speed than AlphaFold3 with guaranteed physical validity. Lastly, ProTEUS refines its prediction and understanding of protein activity through closed loop experimental feedback to guide evolution toward a desired phenotype. ProTEUS surpasses established models in both zero-shot and supervised fine-tuning mutation prediction tasks. We experimentally demonstrate its utility in two closed-loop multi-objective engineering campaigns on aldehyde dehydrogenase and levansucrase, yielding variants with &gt;10 fold higher activity than wild type. ProTEUS provides a world-model framework that connects virtual evaluation of mutational outcomes with experimental learning for efficient protein evolution.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>蛋白质工程需要在崎岖的适应度景观中导航，其中微小的序列变化可能产生巨大的功能差异，但实验筛选只能采样序列空间的一小部分。因此，一个核心挑战是在计算机中高效地遍历巨大的突变组合空间。我们介绍了ProTEUS，一种用于闭环蛋白质进化的突变解析世界模型。ProTEUS在深度突变扫描测定上预训练，使用MutationFormer（一种突变偏置注意力架构）学习序列、进化和结构信息的联合表示。变体在该联合潜在空间中表示为状态，突变定义了动作，其功能后果被预测。为了支持对许多突变体的探索，我们开发了一种快速、物理约束的全原子预测器，利用显式几何约束强制，实现比AlphaFold3快10倍以上的速度，并保证物理有效性。最后，ProTEUS通过闭环实验反馈来改进其对蛋白质活性的预测和理解，以引导进化朝着所需表型方向发展。ProTEUS在零样本和监督微调突变预测任务中均超越了现有模型。我们在醛脱氢酶和果聚糖蔗糖酶的两个闭环多目标工程活动中实验证明了其效用，产生的变体活性比野生型高10倍以上。ProTEUS提供了一个世界模型框架，将突变结果的虚拟评估与实验学习连接起来，以实现高效的蛋白质进化。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

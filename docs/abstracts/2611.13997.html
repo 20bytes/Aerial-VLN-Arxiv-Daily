@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Specify Privacy Yourself: Assessing Inference-Time Personalized Privacy Preservation Ability of Large Vision-Language Models</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Large Vision-Language Models (LVLMs) have demonstrated remarkable capabilities but raise significant privacy concerns due to their abilities to infer sensitive personal information from images with high precision. While current LVLMs are relatively well aligned to protect universal privacy, e.g., credit card data, we argue that privacy is inherently personalized and context-dependent. This work pivots towards a novel task: can LVLMs achieve Inference-Time Personalized Privacy Protection (ITP$^3$), allowing users to dynamically specify privacy boundaries through language specifications? To this end, we present SPY-Bench, the first systematic assessment of ITP$^3$ ability, which comprises (1) 32,700 unique samples with image-question pairs and personalized privacy instructions across 67 categories and 24 real-world scenarios, and (2) novel metrics grounded in user specifications and context awareness. Benchmarking the ITP$^3$ ability of 21 SOTA LVLMs, we reveal that: (i) most models, even the top-performing o4-mini, perform poorly, with only $\sim$24% compliance accuracy; (ii) they show quite limited contextual privacy understanding capability. Therefore, we implemented initial ITP$^3$ alignment methods, including a novel Noise Contrastive Alignment variant which achieves 96.88% accuracy while maintaining reasonable general performance. These results mark an initial step towards the ethical deployment of more controllable LVLMs. Code and data are available at https://github.com/achernarwang/specify-privacy-yourself</p>
+      <h2>摘要 (ZH)</h2>
+      <p>大型视觉-语言模型（LVLMs）已展现出卓越的能力，但由于其能够从图像中高精度地推断敏感个人信息，引发了重大的隐私担忧。虽然当前LVLMs在保护通用隐私（如信用卡数据）方面已相对对齐，但我们认为隐私本质上是个性化和情境依赖的。本工作转向一项新任务：LVLMs能否实现推理时个性化隐私保护（ITP$^3$），允许用户通过语言规范动态指定隐私边界？为此，我们提出了SPY-Bench，这是对ITP$^3$能力的首次系统评估，包含（1）32,700个独特样本，涵盖67个类别和24个真实场景的图像-问题对及个性化隐私指令，以及（2）基于用户规范和情境感知的新颖指标。对21个最先进LVLMs的ITP$^3$能力进行基准测试后，我们揭示：（i）大多数模型，即使表现最佳的o4-mini，表现也很差，合规准确率仅为约24%；（ii）它们展现出相当有限的上下文隐私理解能力。因此，我们实施了初始的ITP$^3$对齐方法，包括一种新颖的噪声对比对齐变体，在保持合理通用性能的同时达到96.88%的准确率。这些结果标志着朝着更可控LVLMs的伦理部署迈出了第一步。代码和数据可在https://github.com/achernarwang/specify-privacy-yourself获取。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

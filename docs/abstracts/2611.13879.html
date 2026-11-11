@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>SFU-Sim: Bit-Exact Reverse Engineering of NVIDIA MUFU and Validation of PTX Paths</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Reproducing the numerical behavior of a GPU requires predicting the exact output of special function instructions. Vendor documents give only the function semantics and error bounds. These do not fix the output bit pattern. We present SFU-Sim, which builds bit-exact models of NVIDIA multi-function unit (MUFU) instructions by black-box reverse engineering on real GPUs. We first model a single bare MUFU instruction. We then add the surrounding operations found in the disassembly to model full PTX paths. The model covers 12 common MUFU forms and two BF16 forms on the tested Blackwell GPU. Using SIN/COS as a complete case study, we show how we analyze the PTX-to-SASS compilation path and recover the segment structure, the equivalent coefficient tables, and the finite-width arithmetic. On NVIDIA GPUs of three architectures (Ampere, Ada Lovelace, and Blackwell), we exhaustively compare every tested PTX path over its specified input domain. FP16 and FP32 paths cover all $2^{16}$ and $2^{32}$ input encodings, respectively. The model output matches the hardware bit for bit, with zero mismatches. SFU-Sim computes each output directly from its input. It needs neither a lookup table of all inputs nor access to a physical GPU. It can serve as a bit-exact special function component for instruction simulators. It can also serve as an arithmetic reference for hardware design and functional verification that target the same numerical behavior. SFU-Sim and its validation programs are open source at https://github.com/hzX40000000/SFU-Sim</p>
+      <h2>摘要 (ZH)</h2>
+      <p>复现GPU的数值行为需要精确预测特殊功能指令的输出。厂商文档仅给出函数语义和误差界限，并未固定输出位模式。我们提出SFU-Sim，通过在真实GPU上进行黑盒逆向工程，为NVIDIA多功能单元（MUFU）指令构建位精确模型。我们首先对单条裸MUFU指令建模，然后结合反汇编中发现的周边操作来建模完整的PTX路径。该模型覆盖了测试的Blackwell GPU上的12种常见MUFU形式及两种BF16形式。以SIN/COS为完整案例研究，我们展示了如何分析PTX到SASS的编译路径，并恢复段结构、等效系数表和有限宽度算术。在三种架构（Ampere、Ada Lovelace和Blackwell）的NVIDIA GPU上，我们对每个测试的PTX路径在其指定输入域上进行了穷举比较。FP16和FP32路径分别覆盖所有$2^{16}$和$2^{32}$种输入编码。模型输出与硬件逐位匹配，零失配。SFU-Sim直接从输入计算每个输出，既不需要所有输入的查找表，也不需要访问物理GPU。它可作为指令模拟器的位精确特殊功能组件，也可作为针对相同数值行为的硬件设计和功能验证的算术参考。SFU-Sim及其验证程序开源于https://github.com/hzX40000000/SFU-Sim。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

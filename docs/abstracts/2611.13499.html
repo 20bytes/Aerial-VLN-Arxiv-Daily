@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>DeRep: Learning Depth Representations for End-to-End Navigation in Cluttered Environments</h1>
+      <h2>Abstract (EN)</h2>
+      <p>End-to-end navigation in cluttered environments relies on compact visual representations to support collision avoidance and goal-directed motion. Existing methods typically learn these representations jointly with the policy or through observation reconstruction, which does not explicitly specify what information the representation should preserve. Moreover, they are usually evaluated with a single downstream policy learner, although the benefit of a representation may depend on how the policy is learned. It therefore remains unclear how different representation-learning objectives affect downstream navigation performance and robustness. This work proposes DeRep, a navigation-oriented representation-learning method that combines local bird&#x27;s-eye-view reachability supervision with depth reconstruction. To compare representation objectives under controlled conditions, we pretrain encoders with a common architecture and freeze them during downstream learning. We evaluate the representations using a linear policy probe, flow-matching imitation learning, and reinforcement learning with PPO. DeRep achieves the lowest linear policy probe prediction error and outperforms reconstruction alone across all six tested PPO conditions. In imitation learning, both reachability-based objectives achieve higher mean success rates than reconstruction alone, with similar mean success rates between the reachability-only and joint objectives. These results demonstrate consistent benefits of incorporating reachability supervision into depth representation pretraining across different downstream learning methods and evaluation conditions. We further deploy the PPO policy with the frozen DeRep encoder in Gazebo and on a physical quadrotor without fine-tuning, demonstrating its capability for zero-shot sim-to-sim and sim-to-real transfer.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>杂乱环境中的端到端导航依赖于紧凑的视觉表示来支持避碰和目标导向运动。现有方法通常将这些表示与策略联合学习或通过观测重建来学习，这并未明确指定表示应保留哪些信息。此外，它们通常仅用单一的下游策略学习器进行评估，尽管表示的优势可能取决于策略的学习方式。因此，不同的表示学习目标如何影响下游导航性能和鲁棒性仍不清楚。本文提出DeRep，一种面向导航的表示学习方法，它将局部鸟瞰图可达性监督与深度重建相结合。为了在受控条件下比较表示目标，我们使用通用架构预训练编码器，并在下游学习期间将其冻结。我们使用线性策略探针、流匹配模仿学习和PPO强化学习来评估这些表示。DeRep实现了最低的线性策略探针预测误差，并在所有六种测试的PPO条件下优于仅重建方法。在模仿学习中，基于可达性的两个目标均比仅重建获得更高的平均成功率，而仅可达性目标与联合目标的平均成功率相似。这些结果表明，在不同的下游学习方法和评估条件下，将可达性监督纳入深度表示预训练具有一致的益处。我们进一步在Gazebo和物理四旋翼上部署了带有冻结DeRep编码器的PPO策略，无需微调，展示了其零样本模拟到模拟和模拟到现实迁移的能力。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

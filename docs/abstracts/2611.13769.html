@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>From Depth to Safe Depth: Uncertainty-Aware Monocular Perception for Mobile Robot Navigation</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Monocular depth foundation models make it tempting to replace depth sensors on mobile robots with a single RGB camera. We show that, used off the shelf, this is unsafe: in a simulated indoor navigation benchmark, a standard Nav2 stack driven by Depth Anything V2 (metric) collides in 63\% of 120 episodes, because the model systematically over-estimates the distance to nearby obstacles. We propose a lightweight plug-in module that turns predicted depth into \emph{safe depth}. A 0.58\,M-parameter head on top of the \emph{frozen} depth model predicts, per pixel, a log-depth correction $μ$ and an uncertainty $σ$, trained with a $β$-weighted Gaussian negative log-likelihood. The navigation stack consumes the one-sided bound $\hat d_{\text{safe}}=d\,e^{μ-kσ}$, where $k$ is set by conformal calibration on a held-out world, and uncertainty also decides which pixels may be treated as floor. The correction halves the depth error (AbsRel $0.262\rightarrow0.134$) and reduces near-range over-estimation from 59.8\% to 12.0\%. In navigation, safe depth raises the success rate from 37\% to 70\% and lowers collisions from 63\% to 3\%, close to the 2\% of ground-truth depth. A constant safety margin calibrated to the same pixel coverage reaches only 30\% success because it freezes the robot; uncertainty-aware safety wins 52 of 56 discordant paired episodes against it. Gains hold on glass, texture-less walls and dark regions.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>单目深度基础模型使得用单个RGB相机替代移动机器人上的深度传感器成为可能。我们表明，直接使用现成模型是不安全的：在模拟室内导航基准测试中，由Depth Anything V2（度量）驱动的标准Nav2栈在120个回合中有63%发生碰撞，因为该模型系统性地高估了附近障碍物的距离。我们提出一个轻量级插件模块，将预测深度转换为\emph{安全深度}。在\emph{冻结}的深度模型之上，一个0.58M参数的头部逐像素预测对数深度校正$\mu$和不确定性$\sigma$，并使用$\beta$加权的高斯负对数似然进行训练。导航栈使用单侧边界$\hat d_{\text{safe}}=d\,e^{\mu-k\sigma}$，其中$k$通过在留出世界上的共形校准设置，不确定性还决定哪些像素可被视为地面。校正将深度误差减半（AbsRel $0.262\rightarrow0.134$），并将近距离高估从59.8%降低到12.0%。在导航中，安全深度将成功率从37%提升到70%，并将碰撞率从63%降低到3%，接近真实深度2%的碰撞率。校准到相同像素覆盖率的恒定安全裕度仅达到30%的成功率，因为它使机器人冻结；不确定性感知的安全方法在56个不一致的配对回合中赢得了52个。增益在玻璃、无纹理墙壁和暗区域上依然成立。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>RetinexGS: Retinex-Inspired Gaussian Splatting for Low-Light RAW Reconstruction</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Standard 3D Gaussian Splatting (3DGS) pipelines struggle with severely underexposed images, producing unstable colors, floating artifacts, and incomplete reconstructions in dark regions. To better account for noise in these low-light observations, RAW images offer a natural basis for noise-aware reconstruction by preserving linear sensor measurements and providing access to noise metadata. We present RetinexGS, a RAW-domain 3DGS framework that combines Retinex-inspired appearance modeling with sensor-informed optimization for low-light novel-view synthesis. We factorize each Gaussian&#x27;s color into a view-independent base color and a shared, position- and view-dependent modulation field, regularizing the two components separately to constrain appearance learning from noisy observations. We use DNG noise metadata to weight the reconstruction loss for signal-dependent noise, while distortion-aware rendering avoids spatially resampling RAW targets. To address sparse geometry in dark regions, we introduce depth-guided initialization. We evaluate RetinexGS on three public RawNeRF scenes and two custom-captured low-light RAW scenes. With all methods trained on the same RAW inputs for each scene, RetinexGS outperforms LE3D and RawNeRF in mean sRGB PSNR by 2.18 dB and 2.71 dB respectively, across the five scenes, while supporting real-time novel-view rendering.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>标准3D高斯泼溅（3DGS）流程在严重曝光不足的图像上表现不佳，会在暗区产生不稳定的颜色、漂浮伪影和不完整的重建。为了更好地处理这些低光照观测中的噪声，RAW图像通过保留线性传感器测量值并提供噪声元数据，为噪声感知重建提供了天然基础。我们提出RetinexGS，一个RAW域3DGS框架，它将受Retinex启发的表观建模与传感器信息优化相结合，用于低光照新视角合成。我们将每个高斯的颜色分解为与视角无关的基础颜色和共享的、位置与视角相关的调制场，分别对这两个分量进行正则化，以约束从噪声观测中的表观学习。我们使用DNG噪声元数据对信号相关噪声的重建损失进行加权，同时畸变感知渲染避免了对RAW目标进行空间重采样。为了解决暗区稀疏几何问题，我们引入了深度引导初始化。我们在三个公开的RawNeRF场景和两个自定义拍摄的低光照RAW场景上评估RetinexGS。在所有方法均使用相同RAW输入进行训练的情况下，RetinexGS在五个场景上的平均sRGB PSNR分别比LE3D和RawNeRF高出2.18 dB和2.71 dB，同时支持实时新视角渲染。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>
