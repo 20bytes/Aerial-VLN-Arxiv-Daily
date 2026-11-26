@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>A Failure-Driven Data Flywheel for Post-Training Vision-Language-Action Models</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Pretrained vision-language-action (VLA) models rarely satisfy all behavioral requirements of a new platform, and teams without a large deployed fleet lack the data to address the resulting failures. We propose a failure-driven data flywheel for post-training such models. It constructs target scenarios absent from the available data by inserting task-relevant entities into reconstructed real-world scenes, and evaluates the model against each behavioral requirement of the target task. Failure rates form a failure map across task conditions and difficulty levels, which is re-evaluated after each round and assigns larger data generation quotas to conditions where the model still fails. We instantiate the framework in autonomous driving for occluded-pedestrian emergence and yielding at stop-sign-controlled intersections, and evaluate it on two VLA models and one non-VLA planner in simulation and on a real vehicle. For occluded-pedestrian emergence, five rounds of post-training improve the critical-phase collision-free rate on the sealed test set from 0.261 to 0.579 for AutoVLA and from 0.390 to 0.765 for ReCogDrive, while the unnecessary braking rate in paired control scenarios never exceeds 0.013. On a full-scale vehicle without real-world training, post-trained ReCogDrive achieves 4 of 5 safe passages, versus 1 of 5 for the base model. Fine-grained evaluation reveals a pattern obscured by the collision-free rate alone: both VLA models learn anticipatory deceleration before reaching the occluding vehicle, while braking after pedestrian emergence remains limited. For stop-sign yielding, the stop-before-line rate rises from 0.100 to 0.897 for AutoVLA and from 0.000 to 0.667 for ReCogDrive. With sequential training from the pedestrian-capability models, it reaches 0.599 and 0.358, respectively, while the pedestrian collision-free rate decreases by at most 0.032.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>预训练的视觉-语言-动作（VLA）模型很少能满足新平台的全部行为要求，而没有大规模部署车队数据的团队也缺乏解决由此产生的失败所需的数据。我们提出了一种用于后训练此类模型的失败驱动数据飞轮。它通过将任务相关实体插入重建的真实场景中，构建可用数据中缺失的目标场景，并针对目标任务的每项行为要求评估模型。失败率在任务条件和难度级别上形成失败图谱，每轮后重新评估，并将更大的数据生成配额分配给模型仍然失败的条件。我们在自动驾驶中针对遮挡行人出现和停车标志控制交叉口的让行实例化了该框架，并在仿真和真实车辆上对两个VLA模型和一个非VLA规划器进行了评估。对于遮挡行人出现，五轮后训练将密封测试集上关键阶段的无碰撞率从AutoVLA的0.261提高到0.579，从ReCogDrive的0.390提高到0.765，而配对控制场景中的不必要制动率始终不超过0.013。在未进行真实世界训练的全尺寸车辆上，后训练的ReCogDrive实现了5次安全通行中的4次，而基础模型仅为5次中的1次。细粒度评估揭示了一种仅靠无碰撞率所掩盖的模式：两个VLA模型都学会了在到达遮挡车辆之前进行预期性减速，而行人在出现后的制动仍然有限。对于停车标志让行，AutoVLA的停车线前停车率从0.100提高到0.897，ReCogDrive从0.000提高到0.667。通过从行人能力模型进行顺序训练，该比率分别达到0.599和0.358，而行人的无碰撞率最多下降0.032。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

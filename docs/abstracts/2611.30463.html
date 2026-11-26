@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Autonomous UAV Navigation in an Unknown Environment via Multi-Trajectory Model Predictive Control</h1>
+      <h2>Abstract (EN)</h2>
+      <p>A novel model predictive control (MPC) formulation, named multi-trajectory MPC (mt-MPC), is presented and applied to the problem of autonomous navigation of an unmanned aerial vehicle (UAV) in an unknown environment. The UAV is equipped with a LiDAR sensor, providing only a partial description of the surroundings and resulting in time-varying constraints as the vehicle navigates among the obstacles. The control system layout is hierarchical: the low-level loops stabilize the vehicle&#x27;s trajectories and track the set-points commanded by the high-level, mt-MPC controller. The latter is required to plan the UAV trajectory trading off safety, i.e. to avoid collisions with the uncertain obstacles, and exploitation, i.e. to reach an assigned target location. To achieve this goal, mt-MPC considers different future state trajectories in the same Finite Horizon Optimal Control Problem (FHOCP), enabling a partial decoupling between constraint satisfaction (safety) and cost function minimization (exploitation). Recursive feasibility and, consequently, persistent obstacle avoidance guarantees are derived under the assumption of a time invariant environment. The performance of the approach is studied in simulation and compared with that of a standard MPC, showing good improvement.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>提出了一种新的模型预测控制（MPC）公式，称为多轨迹MPC（mt-MPC），并将其应用于无人机（UAV）在未知环境中的自主导航问题。无人机配备激光雷达传感器，仅提供周围环境的部分描述，并随着车辆在障碍物间导航而产生时变约束。控制系统布局是分层的：低级回路稳定车辆的轨迹并跟踪高级mt-MPC控制器指令的设定点。后者需要规划无人机轨迹，权衡安全性（即避免与不确定障碍物碰撞）和利用性（即到达指定目标位置）。为实现这一目标，mt-MPC在同一个有限时域最优控制问题（FHOCP）中考虑不同的未来状态轨迹，从而实现约束满足（安全性）与成本函数最小化（利用性）之间的部分解耦。在时不变环境的假设下，推导了递归可行性和因此的持续避障保证。通过仿真研究了该方法的性能，并与标准MPC进行了比较，显示出良好的改进。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

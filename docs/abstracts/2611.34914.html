@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Cairn: Object-Centric 3D Trajectory Priors for Steering Frozen VLAs</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Vision-language-action models (VLAs) are capable low-level controllers, but they tie where objects go to the layouts they were trained on: when objects are moved or obstacles block the way, they carry them to the wrong place or into collisions. Fine-tuning on new layouts needs robot data for each one and erodes skills the model already has. We introduce Cairn, which keeps the VLA frozen and steers it at test time along learned 3D trajectories of the object in its gripper. A small prior reads point clouds of the scene and the held object, along with its pose when grasped and the instruction, and samples SE(3) trajectories up to its release that lead it around obstacles and turn it to fit through gaps. The prior and the VLA form the two levels of a hierarchical planner in which feedback runs both ways: the VLA&#x27;s intended motion chooses and reshapes the trajectories, and the chosen one guides the VLA&#x27;s denoising. Its predicted actions, mapped to the held object&#x27;s poses through the grasp, are pulled toward the next waypoint, while the VLA&#x27;s weights stay untouched. Across 1,941 held-out LIBERO scenes with displaced objects and obstacles, Cairn raises the success rate of a frozen π0.5 from 24.5% to 95.1%, above that of a π0.5 fine-tuned on our training layouts, without hurting standard LIBERO. On the third-party LIBERO-PRO benchmark, it raises success from 27.3% to 38.0%, and from 54.4% to 81.1% on the episodes it steers. On a real Franka, with a prior trained purely in simulation, it guides the frozen DROID π0.5 around an obstacle and to a placement at the limit of the arm&#x27;s reach, where it otherwise fails. All code, models and data will be made public.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>视觉-语言-动作模型（VLA）是能力出色的底层控制器，但它们将物体的去向绑定于训练时所见的布局：当物体被移动或障碍物阻挡路径时，它们会把物体带到错误位置或导致碰撞。在新布局上微调需要为每种布局采集机器人数据，并且会侵蚀模型已有的技能。我们提出 Cairn，它保持 VLA 冻结，并在测试时沿着学习到的、夹爪中物体的 3D 轨迹对其进行引导。一个小型先验模型读取场景点云和被抓取物体的点云，以及抓取时的位姿和指令，并采样直到释放的 SE(3) 轨迹，这些轨迹能绕过障碍物并调整物体朝向以穿过狭窄间隙。该先验与 VLA 构成一个分层规划器的两个层级，二者之间双向反馈：VLA 的意图运动选择并重塑轨迹，而选定的轨迹则引导 VLA 的去噪过程。VLA 预测的动作通过抓取关系映射为被夹持物体的位姿，并被拉向下一个路点，同时 VLA 的权重保持不变。在 1,941 个包含物体位移和障碍物的留出 LIBERO 场景中，Cairn 将冻结的 π0.5 成功率从 24.5% 提升至 95.1%，高于在我们的训练布局上微调的 π0.5，且不影响标准 LIBERO 性能。在第三方 LIBERO-PRO 基准上，它将成功率从 27.3% 提升至 38.0%，在其引导的片段上从 54.4% 提升至 81.1%。在真实的 Franka 机器人上，使用纯仿真训练的先验，它引导冻结的 DROID π0.5 绕过障碍物，并将物体放置到机械臂可达范围的极限位置，而原本在该任务上会失败。所有代码、模型和数据将公开。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

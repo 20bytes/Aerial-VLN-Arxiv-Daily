@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Lab2Sim: Agentic Generation of Interactive Laboratory Equipment from Operation Videos</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Generating laboratory assets that faithfully reproduce the appearance, structure, and joint motions of real equipment remains challenging. Existing asset generation methods struggle to directly generate simulation assets for all equipment observed in operation videos and to faithfully reproduce the appearance, joint motions, and internal cavities of the real equipment. To address the challenge, we present Lab2Sim, an agentic framework that generates editable, simulation-ready laboratory equipment assets from egocentric or multi-view operation videos. Lab2Sim comprises four specialized agents. The Evidence Agent combines video observations with laboratory knowledge to specify equipment parts, materials, and functional requirements, which guide the Asset Agent in constructing editable Blender assets. The independent Verifier checks the generated geometry and appearance against the evidence and requirements, providing targeted feedback for revision. The Simulation Integration Agent converts verified Blender assets into simulation instances with physical properties and articulated mechanisms, using execution feedback to refine their behavior. Experiments on human and robot laboratory scenes show that Lab2Sim achieves higher visual fidelity and stronger interaction capability than coding-agent and real-to-sim baselines, including a Codex baseline using the same underlying model. We further demonstrate valve-controlled drainage and use the generated asset library to reproduce laboratory scenes and operations in RoboTwin, supporting reusable simulation environments for robotic laboratory tasks.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>生成能忠实再现真实设备外观、结构和关节运动的实验室资产仍然具有挑战性。现有的资产生成方法难以直接从操作视频中观察到的所有设备生成仿真资产，也难以忠实再现真实设备的外观、关节运动和内部空腔。为了解决这一挑战，我们提出了Lab2Sim，一个智能体框架，能够从第一人称或多视角操作视频中生成可编辑、可直接用于仿真的实验室设备资产。Lab2Sim包含四个专门的智能体。证据智能体将视频观察与实验室知识相结合，以指定设备部件、材料和功能需求，从而指导资产智能体构建可编辑的Blender资产。独立的验证器根据证据和需求检查生成的几何形状和外观，并提供有针对性的反馈以供修订。仿真集成智能体将验证过的Blender资产转换为具有物理属性和关节机构的仿真实例，并利用执行反馈来优化其行为。在人类和机器人实验室场景上的实验表明，与编码智能体和真实到仿真基线（包括使用相同基础模型的Codex基线）相比，Lab2Sim实现了更高的视觉保真度和更强的交互能力。我们进一步演示了阀门控制的排水，并使用生成的资产库在RoboTwin中重现实验室场景和操作，为机器人实验室任务支持可重用的仿真环境。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

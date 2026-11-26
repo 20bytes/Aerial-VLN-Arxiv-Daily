@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>$μ$MPC: Microsecond-Scale Nonlinear and World Model Control from Edge to GPU via Koopman-Linearized Precompilation</h1>
+      <h2>Abstract (EN)</h2>
+      <p>We present $μ$MPC, a fast model predictive control (MPC) framework that reduces online computation using learned Koopman-linearized dynamics. By precomputing finite-horizon control-to-output maps, $μ$MPC eliminates lifted-state trajectories, yielding an action-only Koopman-Compiled QP (KC-QP) with $Hn_u$ decision variables, independent of lifted dimension. A fixed, precomputed primal operator enables efficient primal-dual iterations using only matrix-vector products and projections, accommodating changing goals and constraints without refactorization. This efficiency also enables control-aware dynamics learning through differentiable KC-QPs in the training loop and batched DAgger-style data aggregation. $μ$MPC achieves solve times as low as $23μ$s on a desktop CPU and 24 ms onboard a 168 MHz Crazyflie microcontroller. It scales to 4096D quadruped control in under 5 ms, visual planning with 2048D world models in 0.4 ms, and collision-aware planning for 200 quadrotors at over 30 Hz on the GPU. Across these benchmarks, $μ$MPC achieves up to $108\times$ faster constrained MPC and $1907\times$ faster visuomotor planning than competing methods.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>我们提出了$\mu$MPC，一个快速的模型预测控制（MPC）框架，利用学习的Koopman线性化动力学减少在线计算。通过预计算有限时域的控制到输出映射，$\mu$MPC消除了提升状态轨迹，产生了仅动作的Koopman编译QP（KC-QP），其决策变量为$Hn_u$，与提升维度无关。一个固定的、预计算的原始算子使得仅使用矩阵-向量乘积和投影的高效原始-对偶迭代成为可能，适应变化的目标和约束而无需重新分解。这种效率还使得通过训练循环中的可微KC-QP和批处理DAgger风格的数据聚合实现控制感知的动力学学习。$\mu$MPC在台式机CPU上实现了低至$23\mu$s的求解时间，在168 MHz的Crazyflie微控制器上实现了24 ms的求解时间。它可扩展到在5 ms内控制4096维四足机器人，在0.4 ms内使用2048维世界模型进行视觉规划，以及在GPU上以超过30 Hz的频率为200个四旋翼飞行器进行碰撞感知规划。在这些基准测试中，与竞争方法相比，$\mu$MPC实现了高达$108\times$更快的约束MPC和$1907\times$更快的视觉运动规划。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

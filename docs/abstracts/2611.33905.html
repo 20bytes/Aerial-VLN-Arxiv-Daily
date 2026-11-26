@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Tortho-Gaussian++: Suppressing Geometric Drift and Floaters for Robust Gravity-Aligned TDOM Generation in Large-Scale Aerial Scenes</h1>
+      <h2>Abstract (EN)</h2>
+      <p>3D Gaussian Splatting (3DGS) has demonstrated remarkable performance in aerial scene reconstruction, motivating its recent extension to true digital orthophoto maps (TDOMs) generation. We propose Tortho-Gaussian++, a novel 3DGS training framework that suppresses geometric drift and floaters and automatically prunes unreliable peripheral regions, coupled with a robust gravity-aligned TDOM rendering solution. First, we explore geometric support via viewing-ray-based geometric observability analysis, quantitatively characterizing the reliability for each Gaussian and subsequently pruning peripheral regions with particularly weak geometric support. Second, the optimizer state initialization is refined for newly created Gaussians during densification, intrinsically suppressing drift and floaters without external priors. Lastly, a robust gravity direction estimation solution is designed, combining image-derived gravity cues, camera-distribution priors and nadir views, to achieve a gravity-aligned orthogonal projection reference for TDOM rendering. Extensive experiments on multiple large-scale UAV (Unmanned Aerial Vehicle) datasets demonstrate that our Tortho-Gaussian++ outperforms vanilla 3DGS by 0.5-3.5 dB in average PSNR and yields comparable or superior performance to prior-guided 3DGS methods. Notably, it reduces the training time, VRAM and Gaussian number by 45.5%, 47.2%, and 58.6%, respectively. Qualitative evaluations confirm that our method effectively suppresses drift and floaters, while robust gravity direction estimation reduces tilt-induced facade artifacts in TDOMs.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>3D高斯泼溅（3DGS）在航空场景重建中表现出卓越性能，推动了其近期在真数字正射影像图（TDOM）生成中的扩展。我们提出Tortho-Gaussian++，一种新颖的3DGS训练框架，可抑制几何漂移和浮点并自动修剪不可靠的外围区域，同时结合稳健的重力对齐TDOM渲染方案。首先，我们通过基于视角射线的几何可观测性分析探索几何支持，定量表征每个高斯分布的可靠性，随后修剪几何支持特别弱的外围区域。其次，在致密化过程中对新创建的高斯分布优化优化器状态初始化，无需外部先验即可内在抑制漂移和浮点。最后，设计了一种稳健的重力方向估计方案，结合图像导出的重力线索、相机分布先验和底点视图，实现用于TDOM渲染的重力对齐正交投影参考。在多个大规模无人机（UAV）数据集上的大量实验表明，我们的Tortho-Gaussian++在平均PSNR上比原始3DGS高出0.5-3.5 dB，并且与先验引导的3DGS方法相比具有相当或更优的性能。值得注意的是，它将训练时间、显存和高斯数量分别减少了45.5%、47.2%和58.6%。定性评估证实，我们的方法有效抑制了漂移和浮点，而稳健的重力方向估计减少了TDOM中倾斜引起的立面伪影。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

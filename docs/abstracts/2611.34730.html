@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>WorldInteract: Controllable Streaming Video Generation for Multi-Material Interactions</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Video world models aim to create interactive physical worlds that capture how diverse materials move and interact. Yet material-dependent dynamics remain underexplored in controllable video generation, limiting reliable control in scenes with different materials. We present WorldInteract, a streaming video generation framework that decomposes cross-material interaction into material-dependent behavior generation and contact response computation. External pushes and contact impulses are expressed through a shared velocity-increment interface, allowing material behaviors learned from interaction-free videos to be reused in interacting scenes. A physics controller predicts contacts and computes velocity increments from estimated masses and restitution coefficients, while a causal generator executes these increments using learned material behaviors. This separation enables cross-material interaction without supervised contact videos spanning diverse material pairings and contact configurations. We train the generator on 30k simulated interaction-free videos spanning 22 material classes and introduce Material-Aware RL, using verifiable physical rewards to refine material behavior and control execution. WorldInteract substantially outperforms state-of-the-art methods on Physics-IQ and delivers more reliable push control on real-world images.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>视频世界模型旨在创建交互式物理世界，捕捉不同材料如何运动和交互。然而，材料相关的动力学在可控视频生成中仍未被充分探索，限制了在不同材料场景中的可靠控制。我们提出WorldInteract，一个流式视频生成框架，将跨材料交互分解为材料相关行为生成和接触响应计算。外部推力和接触冲量通过共享的速度增量接口表达，允许从无交互视频中学习到的材料行为在交互场景中重用。物理控制器预测接触并根据估计的质量和恢复系数计算速度增量，而因果生成器使用学习到的材料行为执行这些增量。这种分离使得跨材料交互无需涵盖多种材料配对和接触配置的监督接触视频。我们在涵盖22种材料类别的3万段模拟无交互视频上训练生成器，并引入材料感知强化学习，使用可验证的物理奖励来优化材料行为和控制执行。WorldInteract在Physics-IQ上大幅优于最先进方法，并在真实世界图像上提供更可靠的推力控制。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

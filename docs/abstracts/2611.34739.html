@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Was the Model Given the Right Action? Auditing and Repairing Action Interfaces in Navigation World Models</h1>
+      <h2>Abstract (EN)</h2>
+      <p>World models are evaluated by predicting future observations from actions. These evaluations assume that actions are prepared the same way as during training, but an unchecked mismatch can make a model appear less accurate than it is. We audit this assumption in Navigation World Models (NWM) and find three interacting differences between its training and rollout code. Correcting the inputs, without retraining, reduces mean visual prediction error by 42%, measured with DreamSim on the RECON navigation dataset. The correction also changes the ranking of NWM checkpoints in an exploratory analysis and removes or reduces two alternative models&#x27; measured advantages. Correcting only the normalization offset instead increases error, showing why interacting mismatches must be checked together. To test whether sensitivity to input preparation extends beyond NWM, we deliberately introduce encoding errors into two alternative models; both become less accurate. We introduce ActRosetta, a tool that checks whether action encoding matches training, identifies supported causes of disagreement, and repairs inputs when sufficient information is available. Repair helps little where predictions barely respond to actions, the tool&#x27;s diagnosis has limited coverage, and improved control remains unproven. For any action-conditioned world model, the lesson is the same: before reporting rollout error, verify that evaluation encodes actions exactly as training did.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>世界模型通过从动作预测未来观测来评估。这些评估假设动作的准备方式与训练时相同，但未检查的不匹配可能使模型显得不如实际准确。我们在导航世界模型（NWM）中审计了这一假设，发现其训练和部署代码之间存在三个相互作用的差异。在不重新训练的情况下修正输入，可将平均视觉预测误差降低42%（在RECON导航数据集上使用DreamSim测量）。该修正还在探索性分析中改变了NWM检查点的排名，并消除或减少了两个替代模型的测量优势。仅修正归一化偏移反而会增加误差，这表明相互作用的错配必须一起检查。为了测试对输入准备的敏感性是否超出NWM，我们故意在两个替代模型中引入编码错误；两者都变得不那么准确。我们引入了ActRosetta，一个检查动作编码是否与训练匹配、识别受支持的分歧原因并在信息充足时修复输入的工具。在预测对动作几乎不响应的场景中，修复帮助甚微，该工具的诊断覆盖范围有限，且改进的控制仍未得到证实。对于任何动作条件世界模型，教训是相同的：在报告部署误差之前，请验证评估时的动作编码与训练时完全一致。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

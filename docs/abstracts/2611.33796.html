@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>SprintGS: Eliminating Redundancy for Fast 3D Gaussian Splatting Training</h1>
+      <h2>Abstract (EN)</h2>
+      <p>3D Gaussian Splatting (3DGS) renders photorealistic novel views in real time, but its per-scene training (optimization) remains slow. Recent fast training methods such as FastGS shorten training to a few minutes by reducing the number of Gaussians. Profiling FastGS, we find two costs that remain even in its compact model. First, rasterization is still the largest cost, and redundant work remains in it. Second, the loss computation does not shrink with the number of Gaussians, so its share of the training time grows as the model becomes compact. We present SprintGS, a training framework built on FastGS that keeps the model compact and reduces both costs. For rasterization, scheduled tile culling limits each Gaussian to the tiles where it matters, using a coarse footprint that is annealed to the exact one before training ends; convergence-aware pruning removes converged, nearly transparent Gaussians; and a shuffle-efficient backward pass reduces the data exchanged between GPU threads. For the loss, a fused loss computes the loss and its image gradient in the forward pass without a loss map, removing most of its cost. SprintGS trains 2.15x faster than FastGS at comparable quality, and 1.81x faster in its high-quality setting. It also accelerates other fast training methods and dynamic, sparse-view, and surface reconstruction.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>3D高斯泼溅（3DGS）能够实时渲染照片级真实感的新视角，但其逐场景训练（优化）仍然缓慢。近期的快速训练方法如FastGS通过减少高斯数量将训练缩短至几分钟。我们对FastGS进行分析，发现即使在其紧凑模型中仍存在两项开销。首先，光栅化仍是最大的开销，其中仍存在冗余工作。其次，损失计算不随高斯数量减少而缩减，因此随着模型变得紧凑，其在训练时间中的占比增加。我们提出SprintGS，一个基于FastGS构建的训练框架，保持模型紧凑并同时降低这两项开销。对于光栅化，调度瓦片剔除将每个高斯限制在对其重要的瓦片上，使用粗略足迹并在训练结束前退火至精确足迹；收敛感知剪枝移除已收敛、近乎透明的高斯；以及一种打乱高效的 backward 传递减少GPU线程之间交换的数据。对于损失，融合损失在前向传递中计算损失及其图像梯度，无需损失图，消除了大部分开销。SprintGS在质量相当的情况下比FastGS训练快2.15倍，在高质量设置下快1.81倍。它还能加速其他快速训练方法以及动态、稀疏视角和表面重建。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Do We Still Need Reinforcement Learning When We Can Read the World Model?</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Reinforcement learning has achieved remarkable success in sequential decision-making, but learning effective policies often requires substantial interaction experience. Model-based reinforcement learning alleviates this dependence by leveraging world models, which are typically used to support planning or policy optimization. In this paper, we investigate an alternative paradigm in which autonomous LLM-based coding agents directly synthesize control policies by reasoning over readable world models. By examining environment source code, these agents translate environmental knowledge into executable decision rules and iteratively refine their policies using online feedback or offline data, without task-specific RL training. Experiments across diverse decision-making benchmarks show that synthesized policies match or outperform conventional RL methods while requiring substantially less experience. Further analyses reveal interpretable decision rules and how they evolve through feedback-driven refinement. Comparisons with policies generated without source code access and experiments under challenging conditions further demonstrate the benefits of readable world models. These findings suggest that direct policy synthesis can reduce reliance on trial and error, challenging the necessity of task-specific RL training.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>强化学习在序列决策中取得了显著成功，但学习有效的策略往往需要大量的交互经验。基于模型的强化学习通过利用世界模型来缓解这种依赖，世界模型通常用于支持规划或策略优化。本文研究了一种替代范式，其中基于LLM的自主编码智能体通过推理可读的世界模型直接合成控制策略。通过检查环境源代码，这些智能体将环境知识转化为可执行的决策规则，并利用在线反馈或离线数据迭代改进其策略，而无需特定任务的强化学习训练。在不同决策基准上的实验表明，合成的策略在所需经验大大减少的情况下，达到或优于传统强化学习方法。进一步的分析揭示了可解释的决策规则及其如何通过反馈驱动的改进而演变。与未访问源代码生成的策略的比较以及在挑战性条件下的实验进一步证明了可读世界模型的好处。这些发现表明，直接策略合成可以减少对试错的依赖，从而挑战了特定任务强化学习训练的必要性。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

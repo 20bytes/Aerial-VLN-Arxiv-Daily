@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Memory Is Not Ground Truth: Revising Navigation Authority under Unreliable VLM Evidence for Persistent Semantic Navigation</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Vision-language models (VLMs) enable robots to reason about semantic and spatio-temporal context, verify task-relevant objects, and guide sensing and navigation. Persistent memory can reduce redundant search for field robots, but when should a memory continue to guide behavior? Repeated misses may suggest that a memory is stale. Our experiments show why this evidence can remain ambiguous under VLM-based perception. Using a Boston Dynamics Spot with four fixed cameras and a persistent spatio-temporal visual memory, we measure negative-verification behavior across targets, viewpoints, language queries, and repeated revisits. False-negative rates vary substantially across objects, nearby revisits often reproduce the same detector outcome, and some matched target-present and target-removed experiments yield identical miss histories. This ambiguity persists under changed observation geometry, identity-preserving query reformulation, and conditioning on a previously verified target image. These findings raise two questions: is the object still there, and is this memory still useful for navigation? We introduce a dependence-aware, reversible memory-update mechanism that avoids double-counting correlated misses and stops using unsupported memories as direct navigation goals without claiming that the object is absent. Later positive evidence can restore a memory&#x27;s use for navigation. One resident onboard VLM is shared across memory verification, semantic frontier reasoning, and in-motion perception. In three matched real-robot decision contexts, an episode-local baseline selected a stale memory as its navigation objective in every case, whereas our method selected semantic frontiers in all three. A complementary trial re-verified the target during motion and promoted fresh memory. These results support revising memory actionability rather than interpreting failed detection as object absence.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>视觉语言模型（VLM）使机器人能够推理语义和时空上下文，验证任务相关物体，并引导感知与导航。持久记忆可以减少野外机器人的冗余搜索，但记忆何时应继续指导行为？反复未命中可能表明记忆已过时。我们的实验展示了为什么在基于VLM的感知下，这种证据可能仍然模糊。使用配备四个固定摄像头和持久时空视觉记忆的Boston Dynamics Spot，我们测量了跨目标、视角、语言查询和重复访问的负验证行为。假阴性率因物体而异，邻近重访通常重现相同的检测器结果，并且一些匹配的目标存在和目标移除实验产生相同的未命中历史。这种模糊性在观察几何变化、保持身份的查询重构以及以先前验证的目标图像为条件的情况下仍然存在。这些发现提出了两个问题：物体是否仍然存在，以及该记忆是否仍对导航有用？我们引入了一种依赖感知的可逆记忆更新机制，避免重复计算相关未命中，并停止将无支持的记忆用作直接导航目标，而不声称物体不存在。后来的正面证据可以恢复记忆用于导航。一个驻留机载VLM共享于记忆验证、语义前沿推理和运动感知。在三个匹配的真实机器人决策场景中，一个情节局部基线在每个案例中都选择过时记忆作为其导航目标，而我们的方法在所有三个案例中都选择了语义前沿。一个补充试验在运动过程中重新验证了目标并提升了新鲜记忆。这些结果支持修正记忆的可操作性，而不是将检测失败解释为物体不存在。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

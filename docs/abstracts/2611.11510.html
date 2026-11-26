@@ -20,11 +20,11 @@
 <body>
   <div class="wrap">
     <div class="card">
-      <h1>Reaching Is Not Finding: Map-Anchored Visual Prompting for the Last Mile of Aerial Vision-Language Navigation&lt;br&gt;到达并非找到：面向空中视觉语言导航最后一英里的地图锚定视觉提示&lt;br&gt;[摘要](abstracts/2611.11510.html)</h1>
+      <h1>Reaching Is Not Finding: Map-Anchored Visual Prompting for the Last Mile of Aerial Vision-Language Navigation</h1>
       <h2>Abstract (EN)</h2>
-      <p>Abstract not available.</p>
+      <p>Aerial vision-language navigation (VLN) asks a drone to find an object described in natural language. The description usually locates the object relative to named landmarks, such as streets and buildings. We observe that current navigators often bring the drone close to the target and then stop at the wrong place: they reach the target without finding it. This gap is shared by navigators of very different designs, from imitation learners to a fine-tuned 7B vision-language model. A simple test reveals the cause. When we replace the target object in the instruction with another one next to the same landmarks, no navigator goes to it, and most stop where they did before. Navigators learn to reach the landmarks, not to identify the described object. We therefore propose MAP-VP, a plug-and-play module for the last step. After any navigator stops, MAP-VP draws the landmarks named in the instruction onto the drone&#x27;s current view, using the landmark outlines that the benchmark provides on a map. A fine-tuned 4B vision-language model then locates the target relative to these landmarks. The training data are generated automatically from the benchmark annotations. Neither drawing the landmarks nor fine-tuning helps much alone, but together they are highly effective. Without retraining any navigator, MAP-VP significantly improves all six navigators we test on CityNav. It roughly doubles the success rate of the two strongest trained navigators, raising HETT from 25.9% to 54.6% and FlightGPT from 24.2% to 48.9%, whereas CityNav&#x27;s official detector-based last step adds less than two points to HETT.</p>
       <h2>摘要 (ZH)</h2>
-      <p>未生成（可稍后重试翻译）</p>
+      <p>航空视觉语言导航（VLN）要求无人机找到用自然语言描述的物体。描述通常将物体相对于命名地标（如街道和建筑物）定位。我们观察到，当前的导航器经常将无人机带到目标附近，然后停在错误的位置：它们到达了目标却没有找到它。这一差距在不同设计的导航器中普遍存在，从模仿学习器到微调的7B视觉语言模型。一个简单的测试揭示了原因。当我们将指令中的目标物体替换为同一地标旁边的另一个物体时，没有导航器前往它，大多数停在之前的位置。导航器学会了到达地标，而不是识别所描述的物体。因此，我们提出了MAP-VP，一个用于最后一步的即插即用模块。在任何导航器停止后，MAP-VP利用基准在地图上提供的地标轮廓，将指令中命名的地标绘制到无人机当前视图上。然后，一个微调的4B视觉语言模型相对于这些地标定位目标。训练数据从基准标注自动生成。单独绘制地标或单独微调帮助不大，但两者结合则非常有效。无需重新训练任何导航器，MAP-VP显著改善了我们在CityNav上测试的所有六个导航器。它大约将两个最强的训练导航器的成功率翻倍，将HETT从25.9%提高到54.6%，将FlightGPT从24.2%提高到48.9%，而CityNav官方的基于检测器的最后一步对HETT的提升不到两个点。</p>
       <p><a href="../index.html">← Back</a></p>
     </div>
   </div>

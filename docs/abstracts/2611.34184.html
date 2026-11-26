@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Hierarchical Semantic Learning for Multimodal Sentiment Analysis with Missing Modalities</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Multimodal sentiment analysis (MSA) in real-world systems must handle unpredictable modality missingness caused by sensor failures, privacy masking, and unstable transmission. Existing methods either learn reliability-aware representations or reconstruct missing inputs, often using a single flattened encoder output. This overlooks deep encoders&#x27; semantic hierarchy and intra- and inter-modal interactions, causing semantic averaging and ill-posed mappings. We propose Hierarchical Semantic Learning (HSL), a framework that exploits semantic hierarchy for robust MSA with missing modalities. Hierarchical Semantic Decoupling exposes low-, mid-, and high-level feature streams from each modality encoder. Cross-Modal Cross-Level Semantic Reconstruction performs ladder-style recovery, using high-level semantics from observed modalities as global anchors to progressively reconstruct mid-level structures and low-level details of missing modalities. To stabilize cross-level reconstruction, Hierarchical Cascade Error Supervisor applies prototypical contrastive regularization to observed and reconstructed features, enforcing level-specific semantic consistency and limiting error propagation. Finally, Hierarchical Interactive Fusion captures dense interactions across modalities and semantic levels to produce robust predictions under diverse missingness patterns. Experiments on CMU-MOSI, CMU-MOSEI, IEMOCAP, and CH-SIMS show that HSL outperforms baselines in most missing-modality settings.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>现实系统中的多模态情感分析（MSA）必须处理由传感器故障、隐私掩蔽和不稳定传输引起的不可预测的模态缺失。现有方法要么学习可靠性感知表示，要么重建缺失输入，通常使用单个扁平编码器输出。这忽略了深度编码器的语义层次以及模态内和模态间的交互，导致语义平均和不适定映射。我们提出了分层语义学习（HSL），这是一个利用语义层次进行鲁棒MSA并处理缺失模态的框架。分层语义解耦从每个模态编码器中暴露低、中、高级特征流。跨模态跨层语义重建执行阶梯式恢复，使用来自观测模态的高级语义作为全局锚点，逐步重建缺失模态的中级结构和低级细节。为了稳定跨层重建，分层级联错误监督器对观测和重建特征应用原型对比正则化，强制特定级别的语义一致性并限制错误传播。最后，分层交互融合捕获跨模态和语义级别的密集交互，以在各种缺失模式下产生鲁棒预测。在CMU-MOSI、CMU-MOSEI、IEMOCAP和CH-SIMS上的实验表明，HSL在大多数缺失模态设置中优于基线。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

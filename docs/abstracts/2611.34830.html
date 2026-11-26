@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Not all world models can doubt: how training objective and architecture shape epistemic uncertainty in JEPA and RSSM world models</h1>
+      <h2>Abstract (EN)</h2>
+      <p>World models predict how an environment responds to actions, so that candidate actions can be evaluated before execution. Executed actions, or decisions, taken in this manner are only as reliable as the model&#x27;s predictive capabilities, and predictions in turn are only reliable within the model&#x27;s experience. Epistemic uncertainty (EU) is the signal that marks where that experience ends. In this work we offer an extensive empirical study on how training objectives and architectures shape epistemic uncertainty of world models. More precisely, we present a controlled comparison of post-hoc EU (last-layer Laplace and ensembles) between two dominant models of different paradigms: 1) LeWorldModel (LeWM): A joint-embedding predictive architecture (JEPA), which predicts the next embedding without a decoder, and 2) DreamerV3: A recurrent state-space model (RSSM), which reconstructs the observation from a recurrent latent state. In ten simulated visual-control environments, we follow a controlled state perturbation of the environment state through every stage of the models up to the final EU estimate. We find that the RSSM attenuates the state perturbation through two mechanisms before it reaches an estimator on the predictor feature. Its recurrent update averages over context, so a change in a single frame reaches the state at a fraction of its size and recovers only as the change persists. Its reconstruction objective weights an entity by the pixels it covers, so a small object can be lost due to the training objective. The JEPA has neither mechanism and passes the change through all stages to the uncertainty. We further show that this translates to gaps in five uncertainty related downstream tasks, from unfamiliar-state detection to uncertainty-penalised planning: the RSSM uncertainty misses deviations that its own posterior registers, whereas the JEPA uncertainty reports what its model sees.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>世界模型预测环境如何响应动作，以便在执行前评估候选动作。以这种方式执行的动作或决策，其可靠性取决于模型的预测能力，而预测只有在模型的经验范围内才可靠。认知不确定性（EU）是标记该经验范围终点的信号。在这项工作中，我们提供了关于训练目标和架构如何塑造世界模型认知不确定性的广泛实证研究。更准确地说，我们对两种不同范式的主导模型进行了事后EU（最后一层拉普拉斯和集成）的受控比较：1）LeWorldModel（LeWM）：一种联合嵌入预测架构（JEPA），在没有解码器的情况下预测下一个嵌入；2）DreamerV3：一种循环状态空间模型（RSSM），从循环潜在状态重建观测。在十个模拟视觉控制环境中，我们遵循环境状态的受控状态扰动，通过模型的每个阶段直到最终的EU估计。我们发现，RSSM在到达预测器特征上的估计器之前，通过两种机制减弱状态扰动。其循环更新对上下文进行平均，因此单帧的变化以一小部分大小到达状态，并且只有在变化持续时才恢复。其重建目标根据实体覆盖的像素对实体进行加权，因此小物体可能因训练目标而丢失。JEPA没有这两种机制，并将变化传递到所有阶段直至不确定性。我们进一步表明，这转化为五个与不确定性相关的下游任务的差距，从陌生状态检测到不确定性惩罚规划：RSSM不确定性错过了其自身后验记录的偏差，而JEPA不确定性报告了其模型所看到的内容。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

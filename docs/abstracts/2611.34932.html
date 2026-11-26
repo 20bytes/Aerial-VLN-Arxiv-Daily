@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>MERLoc: Robust Robot Localization in Dynamic Environments with Pose-Based Retrieval over 3D Gaussian Splatting References</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Robots operating in previously mapped spaces must localize accurately despite moving people and rearranged objects. Most localization pipelines match the query against a sparse set of captured reference images retrieved by appearance, which is brittle under scene change and repeating structures. We present MERLoc, which turns a single metric 3D Gaussian Splatting scan into a dense Functional Reference Memory. Reference views are sampled over the navigable space for the robot&#x27;s morphology and sensors at a target density and rendered offline. Pre-encoding them for the chosen off-the-shelf localizer removes the reference encoder from inference. A pose-based retrieval strategy then selects references by spatial proximity and viewing direction rather than appearance, sidestepping visual ambiguities whenever a prior exists. Across one classical and four learned localizers in simulated and real dynamic scenes, pose-based retrieval matches or outperforms appearance retrieval in most cases, even when the latter is gated by the same prior. On real data, it lowers position RMSE by 15-60 % in nine of ten backend/split combinations, and the rendered memory outperforms real-image caches posed by Structure-from-Motion. The system runs onboard a Jetson Orin NX at 5 Hz, enabling a navigation policy to successfully traverse a hallway with people roaming and rearranging objects.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>在先验建图空间中运行的机器人必须在人员移动和物体重新布置的情况下仍能准确定位。大多数定位流程通过外观检索一组稀疏的捕获参考图像来匹配查询，这在场景变化和重复结构下较为脆弱。我们提出MERLoc，它将单次度量3D高斯泼溅扫描转化为密集的功能参考记忆。参考视图根据机器人的形态和传感器在可导航空间上以目标密度采样并离线渲染。为所选现成定位器预编码这些视图，从而在推理中移除参考编码器。基于位姿的检索策略随后根据空间邻近性和观察方向而非外观来选择参考，只要存在先验就能避开视觉歧义。在模拟和真实动态场景中，针对一种经典和四种学习型定位器，基于位姿的检索在大多数情况下匹配或优于外观检索，即使后者由相同先验门控。在真实数据上，它在十个后端/分割组合中的九个里将位置RMSE降低了15-60%，并且渲染的记忆优于由运动恢复结构构建的真实图像缓存。该系统在Jetson Orin NX上以5 Hz运行，使导航策略能够成功穿越有人员走动和物体重新布置的走廊。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

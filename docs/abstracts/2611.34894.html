@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>What a Drop Reveals: Sim-to-Real Material Estimation for Deformable Objects from Video</h1>
+      <h2>Abstract (EN)</h2>
+      <p>How an object deforms when it hits the ground reveals what it is made of. From a single real video of a drop, we estimate a deformable object&#x27;s density-normalized stiffness $E/ρ$, and its yield stress $σ_Y/ρ$ when the impact causes plastic deformation, with a feed-forward predictor trained only in simulation. Real videos carry no material labels, so such predictors are developed and validated on synthetic data alone. We show that synthetic validation ranks their geometric inputs in the wrong order. Material acts through 3D deformation, and tracklets lifted to 3D with estimated depth are indeed the most accurate input in simulation. However, on real drops they are the least accurate, and better depth does not repair them: the failure persists with simulator depth in training, LiDAR depth at test time, and exact depth on rendered replays of the real drops. Short 2D optical-flow tracklets do the opposite: they improve nothing in simulation, yet they transfer best. Material is therefore better read from what perception measures consistently in both domains than from what is most informative in simulation. Our predictor, PhysReader, reads the video and 2D tracklets and learns the lift to 3D in simulation by matching a teacher that sees exact 3D deformation. To measure transfer, we introduce PhysReader-Real: 16 everyday objects dropped five times each, with reference materials fit jointly to each object&#x27;s drops and checked against tensile tests. On PhysReader-Real, PhysReader is closer to the reference materials than every other input and baseline. The one exception is a per-scene optimizer started from PhysReader&#x27;s prediction, which ends slightly closer but takes 49 minutes per video instead of 12 seconds.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>物体落地时的变形方式揭示了它的材质。仅凭一次真实跌落视频，我们估计可变形物体的密度归一化刚度 E/ρ，以及当冲击导致塑性变形时的屈服应力 σ_Y/ρ，使用仅在仿真中训练的前馈预测器。真实视频没有材料标签，因此这类预测器仅基于合成数据进行开发和验证。我们表明，合成验证对其几何输入排序错误。材料通过3D变形起作用，而用估计深度提升到3D的短轨迹在仿真中确实是最准确的输入。然而，在真实跌落中它们最不准确，并且更好的深度无法修复它们：该失败在训练中使用模拟器深度、测试时使用LiDAR深度以及真实跌落渲染回放上的精确深度时仍然存在。短的2D光流轨迹则相反：它们在仿真中没有任何改进，但迁移效果最好。因此，材料最好从感知在两个域中一致测量的内容中读取，而不是从仿真中最具信息量的内容中读取。我们的预测器PhysReader读取视频和2D轨迹，并通过匹配一个看到精确3D变形的教师模型，在仿真中学习提升到3D。为了衡量迁移，我们引入了PhysReader-Real：16个日常物体各跌落五次，参考材料联合拟合每个物体的跌落并与拉伸测试进行核对。在PhysReader-Real上，PhysReader比所有其他输入和基线都更接近参考材料。唯一的例外是从PhysReader的预测开始的逐场景优化器，它最终稍微更接近，但每个视频需要49分钟而不是12秒。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

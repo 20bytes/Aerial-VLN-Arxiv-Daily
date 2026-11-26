@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>ShowNow: Fine-Grained Speculative Streaming for Responsive World Models</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Interactive world models must generate video continuously while responding promptly to user actions. Real-time throughput alone leaves input latency unresolved: coarse generation blocks delay action updates, and generation after input adds work to the response path. We introduce ShowNow, a fine-grained speculative streaming framework that uses computation available during playback to prepare action-conditioned futures before input arrives. Single-latent commitment enables frequent decisions, while configurable preparation covers one to eight actions. We construct a matched multi-future dataset to train alternative continuations from a common state; shared-history tree execution and fused commitment make their preparation efficient. On a single H100, our 5B model sustains 480p generation at 16 fps with eight prepared futures. In ViZDoom, the complete ShowNow deployment reduces median input-to-display latency from 620 to 208 ms relative to the native-block SolarWM-FT deployment. Matched-policy experiments reduce restart empty ticks from 1.56% to 0.09% (94%) and improve on-time responses to action changes. These results establish complementary roles for fine-grained commitment and advance preparation, with measured trade-offs in visual fidelity and long-horizon consistency. ShowNow turns playback-time computation into responsive visual interaction. Project: https://github.com/showlab/ShowNow.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>交互式世界模型必须持续生成视频，同时迅速响应用户操作。仅靠实时吞吐量无法解决输入延迟：粗粒度生成块会延迟动作更新，而输入后生成又会在响应路径上增加工作。我们提出 ShowNow，一种细粒度推测流式框架，利用播放期间可用的计算，在输入到达之前准备动作条件化的未来。单潜在承诺支持频繁决策，而可配置准备覆盖一到八个动作。我们构建了一个匹配的多未来数据集，用于从共同状态训练替代延续；共享历史树执行和融合承诺使其准备高效。在单张 H100 上，我们的 5B 模型以 16 fps 维持 480p 生成，并准备八个未来。在 ViZDoom 中，与原生块 SolarWM-FT 部署相比，完整的 ShowNow 部署将中位输入到显示延迟从 620 毫秒降低到 208 毫秒。匹配策略实验将重启空刻度从 1.56% 降低到 0.09%（94%），并改善了对动作变化的按时响应。这些结果确立了细粒度承诺和提前准备互补的作用，并在视觉保真度和长时程一致性方面测量了权衡。ShowNow 将播放时计算转化为响应式视觉交互。项目：https://github.com/showlab/ShowNow。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

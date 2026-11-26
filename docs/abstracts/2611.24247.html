@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Allocentric Memory, Egocentric Acting: A Dual-Frame VLA for Urban Aerial Navigation</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Language-goal aerial navigation requires a UAV to reach a destination specified in natural language using observations collected during flight. A key challenge is linking changing egocentric perception with spatial evidence anchored to stable locations for long-range navigation. We propose CityNav-VLA, a dual-frame vision-language-action model for urban navigation integrating dynamic egocentric context with persistent allocentric spatial memory. The UAV incrementally accumulates visual observations on a fixed north-up map initialized with geographic and landmark priors, preserving evidence across viewpoint changes. A dynamic query conditioned on the instruction, current observations, UAV state, and motion history retrieves relevant memory evidence to predict a map-frame target. A deterministic controller converts this target into body-frame commands using the UAV&#x27;s current pose, connecting global reasoning with egocentric execution. To reduce target fluctuations over long horizons, early goal commitment (EGC) fixes the execution target to the coordinate-wise median of the first $K$ predictions without extra trainable parameters. On Test Unseen, CityNav-VLA reduces NE by 21.2% and improves SR and SPL by 15.8% and 30.9%, respectively. It also reduces NE by 6.2% and improves SR and SPL by 5.6% and 23.2%, respectively, relative to the former SOTA after dataset refinement. Cumulative ablations show that navigation-map features yield the largest gains, while metric coordinates further improve endpoint accuracy. With a 4B-scale backbone, inference averages 0.68 s per decision with 8.6 GB peak memory on a single A100, presenting remarkable model efficiency.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>语言目标空中导航要求无人机利用飞行过程中收集的观测到达自然语言指定的目的地。一个关键挑战是将变化的自我中心感知与锚定在稳定位置的空间证据联系起来，以支持长距离导航。我们提出CityNav-VLA，一种用于城市导航的双框架视觉-语言-动作模型，它将动态的自我中心上下文与持久的异我中心空间记忆相结合。无人机在初始化为地理和地标先验的固定北向上地图上增量积累视觉观测，从而在视角变化中保留证据。一个以指令、当前观测、无人机状态和运动历史为条件的动态查询检索相关记忆证据，以预测地图框架目标。一个确定性控制器利用无人机当前位姿将该目标转换为机体框架命令，将全局推理与自我中心执行连接起来。为减少长时程中的目标波动，早期目标承诺（EGC）将执行目标固定为前$K$个预测的坐标中位数，且不增加额外可训练参数。在Test Unseen上，CityNav-VLA将NE降低了21.2%，并将SR和SPL分别提高了15.8%和30.9%。在数据集精炼后，相较于之前的最优方法，它还将NE降低了6.2%，并将SR和SPL分别提高了5.6%和23.2%。累积消融实验表明，导航地图特征带来最大增益，而度量坐标进一步提高了终点精度。在4B规模的主干网络下，单张A100上的推理平均每次决策耗时0.68秒，峰值内存为8.6 GB，展现出显著的模型效率。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

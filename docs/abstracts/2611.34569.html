@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Riding the Wave: Sim-to-Real Humanoid Control on Elastic Terrain</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Humanoid robots on deformable elastic terrains face a surface whose position and motion are coupled in space and time: deflection and rebound persist between contacts, and load at one foothold alters the support at others, so training must capture how each contact changes the support that follows. We present RIPPLE (Robust Interaction via Proprioceptive Policies on Large-deformation Elastic terrain), a simulation-to-real learning framework for humanoid control on such terrains. RIPPLE integrates ElasticMembrane, a pretensioned mass-spring mesh that models spatially coupled deflection, energy storage, and rebound, together with deformable contact into MJLab for GPU-parallel policy learning. Staged training then transfers rigid-ground skills to balance and jumping on these terrains using only proprioception, without vision or force sensing. Deployed zero-shot, the policies enable a MagicBot Z1 humanoid to balance, jump consecutively, and enter a trampoline from a rigid platform. In simulation, ElasticMembrane training holds standing success of at least 98.7% (mean over three seeds) on ElasticMembrane, IndependentSprings, and BouncyPlate under 0.3 m/s perturbations, whereas rigid-ground or contact-compliance training transfers poorly to the first two. A fixed policy tolerates stiffness from 0.35 to 2.8 times the training value, beds up to 7 m wide, and seven further simulated support scenarios, so transfer needs no calibration to the trampoline&#x27;s stiffness. We plan to release the code soon. The interactive browser demo, videos, and scene configurations are available on the project page: https://fly-pigTH.github.io/wave_rider/</p>
+      <h2>摘要 (ZH)</h2>
+      <p>可变形弹性地形上的人形机器人面临一个位置与运动在时空上耦合的表面：偏转与回弹在接触之间持续存在，一个立足点的负载会改变其他支撑点的支撑状态，因此训练必须捕捉每次接触如何改变后续的支撑。我们提出RIPPLE（基于本体感知策略的大变形弹性地形鲁棒交互），这是一个用于此类地形上人形机器人控制的仿真到现实学习框架。RIPPLE将ElasticMembrane（一种预张紧的质量-弹簧网格，用于建模空间耦合偏转、能量存储和回弹）与可变形接触集成到MJLab中，以实现GPU并行策略学习。随后，分阶段训练将刚性地面技能迁移到这些地形上的平衡和跳跃，仅使用本体感知，无需视觉或力传感。部署时零样本迁移，策略使MagicBot Z1人形机器人能够平衡、连续跳跃，并从刚性平台进入蹦床。在仿真中，ElasticMembrane训练在0.3 m/s扰动下，在ElasticMembrane、IndependentSprings和BouncyPlate上保持至少98.7%的站立成功率（三个种子的平均值），而刚性地面或接触柔顺性训练在前两者上迁移效果不佳。固定策略可容忍训练值0.35至2.8倍的刚度、宽达7米的床面以及另外七种模拟支撑场景，因此迁移无需对蹦床刚度进行校准。我们计划很快发布代码。交互式浏览器演示、视频和场景配置可在项目页面获取：https://fly-pigTH.github.io/wave_rider/</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

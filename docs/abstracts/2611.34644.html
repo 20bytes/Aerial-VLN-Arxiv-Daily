@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Motion Beyond Pixels: Learning Future Visual Representations for Object-Centric Dynamics</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Many embodied world models predict future states in latent spaces optimized for RGB reconstruction, which do not explicitly prioritize object-level semantics and geometry relevant to motion generation. We present MotionRep, a visual representation world model that jointly generates future DINO representations and 3D object flow, coupling semantic and geometric information with object-centric dynamics. To make high-dimensional DINO features amenable to generative modeling, we introduce DINO-VAE, which combines temporal and channel compression with latent regularization to produce compact latents while preserving semantic and geometric information. Conditioned on an initial observation, object query points, and a language instruction, a unified diffusion transformer predicts future visual representations and 3D object flow through joint attention. MotionRep employs asymmetric modality-specific noise schedules to keep the visual stream ahead of 3D object flow during joint denoising, allowing progressively refined future visual representations to guide flow generation. Experiments on simulated and real-world manipulation benchmarks demonstrate that MotionRep outperforms pixel-based baselines in 3D object flow accuracy and generalization to unseen scenes, while requiring only three denoising steps for inference. These results support predictive visual representations as an effective future-state space for object-centric dynamics modeling.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>许多具身世界模型在针对RGB重建优化的潜在空间中预测未来状态，并未明确优先考虑与运动生成相关的对象级语义和几何信息。我们提出MotionRep，一种视觉表示世界模型，联合生成未来DINO表示和3D对象流，将语义与几何信息同对象中心动力学相耦合。为使高维DINO特征适于生成建模，我们引入DINO-VAE，它结合时间与通道压缩及潜在正则化，在保留语义与几何信息的同时产生紧凑潜在表示。以初始观测、对象查询点和语言指令为条件，一个统一的扩散变换器通过联合注意力预测未来视觉表示和3D对象流。MotionRep采用非对称的模态特定噪声调度，在联合去噪过程中使视觉流领先于3D对象流，从而允许逐步细化的未来视觉表示引导流生成。在模拟和真实操作基准上的实验表明，MotionRep在3D对象流准确性和对未见场景的泛化方面优于基于像素的基线，同时推理仅需三个去噪步骤。这些结果支持预测性视觉表示作为对象中心动力学建模的有效未来状态空间。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

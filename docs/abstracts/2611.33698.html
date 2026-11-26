@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #1f2937; min-height: 100vh; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 16px; padding: 32px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+    h1 { font-size: 22px; margin: 0 0 16px; color: #111827; line-height: 1.4; }
+    h2 { font-size: 16px; margin: 24px 0 12px; color: #4b5563; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; display: inline-block; }
+    p { line-height: 1.8; white-space: pre-wrap; font-size: 15px; color: #374151; }
+    a { color: #0ea5e9; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
+    a:hover { color: #0284c7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Efficient Scene-Distribution-Aware Second-Order Optimization for 3D Gaussian Splatting</h1>
+      <h2>Abstract (EN)</h2>
+      <p>3D Gaussian Splatting (3DGS) optimization updates the Gaussian parameters one training view at a time, tens of thousands of times. Unlike such single-view updates, multi-view batches reduce dependence on individual training views, and second-order optimization reduces the number of updates with larger, structured parameter changes. Because fewer updates leave fewer chances to correct a change that fits only the views used in one update, scene coverage becomes more important for each second-order update. Multi-view second-order updates, however, are expensive. Pixel sampling reduces this cost, but two issues remain. First, selecting views without considering overlap leaves some views redundant. To address this, we propose a view selection strategy that reduces this redundancy. Second, existing work processes the sampled pixels of each view in a separate pass and recomputes alpha compositing for these pixels from scratch. We introduce two implementation strategies that reduce both overheads by processing the sampled pixels of multiple views in joint passes and reusing the transmittance and accumulated color cached during rendering. On three datasets, our method reaches higher PSNR than the sampled second-order baseline in less than half its optimization time, with competitive SSIM and LPIPS.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>3D高斯泼溅（3DGS）优化在每次训练视图上更新高斯参数，需进行数万次更新。与这种单视图更新不同，多视图批量减少了对单个训练视图的依赖，而二阶优化通过更大、结构化的参数变化减少了更新次数。由于更新次数减少，修正仅拟合单次更新所用视图的变化的机会也减少，因此场景覆盖对每次二阶更新变得更加重要。然而，多视图二阶更新代价高昂。像素采样降低了这一成本，但仍存在两个问题。首先，不考虑重叠的视图选择会导致部分视图冗余。为解决此问题，我们提出了一种减少冗余的视图选择策略。其次，现有工作在每个视图的采样像素上分别进行处理，并从头重新计算这些像素的alpha合成。我们引入了两种实现策略，通过联合处理多个视图的采样像素，并重用渲染过程中缓存的透射率和累积颜色，来降低这两种开销。在三个数据集上，我们的方法在不到其一半的优化时间内达到了比采样二阶基线更高的PSNR，同时SSIM和LPIPS具有竞争力。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>
